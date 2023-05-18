@@ -9,4 +9,5 @@ The readers are the learners
 * How to use it 
 	* Refresh you use it
 
-Address of this repository: https://github.com/4turesearchdata-carpentries/blob/2305-SCW/?
+Address of this repository: 
+https://github.com/4TUResearchData-Carpentries/workshop_notes/tree/2305-SCW
