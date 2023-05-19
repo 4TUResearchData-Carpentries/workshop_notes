@@ -4,6 +4,8 @@
 
 **Readership** Workshop coordinators and instructors.
 
+**Current branch** You are in the master branch.
+
 ---
 
 ## 1. Automated note-taking for the Carpentries workshops using gitautopush
@@ -23,7 +25,7 @@ The local repository in the instructor's machine must contain the files to be sh
 The learners can consult the notes in the auto-pushed remote. 
 (The remote _receives_ the pushes.)  
 `gitautopush` has indeed been conceived to support the Software Carpentries from the start. 
-This application is available from the Python Package Index at https://pypi.org/project/gitautopush/ (accessed 19 May 2023); more on the installation below.
+This application is available from the Python Package Index at https://pypi.org/project/gitautopush/ (accessed 19 May 2023); more on its installation in §3.2.
 
 **This document** is intended for instructors and explains how to use this remote to serve each edition of a Carpentries workshop and how to prepare your local computer for this. 
 As of May 2023, it only comments on the lessons of the Software Carpentry Workshop (SCW): Git, Unix Shell, and Python.
@@ -33,8 +35,8 @@ The table below organises how the working directory is used in each unassisted l
 | Lesson | Contains a repo? | Commands are typed in...| We share... | Notes contain... | Half-days | 
 |:-------|:------|:------|:------|:------|:------|
 | Git | yes | Shell terminal | Shell command history | input | 1 |
-| Unix Shell  | no | Shell terminal | Shell command history | input | 1 |
 | Python | no | Browser | Jupyter notebook | in/output | 2 |
+| Unix Shell  | no | Shell terminal | Shell command history | input | 1 |
 
 ---
 
@@ -53,11 +55,11 @@ Using this repository for automated note-taking/sharing requires that:
 ### 2.2 Name conventions
 To leverage speed reading and finding, the following usage is encouraged:
 
-* **edition-specific branch names** follow the pattern \[yymm\]-\[type of workshop\]-\[institution\].  
+1. **edition-specific branch names** follow the pattern \[yymm\]-\[type of workshop\]-\[institution\].  
   Example: Software Carpentry Workshop in May 2023 at Delft => `2305-SCW-TUD`.
-* **shared-file names** start with the lesson they refer to, as follows:  
-  `python*`. For example, Python shares JupyterLab notebooks and runs in two sessions => `python1.ipynb`, `python2.ipynb`  
-  `unixshell*`, `git*`. For example, Unix Shell and Git both share the command history and run in one session each => `unixshell.log`, `git.log`. 
+2. **shared-file names** start with the lesson they refer to, as follows:  
+     - `python*`. For example, Python shares JupyterLab notebooks and runs in two sessions => `python1.ipynb`, `python2.ipynb`  
+     - `unixshell*`, `git*`. For example, Unix Shell and Git both share the command history and run in one session each => `unixshell.log`, `git.log`. 
 
 The table is an example of the eventual data hierarchy:
 
@@ -73,12 +75,13 @@ The table is an example of the eventual data hierarchy:
 
 ### 2.3 Other usage notes
 
-* File extensions may vary.  
+1. File extensions may vary.  
 It is important for proper visualisation in GitHub that human-readable files have extensions typically recognized as such, like `*.log` or `*.txt`.  
-* You may share more files than the notes, of course, provided their name is prepended with the originating lesson name, as said just above.
-* In principle, one can also use directories to organise contents according to the lessons.  
+2. You may share more files than the notes, of course, provided their name is prepended with the originating lesson name, as said just above.
+3. In principle, one can also use directories to organise contents according to the lessons.  
 However, a flat list of files is leaner and discourages sharing in bulks. 
-If this pilot takes off, this repository is expected to contain the materials of many editions. 
+
+Concerning items 2 and 3, please be considerate that, if this pilot takes off, this repository is expected to contain the materials of many editions. 
 The leaner from the outset, the better for the instructors' information management and the learners' ['extraneous load'](https://en.wikipedia.org/wiki/Cognitive_load).
 
 
@@ -117,51 +120,39 @@ Specific notes of caution apply as to which lessons you are teaching.
 
 ##### Where and when
 
-As for the when, after the edition branch is ready in this remote.
+As for the when, after the edition branch is ready in this remote (§3.1.1).
 
 As for the where, in the machine the instructor will use for giving the lesson.
 You need to make a conditioned choice regarding the paths of:
  
 * the **working directory** (WORKINGDIR). 
 This is where you carry out the demonstrations for the learners. 
-Typically, this is a subdirectory of the desktop. 
-The instructor is free to choose any of his/her liking, however. 
+Typically, this is a subdirectory of the desktop, although the instructor is free to choose any of his/her liking. 
 You show the learners the terminal working on this directory.
 * the **auto-pushing directory** (AUTOPUSHDIR).
-This where you save your lesson notes (whether notebooks or command histories) AND clone (the edition branch of) this repository AND have `gitautopush` observe the changes (a terminal is thus needed for launching `gitautopush`).
+This where you save your lesson notes (whether notebooks or command histories) AND clone (the edition branch of) this repository AND have `gitautopush` observe the local changes (another terminal is thus needed for launching `gitautopush`, §3.2).
 You do _not_ show the learners the terminal working with this directory.
-
 
 The table below guides the choice of the AUTOPUSHDIR directory for the different lessons:
 
 | Questions | Unix Shell | Git | Python |
 |------:|:------|:------|:------|
 | **Will AUTOPUSHDIR = $WORKINGDIR work?** | No. Create another directory unrelated to WORKINGDIR.  |No. Same as Unix Shell. | Yes. |
-| **Why?** | You are showing the learners the terminal with WORKINGDIR. gitautopush is verbose and its messages pollute that terminal at any change of the directory content, that is any command you type. | You are showing the learners the terminal with WORKINGDIR (see Unix Shell). Also, you need a Git repository which you have full control on, whereas gitautopush will commit any change of the directory content and try to push it. Let alone that it is unhandy to manage two repositories in one directory. | You are working on the browser and never share a terminal with the learners. The verbose standard output of gitautopush does not interfere with your demonstration. |
-| **What to do in AUTOPUSHDIR?** | Redirect the command history to a file contained there. See next section. | Same as Unix Shell. See next section.  | A `.gitignore` file that does not track the hidden clutter that goes with a notebook, like the directory `.ipynb_checkpoints` (plus any notebook output you do not need to share). See next section. |
+| **Why?** | You are showing the learners the terminal with WORKINGDIR. gitautopush is verbose and its messages pollute that terminal at any change of the directory content, that is any command you type. (You may check the gitautopush output from time to time.) | See Unix Shell. Also, you need a Git repository which you have full control on, whereas gitautopush will commit any change of the directory content and try to push it. Let alone that it is unhandy to manage two repositories in one directory. | You are working on the browser and never share a terminal with the learners. The verbose standard output of gitautopush does not interfere with your demonstration. |
+| **What to do in AUTOPUSHDIR?** | Redirecting the command history to a file contained there. See next section. | Same as Unix Shell. See next section.  | A `.gitignore` file that does not track the hidden clutter that goes with a notebook, like the directory `.ipynb_checkpoints` (plus any notebook output you do not need to share). See next section. |
 | **How many terminals are needed?** | Three. | Three. | One. |
 
 
 ##### What and how 
 
-Once you set your WORKINGDIR and AUTOPUSHDIR as convenient and appropriate, clone the remote edition branch (§ 3.1.1) into AUTOPUSHDIR. Conveniently, the following command enables you to clone the edition branch only. (Source: [Git documentation](https://www.git-scm.com/docs/git-clone) and [Stackexchange Q&A](https://stackoverflow.com/a/9920956)). Please set or substitute the variables AUTOPUSHDIR and EDITIONBRANCH (the edition branch name, for example `SWC-2305-TUD`).
+Once you set your WORKINGDIR and AUTOPUSHDIR as convenient and appropriate, clone the remote edition branch (§ 3.1.1) into AUTOPUSHDIR. Conveniently, the following command enables you to clone the edition branch only. (Source: [Git documentation](https://www.git-scm.com/docs/git-clone) and [Stackexchange Q&A](https://stackoverflow.com/a/9920956)). Please set or substitute the variables AUTOPUSHDIR and EDITIONBRANCH (for the edition branch name, for example `SWC-2305-TUD`).
 
 ```bash
     mkdir $AUTOPUSHDIR
     git clone git@github.com:4TUResearchData-Carpentries/workshop_notes.git --branch $EDITIONBRANCH --single-branch $AUTOPUSHDIR
 ```
 
-For **Python**, create a `.gitignore` file (keep single quotes!):
-
-```bash
-    cd $AUTOPUSHDIR
-    echo '.ipynb_checkpoints' > .gitignore
-    echo '.gitignore' >> .gitignore
-``` 
-The last line is not the orthodox way: it works but see `git help gitignore` for cleaner ways to implement the same effect.
-
-
-For **Unix Shell** and **Git**, use 
+For the **Unix Shell** and **Git** lessons, use 
 
 1. A terminal to type along your commands. You start off in WORKINGDIR. This terminal shows both input and output. You always share this with the learners.
    There you type: 
@@ -177,24 +168,74 @@ You may or may not share this terminal with the learners alongside the first. Th
         clear
         tail -n 0 -f ~/.bash_history | tee -a $WORKINGDIR/$LESSON.log
     ```
-where `LESSON = [ git | unixshell ]` according to the name convention for the notes file presented in §2. 
+where `LESSON = [ git | unixshell ]` according to the name convention for the notes file presented in §2.2. 
 
 You close both terminals after closing the lesson.
 
+For the **Python** lesson, create a `.gitignore` file (keep single quotes!):
+
+ ```bash
+     cd $AUTOPUSHDIR
+     echo '.ipynb_checkpoints' > .gitignore
+     echo '.gitignore' >> .gitignore
+ ``` 
+The last line is not the orthodox fashion: it works but see `git help gitignore` for cleaner ways to implement the same effect.
 
 ### 3.2 Software (gitautopush)
 
-=== hereinafter: work in progress ===
+#### The package
 
-...
+Description, credits and downloads of gitautopush are available from the Python Package Index at https://pypi.org/project/gitautopush/. 
 
-+ Autosave interval in JupyterLab.
+#### Install 
 
+In a terminal launch
+
+       pip install gitautopush
+
+#### Help
+
+Get familiar with the options and arguments with: 
+
+       gitautopush -h
+
+#### Supporting software
+
+gitautopush makes continual usage of an ssh connection with GitHub. 
+To this end it is necessary that...
+
+```bash
+# TODO: explanation of commands
+```
+
+#### Launch
+
+At the start of the lesson open a new terminal and launch
+
+        gitautopush --sleep <seconds> $AUTOPUSHDIR
+
+The option `sleep` sets how frequently gitautopush observes whether changes took place in AUTOPUSHDIR. 
+It seems reasonable that values in the range of 2-5 seconds are short enough to follow the instructor's typing closely.
+
+Alternatively, one can also launch gitautopush this way:
+
+    ```bash
+        cd $AUTOPUSHDIR
+        gitautopush --sleep <seconds> .
+    ```
+
+Close this terminal when the lesson is over.
+
+#### Forewarned is forearmed
+
+For the **Python** lesson, take note that the default interval for autosaving in JupyterLab is 120 seconds.  
+For gitautopush to observe a change, the instructors can either take care of saving their work manually and regularly (with `Ctrl+S`) or reduce the autosave interval to 2-5 seconds. This can be done with the Advanced Settings Editor (with `Ctrl+,`) and then searching for the keyword "autosave".   
+Please verify if the interval set through the attending web interface is effectively implemented.
+If not, it can be preferable and more robust to customize the parameter "autosaveInterval" at the lower level of the 'Document Manager settings' using the 'JSON Settings Editor'. 
+This other avenue is described [in this blog](https://www.webucator.com/article/change-default-autosave-interval-in-jupyterlab/). 
 
 -----
 
-## Fragments
+## Helpful resources to compose this document
 
-You are in the master branch, showing general instructions.
-
-https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-and-highlighting-code-blocks
+* https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-and-highlighting-code-blocks
