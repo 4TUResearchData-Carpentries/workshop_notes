@@ -1,14 +1,32 @@
 # Workshop notes
 
-Currently, this document is less than a draft. Bear with the bear.
+**Document status** Currently, this document is an adolescent draft. Bear with the bear.
 
-## Automated note-taking for the Carpentries workshops using gitautopush
+## 1. Automated note-taking for the Carpentries workshops using gitautopush
 
-The ambition of this repository is to share and store the notes of all lessons of all editions of all Carpentries workshops held at the 4TU Research Data44. 
+**The ambition** is to use this repository to share and store the notes of all lessons of all editions of all Carpentries workshops held at the 4TU Research Data. 
 
-the need is ...
+**The lesson notes** are the documents containing the commands the instructors type along during a lesson. 
+Instructors may not present the material of lesson episodes verbatim.
 
-the tool (gitautopush) is ...
+**The need** Learners use the lesson notes to catch up with a lesson when they had to lag behind, for example after a helper has supported them with an issue. 
+Previously, a helper was fully engaged with the task of note-taking. The application of @Maurits Kok to https://github.com/mwakok/software_carpentry_learner for the Python lesson has showed that the note-taking can be automated.
+
+**The key tool** is `gitautopush`, an application that detects changes in a local repository and pushes them to the associated remote repository automatically. The learners can consult the notes in the auto-pushed remote. 
+The local repository in the instructor's machine thus contains the files that have to be shared as the instructor types them along. 
+`gitautopush` has indeed been conceived to support the Software Carpentries. 
+This application is available from the Python Package Index at https://pypi.org/project/gitautopush/ (accessed 19 May 2023).
+
+**This document** is intended for instructors and explains how to use this remote to serve each edition of a workshop carpentry and prepare your local computer for this. 
+As of May 2023, it only comments on the lessons of the Software Carpentry Workshop (SCW), that is Git, Unix Shell, and Python.
+There are differences as to how each lesson fills the working directory and repositories. 
+The table below organises how the working directory is used in each unassisted lesson:
+
+| Lesson | Contains a repo? | What to share? | 
+|-------|------| 
+| Git | yes | command history |
+| Unix Shell  | no | command history |
+| Python | no | notebook |
 
 ## Expected data organisation  
 
