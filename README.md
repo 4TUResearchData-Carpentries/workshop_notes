@@ -1,6 +1,7 @@
 # Workshop notes
 
-**Document status** Currently, this document is an adolescent draft. Bear with the bear.
+**Document status** Currently, this document is an adolescent draft. Bear with the bear.   
+Please open issues to provide remarks.
 
 **Readership** Workshop coordinators and instructors.
 
