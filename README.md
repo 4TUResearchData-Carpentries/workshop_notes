@@ -23,7 +23,7 @@ There are differences as to how each lesson fills the working directory and repo
 The table below organises how the working directory is used in each unassisted lesson:
 
 | Lesson | Contains a repo? | What to share? | 
-|-------|------| 
+|-------|------|------| 
 | Git | yes | command history |
 | Unix Shell  | no | command history |
 | Python | no | notebook |
