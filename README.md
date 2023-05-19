@@ -40,6 +40,8 @@ The table below organises how the working directory is used in each unassisted l
 
 ## 2. Organizing information for automated note-sharing  
 
+### 2.1 Using branches for workshop editions
+
 Using this repository for automated note-taking/sharing requires that:
 
 1. the _master branch_ only provides instructions to _coordinators/instructors_;
@@ -48,7 +50,8 @@ Using this repository for automated note-taking/sharing requires that:
 4. the _lesson notes_ are files tracked by and committed to an _edition branch_; 
 5. the README of the _edition branch_ addresses the workshop _learners_.
 
-**Name conventions** To leverage speed reading and finding, the following usage is encouraged:
+### 2.2 Name conventions
+To leverage speed reading and finding, the following usage is encouraged:
 
 * **edition-specific branch names** follow the pattern \[yymm\]-\[type of workshop\]-\[institution\].  
   Example: Software Carpentry Workshop in May 2023 at Delft => `2305-SCW-TUD`.
@@ -68,7 +71,7 @@ The table is an example of the eventual data hierarchy:
 | `python2.ipynb` | lesson notes in the edition branch | `python*` |
 | `unixshell.log` | lesson notes in the edition branch | `unixshell*` |
 
-Other usage notes:
+### 2.3 Other usage notes
 
 * File extensions may vary.  
 It is important for proper visualisation in GitHub that human-readable files have extensions typically recognized as such, like `*.log` or `*.txt`.  
@@ -91,9 +94,9 @@ The workshop coordinator can undertake these actions.
 You do not need to be an instructor to set this up.
 
 ##### Where and when
-In this repository on GitHub. Its URL is https://github.com/4TUResearchData-Carpentries/workshop_notes.  
+As for the where, in this repository on GitHub. Its URL is https://github.com/4TUResearchData-Carpentries/workshop_notes.  
 
-After the workshop edition has been planned and the links to the Carpentries workshop site and to the collaboration document are live.  
+As for the when, after the workshop edition has been planned and the links to the Carpentries workshop site and to the collaboration document are live.  
 
 ##### What and how
 The table details the steps to prepare the edition branch on this GitHub remote repository.
@@ -134,27 +137,27 @@ The table below guides the choice of the AUTOPUSHDIR directory for the different
 | Questions | Unix Shell | Git | Python |
 |------:|:------|:------|:------|
 | **Will AUTOPUSHDIR = $WORKINGDIR work?** | No. Create another directory unrelated to WORKINGDIR.  |No. Same as Unix Shell. | Yes. |
-| **Why?** | You are showing the learners the terminal with WORKINGDIR. gitautopush is verbose and its messages pollute that terminal at any change of the directory content, that is any command you type. | You are showing the learners the terminal with WORKINGDIR (see Unix Shell). Also, you need a Git repository which you have full control on, whereas gitautopush will commit any change of the directory content and try to push it. Let alone that it is unhandy to manage two repositories in one directory. | You are working on the browser and never share the terminal with the learners. The verbose standard output of gitautopush does not interfere with your demonstration. |
-| **What do I need to do in AUTOPUSHDIR?** | Redirect the command history to a file contained there. See next section. | Same as Unix Shell. See next section.  | A `.gitignore` file that does not track the hidden clutter that goes with a notebook, like the directory `.ipynb_checkpoints` (plus any notebook output you do not need to share). See next section. |
+| **Why?** | You are showing the learners the terminal with WORKINGDIR. gitautopush is verbose and its messages pollute that terminal at any change of the directory content, that is any command you type. | You are showing the learners the terminal with WORKINGDIR (see Unix Shell). Also, you need a Git repository which you have full control on, whereas gitautopush will commit any change of the directory content and try to push it. Let alone that it is unhandy to manage two repositories in one directory. | You are working on the browser and never share a terminal with the learners. The verbose standard output of gitautopush does not interfere with your demonstration. |
+| **What to do in AUTOPUSHDIR?** | Redirect the command history to a file contained there. See next section. | Same as Unix Shell. See next section.  | A `.gitignore` file that does not track the hidden clutter that goes with a notebook, like the directory `.ipynb_checkpoints` (plus any notebook output you do not need to share). See next section. |
 | **How many terminals are needed?** | Three. | Three. | One. |
 
 
 ##### What and how 
 
-Once you set your WORKINGDIR and AUTOPUSHDIR as convenient and appropriate, clone the edition branch into AUTOPUSHDIR. Conveniently, the following command enables you to clone the edition branch only. (Source: [Git documentation](https://www.git-scm.com/docs/git-clone) and [Stackexchange Q&A](https://stackoverflow.com/a/9920956)). Please set or substitute the variables AUTOPUSHDIR and EDITIONBRANCH (the edition branch name, for example `SWC-2305-TUD`).
+Once you set your WORKINGDIR and AUTOPUSHDIR as convenient and appropriate, clone the remote edition branch (§ 3.1.1) into AUTOPUSHDIR. Conveniently, the following command enables you to clone the edition branch only. (Source: [Git documentation](https://www.git-scm.com/docs/git-clone) and [Stackexchange Q&A](https://stackoverflow.com/a/9920956)). Please set or substitute the variables AUTOPUSHDIR and EDITIONBRANCH (the edition branch name, for example `SWC-2305-TUD`).
 
-    ```bash
+```bash
     mkdir $AUTOPUSHDIR
     git clone git@github.com:4TUResearchData-Carpentries/workshop_notes.git --branch $EDITIONBRANCH --single-branch $AUTOPUSHDIR
-    ```
+```
 
 For **Python**, create a `.gitignore` file (keep single quotes!):
 
-    ```bash
+```bash
     cd $AUTOPUSHDIR
-    echo '.ipynb_checkpoints' >> .gitignore
+    echo '.ipynb_checkpoints' > .gitignore
     echo '.gitignore' >> .gitignore
-    ``` 
+``` 
 The last line is not the orthodox way: it works but see `git help gitignore` for cleaner ways to implement the same effect.
 
 
