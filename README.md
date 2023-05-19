@@ -28,65 +28,76 @@ As of May 2023, it only comments on the lessons of the Software Carpentry Worksh
 Each lesson fills the working directory and repositories differently. 
 The table below organises how the working directory is used in each unassisted lesson:
 
-| Lesson | Contains a repo? | What to share? | 
-|-------|------|------| 
-| Git | yes | command history |
-| Unix Shell  | no | command history |
-| Python | no | notebook |
+| Lesson | Contains a repo? | What to share? | Notes content | Half-days | 
+|-------|------|------|-----|-----|
+| Git | yes | command history | input | 1 |
+| Unix Shell  | no | command history | input | 1 |
+| Python | no | notebook | in/output | 2 |
 
-## Expected data organisation  
+## 2. Information organisation for automated note sharing  
 
-This is the eventual organisation
+Using this repository for automated note-taking/sharing requires that:
+
+1. the _master branch_ only provides instructions to _instructors_;
+2. the README of the _master branch_ is the file you are reading;
+3. workshop _editions_ are tied to _branches_;
+4. the _lesson notes_ are files tracked and committed in the _edition branch_; 
+5. the README of the _edition branch_ addresses the workshop _learners_.
+
+To leverage speed reading and finding, the following name conventions are encouraged:
+
+* **branch names** follow the pattern \[yymm\]-\[type of workshop\]-\[institution\].  
+  Example: Software Carpentry Workshop in May 23 at Delft => `2305-SCW-TUD`.
+* **shared-file names** start with the lesson they refer to, as follows:  
+  `python*`. For example, Python shares JupyterLab notebooks and runs in two sessions => `python1.ipynb`, `python2.ipynb`  
+  `unixshell*`, `git*`. For example, Unix Shell and Git both share the command history and run in one session each => `unixshell.log`, `git.log`. 
+   
+You may share more files than the notes, provided their name is prepended with the originating lesson name, as said just above.
+
+The file extension may vary; it is important for proper visualisation in GitHub that human-readable files have typical extensions like `*.log` or `*.txt`.  
+
+The table is an example of the eventual data hierarchy:
 
 | What | What | Name format |
 |-------|------|------|
-| `4turesearchdata-carpentries`  | this GitHub account | -- |
-| `workshop_notes` | this repository | -- |
-| `2305-SWC-TUD` | a branch | \[yymm\]-\[type of workshop\]-\[institution\] |
-| `git.log`       | a file with the lesson notes | `git*` |
-| `python1.ipynb` | a file with the lesson notes | `python*` |
-| `python2.ipynb` | a file with the lesson notes | `python*` |
-| `unixshell.log` | a file with the lesson notes | `unixshell*` |
+| `4TUResearchData-Carpentries`  | this GitHub account | -- |
+| `workshop_notes` | this (remote) repository | -- |
+| `2305-SWC-TUD` | an edition branch | \[yymm\]-\[type of workshop\]-\[institution\] |
+| `git.log`       | lesson notes in the edition branch | `git*` |
+| `python1.ipynb` | lesson notes in the edition branch | `python*` |
+| `python2.ipynb` | lesson notes in the edition branch | `python*` |
+| `unixshell.log` | lesson notes in the edition branch | `unixshell*` |
 
 
+## 3. Preparations for coordinators/instructors
 
+### Data
 
-1. Associate branches to workshop editions
-    * branch name format is \[yymm\]-\[type of workshop\]-\[institution\]
-      * example: Software Carpentry Workshop in May 23 at Delft=> `2305-SCW-TUD`   
-2. Associate lessons to files
-    * Python uses JupyerLab notebooks (showing input and output) and runs in two days:
-      * file name is python\[1|2\].ipynb
-        * example: `python1.ipynb`, `python2.ipynb` 
-    * Unix Shell and Git use the command history (showing input only) and run in one day each:  
-      * file name is \[lesson\].log  
-        * example: `unixshell.log` `git.log` 
-
-
-
-### What to share with the learners
-
-The URL https://github.com/4TUResearchData-Carpentries/workshop_notes/tree/2305-SCW-TUD points to the list of lesson notes.  
-This link can be shared with learners. 
-
-Each branch has an own README.
-
+#### remote repo (GitHub)
 ...
 
-## Requirements for instructors
-
-### data
+#### local repo 
 
 You need to create the edition branch in the local repository
 and switch to it before having gitautopush push into the appropriate remote branch.
-
 ...
 
-### software
+### Software (only local)
 
 The gitautopush stuff here
 
 ...
+
+
+## 4. What to share with the learners
+
+The URL https://github.com/4TUResearchData-Carpentries/workshop_notes/tree/2305-SCW-TUD points to the list of lesson notes.  
+
+This link can be shared with learners. 
+
+Each branch has an own README.
+
+As of 19 May, it contains general usage notes and edition-specific links (which have to be updated)
 
 
 ## Fragments
