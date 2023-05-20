@@ -27,7 +27,9 @@ The _local repository_ in the instructor's machine must contain the files to be 
 The learners can consult the notes in the auto-pushed _remote repository_. 
 (The remote _receives_ the pushes.) 
 `gitautopush` has indeed been conceived from the start to support the Software Carpentries. 
-This application is available from the Python Package Index at https://pypi.org/project/gitautopush/ (accessed 19 May 2023); more on its installation in §3.2.
+This application is available from the Python Package Index at https://pypi.org/project/gitautopush/ (accessed 19 May 2023); more on its installation in §3.2.  
+This diagram displays the way this arrangement is supposed to work:   
+![Diagram of how automated note taking and sharing works](./workshop_notes.jpg)
 
 **This document** explains to instructors how to use this remote to serve each edition of a Carpentries workshop and how to prepare your local computer for this. 
 As of May 2023, it only comments on the lessons of the Software Carpentry Workshop (SCW): Git, Unix Shell, and Python.
