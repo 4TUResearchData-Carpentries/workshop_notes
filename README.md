@@ -1,39 +1,40 @@
-# Workshop notes
-
-**Document status** Currently, this document is an adolescent draft. Bear with the bear.   
-Please open issues to provide remarks.
-
-**Readership** Workshop coordinators and instructors.
+# A repository for workshop notes
+## Automated note-taking for the Carpentries workshops using gitautopush
 
 **Current branch** You are in the master branch.
 
+**Readership** Workshop coordinators and instructors.
+
+**Document status** This document is a draft. Please open issues to provide remarks.
+
+
 ---
 
-## 1. Automated note-taking for the Carpentries workshops using gitautopush
+## 1. Context
 
 **The lesson notes** are the documents containing the commands the instructors type along during a lesson. 
-Instructors may not present the material of the lesson episodes following the Carpentries website verbatim.
+Instructors may not follow the lesson material of the Carpentries website verbatim.
 
-**The ambition** is to use this repository to share and store the notes of all lessons of all editions of all Carpentries workshops held at the 4TU Research Data. 
+**The ambition** is to use this repository to share and store the notes of all lessons of all editions of all Carpentries workshops held at the 4TU.ResearchData. 
 
 **The need** _Learners_ use the lesson notes to catch up with a backlog of instructions when they had to lag behind, for example after receiving a helper's support with an issue. Or as written reference after the workshop. 
 Previously, one helper was fully engaged with the task of note-taking. 
-The application to the Python lesson by [Maurits Kok (@mwakok)](https://github.com/mwakok) at https://github.com/mwakok/software_carpentry_learner has showed that the note-taking can be automated effectively.
+The application to the Python lesson by [Maurits Kok (@mwakok)](https://github.com/mwakok) at https://github.com/mwakok/software_carpentry_learner has showed that note-taking can be automated effectively.
 
-**The key tool** is `gitautopush`, an application that _detects_ changes in a local repository, _commits_ them, and _pushes_ them to the associated remote repository automatically (and uncritically and verbosely too).  
-The local repository in the instructor's machine must contain the files to be shared while the instructor keeps on typing. 
+**The key tool** is `gitautopush`, an application that _detects_ changes in the working directory, _commits_ them to a local repository, and _pushes_ them to the associated remote repository automatically (and uncritically and verbosely too).  
+The _local repository_ in the instructor's machine must contain the files to be shared while the instructor keeps on typing. 
 (The local repository _performs_ the pushes.)  
-The learners can consult the notes in the auto-pushed remote. 
+The learners can consult the notes in the auto-pushed _remote repository_. 
 (The remote _receives_ the pushes.)  
-`gitautopush` has indeed been conceived to support the Software Carpentries from the start. 
+`gitautopush` has indeed been conceived from the start to support the Software Carpentries. 
 This application is available from the Python Package Index at https://pypi.org/project/gitautopush/ (accessed 19 May 2023); more on its installation in §3.2.
 
-**This document** is intended for instructors and explains how to use this remote to serve each edition of a Carpentries workshop and how to prepare your local computer for this. 
+**This document** explains to instructors how to use this remote to serve each edition of a Carpentries workshop and how to prepare your local computer for this. 
 As of May 2023, it only comments on the lessons of the Software Carpentry Workshop (SCW): Git, Unix Shell, and Python.
 Each lesson fills the working directory and repositories differently. 
 The table below organises how the working directory is used in each unassisted lesson:
 
-| Lesson | Contains a repo? | Commands are typed in...| We share... | Notes contain... | Half-days | 
+| Lesson | Contains a repo? | Commands are typed in...| We share... | Notes contain... | Duration in half-days | 
 |:-------|:------|:------|:------|:------|:------|
 | Git | yes | Shell terminal | Shell command history | input | 1 |
 | Python | no | Browser | Jupyter notebook | in/output | 2 |
