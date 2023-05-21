@@ -180,8 +180,11 @@ For the **Python** lesson, create a `.gitignore` file (keep single quotes!):
  ```bash
  cd $AUTOPUSHDIR
  echo '.ipynb_checkpoints' > .gitignore
+ echo '*code' >> .gitignore
+ echo '*data' >> .gitignore
  echo '.gitignore' >> .gitignore
  ``` 
+The aim is to avoid that the service directory of JupyterLab and the supporting lesson materials burdening the repository of the lesson notes. 
 The last line is not the orthodox fashion: it works but see `git help gitignore` for cleaner ways to implement the same effect.
 
 ### 3.2 Software (gitautopush)
