@@ -138,7 +138,7 @@ The table below guides the choice of the AUTOPUSHDIR directory for the different
 
 | Questions | Unix Shell | Git | Python |
 |------:|:------|:------|:------|
-| **Will AUTOPUSHDIR = $WORKINGDIR work?** | No. Create another directory unrelated to WORKINGDIR. |No. Same as Unix Shell. | Yes. And it should be so in a [KISS]() approach. |
+| **Will AUTOPUSHDIR = $WORKINGDIR work?** | No. Create another directory unrelated to WORKINGDIR. |No. Same as Unix Shell. | Yes. And it should be so in a [KISS](https://en.wikipedia.org/wiki/KISS_principle) approach. |
 | **Why?** | You are showing the learners the terminal with WORKINGDIR. gitautopush is verbose and its messages pollute that terminal at any change of the directory content, that is any command you type. (You may wish to check the gitautopush output from time to time.) | See Unix Shell. Also, you need a Git repository which you have full control on, whereas gitautopush will uncritically commit any change of the directory content and try to push it. Let alone that it is unhandy to manage two repositories in one directory. | You are working on the browser and never share a terminal with the learners. The verbose standard output of gitautopush does not interfere with your demonstration in the notebook. |
 | **What to do in AUTOPUSHDIR?** | Redirecting the command history to a file contained there. See next section. | Same as Unix Shell. See next section. | A `.gitignore` file that does not track a notebook's hidden companions, like the directory `.ipynb_checkpoints` (plus any notebook output you do not need to share). See next subsection. |
 | **How many terminals are needed?** | 1 for gitautopush + 2 | 1 for gitautopush + 2 | 1 for gitautopush |
@@ -152,6 +152,7 @@ Once you set your WORKINGDIR and AUTOPUSHDIR as convenient and appropriate, clon
  mkdir $AUTOPUSHDIR
  git clone git@github.com:4TUResearchData-Carpentries/workshop_notes.git --branch $EDITIONBRANCH --single-branch $AUTOPUSHDIR
 ```
+Recall that `git clone` wants to act on an empty (AUTOPUSHDIR) directory.
 
 For the **Unix Shell** and **Git** lessons, use 
 
@@ -184,7 +185,7 @@ For the **Python** lesson, create a `.gitignore` file (keep single quotes!):
  echo '*data' >> .gitignore
  echo '.gitignore' >> .gitignore
  ``` 
-The aim is to avoid that the service directory of JupyterLab and the supporting lesson materials burdening the repository of the lesson notes. 
+The aim is to avoid that the service directory of JupyterLab and the supporting lesson materials burden the remote repository of the lesson notes, especially in the long run. 
 The last line is not the orthodox fashion: it works but see `git help gitignore` for cleaner ways to implement the same effect.
 
 ### 3.2 Software (gitautopush)
