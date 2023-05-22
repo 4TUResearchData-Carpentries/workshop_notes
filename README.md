@@ -167,7 +167,7 @@ For the **Unix Shell** and **Git** lessons, use
  
  ```bash
  clear
- tail -n 0 -f ~/.bash_history | tee -a $WORKINGDIR/$LESSON.log
+ tail -n 0 -f ~/.bash_history | tee -a $AUTOPUSHDIR/$LESSON.log
  ```
 where `LESSON = [ git | unixshell ]` according to the name convention for the notes file presented in §2.2. 
   You may or may not share this terminal with the learners alongside the first (if feasible, it is helpful). The `tee` command above generates the lesson notes upon piping to the notes file the command history displayed on this terminal.
