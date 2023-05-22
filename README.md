@@ -198,13 +198,13 @@ Description, credits, licenses and downloads of gitautopush are available from t
 
 In a terminal launch
 
- pip install gitautopush
+    pip install gitautopush
 
 #### Help
 
 Get familiar with the options and arguments with: 
 
- gitautopush -h
+    gitautopush -h
 
 #### Supporting software
 
@@ -221,7 +221,7 @@ You do this only once per machine.
 
 At the start of the lesson open a new terminal and launch
 
- gitautopush --sleep <seconds> $AUTOPUSHDIR
+    gitautopush --sleep <seconds> $AUTOPUSHDIR
 
 The option `sleep` sets how frequently gitautopush observes whether changes took place in AUTOPUSHDIR. 
 It seems reasonable that values in the range of 2-5 seconds are short enough to follow the instructor's typing closely.
