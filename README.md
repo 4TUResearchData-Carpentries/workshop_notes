@@ -93,9 +93,15 @@ The leaner from the outset, the better for the instructors' information manageme
 
 ## 3. Preparations for coordinators/instructors
 
+**Permissions**
+In order to perform the following actions in this repository you need to be a member of the [4TUResearchData-Carpentries](https://github.com/orgs/4TUResearchData-Carpentries/) organisation of GitHub. 
+In case of guest instructors not affiliated with the [4TU Research Data](https://data.4tu.nl/), 
+the organisation members can invite 'external collaborators' through the Settings of the repository; see [this documentation page](https://docs.github.com/en/organizations/managing-user-access-to-your-organizations-repositories/adding-outside-collaborators-to-repositories-in-your-organization), accessed 23 May 2023.
+
+
 ### 3.1 Data
 
-#### 3.1.1 The remote 'edition branch' 
+#### 3.1.1 Setting up the remote 'edition branch' 
 
 A workshop coordinator can undertake these actions. 
 You do not need to be an instructor to set this up.
@@ -114,7 +120,7 @@ The table details the steps to prepare the edition branch on this GitHub remote 
 |2 | customize README for learners | edit workshop type, days, host and links (*) | [README of 2305-SWC-TUD](https://github.com/4TUResearchData-Carpentries/workshop_notes/blob/2305-SCW-TUD/README.md) (Software, 22-25 May 2023, Delft University of Technology, ...)|
 |3 | broadcast URL of edition branch | update collaboration document for learners | In the [workshop collaborative document](https://docs.google.com/document/d/1s_LVZVKFA908kGex2wI4Ce-ZF8CqQLfD8S2kDRClL0g/edit#) sections on type-along commands point to the URL of the edition branch https://github.com/4TUResearchData-Carpentries/workshop_notes/tree/2305-SCW-TUD |
 
-#### 3.1.2 The local repository and edition branch
+#### 3.1.2 Setting up the local repository and edition branch
 
 Instructors must undertake these actions. 
 Specific notes of caution apply as to which lessons you are teaching.
