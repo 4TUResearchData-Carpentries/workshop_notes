@@ -1,6 +1,6 @@
-# Notes of the Software Carpentry Workshop 
+# Notes of the ... 
 
-**When** 22-25 May 2023  
+**When** 14-16 June 2023  
 **Where** Delft University of Technology
 
 _To whom this may concern._
@@ -17,6 +17,12 @@ The commands of each lesson are continuously appended to a file whose name start
 Consider that instructors may not follow the on-line lesson material verbatim. So, referring to these notes may be more helpful and effective than browsing the Carpentries website.  
 2. In the list above bring up the file of your lesson upon clicking _exactly on the file name_ (hence not anywhere else in the line).  
 3. Please refresh the webpage with the lesson notes. So, you will view the latest commands as the instructor types and the notes grow.
+
+#### Links to worshop slides
+1. Introduction day 1: [link]
+2. Lesson 1, TOC and exercises: [link]
+3. Lesson 2, TOC and exercises: [link]
+4. Lesson 3, TOC and exercises: [link]
 
 #### Workshop documents
 You are also encouraged to bookmark these URLs for an easy navigation during the workshop:
