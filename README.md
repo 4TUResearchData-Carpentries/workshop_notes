@@ -21,7 +21,7 @@ The rolling out of the content is not tied to time slots.
 
 ### Content
 
-The workshop is divided in **3 Lessons**, each given in a half day. Each Lesson is divided into **Episodes**, and then into **Chapters**. We may well not cover all the material: see the following [Section](https://github.com/4TUResearchData-Carpentries/workshop_notes/edit/2306-VC+CD-TUD/README.md#type-along-notes-per-lesson) for the effective coverage.  
+The workshop is divided in **3 Lessons**, each given in one half a day. Each Lesson is divided into **Episodes**, and then into **Chapters**. Unfold the detailed content in the listing below.  The instructor may well not cover all the material: see the following [Section](https://github.com/4TUResearchData-Carpentries/workshop_notes/edit/2306-VC+CD-TUD/README.md#type-along-notes-per-lesson) for the effective coverage.  
 
 <details> 
 <summary>
@@ -103,7 +103,7 @@ You are encouraged to bookmark these URLs for an easy navigation during the work
 
 1. Workshop announcement at the Library: https://www.tudelft.nl/library/research-data-management/r/training-evenementen/training-voor-onderzoekers/version-control-collaborative-development-for-research-software
 2. This page: https://github.com/4TUResearchData-Carpentries/workshop_notes/tree/2306-VC+CD-TUD
-3. Tiny url for this page: [tiny url, to be created](add address)
+3. Tiny URL for this page: [https://bit.ly/2306-VC_CD-TUD](https://bit.ly/2306-VC_CD-TUD)
 
 ##### Slides
 1. Introduction day 1: [link, to be released](add address)
