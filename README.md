@@ -12,13 +12,13 @@ _To whom this may concern._
 
 ### Content
 
-The workshop is divided in 3 **Lessons**, each given in a half day. Each Lesson is divided into **Episodes**, and then into Chapters. We may well not cover all the material: see the following [section]() for the effective coverage.  
-
+The workshop is divided in 3 **Lessons**, each given in a half day. Each Lesson is divided into **Episodes**, and then into Chapters. We may well not cover all the material: see the following [section](https://github.com/4TUResearchData-Carpentries/workshop_notes/edit/2306-VC+CD-TUD/README.md#type-along-notes-per-lesson) for the effective coverage.  
 
 <details> 
 <summary>
-1. INTRODUCTION TO GIT
+L1. INTRODUCTION TO GIT
 </summary>
+  
 | Part | Topic |
 |:----|:----|
 | 1.1 | **Git repositories for version control** | 
@@ -34,12 +34,14 @@ The workshop is divided in 3 **Lessons**, each given in a half day. Each Lesson 
 | --- | Committing changes with a configured identity and a message | 
 | --- | Inspecting using the history | 
 | --- | Undoing changes with the history | 
+  
 </details>
 
 <details> 
 <summary>
-2. BRANCHING AND REMOTE OPERATIONS
+L2. BRANCHING AND REMOTE OPERATIONS
 </summary>
+  
 | Part | Topic |
 |:----|:----|
 | 2.1 | **Branching** | 
@@ -52,8 +54,9 @@ The workshop is divided in 3 **Lessons**, each given in a half day. Each Lesson 
 
 <details> 
 <summary>
-3. COLLABORATIVE SOFTWARE DEVELOPMENT
+L3. COLLABORATIVE SOFTWARE DEVELOPMENT
 </summary>
+  
 | Part | Topic |
 |:----|:----|
 | 3.1 | **...** | 
@@ -67,7 +70,7 @@ The workshop is divided in 3 **Lessons**, each given in a half day. Each Lesson 
 
 ---
 
-## Type-along notes per lesson
+## Type-along notes, per lesson
 
 #### Content
 
