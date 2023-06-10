@@ -87,9 +87,7 @@ The commands that the instructors type on the screen during each lesson will be 
 
 Please use these lesson notes when you had to lag behind the instructor and need to catch up with the instructions. 
 
-In the list of files above, bring up the file of your lesson upon clicking _exactly on the file name_ (hence not anywhere else in the line). If that page has been parked for some time, please refresh it with your browser (typically, hit F5). So, you will view the latest commands as the instructor types and the notes grow.
-
-After the lesson, the instructor will decorate the notes with the division in episodes and chapters and other comments. The notes will then serve as reference to re-play the lesson in the future.
+In the list of files above, bring up the file of your lesson upon clicking _exactly on the file name_ (hence not anywhere else in the line). If that page has been parked for some time, please refresh it with your browser (typically, hit `F5`). So, you will view the latest commands as the instructor types and the notes grow.
 
 ---
 ## Documents
@@ -115,17 +113,12 @@ You are encouraged to bookmark these URLs for an easy navigation during the work
 
 ...
 
+### GitHub-related documentation
+
+...
+
 ### Miscellaneous resources
 
 ...
 
 ---
-
-
-hkhkjhk
-
-    jljkljlk
-
-    jklkjlkjlk
-
-
