@@ -31,4 +31,51 @@ You are also encouraged to bookmark these URLs for an easy navigation during the
 2. Collaborative document: https://docs.google.com/document/d/1s_LVZVKFA908kGex2wI4Ce-ZF8CqQLfD8S2kDRClL0g/
 3. This page: https://github.com/4TUResearchData-Carpentries/workshop_notes/tree/2305-SCW-TUD/ 
 
+### Syllabus
 
+The workshop is organised in three lessons.
+
+1. **Lesson: Version Control**
+    * Episode 1. Version control with Git repositories	
+        * Introduction to Git	
+        * Git command syntax and getting help
+        * Creating  an empty repository
+    * Episode 2. Tracking changes in working files and directories
+        * Tracking changes with the index	
+        * Not tracking and stop tracking
+        * Undoing changes with the index
+        * Deleting and renaming tracked files and directories
+    * Episode 3. The Git history tree
+        * Commiting changes with a configured account identity and a message
+        * Inspecting changes in the history
+        * Undoing changes in the history
+        * Git jargon
+2. **Lesson: Branching and remote operations**
+    * Episode 1. Branching
+        * Create, rename, and change branches
+        * Create, rename, and change branches
+        * Compare, merge and delete branches 
+        * Resolve merge conflicts 
+        * Parking untracked and uncommitted work 
+    * Episode 2. Remotes
+        * What are remote repositories?
+        * Cloning remote repositories 
+        * Comparing repositories 
+        * Syncing changes between repositories 
+        * Multiple branches, multiple remotes 
+3. **Lesson: Collaborative Software Development**
+    * Episode. Collaborative development for research software
+        * When to aim for a collaborative approach? 
+        * Management strategies 
+        * Roles and responsibilities 
+        * Episode. Collaborative Platforms 
+        * Connecting to code repositories 
+        * Collaborators 
+        * Pull requests and forks 
+        * Documenting issues 
+    * Episode. Collaborative Workflows
+        * Introduction
+        * Branching Workflow 
+        * Forking Workflow 
+        * Code reviews 
+        * Managing collaboration
