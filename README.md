@@ -10,9 +10,24 @@ _To whom this may concern._
 
 ### Schedule
 
+Each day we follow the following routine. 
+The rolling out of the content is not tied to time slots.
+
+| Time  | Activity | 
+|:------|:-------- | 
+| 12:30 | Lesson  60' |
+| **13:30** | **Break 10'** |
+| 13:40 | Lesson 50' |
+| **14:30** | **Break 20'** |
+| 14:50 | Lesson 60' |
+| **15:50** | **Break 10'** |
+| 16:00 | Lesson  50'|
+| **16:50** | **Wrap-up 10'** |
+| 17:00 | Closure |
+
 ### Content
 
-The workshop is divided in 3 **Lessons**, each given in a half day. Each Lesson is divided into **Episodes**, and then into Chapters. We may well not cover all the material: see the following [section](https://github.com/4TUResearchData-Carpentries/workshop_notes/edit/2306-VC+CD-TUD/README.md#type-along-notes-per-lesson) for the effective coverage.  
+The workshop is divided in **3 Lessons**, each given in a half day. Each Lesson is divided into **Episodes**, and then into **Chapters**. We may well not cover all the material: see the following [Section](https://github.com/4TUResearchData-Carpentries/workshop_notes/edit/2306-VC+CD-TUD/README.md#type-along-notes-per-lesson) for the effective coverage.  
 
 <details> 
 <summary>
@@ -50,6 +65,7 @@ L2. BRANCHING AND REMOTE OPERATIONS
 | --- | Visualise and merge branches. Resolve conflicts | 
 | 2.2 | **Remote repositories** | 
 | --- | ... | 
+
 </details>
 
 <details> 
@@ -65,6 +81,7 @@ L3. COLLABORATIVE SOFTWARE DEVELOPMENT
 | 3.2 | **...** | 
 | --- | ... | 
 | --- | ... | 
+
 </details>
 
 
