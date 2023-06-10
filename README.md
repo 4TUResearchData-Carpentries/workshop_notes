@@ -1,9 +1,9 @@
 # Workshop Version Control and Collaborative Development for Research Software
 
 **When** 14, 15, 16 June 2023 (the pilot edition)  
-**Where** Delft University of Technology
-
-_To whom this may concern._
+**Where** Delft University of Technology  
+**Instructors** Manuel Garcia Alvarez, Giordano Lipari  
+**Helpers** Heather Andrews, Nicolas Dintzner, Niket Agrawal  
 
 ---
 ## Workshop program
