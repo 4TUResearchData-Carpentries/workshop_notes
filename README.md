@@ -25,7 +25,7 @@ The workshop is divided in **3 Lessons**, each given in one half a day. Each Les
 
 <details> 
 <summary>
-L1. INTRODUCTION TO GIT
+L1. FUNDAMENTAL OPERATIONS WITH GIT
 </summary>
   
 | Part | Topic |
