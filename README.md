@@ -13,17 +13,11 @@ _To whom this may concern._
 Each day we follow the following routine. 
 The rolling out of the content is not tied to time slots.
 
-| Time  | Activity | 
-|:------|:-------- | 
-| 12:30 | Lesson  60' |
-| **13:30** | **Break 10'** |
-| 13:40 | Lesson 50' |
-| **14:30** | **Break 20'** |
-| 14:50 | Lesson 60' |
-| **15:50** | **Break 10'** |
-| 16:00 | Lesson  50'|
-| **16:50** | **Wrap-up 10'** |
-| 17:00 | Closure |
+
+| 12:30  | 13:30 | 13:40 | 14:30 | 14:50 | 15:50 | 16:00 | 16:50 | 17:00 |
+|:-------|:------|:------|:------|:------|:------|:------|:------|:------|
+| Lesson 60' | **Break 10'** | Lesson 50' | **Break 20'** | Lesson 60' | **Break 10'** | Lesson  50'| **Wrap-up 10'** | Closure |
+
 
 ### Content
 
