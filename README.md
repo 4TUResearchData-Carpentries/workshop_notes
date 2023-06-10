@@ -1,7 +1,7 @@
-# Notes of the Software Carpentry Workshop 
+# Notes of the ... 
 
-**When** DD-DD Mm YEAR  
-**Where** Host institution
+**When** 14-16 June 2023  
+**Where** Delft University of Technology
 
 _To whom this may concern._
 
@@ -20,10 +20,13 @@ So, referring to these notes may be more helpful and effective than browsing the
 3. Please refresh the webpage with the lesson notes. So, you will view the latest commands as the instructor types and the notes grow.
 
 #### Workshop documents
-You are also encouraged to bookmark these URLs for an easy navigation during the workshop:
+You are encouraged to bookmark these URLs for an easy navigation during the workshop:
 
-1. Carpentries announcement: **replace this text with a link to the workshop announcement (typically following the Carpentries template)**
-2. Collaborative document: **replace this text with a link to, typically, a public Google Doc or a pad**
-3. This page: https://github.com/4TUResearchData-Carpentries/workshop_notes/tree/YYMM-WHICH-WHERE **edit the workshop label YYMM-WHICH-WHERE as applicable**
+1. Workshop announcement at the Library: https://www.tudelft.nl/library/research-data-management/r/training-evenementen/training-voor-onderzoekers/version-control-collaborative-development-for-research-software
+2. This page: https://github.com/4TUResearchData-Carpentries/workshop_notes/tree/2306-VC+CD-TUD
 
-
+##### Slides
+1. Introduction day 1: [link, to be released](add address)
+2. Lesson 1, TOC and exercises: [Google Slides, to be released](https://docs.google.com/presentation/d/15fFsslX_zyvXbgCkgCO-ALUbab38Q2oZZABhmqgn3yk/edit?usp=sharing)
+3. Lesson 2, TOC and exercises: [Google Slides, to be released](https://docs.google.com/presentation/d/1p7-n04rVGNNlloMvJDAXApYkwWO1ItMIgCMLG9ScTqQ/edit?usp=sharing)
+4. Lesson 3, TOC and exercises: [Google Slides, to be released](https://docs.google.com/presentation/d/1H18r-Q9CLx_aUPkTn3IXqWvOZdBWof-6ca_FdfOD9p0/edit?usp=sharing)
