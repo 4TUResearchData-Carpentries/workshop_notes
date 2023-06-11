@@ -34,14 +34,14 @@ L1. FUNDAMENTAL OPERATIONS WITH GIT
 | --- | Introduction to Git | 
 | --- | Git command syntax and getting help | 
 | --- | Creating an empty repository | 
-| **1.2** | **Tracking changes in a working file and directory** | 
+| **1.2** | **Tracking changes in working documents** | 
 | --- | Tracking changes with the index | 
 | --- | Not tracking and stop tracking | 
 | --- | Undoing changes with the index | 
 | --- | Deleting and renaming tracked files and directories  | 
 | **1.3** | **Organising tracked changes in a history** | 
 | --- | Committing changes with a configured identity and a message | 
-| --- | Inspecting using the history | 
+| --- | Inspecting changes using the history | 
 | --- | Undoing changes with the history | 
   
 </details>
@@ -83,11 +83,11 @@ L3. COLLABORATIVE SOFTWARE DEVELOPMENT
 
 ## 2. Type-along notes, per lesson
 
-The commands the instructors type on the screen during each lesson will be appended to the documents **Lesson\*.md** found at the top of this page.
+The commands the instructors type on the screen during each lesson will be appended continuously to the documents **Lesson\*.md** found at the top of this web page (_above_ this document).
 
-Please use these lesson notes when you had to lag behind the instructor and need to catch up with the instructions. Bring up the file of the lesson upon clicking _exactly on the file name_ (hence not anywhere else in the line). 
+Please use these lesson notes when you had to lag behind the instructor and need to catch up with the insgittructions. Bring up the file of the lesson upon clicking _exactly on the file name_ (to the right, hence not anywhere else in the line). 
 
-Please refresh the page with the lesson notes in your browser (typically, hit `F5`). So, you will view the latest commands as the instructor types and the notes grow.
+Please refresh the page with the lesson notes in your browser (typically, hit `F5`). So, you will view the latest commands as the notes grow.
 
 
 <!-- After the end of the lesson the instructors will decorate the type-along notes with the division in Chapters and Episodes -->
