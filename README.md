@@ -85,7 +85,7 @@ L3. COLLABORATIVE SOFTWARE DEVELOPMENT
 
 The commands the instructors type on the screen during each lesson will be appended continuously to the documents **Lesson\*.md** found at the top of this web page (_above_ this document).
 
-Please use these lesson notes when you had to lag behind the instructor and need to catch up with the insgittructions. Bring up the file of the lesson upon clicking _exactly on the file name_ (to the right, hence not anywhere else in the line). 
+Please use these lesson notes when you had to lag behind the instructor and need to catch up with the instructions. Bring up the file of the lesson upon clicking _exactly on the file name_ (to the right, hence not anywhere else in the line). 
 
 Please refresh the page with the lesson notes in your browser (typically, hit `F5`). So, you will view the latest commands as the notes grow.
 
