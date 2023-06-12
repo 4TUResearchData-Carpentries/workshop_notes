@@ -11,7 +11,7 @@
 ### Schedule
 
 Each day we follow the following routine. 
-The rolling out of the self-contained topics is not tied to time slots.
+Rolling out self-contained topics is not tied to time slots.
 
 
 | 12:30  | 13:30 | 13:40 | 14:30 | 14:50 | 15:50 | 16:00 | 16:50 | 17:00 |
@@ -103,11 +103,18 @@ Please bookmark these URLs for an easy navigation during the workshop:
 3. Short URL for this page: [https://bit.ly/2306-VC_CD-TUD](https://bit.ly/2306-VC_CD-TUD)
 
 ### The slides
-* Introduction to the workshop: [link, to be released](add address)
+* Introduction to the workshop: [link, to be released](URL)
 * Lesson 1, TOC and exercises: [Google Slides, to be released](https://docs.google.com/presentation/d/15fFsslX_zyvXbgCkgCO-ALUbab38Q2oZZABhmqgn3yk/edit?usp=sharing)
 * Lesson 2, TOC and exercises: [Google Slides, to be released](https://docs.google.com/presentation/d/1p7-n04rVGNNlloMvJDAXApYkwWO1ItMIgCMLG9ScTqQ/edit?usp=sharing)
 * Lesson 3, TOC and exercises: [Google Slides, to be released](https://docs.google.com/presentation/d/1H18r-Q9CLx_aUPkTn3IXqWvOZdBWof-6ca_FdfOD9p0/edit?usp=sharing)
 
+### The feedback forms
+
+Filling in these anonymous questionnaires is voluntary. Your honest opinion on your experience will help us improve the design and delivery of the workshop. Thank you in advance for your time.
+
+* Lesson 1: [Google Forms, to be released, with short link?](URL)
+* Lesson 2: [Google Forms, to be released, with short link?](URL)
+* Lesson 3: [Google Forms, to be released, with short link?](URL)
 
 ---
 ## 4. Resources
