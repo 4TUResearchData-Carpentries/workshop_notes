@@ -13,7 +13,6 @@
 Each day we follow the following routine. 
 Rolling out self-contained topics is not tied to time slots.
 
-
 | 12:30  | 13:30 | 13:40 | 14:30 | 14:50 | 15:50 | 16:00 | 16:50 | 17:00 |
 |:-------|:------|:------|:------|:------|:------|:------|:------|:------|
 | Lesson 60' | **Break 10'** | Lesson 50' | **Break 20'** | Lesson 60' | **Break 10'** | Lesson  50'| **Wrap-up 10'** | Closure |
@@ -57,8 +56,12 @@ L2. BRANCHING AND REMOTE OPERATIONS
 | --- | Create, rename, change, and delete branches | 
 | --- | Develop and compare branches | 
 | --- | Visualise and merge branches, and resolve conflicts | 
-| **2.2** | **Remote repositories** | 
-| --- | ... | 
+| **2.2** | **Operations with remotes** | 
+| --- | What are remote repositories? |
+| --- | Cloning remote repositories  |
+| --- | Comparing repositories |
+| --- | Syncing changes between repositories |
+| --- | Multiple branches, multiple remotes |
 
 </details>
 
@@ -69,13 +72,21 @@ L3. COLLABORATIVE SOFTWARE DEVELOPMENT
   
 | Episode | Topic |
 |:----|:----|
-| **3.1** | **...** | 
-| --- | ... | 
-| --- | ... | 
-| **3.2** | **...** | 
-| --- | ... | 
-| --- | ... | 
-
+| **3.1** | **Collaborative software development** | 
+| --- | When to aim for a collaborative approach? |
+| --- | Management strategies |
+| --- | Roles and responsibilities |
+| --- | Episode. Collaborative Platforms |
+| --- | Connecting to code repositories |
+| --- | Collaborators |
+| --- | Pull requests and forks |
+| --- | Documenting issues |
+| **3.2** | **Collaborative Workflows** | 
+| --- | How workflow can help teams?|
+| --- | Branching Workflow |
+| --- | Forking Workflow |
+| --- | Code reviews |
+| --- | Managing collaboration|
 </details>
 
 
