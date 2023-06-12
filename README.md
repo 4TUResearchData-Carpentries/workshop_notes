@@ -127,6 +127,14 @@ Filling in these anonymous questionnaires is voluntary. Your honest opinion on y
 * Lesson 2: [Google Forms, to be released, with short link?](URL)
 * Lesson 3: [Google Forms, to be released, with short link?](URL)
 
+### The feedback forms
+
+Filling in these anonymous questionnaires is voluntary. Your honest opinion on your experience will help us improve the design and delivery of the workshop. Thank you in advance for your time.
+
+* Lesson 1: [Google Forms, to be released, with short link?](URL)
+* Lesson 2: [Google Forms, to be released, with short link?](URL)
+* Lesson 3: [Google Forms, to be released, with short link?](URL)
+
 ---
 ## 4. Resources
 
