@@ -116,17 +116,17 @@ Please bookmark these URLs for an easy navigation during the workshop:
 
 ### The slides
 * Workshop introduction: [link, to be released](URL)
-* Lesson 1, TOC and exercises: [Google Slides, to be released](https://docs.google.com/presentation/d/15fFsslX_zyvXbgCkgCO-ALUbab38Q2oZZABhmqgn3yk/edit?usp=sharing)
-* Lesson 2, TOC and exercises: [Google Slides, to be released](https://docs.google.com/presentation/d/1p7-n04rVGNNlloMvJDAXApYkwWO1ItMIgCMLG9ScTqQ/edit?usp=sharing)
-* Lesson 3, TOC and exercises: [Google Slides, to be released](https://docs.google.com/presentation/d/1H18r-Q9CLx_aUPkTn3IXqWvOZdBWof-6ca_FdfOD9p0/edit?usp=sharing)
+* Lesson 1, TOC and exercises: <!-- [Google Slides](https://docs.google.com/presentation/d/15fFsslX_zyvXbgCkgCO-ALUbab38Q2oZZABhmqgn3yk/edit?usp=sharing) -->
+* Lesson 2, TOC and exercises: <!--[Google Slides](https://docs.google.com/presentation/d/1p7-n04rVGNNlloMvJDAXApYkwWO1ItMIgCMLG9ScTqQ/edit?usp=sharing) -->
+* Lesson 3, TOC and exercises: <!--[Google Slides](https://docs.google.com/presentation/d/1H18r-Q9CLx_aUPkTn3IXqWvOZdBWof-6ca_FdfOD9p0/edit?usp=sharing) -->
 
 ### The feedback forms
 
 Filling in these anonymous questionnaires is voluntary. Your honest opinion on your experience will help us improve the design and delivery of the workshop. Thank you in advance for your time.
 
-* Lesson 1: [Google Forms, to be released, with short link?](URL)
-* Lesson 2: [Google Forms, to be released, with short link?](URL)
-* Lesson 3: [Google Forms, to be released, with short link?](URL)
+* Lesson 1: <!-- [Google Forms](https://bit.ly/2306-VC_CD-TUD-FB1) -->
+* Lesson 2: <!-- [Google Forms](https://bit.ly/2306-VC_CD-TUD-FB2) -->
+* Lesson 3: <!-- [Google Forms](https://bit.ly/2306-VC_CD-TUD-FB3) -->
 
 ---
 ## 4. Resources
