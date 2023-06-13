@@ -11,7 +11,7 @@
 ### Schedule
 
 Each day we follow the following routine. 
-The time slots are not tied to rolling out self-contained topics.
+The time slots are not tied to the rolling out of self-contained topics.
 
 | 12:30  | 13:30 | 13:40 | 14:30 | 14:50 | 15:50 | 16:00 | 16:50 | 17:00 |
 |:-------|:------|:------|:------|:------|:------|:------|:------|:------|
@@ -97,10 +97,9 @@ L3. COLLABORATIVE SOFTWARE DEVELOPMENT
 
 The commands the instructors type on the screen during each lesson will be appended continuously to the documents **Lesson\*.md** found at the top of this web page (_above_ this document).
 
-Please use these lesson notes when you had to lag behind the instructor and need to catch up with the instructions. Bring up the file of the lesson upon clicking _exactly on the file name_ (to the right, hence not anywhere else, in the line). 
+Please use these lesson notes when you had to lag behind the instructor and need to catch up with the instructions. Bring up the file of the lesson upon clicking _exactly on the file name_ (to the left, hence not anywhere else, in the line). 
 
 Please refresh the page with the lesson notes in your browser (typically, hit `F5`). So, you will view the latest commands as the notes grow.
-
 
 <!-- After the end of the lesson the instructors will decorate the type-along notes with the division in Chapters and Episodes -->
 
@@ -111,8 +110,8 @@ Please refresh the page with the lesson notes in your browser (typically, hit `F
 Please bookmark these URLs for an easy navigation during the workshop:
 
 1. [Workshop announcement at the Library](https://www.tudelft.nl/library/research-data-management/r/training-evenementen/training-voor-onderzoekers/version-control-collaborative-development-for-research-software)
-2. Full URL of this page: https://github.com/4TUResearchData-Carpentries/workshop_notes/tree/2306-VC+CD-TUD
-3. Short URL for this page: [https://bit.ly/2306-VC_CD-TUD](https://bit.ly/2306-VC_CD-TUD)
+2. Short URL for this page: [https://bit.ly/2306-VC_CD-TUD](https://bit.ly/2306-VC_CD-TUD)
+3. Full URL of this page: https://github.com/4TUResearchData-Carpentries/workshop_notes/tree/2306-VC+CD-TUD
 
 ### The slides
 * [Workshop introduction](https://docs.google.com/presentation/d/16dWVK1y3LFh227-GjvFvZLoBMyIJwiDC/edit?usp=sharing&ouid=105684743155471216616&rtpof=true&sd=true)
@@ -122,7 +121,7 @@ Please bookmark these URLs for an easy navigation during the workshop:
 
 ### The feedback forms
 
-Filling in these anonymous questionnaires is voluntary. Your honest opinion on your experience will help us improve the design and delivery of the workshop. Thank you in advance for your time.
+Filling in these anonymous questionnaires is voluntary. Your honest opinion based on your experience will help us improve the design and delivery of the workshop. Thank you in advance for your time.
 
 * Feedback on Lesson 1: [Google Forms](https://bit.ly/2306-VC_CD-TUD-FB1)
 * Feedback on Lesson 2: [Google Forms](https://bit.ly/2306-VC_CD-TUD-FB2)
@@ -133,7 +132,7 @@ Filling in these anonymous questionnaires is voluntary. Your honest opinion on y
 
 ### Official Git documentation
 
-...
+* https://www.git-scm.com/docs/
 
 ### GitHub-related documentation
 
