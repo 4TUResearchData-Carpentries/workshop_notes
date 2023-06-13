@@ -110,12 +110,12 @@ Please refresh the page with the lesson notes in your browser (typically, hit `F
 ### The workshop
 Please bookmark these URLs for an easy navigation during the workshop:
 
-1. Workshop announcement at the Library: https://www.tudelft.nl/library/research-data-management/r/training-evenementen/training-voor-onderzoekers/version-control-collaborative-development-for-research-software
-2. Full URL of this page: https://github.com/4TUResearchData-Carpentries/workshop_notes/tree/2306-VC+CD-TUD
+1. [Workshop announcement at the Library](https://www.tudelft.nl/library/research-data-management/r/training-evenementen/training-voor-onderzoekers/version-control-collaborative-development-for-research-software)
+2. Full URL of this page: https://github.com/4TUResearchData-Carpentries/workshop_notes/tree/2306-VC+CD-TUD)
 3. Short URL for this page: [https://bit.ly/2306-VC_CD-TUD](https://bit.ly/2306-VC_CD-TUD)
 
 ### The slides
-* Workshop introduction: [link, to be released](URL)
+* [Workshop introduction](https://docs.google.com/presentation/d/16dWVK1y3LFh227-GjvFvZLoBMyIJwiDC/edit?usp=sharing&ouid=105684743155471216616&rtpof=true&sd=true)
 * Lesson 1, TOC and exercises: <!-- [Google Slides](https://docs.google.com/presentation/d/15fFsslX_zyvXbgCkgCO-ALUbab38Q2oZZABhmqgn3yk/edit?usp=sharing) -->
 * Lesson 2, TOC and exercises: <!--[Google Slides](https://docs.google.com/presentation/d/1p7-n04rVGNNlloMvJDAXApYkwWO1ItMIgCMLG9ScTqQ/edit?usp=sharing) -->
 * Lesson 3, TOC and exercises: <!--[Google Slides](https://docs.google.com/presentation/d/1H18r-Q9CLx_aUPkTn3IXqWvOZdBWof-6ca_FdfOD9p0/edit?usp=sharing) -->
