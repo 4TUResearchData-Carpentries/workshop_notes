@@ -76,12 +76,12 @@ L3. COLLABORATIVE SOFTWARE DEVELOPMENT
 | --- | When to aim for a collaborative approach? |
 | --- | Management strategies |
 | --- | Roles and responsibilities |
-| --- | Episode. Collaborative Platforms |
+| **3.2** | **Collaborative Platforms** |
 | --- | Connecting to code repositories |
 | --- | Collaborators |
 | --- | Pull requests and forks |
 | --- | Documenting issues |
-| **3.2** | **Collaborative Workflows and Management** | 
+| **3.3** | **Collaborative Workflows and Management** | 
 | --- | How workflow can help teams?|
 | --- | Branching Workflow |
 | --- | Forking Workflow |
