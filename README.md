@@ -81,7 +81,7 @@ L3. COLLABORATIVE SOFTWARE DEVELOPMENT
 | --- | Collaborators |
 | --- | Pull requests and forks |
 | --- | Documenting issues |
-| **3.2** | **Collaborative Workflows** | 
+| **3.2** | **Collaborative Workflows and Management** | 
 | --- | How workflow can help teams?|
 | --- | Branching Workflow |
 | --- | Forking Workflow |
