@@ -111,7 +111,7 @@ Please refresh the page with the lesson notes in your browser (typically, hit `F
 Please bookmark these URLs for an easy navigation during the workshop:
 
 1. [Workshop announcement at the Library](https://www.tudelft.nl/library/research-data-management/r/training-evenementen/training-voor-onderzoekers/version-control-collaborative-development-for-research-software)
-2. Full URL of this page: https://github.com/4TUResearchData-Carpentries/workshop_notes/tree/2306-VC+CD-TUD)
+2. Full URL of this page: https://github.com/4TUResearchData-Carpentries/workshop_notes/tree/2306-VC+CD-TUD
 3. Short URL for this page: [https://bit.ly/2306-VC_CD-TUD](https://bit.ly/2306-VC_CD-TUD)
 
 ### The slides
