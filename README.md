@@ -124,9 +124,9 @@ Please bookmark these URLs for an easy navigation during the workshop:
 
 Filling in these anonymous questionnaires is voluntary. Your honest opinion on your experience will help us improve the design and delivery of the workshop. Thank you in advance for your time.
 
-* Lesson 1: <!-- [Google Forms](https://bit.ly/2306-VC_CD-TUD-FB1) -->
-* Lesson 2: <!-- [Google Forms](https://bit.ly/2306-VC_CD-TUD-FB2) -->
-* Lesson 3: <!-- [Google Forms](https://bit.ly/2306-VC_CD-TUD-FB3) -->
+* Feedback on Lesson 1: [Google Forms](https://bit.ly/2306-VC_CD-TUD-FB1)
+* Feedback on Lesson 2: [Google Forms](https://bit.ly/2306-VC_CD-TUD-FB2)
+* Feedback on Lesson 3: [Google Forms](https://bit.ly/2306-VC_CD-TUD-FB3)
 
 ---
 ## 4. Resources
