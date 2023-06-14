@@ -145,3 +145,4 @@ git rm -r directory/
 git rm -rf directory/
 ls -FR
 git restore directory/
+mv directory/donttrackme.txt directory/trackme.txt
