@@ -76,3 +76,4 @@ ls-FR
 ls -FR
 echo 'directory' >>.gitignore
 cat .gitignore
+git status 
