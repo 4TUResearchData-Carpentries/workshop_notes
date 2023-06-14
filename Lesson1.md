@@ -100,3 +100,4 @@ git status -u
 git add directory/trackme.txt 
 git status 
 git diff .gitignore
+git add .gitignore 
