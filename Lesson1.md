@@ -157,3 +157,4 @@ git status
 cat .gitignore 
 git help gitignore
 ls -FR
+cat lines.txt 
