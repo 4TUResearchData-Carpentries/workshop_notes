@@ -9,3 +9,4 @@ cd 2306-VC_CD-TUD/L12/git/
 ls
 echo $SHELL
 git
+git --version
