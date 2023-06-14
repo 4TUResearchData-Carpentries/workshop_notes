@@ -27,3 +27,4 @@ ls
 ls -a
 ls -aF
 ls -aF .git/
+echo 'second line' >>lines.txt
