@@ -134,3 +134,4 @@ rm directory/
 rm -r directory/
 ls -FR
 git status -u
+git restore directory
