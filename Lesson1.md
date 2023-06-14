@@ -129,3 +129,4 @@ cat lines.txt
 ls -FR
 ls _a
 ls -a
+ls -FR
