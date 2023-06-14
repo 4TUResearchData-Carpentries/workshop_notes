@@ -118,3 +118,4 @@ echo 'fifth line' >>lines.txt
 cat lines.txt 
 git diff lines.txt
 git help diff
+git help gitignore
