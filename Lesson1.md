@@ -151,3 +151,4 @@ git status
 git status -u
 ls -FR
 git add directory/trackme.txt 
+git status 
