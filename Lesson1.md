@@ -167,3 +167,4 @@ history
 cat Lines.txt 
 git diff Lines.txt
 git status 
+git rm --cached directory/trackable.txt 
