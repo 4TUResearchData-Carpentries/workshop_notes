@@ -93,3 +93,4 @@ git status -u
 echo 'directory/*' >>.gitignore
 git status 
 echo '!directory/trackme.txt' >>.gitignore
+cat .gitignore 
