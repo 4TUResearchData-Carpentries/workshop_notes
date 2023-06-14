@@ -81,3 +81,4 @@ echo '!directory' >>.gitignore
 cat .gitignore 
 git status 
 cat .gitignore 
+git status 
