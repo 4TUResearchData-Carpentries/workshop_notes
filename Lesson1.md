@@ -52,3 +52,4 @@ git diff lines.txt
 ls -FR
 mkdir directory
 ls -FR
+git status 
