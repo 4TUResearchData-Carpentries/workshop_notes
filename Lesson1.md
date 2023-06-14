@@ -138,3 +138,4 @@ git restore directory
 ls -RF
 touch directory/emptyfile.txt
 touch directory/donttrackme.txt
+ls -RF
