@@ -15,3 +15,4 @@ git help
 git config
 git config --list
 git config -l
+git help help
