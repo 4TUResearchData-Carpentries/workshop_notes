@@ -19,3 +19,4 @@ git help help
 pwd
 echo 'first line'
 echo 'first line' >lines.txt
+ls
