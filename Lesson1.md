@@ -91,3 +91,4 @@ cat .gitignore
 git status
 git status -u
 echo 'directory/*' >>.gitignore
+git status 
