@@ -119,3 +119,4 @@ cat lines.txt
 git diff lines.txt
 git help diff
 git help gitignore
+git diff lines.txt
