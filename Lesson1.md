@@ -88,3 +88,4 @@ echo '!directory/trackme.txt' >>.gitignore
 git status 
 echo '!directory' >>.gitignore
 cat .gitignore 
+git status
