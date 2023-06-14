@@ -146,4 +146,9 @@ Filling in these anonymous questionnaires is voluntary. Your honest opinion base
 
 ## 5. Licensing
 
-<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+#### Authorship
+
+This course has been designed, developed and delivered by Manuel Garcia Alvarez and Giordano Lipari.
+
+#### Distribution
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a> in accordance with the <a href='https://doi.org/10.5281/zenodo.3516874'> Vision for Research Data & Software management training at TU Delft</a>.
