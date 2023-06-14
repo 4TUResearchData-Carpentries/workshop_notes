@@ -107,3 +107,4 @@ git rm --cached directory/trackme.txt
 ls -RF
 git status 
 git status -u
+git status 
