@@ -57,3 +57,4 @@ touch directory/emptyfile.txt
 ls -FR
 git status 
 git status -u
+history
