@@ -161,3 +161,4 @@ cat lines.txt
 git status 
 git mv lines.txt Lines.txt
 git status 
+cat Lines.txt 
