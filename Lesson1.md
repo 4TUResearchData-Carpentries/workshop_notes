@@ -22,3 +22,4 @@ echo 'first line' >lines.txt
 ls
 cat lines.txt 
 git status
+git init
