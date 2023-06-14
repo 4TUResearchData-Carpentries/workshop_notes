@@ -104,3 +104,4 @@ git add .gitignore
 git status 
 git rm --staged directory/trackme.txt 
 git rm --cached directory/trackme.txt 
+ls -RF
