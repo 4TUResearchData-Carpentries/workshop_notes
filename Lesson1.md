@@ -122,3 +122,4 @@ git help gitignore
 git diff lines.txt
 git restore lines.txt
 git status 
+cat lines.txt 
