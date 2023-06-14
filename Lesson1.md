@@ -155,3 +155,4 @@ git status
 git mv directory/trackme.txt directory/trackable.txt 
 git status 
 cat .gitignore 
+git help gitignore
