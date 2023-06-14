@@ -23,3 +23,4 @@ ls
 cat lines.txt 
 git status
 git init
+ls
