@@ -114,3 +114,4 @@ git add directory/trackme.txt
 git status 
 git diff lines.txt
 cat lines.txt 
+echo 'fifth line' >>lines.txt 
