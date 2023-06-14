@@ -164,3 +164,4 @@ git status
 cat Lines.txt 
 ls -a .git
 history
+cat Lines.txt 
