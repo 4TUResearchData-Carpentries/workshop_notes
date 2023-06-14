@@ -159,3 +159,5 @@ git help gitignore
 ls -FR
 cat lines.txt 
 git status 
+git mv lines.txt Lines.txt
+git status 
