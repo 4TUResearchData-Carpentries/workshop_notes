@@ -58,3 +58,4 @@ ls -FR
 git status 
 git status -u
 history
+history >history.log
