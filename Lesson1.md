@@ -126,3 +126,4 @@ cat lines.txt
 git diff lines.txt
 git restore lines.txt
 cat lines.txt
+ls -FR
