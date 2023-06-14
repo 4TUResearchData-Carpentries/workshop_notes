@@ -96,3 +96,4 @@ echo '!directory/trackme.txt' >>.gitignore
 cat .gitignore 
 ls -FR
 git status 
+git status -u
