@@ -26,3 +26,4 @@ git init
 ls
 ls -a
 ls -aF
+ls -aF .git/
