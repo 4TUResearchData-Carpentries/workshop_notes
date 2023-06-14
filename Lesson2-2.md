@@ -1,0 +1,6 @@
+echo "hi"
+echo "hello there"
+echo "this is firt pushed line"
+echo "this is firt pushed line"
+echo "this is firt pushed line"
+echo "this is firt pushed line"
