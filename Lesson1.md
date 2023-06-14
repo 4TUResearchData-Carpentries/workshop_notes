@@ -95,3 +95,4 @@ git status
 echo '!directory/trackme.txt' >>.gitignore
 cat .gitignore 
 ls -FR
+git status 
