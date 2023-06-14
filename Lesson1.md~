@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+# test after restarting the tail&tee solution on the assisting terminal
+echo
+test
+=======
 # Workshop Version Control and Collaborative Development for Research Software Development (14-16 June 2023)
 
 These notes have been revised after the lesson, removing duplicates and changing the position of a command at places. The comments (the text after the # tokens) outline the context of the command (working tree, index, repository, documentation, shell). The abbreviations used in the comments are:  
@@ -266,5 +271,4 @@ These notes have been revised after the lesson, removing duplicates and changing
 	git help tag								# documentation
 ---
 ### Closure day 1
-
-# test: tail&tee with append option, desired that Lesson1.md is not overwritten
+>>>>>>> parent of 502c39c... Lesson1.md: fix indentation for md rendering in GitHub
