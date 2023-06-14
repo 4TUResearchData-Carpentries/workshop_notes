@@ -29,3 +29,4 @@ ls -aF
 ls -aF .git/
 echo 'second line' >>lines.txt
 cat lines.txt 
+git add lines.txt 
