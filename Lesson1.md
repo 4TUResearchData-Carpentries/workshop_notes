@@ -153,3 +153,4 @@ ls -FR
 git add directory/trackme.txt 
 git status 
 git mv directory/trackme.txt directory/trackable.txt 
+git status 
