@@ -17,3 +17,4 @@ git config --list
 git config -l
 git help help
 pwd
+echo 'first line'
