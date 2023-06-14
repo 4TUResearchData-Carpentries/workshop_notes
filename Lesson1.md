@@ -132,3 +132,4 @@ ls -a
 ls -FR
 rm directory/
 rm -r directory/
+ls -FR
