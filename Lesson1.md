@@ -74,3 +74,4 @@ touch directory/trackme.txt
 touch directory/donttrackme.txt
 ls-FR
 ls -FR
+echo 'directory' >>.gitignore
