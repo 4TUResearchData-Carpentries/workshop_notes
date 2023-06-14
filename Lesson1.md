@@ -162,3 +162,4 @@ git status
 git mv lines.txt Lines.txt
 git status 
 cat Lines.txt 
+ls -a .git
