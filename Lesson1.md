@@ -268,3 +268,4 @@ These notes have been revised after the lesson, removing duplicates and changing
 ### Closure day 1
 
 # test: tail&tee with append option, desired that Lesson1.md is not overwritten
+# test passed: the option -a IS VERY IMPORTANT 
