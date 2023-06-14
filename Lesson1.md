@@ -53,3 +53,4 @@ ls -FR
 mkdir directory
 ls -FR
 git status 
+touch directory/emptyfile.txt
