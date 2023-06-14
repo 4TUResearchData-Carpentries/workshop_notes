@@ -18,3 +18,4 @@ git config -l
 git help help
 pwd
 echo 'first line'
+echo 'first line' >lines.txt
