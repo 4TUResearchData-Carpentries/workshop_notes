@@ -69,3 +69,4 @@ ls -a
 cat .gitignore
 git status 
 git add .gitignore
+git status 
