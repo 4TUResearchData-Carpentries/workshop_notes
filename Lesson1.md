@@ -63,3 +63,4 @@ ls
 cat history.log 
 git status
 echo '*.log' >.gitignore
+cat .gitignore 
