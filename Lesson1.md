@@ -169,3 +169,4 @@ git diff Lines.txt
 git status 
 git rm --cached directory/trackable.txt 
 git status 
+git commit -m 'Add first four lines' Lines.txt 
