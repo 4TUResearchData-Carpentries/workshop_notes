@@ -45,3 +45,4 @@ cat lines.txt
 echo 'fourth line' >>lines.txt 
 cat lines.txt 
 git status 
+git diff lines.txt
