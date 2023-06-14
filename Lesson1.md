@@ -50,3 +50,4 @@ git add lines.txt
 git status 
 git diff lines.txt
 ls -FR
+mkdir directory
