@@ -13,3 +13,4 @@ git --version
 git version
 git help
 git config
+git config --list
