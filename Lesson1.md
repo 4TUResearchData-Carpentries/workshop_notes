@@ -60,3 +60,4 @@ git status -u
 history
 history >history.log
 ls
+cat history.log 
