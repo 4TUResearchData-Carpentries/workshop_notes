@@ -32,3 +32,4 @@ cat lines.txt
 git add lines.txt 
 ls -a .git
 git status 
+echo 'third line' >>lines.txt 
