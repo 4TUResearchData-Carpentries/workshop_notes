@@ -34,3 +34,4 @@ ls -a .git
 git status 
 echo 'third line' >>lines.txt 
 cat lines.txt 
+git status
