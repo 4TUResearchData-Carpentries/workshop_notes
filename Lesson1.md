@@ -97,3 +97,4 @@ cat .gitignore
 ls -FR
 git status 
 git status -u
+git add directory/trackme.txt 
