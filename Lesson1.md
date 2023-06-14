@@ -148,3 +148,4 @@ git restore directory/
 mv directory/donttrackme.txt directory/trackme.txt
 ls -FR
 git status 
+git status -u
