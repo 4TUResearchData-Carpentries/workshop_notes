@@ -113,3 +113,4 @@ ls -FR
 git add directory/trackme.txt
 git status 
 git diff lines.txt
+cat lines.txt 
