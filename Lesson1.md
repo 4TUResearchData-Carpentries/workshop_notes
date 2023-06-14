@@ -43,3 +43,4 @@ git diff lines.txt
 git add
 cat lines.txt 
 echo 'fourth line' >>lines.txt 
+cat lines.txt 
