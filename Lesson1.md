@@ -72,3 +72,5 @@ git add .gitignore
 git status 
 touch directory/trackme.txt
 touch directory/donttrackme.txt
+ls-FR
+ls -FR
