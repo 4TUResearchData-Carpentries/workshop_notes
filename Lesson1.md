@@ -166,3 +166,4 @@ ls -a .git
 history
 cat Lines.txt 
 git diff Lines.txt
+git status 
