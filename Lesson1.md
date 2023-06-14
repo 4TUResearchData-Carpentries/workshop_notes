@@ -10,3 +10,4 @@ ls
 echo $SHELL
 git
 git --version
+git version
