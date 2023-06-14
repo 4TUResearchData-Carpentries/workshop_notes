@@ -140,3 +140,4 @@ touch directory/emptyfile.txt
 touch directory/donttrackme.txt
 ls -RF
 git status
+git rm directory/
