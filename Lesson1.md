@@ -70,3 +70,4 @@ cat .gitignore
 git status 
 git add .gitignore
 git status 
+touch directory/trackme.txt
