@@ -61,3 +61,4 @@ history
 history >history.log
 ls
 cat history.log 
+git status
