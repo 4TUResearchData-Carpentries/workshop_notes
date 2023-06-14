@@ -82,3 +82,4 @@ cat .gitignore
 git status 
 cat .gitignore 
 git status 
+echo 'directory' >>.gitignore
