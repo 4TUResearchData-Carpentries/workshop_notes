@@ -11,3 +11,4 @@ echo $SHELL
 git
 git --version
 git version
+git help
