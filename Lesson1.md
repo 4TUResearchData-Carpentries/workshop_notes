@@ -102,3 +102,4 @@ git status
 git diff .gitignore
 git add .gitignore 
 git status 
+git rm --staged directory/trackme.txt 
