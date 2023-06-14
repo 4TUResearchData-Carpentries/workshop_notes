@@ -49,3 +49,4 @@ git diff lines.txt
 git add lines.txt 
 git status 
 git diff lines.txt
+ls -FR
