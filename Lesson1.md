@@ -279,3 +279,4 @@ echo
 # STARTING WITH DAY 2
 pwd
 ls
+cd 2306-VC_CD-TUD/L12/git/
