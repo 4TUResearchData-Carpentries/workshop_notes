@@ -16,3 +16,4 @@ git branch -m master foo
 git status 
 git branch -d foo
 git branch -m foo main
+git status 
