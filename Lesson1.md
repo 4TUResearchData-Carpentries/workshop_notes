@@ -297,3 +297,4 @@ git tag ex2 047ba
 git log --oneline
 cat Lines.txt 
 git diff HEAD~3 HEAD~1 Lines.txt
+cat Lines.txt 
