@@ -108,3 +108,4 @@ git add Lines.txt
 git status 
 git commit -m 'Merge changes from B1 into main'
 git log --online --all
+git log --oneline --all
