@@ -274,3 +274,5 @@ The type-along notes have been revised after the lesson by removing duplicates, 
 true
 false
 false 
+true
+echo
