@@ -100,3 +100,4 @@ git status
 git diff Lines.txt
 git add Lines.txt 
 git commit -m 'B1: add Ninth Line'
+git log --oneline --all 
