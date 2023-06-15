@@ -75,3 +75,4 @@ git branch yidong
 git log --oneline --all
 git branch -d yidong 
 git status 
+git diff Lines.txt
