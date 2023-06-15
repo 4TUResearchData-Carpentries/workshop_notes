@@ -284,3 +284,4 @@ ls
 ls -FR
 git history
 git log
+git log --oneline
