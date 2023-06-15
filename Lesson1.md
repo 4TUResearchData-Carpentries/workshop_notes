@@ -6,7 +6,7 @@ The type-along notes have been revised after the lesson by removing duplicates, 
 * \>, <: direction of information transfer  
 
 ## LESSON 1. FUNDAMENTAL GIT OPERATIONS
----
+
 ## 1.1 Git repositories for version control
 
 #### Preparing the working tree
@@ -43,7 +43,7 @@ The type-along notes have been revised after the lesson by removing duplicates, 
 	ls -aF						# working tree
 	ls -aF .git/					# repo in working tree
 
----
+
 ## 1.2 Tracking changes in working documents
 
 #### Tracking changes with the index (files)	
@@ -197,13 +197,13 @@ The type-along notes have been revised after the lesson by removing duplicates, 
 	git status 					# repo
 	git rm --cached directory/trackable.txt		# index 
 	git status 					# repo
----
+
 ## 1.3 Organising tracked changes in a history
 
 #### Committing changes with a configured identity and a message
 	git commit -m 'Add first four lines' Lines.txt	# NEW: git commit
-	git config -l					# repo
-	git config --global user.email 'user@example.com' 	# repo
+	git config -l							# repo
+	git config --global user.email 'user@example.com' 		# repo
 	git config --global user.name 'Name Surname (your device?) '	# repo
 	git config --global core.editor nano		# repo
 	git config --global core.autocrlf false		# repo
@@ -274,13 +274,13 @@ The type-along notes have been revised after the lesson by removing duplicates, 
 	git tag -d hey hey_jude             		# history
 	git log --oneline             			# history
 	git tag -d v1 v2             			# history
-                                            # PILL EXERCISE:
+                                            		# PILL EXERCISE:
 	git log --oneline             			# history
 	git tag ex1 adbe95d             		# history
 	git log --oneline             			# history
 	git tag ex2 047ba             			# history
 	git log --oneline             			# history
-                                            # PILL EXERCISE: end
+                                            		# PILL EXERCISE: end
 	cat Lines.txt             			# working tree
 	git tag             				# history
 	git diff ex2 Lines.txt             		# history v working tree
@@ -290,7 +290,7 @@ The type-along notes have been revised after the lesson by removing duplicates, 
 	git diff HEAD~3 HEAD~1 Lines.txt             	# history v history
 	cat Lines.txt             			# working tree
 	git restore HEAD Lines.txt             		# history > working tree
-	cat Lines.txt             			#  working tree
+	cat Lines.txt             			# working tree
 	git restore --source HEAD Lines.txt             # history > working tree
 	cat Lines.txt             			# working tree
 	git status             				# history
@@ -298,7 +298,7 @@ The type-along notes have been revised after the lesson by removing duplicates, 
 	cat Lines.txt             			# working tree 
 	git log --oneline             			# history
 	git status             				# repo
-	echo 'I used git restore -s' >>Lines.txt           # working tree
+	echo 'I used git restore -s' >>Lines.txt        # working tree
 	git status             				# repo
 	git diff Lines.txt             			# history
 	git status             				# repo
@@ -308,4 +308,3 @@ The type-along notes have been revised after the lesson by removing duplicates, 
 	git commit -m 'Add line with text' Lines.txt    # history
 	git log --oneline             			# history
 ---
-#### End of lesson 1
