@@ -292,3 +292,4 @@ git log --oneline
 git tag -d v1 v2
 git log --oneline
 git tag ex1 adbe95d
+git log --oneline
