@@ -280,3 +280,4 @@ echo
 pwd
 ls
 cd 2306-VC_CD-TUD/L12/git/
+ls
