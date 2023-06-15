@@ -1,12 +1,13 @@
 # Workshop Version Control and Collaborative Development for Research Software Development (14-16 June 2023)
 
-These notes have been revised after the lesson, removing duplicates and changing the position of a command at places. The comments (the text after the # tokens) outline the context of the command (working tree, index, repository, documentation, shell). The abbreviations used in the comments are:  
+The type-along notes have been revised after the lesson by removing duplicates, changing the position of a command at places, and grouping similar actions into sections. The comments (the text after the # tokens) outline the context of the command (working tree, index, repository, documentation, shell). The abbreviations used in the comments are:  
 * repo = repository  
 * v = versus (a comparison)   
 * \>, <: direction of information transfer  
 
 ## Lesson 1. Fundamental Git Operations
 ### Preparing the working tree
+
 	pwd						# working tree
 	cd ~/Desktop/					# working tree
 	pwd						# working tree
@@ -262,6 +263,10 @@ These notes have been revised after the lesson, removing duplicates and changing
 	git status 					# repo
 	git log --oneline				# history
 	git diff hey hey_jude				# history v history
+
+~~git tag -m hey_jude v1~~  
+~~git tag -m hey v2~~
+
 	git log --oneline				# history
 	git help tag					# documentation
 ---
