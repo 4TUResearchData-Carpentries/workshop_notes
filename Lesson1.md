@@ -301,3 +301,4 @@ cat Lines.txt
 git restore --source HEAD Lines.txt
 cat Lines.txt 
 git status 
+git restore HEAD Lines.txt
