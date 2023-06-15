@@ -68,3 +68,4 @@ cat Lines.txt
 git switch B2
 cat Lines.txt 
 git log --oneline
+git switch B1
