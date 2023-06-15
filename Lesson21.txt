@@ -97,3 +97,4 @@ git stash list
 cat Lines.txt 
 git log --oneline --all
 git status 
+git diff Lines.txt
