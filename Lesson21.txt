@@ -95,3 +95,4 @@ git stash list
 git stash pop
 git stash list
 cat Lines.txt 
+git log --oneline --all
