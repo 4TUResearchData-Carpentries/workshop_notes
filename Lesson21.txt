@@ -37,3 +37,4 @@ git branch
 git status 
 echo 'ninth line' >>Lines.txt 
 git add Lines.txt 
+git status 
