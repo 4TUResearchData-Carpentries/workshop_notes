@@ -285,3 +285,4 @@ ls -FR
 git history
 git log
 git log --oneline
+git status 
