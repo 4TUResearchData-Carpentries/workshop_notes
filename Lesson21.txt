@@ -89,3 +89,4 @@ git commit -m 'Add tenth line'
 git status 
 git log --oneline --all
 cat Lines.txt 
+git switch B1
