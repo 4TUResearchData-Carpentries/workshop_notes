@@ -318,3 +318,4 @@ git add
 git add Lines.txt 
 git status 
 git commit -m 'Add line with text' Lines.txt 
+git log --oneline
