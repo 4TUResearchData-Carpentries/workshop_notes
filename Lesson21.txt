@@ -2,3 +2,4 @@
 git log --oneline
 git status 
 git branch
+cat Lines.txt 
