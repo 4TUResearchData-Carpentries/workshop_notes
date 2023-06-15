@@ -309,3 +309,4 @@ git restore -s ex2 Lines.txt
 cat Lines.txt 
 git tag
 git log --oneline
+git status 
