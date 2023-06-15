@@ -278,3 +278,4 @@ true
 echo
 # STARTING WITH DAY 2
 pwd
+ls
