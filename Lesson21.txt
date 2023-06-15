@@ -64,3 +64,4 @@ git log --oneline --all
 git branch
 cat Lines.txt 
 echo 'Ninth Line' >>Lines.txt 
+cat Lines.txt 
