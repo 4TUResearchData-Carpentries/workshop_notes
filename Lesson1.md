@@ -300,3 +300,4 @@ git diff HEAD~3 HEAD~1 Lines.txt
 cat Lines.txt 
 git restore --source HEAD Lines.txt
 cat Lines.txt 
+git status 
