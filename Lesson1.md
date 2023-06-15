@@ -7,6 +7,7 @@ These notes have been revised after the lesson, removing duplicates and changing
 
 ## Lesson 1. Fundamental Git Operations
 ### Preparing the working tree
+
 	pwd						# working tree
 	cd ~/Desktop/					# working tree
 	pwd						# working tree
@@ -262,6 +263,10 @@ These notes have been revised after the lesson, removing duplicates and changing
 	git status 					# repo
 	git log --oneline				# history
 	git diff hey hey_jude				# history v history
+
+~~git tag -m hey_jude v1~~  
+~~git tag -m hey v2~~
+
 	git log --oneline				# history
 	git help tag					# documentation
 ---
