@@ -87,3 +87,4 @@ echo 'tenth line' >>Lines.txt
 git add Lines.txt 
 git commit -m 'Add tenth line'
 git status 
+git log --oneline --all
