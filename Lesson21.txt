@@ -83,3 +83,4 @@ git stash list
 cat Lines.txt 
 git switch main
 cat Lines.txt 
+echo 'tenth line' >>Lines.txt 
