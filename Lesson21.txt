@@ -70,3 +70,4 @@ cat Lines.txt
 git log --oneline
 git switch B1
 cat Lines.txt 
+git log --oneline --all
