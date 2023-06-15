@@ -286,3 +286,4 @@ git history
 git log
 git log --oneline
 git status 
+# git tag -m hey v1 
