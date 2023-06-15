@@ -79,3 +79,4 @@ git diff Lines.txt
 git switch main
 git stash -m 'switching to main aborted' push
 git stash push -m 'switching to main aborted'
+git stash list
