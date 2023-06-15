@@ -105,3 +105,4 @@ git log --oneline --all
 nano Lines.txt 
 cat Lines.txt 
 git add Lines.txt 
+git status 
