@@ -302,3 +302,4 @@ git restore --source HEAD Lines.txt
 cat Lines.txt 
 git status 
 git restore HEAD Lines.txt
+git diff HEAD~2 Lines.txt
