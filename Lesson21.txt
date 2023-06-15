@@ -55,3 +55,4 @@ git switch main
 git switch B1
 cat Lines.txt 
 git switch main
+cat Lines.txt 
