@@ -103,3 +103,4 @@ git commit -m 'B1: add Ninth Line'
 git log --oneline --all 
 # WE RESUME AT 14:56
 nano Lines.txt 
+cat Lines.txt 
