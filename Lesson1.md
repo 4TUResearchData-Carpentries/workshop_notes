@@ -310,3 +310,4 @@ cat Lines.txt
 git tag
 git log --oneline
 git status 
+echo 'I used git restore' >>Lines.txt 
