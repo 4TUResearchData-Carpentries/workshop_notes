@@ -67,3 +67,4 @@ echo 'Ninth Line' >>Lines.txt
 cat Lines.txt 
 git switch B2
 cat Lines.txt 
+git log --oneline
