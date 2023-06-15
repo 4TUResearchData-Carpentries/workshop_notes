@@ -313,3 +313,4 @@ git status
 echo 'I used git restore' >>Lines.txt 
 git status 
 git diff Lines.txt
+git status 
