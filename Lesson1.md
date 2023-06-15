@@ -5,8 +5,11 @@ The type-along notes have been revised after the lesson by removing duplicates, 
 * v = versus (a comparison)   
 * \>, <: direction of information transfer  
 
-## Lesson 1. Fundamental Git Operations
-### Preparing the working tree
+## LESSON 1. FUNDAMENTAL GIT OPERATIONS
+---
+## 1.1 Git repositories for version control
+
+#### Preparing the working tree
 
 	pwd						# working tree
 	cd ~/Desktop/					# working tree
@@ -16,8 +19,8 @@ The type-along notes have been revised after the lesson by removing duplicates, 
 	cd 2306-VC_CD-TUD/L12/git/			# working tree
 	ls						# working tree
 	echo $SHELL  					# shell intepreter
----
-### Git is a program. The syntax of Git commands
+
+#### Git command syntax and getting help
 	git						# program
 	git --version					# documentation
 	git version					# NEW: git version
@@ -26,8 +29,8 @@ The type-along notes have been revised after the lesson by removing duplicates, 
 	git config					# NEW: git config
 	git config --list				# repo
 	git config -l					# repo
----
-### Initialise a Git repository
+
+#### Creating an empty repository
 	pwd						# working tree
 	echo 'first line'				# working tree
 	echo 'first line' >lines.txt			# working tree
@@ -39,8 +42,11 @@ The type-along notes have been revised after the lesson by removing duplicates, 
 	ls -a 						# working tree
 	ls -aF						# working tree
 	ls -aF .git/					# repo in working tree
----	
-### Tracking files	
+
+---
+## 1.2 Tracking changes in working documents
+
+#### Tracking changes with the index (files)	
 	echo 'second line' >>lines.txt	# working tree
 	cat lines.txt 					# working tree
 	git add lines.txt 				# NEW: git add
@@ -63,8 +69,8 @@ The type-along notes have been revised after the lesson by removing duplicates, 
 	git add lines.txt 				# working tree > index
 	git status 					# repo
 	git diff lines.txt				# working tree v index
----	
-### Tracking directories
+	
+#### Tracking changes with the index (directories)
 	ls -FR						# working tree
 	mkdir directory					# working tree
 	ls -FR						# working tree
@@ -73,8 +79,8 @@ The type-along notes have been revised after the lesson by removing duplicates, 
 	ls -FR						# working tree
 	git status 					# repo
 	git status -u					# repo
----	
-### Not tracking untracked files (gitignore)
+
+#### Not tracking untracked files (gitignore)
 	history						# working tree
 	history >history.log				# working tree
 	ls						# working tree
@@ -86,8 +92,8 @@ The type-along notes have been revised after the lesson by removing duplicates, 
 	git status					# repo
 	git add .gitignore				# working tree > index
 	git status 					# repo
----	
-### Not tracking untracked directories (gitignore)
+
+#### Not tracking untracked directories (gitignore)
 	touch directory/trackme.txt			# working tree
 	touch directory/donttrackme.txt			# working tree
 	ls -FR						# working tree
@@ -99,8 +105,8 @@ The type-along notes have been revised after the lesson by removing duplicates, 
 	git status 					# repo
 	echo 'directory' >>.gitignore			# working tree
 	git status 					# repo
----	
-### Tracking selectively inside untracked directories (gitignore)
+
+#### Tracking selectively inside untracked directories (gitignore)
 	echo '!directory/trackme.txt' >>.gitignore 	# working tree
 	git status 					# repo
 	echo '!directory' >>.gitignore			# working tree
@@ -120,8 +126,8 @@ The type-along notes have been revised after the lesson by removing duplicates, 
 	git add .gitignore 				# working tree > index
 	git status 					# repo
 	git help gitignore				# documentation
----
-### Stop tracking 
+
+#### Stop tracking 
 	git rm --staged directory/trackme.txt		# NEW: git rm  
 	git rm --cached directory/trackme.txt 		# index
 	ls -RF						# working tree
@@ -131,8 +137,8 @@ The type-along notes have been revised after the lesson by removing duplicates, 
 	git add directory/trackme.txt			# working tree > index
 	git status 					# repo
 	git diff lines.txt				# working tree v index
----
-### Undoing changes staged in the index
+
+#### Undoing changes with the index
 	cat lines.txt 					# working tree
 	echo 'fifth line' >>lines.txt 			# working tree
 	cat lines.txt 					# working tree
@@ -146,8 +152,8 @@ The type-along notes have been revised after the lesson by removing duplicates, 
 	ls -a 						# working tree
 	ls -FR						# working tree
 	git help diff					# documentation
----
-### Deleting (un)tracked documents 
+
+#### Deleting (un)tracked documents 
 	rm directory/					# working tree						
 	rm -r directory/				# working tree
 	ls -FR						# working tree
@@ -163,8 +169,8 @@ The type-along notes have been revised after the lesson by removing duplicates, 
 	git rm -rf directory/				# index + working tree
 	ls -FR						# working tree
 	git restore directory/				# index > working tree
----
-### Renaming tracked documents 
+
+#### Renaming tracked documents 
 	mv directory/donttrackme.txt directory/trackme.txt # working tree
 	ls -FR						# working tree
 	git status 					# repo
@@ -192,11 +198,13 @@ The type-along notes have been revised after the lesson by removing duplicates, 
 	git rm --cached directory/trackable.txt		# index 
 	git status 					# repo
 ---
-### Commit changes with an identity and a message
+## 1.3 Organising tracked changes in a history
+
+#### Committing changes with a configured identity and a message
 	git commit -m 'Add first four lines' Lines.txt	# NEW: git commit
 	git config -l					# repo
-	git config --global user.email 'wmotion.eu@gmail.com' 	# repo
-	git config --global user.name 'Giordano Lipari laptop'	# repo
+	git config --global user.email 'user@example.com' 	# repo
+	git config --global user.name 'Name Surname (your device?) '	# repo
 	git config --global core.editor nano		# repo
 	git config --global core.autocrlf false		# repo
 	git config --list				# repo
@@ -226,8 +234,8 @@ The type-along notes have been revised after the lesson by removing duplicates, 
 	git commit -m 'Add sixth line' Lines.txt 	# working tree
 	git log						# history
 							# DRILL EXERCISE: end
----
-### Inspecting the history
+
+#### Inspecting changes in the history (using HEAD)
 	git log --oneline				# history
 	echo 'seventh line' >>Lines.txt 		# working tree
 	cat Lines.txt 					# working tree
@@ -244,8 +252,8 @@ The type-along notes have been revised after the lesson by removing duplicates, 
 	git diff HEAD~1 HEAD Lines.txt			# history v history
 	cat Lines.txt 					# working tree	
 	git diff HEAD~3 HEAD~1 Lines.txt		# history v history
----
-### Tagging commits (across days 1 and 2)
+
+#### Inspecting changes in the history (tagging commits)
 	git log --oneline				# history
 	git tag 'hey'					# NEW: git tag
 	git log --oneline				# history
@@ -263,39 +271,41 @@ The type-along notes have been revised after the lesson by removing duplicates, 
 	git status 					# repo
 	git log --oneline				# history
 	git diff hey hey_jude				# history v history
-	git tag -d hey hey_jude             		#
-	git log --oneline             			#
-	git tag -d v1 v2             			#
-	git log --oneline             			#
-	git tag ex1 adbe95d             		#
-	git log --oneline             			#
-	git tag ex2 047ba             			#
-	git log --oneline             			#
-	cat Lines.txt             			# 
+	git tag -d hey hey_jude             		# history
+	git log --oneline             			# history
+	git tag -d v1 v2             			# history
+                                            # PILL EXERCISE:
+	git log --oneline             			# history
+	git tag ex1 adbe95d             		# history
+	git log --oneline             			# history
+	git tag ex2 047ba             			# history
+	git log --oneline             			# history
+                                            # PILL EXERCISE: end
+	cat Lines.txt             			# working tree
+	git tag             				# history
+	git diff ex2 Lines.txt             		# history v working tree
+	git diff HEAD~2 Lines.txt             		# history v working tree
+
+#### Undoing changes using the history
+	git diff HEAD~3 HEAD~1 Lines.txt             	# history v history
+	cat Lines.txt             			# working tree
+	git restore HEAD Lines.txt             		# history > working tree
+	cat Lines.txt             			#  working tree
+	git restore --source HEAD Lines.txt             # history > working tree
+	cat Lines.txt             			# working tree
+	git status             				# history
+	git restore -s ex2 Lines.txt             	# history > working tree
+	cat Lines.txt             			# working tree 
+	git log --oneline             			# history
+	git status             				# repo
+	echo 'I used git restore -s' >>Lines.txt           # working tree
+	git status             				# repo
+	git diff Lines.txt             			# history
+	git status             				# repo
+	git add             				# index
+	git add Lines.txt             			# index	 
+	git status             				# repo
+	git commit -m 'Add line with text' Lines.txt    # history
+	git log --oneline             			# history
 ---
-### Undoing changes using the history
-	git diff HEAD~3 HEAD~1 Lines.txt             	#
-	cat Lines.txt             			# 
-	git restore --source HEAD Lines.txt             #
-	cat Lines.txt             			# 
-	git status             				# 
-	git restore HEAD Lines.txt             		#
-	git diff HEAD~2 Lines.txt             		#
-	git diff ex2 Lines.txt             		#
-	cat Lines.txt             			# 
-	git restore -s ex2 Lines.txt             	#
-	cat Lines.txt             			#	 
-	git tag             				#
-	git log --oneline             			#
-	git status             				# 
-	echo 'I used git restore' >>Lines.txt           # 
-	git status             				# 
-	git diff Lines.txt             			#
-	git status             				# 
-	git add             				#
-	git add Lines.txt             			#	 
-	git status             				# 
-	git commit -m 'Add line with text' Lines.txt    # 
-	git log --oneline             			#
-#### End lesson 1
----
+#### End of lesson 1
