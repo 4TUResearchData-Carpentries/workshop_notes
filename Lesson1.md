@@ -306,3 +306,4 @@ git diff HEAD~2 Lines.txt
 git diff ex2 Lines.txt
 cat Lines.txt 
 git restore -s ex2 Lines.txt
+cat Lines.txt 
