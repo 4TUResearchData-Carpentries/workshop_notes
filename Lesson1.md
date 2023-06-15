@@ -290,3 +290,4 @@ git status
 git tag -d hey hey_jude
 git log --oneline
 git tag -d v1 v2
+git log --oneline
