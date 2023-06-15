@@ -28,3 +28,4 @@ git log --oneline
 git status 
 git branch
 git branch 
+git branch -d B1
