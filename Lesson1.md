@@ -271,3 +271,4 @@ The type-along notes have been revised after the lesson by removing duplicates, 
 	git help tag					# documentation
 ---
 ### Closure day 1
+true
