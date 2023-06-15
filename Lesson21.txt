@@ -31,3 +31,4 @@ git branch
 git branch -d B1
 git switch main 
 git branch -d B1
+git branch B1
