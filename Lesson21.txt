@@ -81,3 +81,4 @@ git stash -m 'switching to main aborted' push
 git stash push -m 'switching to main aborted'
 git stash list
 cat Lines.txt 
+git switch main
