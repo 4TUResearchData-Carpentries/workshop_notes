@@ -1,2 +1,5 @@
 export PROMPT_COMMAND="history -a; $PROMPT_COMMAND"
 echo 'hi'
+echo 'hi'
+true
+false
