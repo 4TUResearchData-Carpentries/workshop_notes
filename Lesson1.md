@@ -271,51 +271,47 @@ The type-along notes have been revised after the lesson by removing duplicates, 
 	git help tag					# documentation
 ---
 ### Closure day 1
-true
-false
-false 
-true
-echo
-# STARTING WITH DAY 2
-pwd
-ls
-cd 2306-VC_CD-TUD/L12/git/
-ls
-ls -FR
-git history
-git log
-git log --oneline
-git status 
-# git tag -m hey v1 
-git tag -d hey hey_jude
-git log --oneline
-git tag -d v1 v2
-git log --oneline
-git tag ex1 adbe95d
-git log --oneline
-git tag ex2 047ba
-git log --oneline
-cat Lines.txt 
-git diff HEAD~3 HEAD~1 Lines.txt
-cat Lines.txt 
-git restore --source HEAD Lines.txt
-cat Lines.txt 
-git status 
-git restore HEAD Lines.txt
-git diff HEAD~2 Lines.txt
-git diff ex2 Lines.txt
-cat Lines.txt 
-git restore -s ex2 Lines.txt
-cat Lines.txt 
-git tag
-git log --oneline
-git status 
-echo 'I used git restore' >>Lines.txt 
-git status 
-git diff Lines.txt
-git status 
-git add
-git add Lines.txt 
-git status 
-git commit -m 'Add line with text' Lines.txt 
-git log --oneline
+### STARTING WITH DAY 2
+	pwd
+	ls
+	cd 2306-VC_CD-TUD/L12/git/
+	ls
+	ls -FR
+	git history
+	git log
+	git log --oneline
+	git status 
+	# git tag -m hey v1 
+	git tag -d hey hey_jude
+	git log --oneline
+	git tag -d v1 v2
+	git log --oneline
+	git tag ex1 adbe95d
+	git log --oneline
+	git tag ex2 047ba
+	git log --oneline
+	cat Lines.txt 
+	git diff HEAD~3 HEAD~1 Lines.txt
+	cat Lines.txt 
+	git restore --source HEAD Lines.txt
+	cat Lines.txt 
+	git status 
+	git restore HEAD Lines.txt
+	git diff HEAD~2 Lines.txt
+	git diff ex2 Lines.txt
+	cat Lines.txt 
+	git restore -s ex2 Lines.txt
+	cat Lines.txt 
+	git tag
+	git log --oneline
+	git status 
+	echo 'I used git restore' >>Lines.txt 
+	git status 
+	git diff Lines.txt
+	git status 
+	git add
+	git add Lines.txt 
+	git status 
+	git commit -m 'Add line with text' Lines.txt 
+	git log --oneline
+	(notes break down)
