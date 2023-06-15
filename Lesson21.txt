@@ -14,3 +14,4 @@ git log --oneline
 git branch -d master
 git branch -m master foo
 git status 
+git branch -d foo
