@@ -53,3 +53,4 @@ git log --oneline
 git log --oneline --all
 git switch main
 git switch B1
+cat Lines.txt 
