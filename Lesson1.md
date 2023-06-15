@@ -272,3 +272,4 @@ The type-along notes have been revised after the lesson by removing duplicates, 
 ---
 ### Closure day 1
 true
+false
