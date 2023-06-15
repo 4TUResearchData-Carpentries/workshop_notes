@@ -72,3 +72,4 @@ git switch B1
 cat Lines.txt 
 git log --oneline --all
 git branch yidong
+git log --oneline --all
