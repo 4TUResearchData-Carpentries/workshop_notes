@@ -26,3 +26,4 @@ git switch
 git switch B1
 git log --oneline
 git status 
+git branch
