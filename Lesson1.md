@@ -307,3 +307,4 @@ git diff ex2 Lines.txt
 cat Lines.txt 
 git restore -s ex2 Lines.txt
 cat Lines.txt 
+git tag
