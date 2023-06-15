@@ -98,3 +98,4 @@ cat Lines.txt
 git log --oneline --all
 git status 
 git diff Lines.txt
+git add Lines.txt 
