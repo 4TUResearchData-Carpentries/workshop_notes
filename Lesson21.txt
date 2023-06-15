@@ -93,3 +93,4 @@ git switch B1
 cat Lines.txt 
 git stash list
 git stash pop
+git stash list
