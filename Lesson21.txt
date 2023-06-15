@@ -5,3 +5,4 @@ git branch
 cat Lines.txt 
 git branch B1
 git branch
+git log --oneline
