@@ -7,3 +7,4 @@ git branch B1
 git branch
 git log --oneline
 git status 
+git branch -m B1 B2
