@@ -283,3 +283,4 @@ cd 2306-VC_CD-TUD/L12/git/
 ls
 ls -FR
 git history
+git log
