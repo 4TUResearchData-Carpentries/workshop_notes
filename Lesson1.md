@@ -1,4 +1,4 @@
-# Workshop Version Control and Collaborative Development for Research Software Developmentgi (14-16 June 2023)
+# Workshop Version Control and Collaborative Development for Research Software Development (14-16 June 2023)
 
 The type-along notes have been revised after the lesson by removing duplicates, changing the position of a command at places, and grouping similar actions into sections. The comments (the text after the # tokens) outline the context of the command (working tree, index, repository, documentation, shell). The abbreviations used in the comments are:  
 * repo = repository  
@@ -74,7 +74,7 @@ The type-along notes have been revised after the lesson by removing duplicates, 
 	git status 					# repo
 	git status -u					# repo
 ---	
-### Not tracking untracked files with (gitignore)
+### Not tracking untracked files (gitignore)
 	history						# working tree
 	history >history.log				# working tree
 	ls						# working tree
@@ -245,7 +245,7 @@ The type-along notes have been revised after the lesson by removing duplicates, 
 	cat Lines.txt 					# working tree	
 	git diff HEAD~3 HEAD~1 Lines.txt		# history v history
 ---
-### Tagging commits
+### Tagging commits (across days 1 and 2)
 	git log --oneline				# history
 	git tag 'hey'					# NEW: git tag
 	git log --oneline				# history
@@ -263,55 +263,40 @@ The type-along notes have been revised after the lesson by removing duplicates, 
 	git status 					# repo
 	git log --oneline				# history
 	git diff hey hey_jude				# history v history
-
-~~git tag -m hey_jude v1~~  
-~~git tag -m hey v2~~
-
-	git log --oneline				# history
-	git help tag					# documentation
+	git tag -d hey hey_jude             #
+	git log --oneline             #
+	git tag -d v1 v2             #
+	git log --oneline             #
+	git tag ex1 adbe95d             #
+	git log --oneline             #
+	git tag ex2 047ba             #
+	git log --oneline             #
+	cat Lines.txt             # 
 ---
-### Closure day 1
-### STARTING WITH DAY 2
-	pwd
-	ls
-	cd 2306-VC_CD-TUD/L12/git/
-	ls
-	ls -FR
-	git history
-	git log
-	git log --oneline
-	git status 
-	# git tag -m hey v1 
-	git tag -d hey hey_jude
-	git log --oneline
-	git tag -d v1 v2
-	git log --oneline
-	git tag ex1 adbe95d
-	git log --oneline
-	git tag ex2 047ba
-	git log --oneline
-	cat Lines.txt 
-	git diff HEAD~3 HEAD~1 Lines.txt
-	cat Lines.txt 
-	git restore --source HEAD Lines.txt
-	cat Lines.txt 
-	git status 
-	git restore HEAD Lines.txt
-	git diff HEAD~2 Lines.txt
-	git diff ex2 Lines.txt
-	cat Lines.txt 
-	git restore -s ex2 Lines.txt
-	cat Lines.txt 
-	git tag
-	git log --oneline
-	git status 
-	echo 'I used git restore' >>Lines.txt 
-	git status 
-	git diff Lines.txt
-	git status 
-	git add
-	git add Lines.txt 
-	git status 
-	git commit -m 'Add line with text' Lines.txt 
-	git log --oneline
-	(notes break down)
+### Undoing changes using the history
+	git diff HEAD~3 HEAD~1 Lines.txt             #
+	cat Lines.txt             # 
+	git restore --source HEAD Lines.txt             #
+	cat Lines.txt             # 
+	git status             # 
+	git restore HEAD Lines.txt             #
+	git diff HEAD~2 Lines.txt             #
+	git diff ex2 Lines.txt             #
+	cat Lines.txt             # 
+	git restore -s ex2 Lines.txt             #
+	cat Lines.txt             # 
+	git tag             #
+	git log --oneline             #
+	git status             # 
+	echo 'I used git restore' >>Lines.txt             # 
+	git status             # 
+	git diff Lines.txt             #
+	git status             # 
+	git add             #
+	git add Lines.txt             # 
+	git status             # 
+	git commit -m 'Add line with text' Lines.txt             # 
+	git log --oneline             #
+#### End lesson 1
+---
+
