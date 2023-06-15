@@ -9,3 +9,4 @@ git log --oneline
 git status 
 git branch -m B1 B2
 git log --oneline
+git branch -d B2
