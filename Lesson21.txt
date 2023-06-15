@@ -22,3 +22,4 @@ git branch
 cat Lines.txt 
 git branch B1
 git log --oneline
+git switch 
