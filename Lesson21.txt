@@ -49,3 +49,4 @@ git switch B1
 git switch B2
 git log --oneline --all
 git switch B1
+git log --oneline
