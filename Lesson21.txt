@@ -45,3 +45,4 @@ git status
 git log --oneline
 git log --oneline --all
 git switch B2
+git switch B1
