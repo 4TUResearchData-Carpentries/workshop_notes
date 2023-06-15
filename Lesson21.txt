@@ -62,3 +62,4 @@ git log --onelin
 git log --oneline
 git log --oneline --all
 git branch
+cat Lines.txt 
