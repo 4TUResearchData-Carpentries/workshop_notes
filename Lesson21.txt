@@ -19,3 +19,4 @@ git branch -m foo main
 git status 
 # WE RESUME AT 13:43
 git branch
+cat Lines.txt 
