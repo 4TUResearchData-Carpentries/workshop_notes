@@ -106,3 +106,4 @@ nano Lines.txt
 cat Lines.txt 
 git add Lines.txt 
 git status 
+git commit -m 'Merge changes from B1 into main'
