@@ -42,3 +42,4 @@ git commit -m 'main: add ninth line ' Lines.txt
 git log --oneline
 git switch B1
 git status 
+git log --oneline
