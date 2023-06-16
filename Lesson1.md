@@ -202,9 +202,9 @@ The type-along notes have been revised after the lesson by removing duplicates, 
 
 #### Committing changes with a configured identity and a message
 	git commit -m 'Add first four lines' Lines.txt	# NEW: git commit
-	git config -l							# repo
-	git config --global user.email 'user@example.com' 		# repo
-	git config --global user.name 'Name Surname (your device?) '	# repo
+	git config -l						# repo
+	git config --global user.email 'user@example.com' 	# repo
+	git config --global user.name 'Name Surname (device?)'	# repo
 	git config --global core.editor nano		# repo
 	git config --global core.autocrlf false		# repo
 	git config --list				# repo
@@ -278,12 +278,12 @@ The type-along notes have been revised after the lesson by removing duplicates, 
 	git log --oneline             			# history
 	git tag exercise1 adbe95d             		# history
 	git log --oneline             			# history
-	git tag exercise2 047ba             			# history
+	git tag exercise2 047ba             		# history
 	git log --oneline             			# history
                                             		# PILL EXERCISE: end
 	cat Lines.txt             			# working tree
 	git tag             				# history
-	git diff exercise2 Lines.txt             		# history v working tree
+	git diff exercise2 Lines.txt             	# history v working tree
 	git diff HEAD~2 Lines.txt             		# history v working tree
 
 #### Undoing changes using the history
