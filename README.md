@@ -95,7 +95,7 @@ L3. COLLABORATIVE SOFTWARE DEVELOPMENT
 
 ## 2. Type-along notes, per lesson
 
-The commands the instructors type on the screen during each lesson will be appended continuously to the documents **Lesson\*.md** found at the top of this web page (_above_ this document).
+The commands the instructors type on the screen during each lesson will be appended continuously to the documents **Lesson\*.\*** (extension may vary) found at the top of this web page, _above_ this document.
 
 Please use these lesson notes when you had to lag behind the instructor and need to catch up with the instructions. Bring up the file of the lesson upon clicking _exactly on the file name_ (to the left, hence not anywhere else, in the line). 
 
@@ -127,7 +127,7 @@ Filling in these anonymous questionnaires is voluntary. Your honest opinion base
 * Feedback on Lesson 2: [Google Forms](https://bit.ly/2306-VC_CD-TUD-FB2)
 * Feedback on Lesson 3: [Google Forms](https://bit.ly/2306-VC_CD-TUD-FB3)
 
----
+---gi
 ## 4. Resources
 
 ### Official Git documentation
