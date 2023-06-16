@@ -127,7 +127,7 @@ Filling in these anonymous questionnaires is voluntary. Your honest opinion base
 * Feedback on Lesson 2: [Google Forms](https://bit.ly/2306-VC_CD-TUD-FB2)
 * Feedback on Lesson 3: [Google Forms](https://bit.ly/2306-VC_CD-TUD-FB3)
 
----gi
+
 ## 4. Resources
 
 ### Official Git documentation
@@ -136,7 +136,9 @@ Filling in these anonymous questionnaires is voluntary. Your honest opinion base
 
 ### GitHub-related documentation
 
-...
+* [GitHub documentation](https://docs.github.com/en)
+* Also Git has a [GitHub account with several repositories](https://github.com/git/)
+* Also Linus Torvalds has a [GitHub account with many repositories](https://github.com/torvalds)
 
 ### Miscellaneous resources
 
