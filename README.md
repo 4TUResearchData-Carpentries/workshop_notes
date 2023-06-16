@@ -116,8 +116,8 @@ Please bookmark these URLs for an easy navigation during the workshop:
 ### The slides
 * [Workshop introduction](https://docs.google.com/presentation/d/16dWVK1y3LFh227-GjvFvZLoBMyIJwiDC/edit?usp=sharing&ouid=105684743155471216616&rtpof=true&sd=true)
 * Lesson 1, TOC and exercises: [Google Slides](https://docs.google.com/presentation/d/15fFsslX_zyvXbgCkgCO-ALUbab38Q2oZZABhmqgn3yk/edit?usp=sharing) (subject to revision after this workshop)
-* Lesson 2, TOC and exercises: <!--[Google Slides](https://docs.google.com/presentation/d/1p7-n04rVGNNlloMvJDAXApYkwWO1ItMIgCMLG9ScTqQ/edit?usp=sharing) -->
-* Lesson 3, TOC and exercises: <!--[Google Slides](https://docs.google.com/presentation/d/1H18r-Q9CLx_aUPkTn3IXqWvOZdBWof-6ca_FdfOD9p0/edit?usp=sharing) -->
+* Lesson 2, TOC and exercises: [Google Slides](https://docs.google.com/presentation/d/1p7-n04rVGNNlloMvJDAXApYkwWO1ItMIgCMLG9ScTqQ/edit?usp=sharing) (subject to revision after this workshop)
+* Lesson 3, TOC and exercises: [Google Slides](https://docs.google.com/presentation/d/1H18r-Q9CLx_aUPkTn3IXqWvOZdBWof-6ca_FdfOD9p0/edit?usp=sharing) (subject to revision after this workshop)
 
 ### The feedback forms
 
