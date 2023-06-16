@@ -1,4 +1,16 @@
-# LESSON 2
+# Workshop Version Control and Collaborative Development for Research Software Development (14-16 June 2023)
+
+The type-along notes have been revised after the lesson by removing duplicates, changing the position of a command at places, and grouping similar actions into sections. The comments (the text after the # tokens) outline the context of the command (working tree, index, repository, documentation, shell). The abbreviations used in the comments are:  
+* repo = repository  
+* v = versus (a comparison)   
+* \>, <: direction of information transfer  
+
+## LESSON 2. BRANCHING AND REMOTE OPERATIONS
+
+### 2.1 Branching and remote operations 
+
+#### Create, rename, change, and delete branches
+
 	git log --oneline				#
 	git status					#
 	git branch					#
@@ -34,6 +46,9 @@
 	git branch B1					#
 	git branch B2					#
 	git branch					#
+
+#### Develop and compare branches
+
 	git status					#
 	echo 'ninth line' >>Lines.txt			#
 	git add Lines.txt				#
@@ -71,9 +86,6 @@
 	git switch B1					#
 	cat Lines.txt					#
 	git log --oneline --all				#
-	git branch yidong				#
-	git log --oneline --all				#
-	git branch -d yidong				#
 	git status					#
 	git diff Lines.txt				#
 	git switch main					#
@@ -101,7 +113,9 @@
 	git add Lines.txt				#
 	git commit -m 'B1: add Ninth Line'		#
 	git log --oneline --all				#
-	# WE RESUME AT 14:56				#
+
+#### Visualise and merge branches, and resolve conflicts
+
 	git log --oneline --all				#
 	git log --graph --oneline --all			#
 	git log --parents --oneline --all		#
@@ -136,3 +150,4 @@
 	git log --oneline --all				#
 	git log --parents --oneline --all		#
 	git log --parents --oneline --all --graph	#
+---

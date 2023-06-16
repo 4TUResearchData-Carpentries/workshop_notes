@@ -276,14 +276,14 @@ The type-along notes have been revised after the lesson by removing duplicates, 
 	git tag -d v1 v2             			# history
                                             		# PILL EXERCISE:
 	git log --oneline             			# history
-	git tag ex1 adbe95d             		# history
+	git tag exercise1 adbe95d             		# history
 	git log --oneline             			# history
-	git tag ex2 047ba             			# history
+	git tag exercise2 047ba             			# history
 	git log --oneline             			# history
                                             		# PILL EXERCISE: end
 	cat Lines.txt             			# working tree
 	git tag             				# history
-	git diff ex2 Lines.txt             		# history v working tree
+	git diff exercise2 Lines.txt             		# history v working tree
 	git diff HEAD~2 Lines.txt             		# history v working tree
 
 #### Undoing changes using the history
@@ -294,7 +294,7 @@ The type-along notes have been revised after the lesson by removing duplicates, 
 	git restore --source HEAD Lines.txt             # history > working tree
 	cat Lines.txt             			# working tree
 	git status             				# history
-	git restore -s ex2 Lines.txt             	# history > working tree
+	git restore -s exercise2 Lines.txt             	# history > working tree
 	cat Lines.txt             			# working tree 
 	git log --oneline             			# history
 	git status             				# repo
@@ -305,6 +305,6 @@ The type-along notes have been revised after the lesson by removing duplicates, 
 	git add             				# index
 	git add Lines.txt             			# index	 
 	git status             				# repo
-	git commit -m 'Add line with text' Lines.txt    # history
+	git commit -m 'Add line with a sentence' Lines.txt    # history
 	git log --oneline             			# history
 ---
