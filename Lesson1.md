@@ -1,7 +1,7 @@
 # Workshop Version Control and Collaborative Development for Research Software Development (14-16 June 2023)
 
 The type-along notes have been revised after the lesson by removing duplicates, changing the position of a command at places, and grouping similar actions into sections. The comments (the text after the # tokens) outline the context of the command (working tree, index, repository, documentation, shell). The abbreviations used in the comments are:  
-* repo = repository  
+* repo = repository = tracked documents and index and history
 * v = versus (a comparison)   
 * \>, <: direction of information transfer  
 
@@ -213,7 +213,7 @@ The type-along notes have been revised after the lesson by removing duplicates, 
 	git status 					# repo
 	git diff 					# working tree v index
 	git diff .gitignore				# working tree v index
-	git commit -m 'Add .gitignore' .gitignore	# history 
+	git commit -m 'Add .gitignore' .gitignore	# index > history 
 	git log						# history
 	git status 					# repo
 							# DRILL EXERCISE: 
@@ -222,7 +222,7 @@ The type-along notes have been revised after the lesson by removing duplicates, 
 	git status 					# repo
 	git add Lines.txt 				# working tree > index
 	git status 					# repo
-	git commit -m 'Add fifth line' Lines.txt 	# history
+	git commit -m 'Add fifth line' Lines.txt 	# index > history
 	git status 					# repo
 	git log 					# history
 	git diff Lines.txt				# working tree v index
@@ -231,7 +231,7 @@ The type-along notes have been revised after the lesson by removing duplicates, 
 	git diff Lines.txt				# working tree v index
 	git add Lines.txt 				# working tree > index
 	git diff Lines.txt				# working tree v index
-	git commit -m 'Add sixth line' Lines.txt 	# working tree
+	git commit -m 'Add sixth line' Lines.txt 	# index > history
 	git log						# history
 							# DRILL EXERCISE: end
 
@@ -267,7 +267,7 @@ The type-along notes have been revised after the lesson by removing duplicates, 
 	git status 					# repo
 	git diff Lines.txt				# working tree v index
 	git diff HEAD Lines.txt				# working tree v history
-	git commit -m 'Add seventh line' Lines.txt 	# history
+	git commit -m 'Add seventh line' Lines.txt 	# index > history
 	git status 					# repo
 	git log --oneline				# history
 	git diff hey hey_jude				# history v history
@@ -302,9 +302,9 @@ The type-along notes have been revised after the lesson by removing duplicates, 
 	git status             				# repo
 	git diff Lines.txt             			# history
 	git status             				# repo
-	git add             				# index
-	git add Lines.txt             			# index	 
+	git add             				# working tree > index
+	git add Lines.txt             			# working tree > index	 
 	git status             				# repo
-	git commit -m 'Add line with a sentence' Lines.txt    # history
+	git commit -m 'Add line with a sentence' Lines.txt    # index > history
 	git log --oneline             			# history
 ---
