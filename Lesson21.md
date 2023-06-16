@@ -38,11 +38,11 @@ The type-along notes have been revised after the lesson by removing duplicates, 
 	git switch B1					# repo
 	git log --oneline				# history
 	git status					# repo
-								# DRILL EXERCISE:
+							# DRILL EXERCISE:
 	git branch delft, technology, university
 	# switch around branches and explore consequences
 	git branch -d delft, technology, university
-								# DRILL EXERCISE: end
+							# DRILL EXERCISE: end
 	git branch					# repo
 	git branch -d B1				# repo
 
@@ -56,7 +56,7 @@ The type-along notes have been revised after the lesson by removing duplicates, 
 	echo 'ninth line' >>Lines.txt			# working tree
 	git add Lines.txt				# working tree > index
 	git status					# repo
-	git commit -m 'main: add ninth line' Lines.txt # index > history
+	git commit -m 'main: add ninth line' Lines.txt 	# index > history
 	git log --oneline				# history
 	git switch B1					# repo
 	git status					# repo
@@ -95,7 +95,7 @@ The type-along notes have been revised after the lesson by removing duplicates, 
 	cat Lines.txt					# working tree
 	echo 'tenth line' >>Lines.txt			# working tree
 	git add Lines.txt				# working tree > index
-	git commit -m 'main: add tenth line'			# index > history
+	git commit -m 'main: add tenth line'		# index > history
 	git status					# repo
 	git log --oneline --all				# history
 	cat Lines.txt					# working tree
@@ -128,7 +128,7 @@ The type-along notes have been revised after the lesson by removing duplicates, 
 	git diff main Lines.txt				# working tree v history
 	git switch main					# repo
 	git diff B1 Lines.txt				# history v working tree
-	git merge -m 'Merge development on B1 into main' Lines.txt 	# NEW: git merge
+	git merge -m 'Merge development on B1 into main' Lines.txt	# NEW: git merge
 	git merge -m 'Merge development on B1 into main'		# repo & repo
 	git merge -m 'Merge development on B1 into main' B1		# repo & repo
 	git diff Lines.txt				# working tree v index
@@ -136,7 +136,7 @@ The type-along notes have been revised after the lesson by removing duplicates, 
 	git log --oneline				# history
 	git status					# repo
 	nano Lines.txt					# working tree
-	# resolve conflict in overlapping area manually
+	# resolve conflict in overlapping area manually # working tree
 	cat Lines.txt					# working tree
 	git add Lines.txt				# working tree > index
 	git status					# repo
