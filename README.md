@@ -24,7 +24,7 @@ The workshop is divided into **4 Lessons**, each given in one half a day.
 Each Lesson is further divided into **Episodes**, and then into **Chapters**. 
 Unfold the detailed tables of contents in the listing below. 
 As a disclaimer, the instructor may not cover all the intended material: 
-see the following [Section 2](...) for the actual coverage.  
+see the following [Section 2](#2-lesson-notes) for the actual coverage.  
 
 <details> 
 <summary>
@@ -120,10 +120,9 @@ L4. COLLABORATIVE SOFTWARE DEVELOPMENT (to be composed)
 
 The material of each lesson will be presented in documents named as **Lesson[1234].\*** (the file extension may vary).
 The documents are listed at the top of this web page, _above_ this text.
-Bring up the file of your interest upon clicking _exactly on the file name_ (to the left, hence not anywhere else, in the line). 
+There, bring up the file of your interest upon clicking _exactly on the file name_, hence to the left in the line. 
 
 ### 2.1 Lesson 1 and 2: type-along notes
-
 
 The commands the instructors type on the screen during each lesson will be appended continuously to the documents **Lesson[12].\*** (the file extension may vary).
 
@@ -133,7 +132,7 @@ Please refresh the page with the lesson notes in your browser (typically, hit `F
 So, you will view the latest commands as the notes grow.
 Kindly notify the instructor if you do not see this happening.
 
-<!-- After the end of the lesson the instructors will decorate the type-along notes with the division in Chapters and Episodes -->
+After the end of the lessons the instructors will decorate the type-along notes with the division in Chapters and Episodes.
 
 ### 2.2 Lesson 3 and 4 (to be prepared)
 
@@ -145,15 +144,15 @@ Kindly notify the instructor if you do not see this happening.
 ### The workshop
 Please bookmark these URLs for an easy navigation during the workshop:
 
-1. [Workshop announcement at the Library](...)
-2. Short URL for this page: [...)
-3. Full URL of this page: ...
+1. [Workshop announcement at the Library](https://www.tudelft.nl/library/research-data-management/r/training-evenementen/training-voor-onderzoekers/version-control-collaborative-development-for-research-software)
+2. Short URL of this README file: [https://bit.ly/2310-gitcodev-TUD](https://bit.ly/2310-gitcodev-TUD)
+3. Full URL of this page: https://github.com/4TUResearchData-Carpentries/workshop_notes/tree/2310-gitcodev-TUD 
 
 ### The slides
 * [Workshop introduction](...)
-* Lesson 3, TOC and exercises: [Google Slides](...)
+* Lesson 3, TOC and exercises: [Google Slides](...) (subject to revision after this workshop)
 * Lesson 4, TOC and exercises: [Google Slides](...) (subject to revision after this workshop)
-* [Workshop outlook](...)
+* [Workshop conclusion and outlook](...)
 
 ### The feedback forms
 
