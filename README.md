@@ -3,7 +3,7 @@
 **When** 16, 17, 18, 19 October 2023 (the second edition)  
 **Where** Delft University of Technology  
 **Who, the instructors** Manuel Garcia Alvarez, Giordano Lipari  
-**Who, the helpers** TBC
+**Who, the helpers** Lora Armstrong, Richard Grimes, Selin Kubilay, Raúl Ortiz Merino, Yasel Quintero Lares, Carlos Utrilla Guerrero
 
 ---
 ## 1. Workshop program
