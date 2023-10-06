@@ -154,6 +154,10 @@ Please bookmark these URLs for an easy navigation during the workshop:
 * Lesson 4, TOC and exercises: [Google Slides](...) (subject to revision after this workshop)
 * [Workshop conclusion and outlook](...)
 
+### User Accounts
+
+Register you account via [GitHub account.](https://forms.gle/asj6dAhTh6vcyUhV9)
+
 ### The feedback forms
 
 Filling in these anonymous questionnaires is voluntary.
