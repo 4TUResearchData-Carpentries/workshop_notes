@@ -35,25 +35,26 @@ Useful shortcuts for the Windows Terminal (Preview) App on Windows 11.
 
 ------
 
-## PART 1: RECAP Operations with Remotes
+## PART 1
 
-> Participants provide GitHub user names to be invited to collaborative repositories [Google form](https://forms.gle/asj6dAhTh6vcyUhV9), the day before.
+### 0. Recapitulation Operations with Remotes
 
-### 1. MOST COMMON OPERATIONS WITH REMOTES [5 min]
+#### a. Common operations with remotes [5 min]
 
 > Recap figure on how local repostories and remotes are connected and how to work with remotes (Slides).
 
-> Recap what `clone, fetch, pull` and `push` commands do.
+> Recap what `clone, fetch, merge, pull` and `push` commands do.
 
-### 2. COLLABORATIVE PLATFORMS
+### A. Collaborative Platforms
 
-#### a. Connect to GitHub via SSH [ 10 min]
+#### 1. Connect to GitHub via SSH [ 10 min]
 
 > Ask participants to test the connection with:
 
-    ```shell
-    $ ssh -T git@github.com
-    ```
+```shell
+ssh -T git@github.com
+```
+
 > GitHub requires authentification via SSH to do pulls an pushes, but not for cloning. **Use illustrations** to explain what a SSH connection entitles.
 
 To connect via SSH do the following [skip if connections have been successfuly set]:
@@ -62,25 +63,25 @@ To connect via SSH do the following [skip if connections have been successfuly s
 
     ```shell
     # move to Home directory
-    $ cd ~
+    cd ~
     # create key
-    $ ssh-keygen -t ed25519 -C "your_email@example.com"
+    ssh-keygen -t ed25519 -C "your_email@example.com"
     # save to the default location and file name: ~/.ssh/id_ed25519
     ```
 * Check the keys have been created
 
     ```shell
-    $ ls ~/.ssh/
+    ls ~/.ssh/
     ```
 
 * Start the `ssh-agent` and add private key to agent:
 
     ```shell
     # start agent
-    $ eval "$(ssh-agent -s)"
+    eval "$(ssh-agent -s)"
     
     # add private key
-    $ ssh-add ~/.ssh/id_ed25519
+    ssh-add ~/.ssh/id_ed25519
     ```
     > Instruct SSH to use key files in different locations: `ssh -i <path/private/keyfile>`
 
@@ -90,7 +91,7 @@ Mac and Linux user don't have to worry about this.
 * Copy public key to GitHub:
 
     ```shell
-    $ clip < .ssh/id_ed25519.pub
+    clip < .ssh/id_ed25519.pub
     ```
 
 * Go to GitHub, explain the basics of the interface and add the SSH key.
@@ -107,49 +108,67 @@ Profile > Settings > SSH and GPG keys > New SSH key > Add SSH key
 
 > Check the info on (Troubleshooting SSH[https://docs.github.com/en/authentication/troubleshooting-ssh]) for GitHub.
 
-#### b. Exploring the GitHub GUI [ 5 min]
+#### 2. Exploring the GitHub GUI [ 5 min]
 
 Collaborative platform host and manage remote repositories to enable collaborative development.
 
 > Ask participants if they are familiar with GitHub. If not, give a short explanation of what it is for how to explore the GUI.
 
-### c. Inviting Collaborators [ 5 min ]
+Mention GitLab at TU Delft as an alternative for a collaborative platform: https://gitlab.tudelft.nl/
 
-> Participants are invited as collaborators to the check-in repository. Participants have permission to merge pull requets.
+### 3. Collaborating [ 5 min ]
 
-a. Demo on how to invite collaborators using the check-in repository.
+> Participants are invited as collaborators to the check-in repository. Participants must have permission to merge pull requets.
 
-b. Paticipant accept inviation.
+a. Demo on how to invite collaborators using the [check-in repository.](https://github.com/manuGil/check-in)
 
-c. Mention GitLab at TU Delft as an alternative for a collaborative platform: https://gitlab.tudelft.nl/
+b. Paticipant accept inviation via email or GitHub GUI.
 
-
-### 3. COLLABORATIVE DEVELOPMENT FOR RESEARCH SOFTWARE 
+### B. Collaborative Development for Research Software
 
 Development high quality software requires more than programming and technical skills. Exceptional programmers can produce high quality for themselves and others. But good programmers will need to collaborate in order to develop complex, high quality research software. 
 
-#### a. Collaborative Development
+#### 1. Collaborative Development
 
 > An Quick introduction to collaborative development. Definitions  (Slides)
 
-#### b. When to Aim for a Collaborative Approach? 
+#### 2. When to Aim for a Collaborative Approach? 
 
 > Explain the difference between private and close collaboration
 
+#### 3. Management Strategies [10 min]
 
-### 2. MANAGEMENT STRATEGIES [10 min]
+> Explain why management is important for developing software, the key factors to consider, and recommend a management strategy.
 
-> Explain why management is important for developing software, the key factors to consider and remcommend a management strategy based on experience.
+**Key Factors:**
+- Purpose
+- People
+- Time
+- Maintenance
 
-### 3. ROLES AND RESPONSIBILITIES
+*ROLES AND RESPONSIBILITIES*
 
 > Describe the responsibilities for each role and why they are important for a research-software development project.
 
+**Roles:**
+- Project owner
+- Administrator
+- Reviewer
+- Collaborator
 
-### 4. EXERCISE [6 min]
+### 4. EXERCISE: Roles and Responsibilities [6 min]
 
-Breakout session 1: [Make Teams](#)
+> Participant make teams, decide on roles and name their teams.
 
+1. Make teams of 3 or 4 people. They will work together during group exercises.
+2. Assign roles and responsibilities to each member; you should and up with:
+    - One project owner
+    - One administrator
+    - One or more collaborators
+    - Zero or more reviewers
+3. Choose a name for the team.
+
+[CONTINUE HERE]
 -----------------
 ## BREAK 
 -----------------
