@@ -1,9 +1,9 @@
 
 
     Please perform the following tasks individually
-  
+
     1. Revise the commands we have used since the last exercise.
-             Could you use a shell command for this?
+        Could you use a shell command for this?
     2. Ask Git what the current state of the repository using ...
     3. Please stop tracking the file directory/emptyfile.txt
     4. Be mindful of not deleting the file!
