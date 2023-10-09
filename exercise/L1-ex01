@@ -1,0 +1,25 @@
+
+
+   Revise the commands we have used so far
+   The current file lines.txt contains three lines
+   Please perform the following tasks alone
+
+   1a. Append to the file a fourth line in the same style
+   1b. Check the content of the new file using ...
+   1c. Check if Git realises a change occurred using ...
+   1d. Check which difference Git finds in the file using ...
+
+   Make note of the output of the Git commands
+
+   2a. Follow the next step that Git suggests by using ...
+   2b. Same as 1b
+   2c. Same as 1c
+   2d. Same as 1d
+
+   Make note of the outputs of Git commands have changed
+
+   Formulate your explanation of what you have observed
+   The following questions are two sides of the same coin:
+      What did you ask Git to do? 
+      What did Git do for you?
+
