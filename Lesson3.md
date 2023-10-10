@@ -4,7 +4,7 @@
 
 **Last update:** *06-10-2023*
 
-**Presentation:** *[Branching and remote operations | remote operations](https://docs.google.com/presentation/d/1p7-n04rVGNNlloMvJDAXApYkwWO1ItMIgCMLG9ScTqQ/edit#slide=id.g2512947bc00_6_14)*
+**Presentation:** *[Branching and remote operations | remote operations](https://docs.google.com/presentation/d/1yBy_4r9aHhsUH9AH1s7zLWIQ_h20xNKVYM1somPnz1Q/edit?usp=sharing)*
 
 <!-- **Exercises:** *[Exercises remote operations]()* -->
 
@@ -116,13 +116,22 @@ Collaborative platform host and manage remote repositories to enable collaborati
 
 Mention GitLab at TU Delft as an alternative for a collaborative platform: https://gitlab.tudelft.nl/
 
-### 3. Collaborating [ 5 min ]
+#### 3. Collaborating [ 5 min ]
 
 > Participants are invited as collaborators to the check-in repository. Participants must have permission to merge pull requets.
 
 a. Demo on how to invite collaborators using the [check-in repository.](https://github.com/manuGil/check-in)
 
 b. Paticipant accept inviation via email or GitHub GUI.
+
+### 4. EXERCISE: Startig with Collaboration [10 mins]
+
+- Clone the Check-in repository via SSH: https://github.com/manuGil/check-in  
+- Make a copy of the file `check-in/template.md` in the same directory; give it an anonymous name, ex. `<name-initials><3-last-digits-phone>.md`
+- Open your copy of `template.md` and add something to the lists in the file.
+- Commit your changes, and push them to the remote repository. You might experience difficulties doing that, follow the suggestions given by Git. 
+- Reflect on the difficulties you faced, and how we might avoid them.
+
 
 ### B. Collaborative Development for Research Software
 
@@ -156,7 +165,7 @@ Development high quality software requires more than programming and technical s
 - Reviewer
 - Collaborator
 
-### 4. EXERCISE: Roles and Responsibilities [6 min]
+### 4. EXERCISE 1: Roles and Responsibilities [6 min]
 
 > Participant make teams, decide on roles and name their teams.
 
@@ -168,7 +177,7 @@ Development high quality software requires more than programming and technical s
     - Zero or more reviewers
 3. Choose a name for the team.
 
-[CONTINUE HERE]
+
 -----------------
 ## BREAK 
 -----------------
