@@ -10,3 +10,8 @@
         Use capital letters for the tag name, for our convenience
     3. Verify the outcome of tagging with two Git commands, namely ... and ... 
 
+    Formulate your own explanation of what you see
+    The following questions are two sides of the same coin:
+        What did you ask Git to do?
+        What did Git do for you?
+
