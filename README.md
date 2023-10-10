@@ -28,7 +28,7 @@ see the following [Section 2](#2-lesson-notes) for the actual coverage.
 
 <details> 
 <summary>
-L1. FUNDAMENTAL OPERATIONS WITH GIT (to be revised)
+L1. FUNDAMENTAL OPERATIONS WITH GIT
 </summary>
   
 | Episode | Topic |
