@@ -1,0 +1,23 @@
+
+    Lesson 1 Episode 2 --- Tracking changes with the index
+    Please perform the following tasks alone
+
+    The current file lines.txt contains three lines
+    Revise in your terminal the commands we have used so far
+
+    1a. Append to the file a fourth line (in the same style as the previous lines)
+    1b. Check the new content of the file using...
+    1c. Check whether Git realises that a change has occurred using...
+    1d. Check which difference Git finds in the file using...
+    Take note of the output of the Git commands
+
+    2a. Follow the action that Git suggests next by using...
+    2b. Same as 1b
+    2c. Same as 1c
+    2d. Same as 1d
+    Take note of how the outputs of Git commands have changed
+
+    Formulate your own explanation of what you have observed
+    The following questions are two sides of the same coin:
+        What did you ask Git to do?
+        What did Git do for you?
