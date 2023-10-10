@@ -10,8 +10,8 @@
         Explain to yourself the difference **between** the outputs of
         these two commands:
 
-            git diff HEAD~3 HEAD~4 Lines.txt 
+            git diff HEAD~3 HEAD~4 Lines.txt
 
 	        git diff HEAD~3 HEAD~4
 
-        What is the reason of the (lack of) difference between the outputs?
+    What is the reason of the (lack of) difference between the outputs?

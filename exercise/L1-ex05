@@ -1,5 +1,6 @@
 
-    Lesson 1 Episode 3 --- Follow the state of the repository in the commit routine 
+    Lesson 1 Episode 3 --- Follow the state of the repository in the commit routine
+
     Please perform the following tasks individually
 
     The baseline
@@ -18,7 +19,7 @@
         4a. Store the changes of Lines.txt in the history using...
         4b. Repeat 1b and compare its output with the previous ones
         5. Look up and parse the commit history using...
-            
+
     Formulate your own explanation of what git status showed you
     The following questions are two sides of the same coin:
         What did you ask Git to do?
