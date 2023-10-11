@@ -124,7 +124,7 @@ a. Demo on how to invite collaborators using the [check-in repository.](https://
 
 b. Paticipant accept inviation via email or GitHub GUI.
 
-### 4. EXERCISE: Startig with Collaboration [10 mins]
+### 4. EXERCISE 1: Startig with Collaboration [10 mins]
 
 - Clone the Check-in repository via SSH: https://github.com/manuGil/check-in  
 - Make a copy of the file `check-in/template.md` in the same directory; give it an anonymous name, ex. `<name-initials><3-last-digits-phone>.md`
@@ -135,7 +135,7 @@ b. Paticipant accept inviation via email or GitHub GUI.
 
 ### B. Collaborative Development for Research Software
 
-Development high quality software requires more than programming and technical skills. Exceptional programmers can produce high quality for themselves and others. But good programmers will need to collaborate in order to develop complex, high quality research software. 
+Developing high quality software requires more than programming and technical skill. Exceptionally good programmers can produce high quality software by themselves. But good programmers will need to collaborate in order to develop complex, high quality software. 
 
 #### 1. Collaborative Development
 
@@ -165,7 +165,7 @@ Development high quality software requires more than programming and technical s
 - Reviewer
 - Collaborator
 
-### 4. EXERCISE 1: Roles and Responsibilities [6 min]
+### 4. EXERCISE 2: Roles and Responsibilities [6 min]
 
 > Participant make teams, decide on roles and name their teams.
 
@@ -182,6 +182,27 @@ Development high quality software requires more than programming and technical s
 ## BREAK 
 -----------------
 ## PART 2
+
+### a. Collaborative Workflows
+
+Collaborative workflows are estrategies to organise the work of a developer team so that many developers can contribute to a software project. Two common estrategies that use version control and collaborative platforms as leverage are:
+
+- The **branching workflow** and
+- The **forking workflow**
+
+>  A short explanation on branching workflow (slides)
+
+#### 1. EXERCISE 3: 
+
+[CONTINUE HERE]
+
+
+
+
+
+>  A short explanation on fork workflow (slides)
+>
+
 
 ### 4. EXERCISE [20 mins]
 
