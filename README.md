@@ -1,7 +1,7 @@
-# Notes of the Software Carpentry Workshop 
+# Notes of the Data Carpentry Workshop 
 
-**When** DD-DD Mm YEAR  
-**Where** Host institution
+**When** 12-13 Oct 2023  
+**Where** TU Delft Library
 
 _To whom this may concern._
 
@@ -22,8 +22,8 @@ So, referring to these notes may be more helpful and effective than browsing the
 #### Workshop documents
 You are also encouraged to bookmark these URLs for an easy navigation during the workshop:
 
-1. Carpentries announcement: **replace this text with a link to the workshop announcement (typically following the Carpentries template)**
+1. Carpentries announcement: https://4turesearchdata-carpentries.github.io/2023-10-12-ldev-delft/
 2. Collaborative document: **replace this text with a link to, typically, a public Google Doc or a pad**
-3. This page: https://github.com/4TUResearchData-Carpentries/workshop_notes/tree/YYMM-WHICH-WHERE **edit the workshop label YYMM-WHICH-WHERE as applicable**
+3. This page: https://github.com/4TUResearchData-Carpentries/workshop_notes/tree/2310-ldev-delft
 
 
