@@ -8,7 +8,7 @@ _To whom this may concern._
 #### Content
 
 Here you find the "lesson notes", that is the commands that the instructors type during the workshop lessons.  
-During each lesson, these commands are continuously appended to a file whose name starts with `python`, `unixshell`, and `git`.  
+During each lesson, these commands are continuously appended to a file ~~whose name starts with `python`, `unixshell`, and `git`~~.  
 (Files may have different extension according to the lesson, never mind that.)
 
 #### Usage
