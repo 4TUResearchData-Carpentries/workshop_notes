@@ -56,6 +56,10 @@ Using this repository for automated note-taking/sharing requires that:
 4. the _lesson notes_ are files tracked by and committed to an _edition branch_; 
 5. the README of the _edition branch_ thus addresses the workshop _learners_.
 
+The branch `YYMM-WHAT-WHERE` is a blank branch with a minimal draft README; 
+it is a convenient source point for the _edition branches_ to branch off in clean shape.
+Branching off `master` is discouraged, else you need to clean all the text you are reading just now.  
+
 ### 2.2 Name conventions
 To leverage speed reading and finding, the following usage is encouraged:
 
@@ -116,7 +120,7 @@ The table details the steps to prepare the edition branch on this GitHub remote 
 
 |Step |Objective |Action |Example
 |:-------|:------|:------|:-----|
-|1 | create empty edition branch | [create a new branch in this repo](https://github.com/4TUResearchData-Carpentries/workshop_notes/branches) following §2.2 | [`2305-SCW-TUD`](https://github.com/4TUResearchData-Carpentries/workshop_notes/tree/2305-SCW-TUD) |
+|1 | create empty edition branch | [create a new branch in this repo](https://github.com/4TUResearchData-Carpentries/workshop_notes/branches) following §2.2 for naming; set `YYMM-WHAT-WHEN` as the source of the new branch| [`2305-SCW-TUD`](https://github.com/4TUResearchData-Carpentries/workshop_notes/tree/2305-SCW-TUD) |
 |2 | customize README for learners | edit workshop type, days, host and links (*) | [README of 2305-SWC-TUD](https://github.com/4TUResearchData-Carpentries/workshop_notes/blob/2305-SCW-TUD/README.md) (Software, 22-25 May 2023, Delft University of Technology, ...)|
 |3 | broadcast URL of edition branch | update collaboration document for learners | In the [workshop collaborative document](https://docs.google.com/document/d/1s_LVZVKFA908kGex2wI4Ce-ZF8CqQLfD8S2kDRClL0g/edit#) sections on type-along commands point to the URL of the edition branch https://github.com/4TUResearchData-Carpentries/workshop_notes/tree/2305-SCW-TUD |
 
