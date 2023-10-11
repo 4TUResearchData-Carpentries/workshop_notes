@@ -194,6 +194,23 @@ Collaborative workflows are estrategies to organise the work of a developer team
 
 #### 1. EXERCISE 3: 
 
+Teams work on coding taks using the branch worflow model.
+
+1. [Administrator] Creates a repository using the template:
+2. [Administrator] Invites all team members to the repository.
+3. [Team] Read the TODO list in the repository and each member takes on of the tasks
+4. [Team] Apply the branching model to work the chosen task.
+5. [Team] Commit and push changes to the repository.
+
+
+
+
+
+#### Pull request
+
+Explain what they are and teams follow the steps to create a pull reques from their branch to the main branch.
+
+
 [CONTINUE HERE]
 
 
