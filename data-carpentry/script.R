@@ -82,3 +82,20 @@ hh_members[hh_members == 7]
 hh_members[hh_members < 7]
 
 # Missing values
+
+NA
+class(NA)
+NA + NA 
+NA + 3
+
+rooms <- c(2, 1, 1, NA, 7)
+rooms
+max(rooms)
+args(max)
+max(rooms, na.rm=TRUE)
+
+is.na(NA)
+is.na(4)
+is.na(rooms)
+rooms_cleaned <- rooms[!is.na(rooms)]
+mean(rooms_cleaned)
