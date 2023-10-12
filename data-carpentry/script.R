@@ -72,3 +72,10 @@ hh_members
 hh_members[c(TRUE, FALSE, TRUE, TRUE)]
 
 3 > 5
+5 > 3
+5 == 3
+5 != 3
+
+hh_members
+hh_members == 7
+hh_members[hh_members == 7]
