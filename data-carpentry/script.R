@@ -21,4 +21,6 @@ area_hectares <- 50  #
 r_length <- 2
 r_width <- 5
 r_area <- r_length * r_width
+r_area
 
+# functions
