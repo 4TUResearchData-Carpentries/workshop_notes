@@ -30,3 +30,34 @@ round_pi <- round(pi)
 (round_pi <- round(pi))
 rounded_number <- round(45732.2876743)
 round
+round()
+round(x=pi)
+(round(x=pi, digits=2))
+args(round)
+help(round)
+round(digits=3, x=pi)
+
+# vectors and data types
+
+hh_members <- c(3, 7, 10, 6)
+hh_members
+length(hh_members)
+
+respondent_wall_type <- c("muddaub", "burntbricks", "sunbricks")
+respondent_wall_type
+length(respondent_wall_type)
+
+class(hh_members)
+typeof(hh_members)
+class(respondent_wall_type)
+typeof(respondent_wall_type)
+
+possession <- c("bicyle", "radio", "television")
+possession
+possession <- c( possession, "mobile phone")
+possession
+
+num_char <- c(1, 2, 3, "a")
+num_char
+class(num_char)
+
