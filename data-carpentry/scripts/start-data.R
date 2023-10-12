@@ -5,8 +5,13 @@
 #  "data/SAFI_clean.csv", mode = "wb"
 #)
 
+# load packages
 library(here)
 library(tidyverse)
+
+# loading data
+read_csv(here("data/SAFI_clean.csv"))
+
 
 
 
