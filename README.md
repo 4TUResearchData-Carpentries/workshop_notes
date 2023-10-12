@@ -9,7 +9,7 @@ _To whom this may concern._
 
 Here you find the "lesson notes", that is the commands that the instructors type during the workshop lessons.  
 During the R lesson, these commands are continuously appended to the directory `data-carpentry`.
-This directory contains the RStudio project you have working with in class.
+This directory contains the RStudio project you have working with in class, except for empty directories.
 
 #### Usage
 
@@ -17,7 +17,7 @@ This directory contains the RStudio project you have working with in class.
 Consider that instructors may not follow the on-line lesson material verbatim.  
 So, referring to these notes may be more helpful and effective than browsing the [Carpentries lesson material](https://datacarpentry.org/r-socialsci/index.html).  
 2. You can bring up the file of your lesson upon clicking _exactly on the file name_ (hence not anywhere else in the line) in the list of document above in this page.  
-The R of script of day 1 is [here](**add link**)
+The R script of the episode 'Introduction to R'  is [here -- link to be set](https://github.com/4TUResearchData-Carpentries/workshop_notes/blob/2310-ldev-delft/data-carpentry/.../...)
 3. Please refresh the webpage with the lesson notes. So, you will view the latest commands as the instructor types and the notes grow.
 4. Please notify the instructor if you notice that the lesson notes are not up to date; s/he may have lost the connection with the repository.
 
