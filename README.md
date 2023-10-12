@@ -25,7 +25,7 @@ The R script of the episode 'Introduction to R'  is [here -- link to be set](htt
 You are also encouraged to bookmark these URLs for an easy navigation during the workshop:
 
 1. Carpentries announcement: https://4turesearchdata-carpentries.github.io/2023-10-12-ldev-delft/
-2. Collaborative document: **replace this text with a link to, typically, a public Google Doc or a pad**
+2. Collaborative document:  https://docs.google.com/document/d/1TyWEBjjYDAlO0WLLcGwNLTEE6ao2BPinMeDoqsoAttU/edit?usp=drivesdk
 3. This page: https://github.com/4TUResearchData-Carpentries/workshop_notes/tree/2310-ldev-delft
 4. Short link to this page: https://bit.ly/2310-ldev-delft
 5. The data set used during the workshop: https://raw.githubusercontent.com/datacarpentry/r-socialsci/main/episodes/data/SAFI_clean.csv
