@@ -15,3 +15,4 @@ area_hectares
 (area_hectares <- 1.0)  # assign and print at once
 2.47 * area_hectares
 (area_acres <- area_hectares * 2.47)
+area_hectares <- 50
