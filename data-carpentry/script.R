@@ -61,3 +61,9 @@ num_char <- c(1, 2, 3, "a")
 num_char
 class(num_char)
 
+num_char[1]
+num_char[4]
+num_char[c(2,3)]
+
+possession[c(2,3)]
+possession[c(2,3,1,3,4,2,4,1,2,4)]
