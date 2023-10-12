@@ -79,3 +79,6 @@ hh_members[c(TRUE, FALSE, TRUE, TRUE)]
 hh_members
 hh_members == 7
 hh_members[hh_members == 7]
+hh_members[hh_members < 7]
+
+# Missing values
