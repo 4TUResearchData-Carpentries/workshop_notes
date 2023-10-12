@@ -14,8 +14,8 @@ interviews <- read_csv(here("data/SAFI_clean.csv"), na = "NULL")
 interviews
 
 view(interviews)
-
-
+head(interviews, n = 20)
+class(interviews)
 
 
 
