@@ -13,6 +13,12 @@ area_hectares <- 2.0
 area_hectares 
 1.0 -> area_hectares  # possible but uncommon
 (area_hectares <- 1.0)  # assign and print at once
-2.47 * area_hectares
-(area_acres <- area_hectares * 2.47)
-area_hectares <- 50
+2.47 * area_hectares  # 
+(area_acres <- area_hectares * 2.47)  #
+area_hectares <- 50  #  
+
+# exercise compute area of a rectangle
+r_length <- 2
+r_width <- 5
+r_area <- r_length * r_width
+
