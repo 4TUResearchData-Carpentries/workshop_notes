@@ -10,7 +10,7 @@ library(here)
 library(tidyverse)
 
 # loading data
-read_csv(here("data/SAFI_clean.csv"))
+interviews <- read_csv(here("data/SAFI_clean.csv"))
 
 
 
