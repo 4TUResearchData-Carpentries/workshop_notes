@@ -67,3 +67,8 @@ num_char[c(2,3)]
 
 possession[c(2,3)]
 possession[c(2,3,1,3,4,2,4,1,2,4)]
+
+hh_members
+hh_members[c(TRUE, FALSE, TRUE, TRUE)]
+
+3 > 5
