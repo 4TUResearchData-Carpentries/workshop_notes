@@ -24,3 +24,9 @@ r_area <- r_length * r_width
 r_area
 
 # functions
+round()
+round(pi)
+round_pi <- round(pi)
+(round_pi <- round(pi))
+rounded_number <- round(45732.2876743)
+round
