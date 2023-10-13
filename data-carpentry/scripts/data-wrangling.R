@@ -44,4 +44,13 @@ filter(interviews, village == "Chirodzo" |
 
 # Pipes -------------------------------------------------------------------
 
+interviews_tmp <- filter(interviews, village == "Chirodzo")
+interviews_ch <- select(interviews_tmp, village:respondent_wall_type)
+interviews_ch
+
+interviews_ch <- select(filter(interviews, village == "Chirodzo"),
+                        village:respondent_wall_type)
+interviews_ch
+
+
 
