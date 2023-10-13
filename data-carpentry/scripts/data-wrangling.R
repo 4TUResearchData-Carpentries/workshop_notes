@@ -107,5 +107,6 @@ interviews %>%
             max_rooms = max(rooms)
             ) 
 
+# average hh size by village & membr assoc
 
 
