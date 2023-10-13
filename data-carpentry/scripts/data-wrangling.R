@@ -69,3 +69,9 @@ interviews %>%
 
 interviews %>%
   select(affect_conflicts, liv_count, no_meals)
+
+
+
+# Create new columns with mutate ------------------------------------------
+
+
