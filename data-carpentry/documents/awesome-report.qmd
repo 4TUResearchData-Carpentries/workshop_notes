@@ -70,8 +70,7 @@ interviews_plotting %>%
   geom_boxplot(width = 0.2)
 ```
 
-
-![](../fig_output/myfirstplot.png)
+See my plot (@fig-myplot) and table (@tbl-interviews).
 
 
 
