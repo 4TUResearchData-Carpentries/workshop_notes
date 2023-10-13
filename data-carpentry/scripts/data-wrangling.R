@@ -53,4 +53,3 @@ interviews_ch <- select(filter(interviews, village == "Chirodzo"),
 interviews_ch
 
 
-
