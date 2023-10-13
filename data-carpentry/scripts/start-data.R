@@ -31,6 +31,15 @@ summary(interviews) # summary stats
 # Subsetting data frames --------------------------------------------------
 
 interviews[1,1] # index first row and first column, respectively
+interviews[1,6]
+# both return a tibble
 
+interviews[[2]]
 
+interviews[c(1,2,3),5]
+interviews[1:3, 5] # first 3 rows of 5th column
+
+interviews[2,] # 2nd row, all columns
+interviews[1:6,] # first 6 rows, all columns
+interviews[,1:3]
 
