@@ -95,3 +95,8 @@ interviews4 <-interviews %>%
   select(village, total_meals)
 
 interviews4
+
+
+#  split-apply combine with group_by --------------------------------------
+
+
