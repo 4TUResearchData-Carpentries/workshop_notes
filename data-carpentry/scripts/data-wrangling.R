@@ -152,4 +152,24 @@ interviews_items_owned <-interviews_items_owned %>%
 
 nrow(interviews_items_owned)
 
+interviews_plotting <- interviews %>%
+  ## pivot wider by items_owned
+  separate_longer_delim(items_owned, delim = ";") %>%
+  ## if there were no items listed, changing NA to no_listed_items
+  replace_na(list(items_owned = "no_listed_items")) %>%
+  mutate(items_owned_logical = TRUE) %>%
+  pivot_wider(names_from = items_owned,
+              values_from = items_owned_logical,
+              values_fill = FALSE) %>%
+  ## pivot wider by months_lack_food
+  separate_longer_delim(months_lack_food, delim = ";") %>%
+  mutate(months_lack_food_logical = TRUE) %>%
+  pivot_wider(names_from = months_lack_food,
+              values_from = months_lack_food_logical,
+              values_fill = FALSE) %>%
+  ## add some summary columns
+  mutate(number_months_lack_food = rowSums(select(., Jan:May))) %>%
+  mutate(number_items = rowSums(select(., bicycle:car)))
 
+## save the dataframe to our data_output directory
+write_csv(interviews_plotting, file = here("data_output/interviews_plotting.csv"))
