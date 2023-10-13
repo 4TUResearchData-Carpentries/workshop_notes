@@ -51,7 +51,8 @@ interviews_plotting %>%
   filter(!is.na(memb_assoc)) %>% 
   group_by(village, memb_assoc) %>% 
   summarise(mean_no_members = mean(no_membrs)) %>% 
-  knitr::kable()
+  knitr::kable(caption = "This is a table.",
+               col.names = c("Village", "Member", "Mean members"))
 ```
 
 
