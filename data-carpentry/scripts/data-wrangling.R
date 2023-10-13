@@ -54,6 +54,8 @@ interviews_ch
 
 
 # Use pipes!
+interviews_ch <- interviews %>%
+  filter(village ==  "Chirodzo") %>%
+  select(village:respondent_wall_type)
 
-
-
+interviews_ch
