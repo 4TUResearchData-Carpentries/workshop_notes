@@ -132,3 +132,5 @@ interviews %>%
 
 head(interviews$items_owned)
 
+interviews_items_owned <- interviews %>%
+  separate_longer_delim(items_owned, delim = ";")
