@@ -48,7 +48,7 @@ c. respondent_wall_type
 
 ```{r}
 interviews_plotting %>% 
-  filter(!in.na(memb_assoc)) %>% 
+  filter(!is.na(memb_assoc)) %>% 
   group_by(village, memb_assoc) %>% 
   summarise(mean_no_members = mean(no_membrs))
 ```
