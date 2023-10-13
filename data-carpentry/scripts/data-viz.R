@@ -6,4 +6,5 @@ interviews_plotting <- read_csv(here("data_output/interviews_plotting.csv"))
 # Our first plot
 
 interviews_plotting %>% 
-  ggplot()
+  ggplot(aes(x = no_membrs, y = number_items)) +
+    geom_point(alpha = 0.5)
