@@ -41,5 +41,16 @@ interviews[1:3, 5] # first 3 rows of 5th column
 
 interviews[2,] # 2nd row, all columns
 interviews[1:6,] # first 6 rows, all columns
-interviews[,1:3]
+interviews[,1:3] # all rows, first 3 columns
 
+interviews[,-2] # everything except second column
+interviews[-c(7:131), ] # everything except rows 7 to 131
+
+mean(interviews[[1]]) # works
+mean(interviews[,1]) # doesn't
+
+interviews["village"] # village column as tibble
+interviews[,"village"] # same
+interviews[["village"]] # village as vector
+interviews$years_liv # years_liv column as vector
+interviews$village
