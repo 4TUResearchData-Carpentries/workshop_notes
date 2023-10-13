@@ -147,22 +147,54 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>interviews_plotting <span class="sc">%&gt;%</span> </span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(memb_assoc)) <span class="sc">%&gt;%</span> </span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(village, memb_assoc) <span class="sc">%&gt;%</span> </span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">mean_no_members =</span> <span class="fu">mean</span>(no_membrs))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">mean_no_members =</span> <span class="fu">mean</span>(no_membrs)) <span class="sc">%&gt;%</span> </span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>  knitr<span class="sc">::</span><span class="fu">kable</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>`summarise()` has grouped output by 'village'. You can override using the
 `.groups` argument.</code></pre>
 </div>
-<div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 6 × 3
-# Groups:   village [3]
-  village  memb_assoc mean_no_members
-  &lt;chr&gt;    &lt;chr&gt;                &lt;dbl&gt;
-1 Chirodzo no                    8.06
-2 Chirodzo yes                   7.82
-3 God      no                    7.13
-4 God      yes                   8   
-5 Ruaca    no                    7.18
-6 Ruaca    yes                   9.5 </code></pre>
+<div class="cell-output-display">
+<table class="table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: left;">village</th>
+<th style="text-align: left;">memb_assoc</th>
+<th style="text-align: right;">mean_no_members</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Chirodzo</td>
+<td style="text-align: left;">no</td>
+<td style="text-align: right;">8.062500</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Chirodzo</td>
+<td style="text-align: left;">yes</td>
+<td style="text-align: right;">7.818182</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">God</td>
+<td style="text-align: left;">no</td>
+<td style="text-align: right;">7.133333</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">God</td>
+<td style="text-align: left;">yes</td>
+<td style="text-align: right;">8.000000</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Ruaca</td>
+<td style="text-align: left;">no</td>
+<td style="text-align: right;">7.178571</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Ruaca</td>
+<td style="text-align: left;">yes</td>
+<td style="text-align: right;">9.500000</td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 </section>
