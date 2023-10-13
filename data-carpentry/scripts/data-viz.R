@@ -71,4 +71,10 @@ percent_wall_type %>%
          y = "Percent",
          title = "Proportion of wall type by village",
          fill = "Type of wall in home") +
-    facet_wrap(~ village)
+    facet_wrap(~ village) +
+    theme_bw() +
+    theme(panel.grid.major.x = element_blank(),
+          panel.grid.major.y = element_line(colour = "blue"))
+
+ggsave("fig_output/myfirstplot.png")
+
