@@ -102,5 +102,8 @@ interviews4
 # average hh size by village 
 interviews %>%
   group_by(village) %>%
-  summarize(mean_no_membrs = mean(no_membrs) )
+  summarize(mean_no_membrs = mean(no_membrs),
+            min_membrs = min(no_membrs),
+            max_rooms = max(rooms)
+            )
 
