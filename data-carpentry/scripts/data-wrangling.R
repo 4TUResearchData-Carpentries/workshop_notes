@@ -16,7 +16,7 @@ interviews <- read_csv(here("data", "SAFI_clean.csv"), na = "NULL")
 
 # Subseting by columns ----------------------------------------------------
 
-
+select(interviews, village, no_membrs, months_lack_food)
 
 
 
