@@ -61,4 +61,11 @@ interviews_ch <- interviews %>%
 interviews_ch
 
 
-#exercise 1 
+#exercise 1
+
+interviews %>%
+  filter(memb_assoc == "yes") %>%
+  select(affect_conflicts, liv_count, no_meals)
+
+interviews %>%
+  select(affect_conflicts, liv_count, no_meals)
