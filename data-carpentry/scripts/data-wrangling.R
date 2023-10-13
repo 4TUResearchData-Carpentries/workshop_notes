@@ -76,4 +76,5 @@ interviews %>%
 
 # average number of hh members per room
 
-
+interviews %>%
+  mutate(people_per_room = no_membrs/rooms)
