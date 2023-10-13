@@ -105,5 +105,7 @@ interviews %>%
   summarize(mean_no_membrs = mean(no_membrs),
             min_membrs = min(no_membrs),
             max_rooms = max(rooms)
-            )
+            ) 
+
+
 
