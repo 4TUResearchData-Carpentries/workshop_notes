@@ -85,3 +85,13 @@ interviews2 <- interviews %>%
 interviews2 <- interviews %>%
   filter(!is.na(memb_assoc)) %>%
   mutate( people_per_room = no_membrs /rooms)
+
+
+# Exercise 2 
+
+interviews4 <-interviews %>%
+  mutate(total_meals = no_membrs * no_meals) %>%
+  filter(total_meals > 20) %>%
+  select(village, total_meals)
+
+interviews4
