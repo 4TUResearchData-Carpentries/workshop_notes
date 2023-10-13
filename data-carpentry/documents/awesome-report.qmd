@@ -62,6 +62,7 @@ interviews_plotting %>%
 ```{r}
 #| label: fig-myplot
 #| fig-cap: "This is a plot."
+#| echo: false
 
 interviews_plotting %>% 
   filter(respondent_wall_type != "cement") %>% 
