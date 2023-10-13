@@ -54,3 +54,5 @@ interviews[,"village"] # same
 interviews[["village"]] # village as vector
 interviews$years_liv # years_liv column as vector
 interviews$village
+
+# https://bbartholdy.github.io/2023-10-12_dc-ldev_slides/start-data.html#/exercise-1
