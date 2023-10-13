@@ -62,18 +62,11 @@ interviews_plotting %>%
 ```{r}
 #| label: fig-myplot
 
-percent_wall_type %>% 
-  ggplot(aes(x = respondent_wall_type, 
-             y = percent)) +
-    geom_bar(stat = "identity", position = "dodge") +
-    labs(x = "Village",
-         y = "Percent",
-         title = "Proportion of wall type by village",
-         fill = "Type of wall in home") +
-    facet_wrap(~ village) +
-    theme_bw() +
-    theme(panel.grid.major.x = element_blank(),
-          panel.grid.major.y = element_line(colour = "blue"))
+interviews_plotting %>% 
+  filter(respondent_wall_type != "cement") %>% 
+  ggplot(aes(x = respondent_wall_type, y = rooms)) +
+  geom_violin(aes(fill = respondent_wall_type)) +
+  geom_boxplot(width = 0.2)
 ```
 
 
