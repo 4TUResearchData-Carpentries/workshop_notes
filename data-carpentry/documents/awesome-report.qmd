@@ -4,6 +4,12 @@ author: me
 format: html
 ---
 
+```{r}
+library(here)
+library(tidyverse)
+```
+
+
 # Title
 ## Section
 ### Sub-section
