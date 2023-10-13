@@ -149,3 +149,7 @@ interviews_items_owned <-interviews_items_owned %>%
   pivot_wider(names_from = items_owned, 
               values_from = items_owned_logical, 
               values_fill = FALSE )
+
+nrow(interviews_items_owned)
+
+
