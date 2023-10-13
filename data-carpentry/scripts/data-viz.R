@@ -11,3 +11,17 @@ interviews_plotting %>%
 
 # Another plot
 
+interviews_plotting %>% 
+  ggplot(aes(x = no_membrs, y = number_items)) +
+    geom_jitter(alpha = 0.3,
+                width = 0.2,
+                height = 0.2,
+                colour = "blue")
+
+interviews_plotting %>% 
+  ggplot(aes(x = no_membrs, 
+             y = number_items, 
+             col = village)) +
+    geom_jitter()
+
+
