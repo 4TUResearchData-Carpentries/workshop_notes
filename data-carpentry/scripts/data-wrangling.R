@@ -134,3 +134,7 @@ head(interviews$items_owned)
 
 interviews_items_owned <- interviews %>%
   separate_longer_delim(items_owned, delim = ";")
+
+head(interviews_items_owned$items_owned)
+
+interviews_items_owned["items_owned"]
