@@ -152,6 +152,8 @@ interviews_items_owned <-interviews_items_owned %>%
 
 nrow(interviews_items_owned)
 
+
+#Interviews for plotting
 interviews_plotting <- interviews %>%
   ## pivot wider by items_owned
   separate_longer_delim(items_owned, delim = ";") %>%
