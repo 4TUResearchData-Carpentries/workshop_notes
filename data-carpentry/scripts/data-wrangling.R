@@ -28,5 +28,9 @@ select(interviews, village:respondent_wall_type)
 
 filter(interviews, village == "Chirodzo")
 
+# filtering with AND statement
+
+
+
 
 
