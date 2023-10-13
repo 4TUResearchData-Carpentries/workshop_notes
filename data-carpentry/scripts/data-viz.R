@@ -3,3 +3,7 @@ library(tidyverse)
 
 interviews_plotting <- read_csv(here("data_output/interviews_plotting.csv"))
 
+# Our first plot
+
+interviews_plotting %>% 
+  ggplot()
