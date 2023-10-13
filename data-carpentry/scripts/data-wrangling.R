@@ -78,3 +78,8 @@ interviews %>%
 
 interviews2 <- interviews %>%
   mutate(people_per_room = no_membrs/rooms)
+
+
+# filter out cases with missing values in memb_assoc
+
+
