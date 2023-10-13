@@ -3,7 +3,7 @@
 **When** 12-13 Oct 2023  
 **Where** TU Delft Library
 
-_To whom this may concern._
+_To whom this may concern._ 
 
 #### Content
 
@@ -18,7 +18,7 @@ Consider that instructors may not follow the on-line lesson material verbatim.
 So, referring to these notes may be more helpful and effective than browsing the [Carpentries lesson material](https://datacarpentry.org/r-socialsci/index.html).  
 2. You can bring up the file of your lesson upon clicking _exactly on the file name_ (hence not anywhere else in the line) in the list of document above in this page.  
     * The R script of the episode **Introduction to R** (Giordano)  is [here](https://github.com/4TUResearchData-Carpentries/workshop_notes/blob/2310-ldev-delft/data-carpentry/script.R)
-    * The script of the episode **Starting with Data** (Bjorn) is [here](https://github.com/4TUResearchData-Carpentries/workshop_notes/blob/2310-ldev-delft/data-carpentry/scripts/start-data.R)
+    * The R script of the episode **Starting with Data** (Bjorn) is [here](https://github.com/4TUResearchData-Carpentries/workshop_notes/blob/2310-ldev-delft/data-carpentry/scripts/start-data.R)
 3. Please refresh the webpage with the lesson notes. So, you will view the latest commands as the instructor types and the notes grow.
 4. Please notify the instructor if you notice that the lesson notes are not up to date; s/he may have lost the connection with the repository.
 
