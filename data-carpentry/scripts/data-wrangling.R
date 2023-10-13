@@ -36,8 +36,9 @@ filter(interviews, village == "Chirodzo" &
 
 # filtering with OR statement
 
-filter(interviews, village == "Chirodzo" |
+filter(interviews, village == "Chirodzo" | 
          rooms > 1 |
          no_meals > 2 )
+
 
 
