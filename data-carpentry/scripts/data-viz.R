@@ -34,4 +34,12 @@ pl +
 
 # Box plots ---------------------------------------------------------------
 
-
+interviews_plotting %>% 
+  ggplot(aes(x = respondent_wall_type, y = rooms)) +
+    geom_boxplot()
+  
+  
+  
+  
+  
+  
