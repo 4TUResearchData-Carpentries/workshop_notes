@@ -74,4 +74,6 @@ interviews %>%
 
 # Create new columns with mutate ------------------------------------------
 
+# average number of hh members per room
+
 
