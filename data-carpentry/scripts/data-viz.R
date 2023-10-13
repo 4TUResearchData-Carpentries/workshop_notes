@@ -36,9 +36,15 @@ pl +
 
 interviews_plotting %>% 
   ggplot(aes(x = respondent_wall_type, y = rooms)) +
-    geom_boxplot()
+    geom_boxplot() +
+    geom_jitter(width = 0.2,
+                height = 0.2,
+                alpha = 0.3)
   
-  
+interviews_plotting %>% 
+  ggplot(aes(x = respondent_wall_type, y = rooms)) +
+  geom_boxplot() +
+  geom_violin()
   
   
   
