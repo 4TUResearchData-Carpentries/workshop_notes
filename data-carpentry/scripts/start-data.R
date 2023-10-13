@@ -56,3 +56,17 @@ interviews$years_liv # years_liv column as vector
 interviews$village
 
 # https://bbartholdy.github.io/2023-10-12_dc-ldev_slides/start-data.html#/exercise-1
+
+# Exercise 1
+
+interviews_100 <- interviews[100,]
+nrow(interviews)
+interviews[131,]
+n_row <- nrow(interviews)
+interviews[nrow(interviews),]
+interviews[n_row,]
+
+# Factors
+
+
+
