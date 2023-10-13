@@ -42,9 +42,11 @@ interviews_plotting %>%
                 alpha = 0.3)
   
 interviews_plotting %>% 
+  filter(respondent_wall_type != "cement") %>% 
   ggplot(aes(x = respondent_wall_type, y = rooms)) +
-  geom_boxplot() +
-  geom_violin()
+  geom_violin(aes(fill = respondent_wall_type)) +
+  geom_boxplot(width = 0.2)
+  
   
   
   
