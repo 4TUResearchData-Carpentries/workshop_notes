@@ -76,5 +76,5 @@ percent_wall_type %>%
     theme(panel.grid.major.x = element_blank(),
           panel.grid.major.y = element_line(colour = "blue"))
 
-ggsave("fig_output/myfirstplot.png")
+ggsave("fig_output/myfirstplot.png", width = 15, height = 10)
 
