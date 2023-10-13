@@ -24,4 +24,7 @@ interviews_plotting %>%
              col = village)) +
     geom_jitter()
 
-
+pl <- interviews_plotting %>% 
+  ggplot(aes(x = no_membrs, 
+             y = number_items, 
+             col = village))
