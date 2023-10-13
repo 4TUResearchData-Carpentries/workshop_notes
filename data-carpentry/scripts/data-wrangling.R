@@ -142,4 +142,6 @@ interviews_items_owned["items_owned"]
 interviews_items_owned <- interviews_items_owned %>%
   replace_na(list(items_owned = "no_listed_items"))
 
+dim(interviews_items_owned)
+
 
