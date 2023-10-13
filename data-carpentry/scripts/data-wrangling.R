@@ -24,3 +24,9 @@ interviews[c("village", "no_membrs", "months_lack_food")]
 select(interviews, village:respondent_wall_type)
 
 
+# Subsetting by rows ------------------------------------------------------
+
+filter(interviews, village == "Chirodzo")
+
+
+
