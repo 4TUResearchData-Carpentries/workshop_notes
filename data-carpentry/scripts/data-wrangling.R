@@ -116,5 +116,11 @@ interviews %>%
 
 # Exercise 3 
 
-
+interviews %>%
+  group_by(village) %>%
+  summarize(mean_members= mean(no_membrs),
+            min_members = min(no_membrs),
+            max_members = max(no_membrs),
+            count = n()
+            )
 
