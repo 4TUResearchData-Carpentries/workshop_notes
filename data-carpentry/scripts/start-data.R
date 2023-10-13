@@ -28,4 +28,9 @@ str(interviews) # structure of data
 summary(interviews) # summary stats
 
 
+# Subsetting data frames --------------------------------------------------
+
+interviews[1,1] # index first row and first column, respectively
+
+
 
