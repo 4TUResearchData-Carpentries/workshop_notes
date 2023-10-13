@@ -7,4 +7,7 @@ interviews_plotting <- read_csv(here("data_output/interviews_plotting.csv"))
 
 interviews_plotting %>% 
   ggplot(aes(x = no_membrs, y = number_items)) +
-    geom_point(alpha = 0.5)
+    geom_point(alpha = 0.3) # scatter plot
+
+# Another plot
+
