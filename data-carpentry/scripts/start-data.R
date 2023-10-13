@@ -68,5 +68,12 @@ interviews[n_row,]
 
 # Factors
 
+respondent_floor_type <- factor(
+  c("earth", "cement", "cement", "earth")) # create a factor
+respondent_floor_type <- factor(
+  respondent_floor_type, levels = c("earth", "cement")
+) # reorder levels of factor
+respondent_floor_type
 
+levels(respondent_floor_type) # what levels are present
 
