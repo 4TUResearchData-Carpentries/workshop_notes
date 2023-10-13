@@ -59,6 +59,13 @@ interviews_plotting %>%
   knitr::kable(col.names = c("Village", "Member", "Mean members"))
 ```
 
+```{r}
+#| label: fig-myplot
+
+
+```
+
+
 ![](../fig_output/myfirstplot.png)
 
 
