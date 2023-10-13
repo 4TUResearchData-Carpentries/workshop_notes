@@ -128,3 +128,6 @@ interviews %>%
   count(village)
 
 
+# pivotting with tidyr ----------------------------------------------------
+
+
