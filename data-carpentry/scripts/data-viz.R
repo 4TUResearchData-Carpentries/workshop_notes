@@ -46,8 +46,25 @@ interviews_plotting %>%
   ggplot(aes(x = respondent_wall_type, y = rooms)) +
   geom_violin(aes(fill = respondent_wall_type)) +
   geom_boxplot(width = 0.2)
+
+
+# Barplots ----------------------------------------------------------------
+
+interviews_plotting %>% 
+  ggplot(aes(x = respondent_wall_type, fill = village)) +
+    geom_bar(position = "dodge")
+
+# create a proportional plot
+
+percent_wall_type <- interviews_plotting %>% 
+  filter(respondent_wall_type != "cement") %>% 
+  count(village, respondent_wall_type) %>% 
+  group_by(village) %>% 
+  mutate(percent = (n / sum(n)) * 100) %>% 
+  ungroup()
   
-  
-  
-  
-  
+percent_wall_type %>% 
+  ggplot(aes(x = village, 
+             y = percent, 
+             fill = respondent_wall_type)) +
+    geom_bar()
