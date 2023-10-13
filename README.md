@@ -19,7 +19,8 @@ So, referring to these notes may be more helpful and effective than browsing the
 2. You can bring up the file of your lesson upon clicking _exactly on the file name_ (hence not anywhere else in the line) in the list of document above in this page.  
     * The R script of the episode **Introduction to R** (Giordano)  is [here](https://github.com/4TUResearchData-Carpentries/workshop_notes/blob/2310-ldev-delft/data-carpentry/script.R)
     * The R script of the episode **Starting with Data** (Bjorn) is [here](https://github.com/4TUResearchData-Carpentries/workshop_notes/blob/2310-ldev-delft/data-carpentry/scripts/start-data.R)
-        * The R script of the episode **Data wrangling** (Aleks) is [here](https://github.com/4TUResearchData-Carpentries/workshop_notes/blob/2310-ldev-delft/data-carpentry/scripts/data-wrangling.R)
+    * The R script of the episode **Data wrangling** (Aleks) is [here](https://github.com/4TUResearchData-Carpentries/workshop_notes/blob/2310-ldev-delft/data-carpentry/scripts/data-wrangling.R)
+    * The Quarto document of the episode **Quarto and data viz** is [here](https://github.com/4TUResearchData-Carpentries/workshop_notes/tree/2310-ldev-delft/data-carpentry/documents/awesome-report.qmd)
 3. Please refresh the webpage with the lesson notes. So, you will view the latest commands as the instructor types and the notes grow.
 4. Please notify the instructor if you notice that the lesson notes are not up to date; s/he may have lost the connection with the repository.
 
