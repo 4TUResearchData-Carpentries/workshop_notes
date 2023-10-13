@@ -99,4 +99,6 @@ interviews4
 
 #  split-apply combine with group_by --------------------------------------
 
+# average hh size by village 
+
 
