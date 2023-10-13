@@ -9,4 +9,10 @@ format: html
 ### Sub-section
 #### Sub-sub-section...........
 
+## Introduction
+
+This report uses the tidyverse package along with the SAFI
+dataset, which has columns that include:
+
+
 
