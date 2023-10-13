@@ -138,3 +138,6 @@ interviews_items_owned <- interviews %>%
 head(interviews_items_owned$items_owned)
 
 interviews_items_owned["items_owned"]
+
+
+
