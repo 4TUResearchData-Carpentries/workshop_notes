@@ -111,6 +111,7 @@ interviews %>%
 interviews %>%
   group_by(village, memb_assoc) %>%
   summarize(mean_membrs = mean(no_membrs)) %>%
-  filter(!is.na(memb_assoc))
+  filter(!is.na(memb_assoc)) %>%
+  arrange(mean_membrs)
 
 
