@@ -59,3 +59,6 @@ interviews_ch <- interviews %>%
   select(village:respondent_wall_type)
 
 interviews_ch
+
+
+#exercise 1 
