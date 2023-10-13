@@ -114,4 +114,7 @@ interviews %>%
   filter(!is.na(memb_assoc)) %>%
   arrange(desc(mean_membrs))
 
+# Exercise 3 
+
+
 
