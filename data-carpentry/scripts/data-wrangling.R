@@ -18,6 +18,7 @@ interviews <- read_csv(here("data", "SAFI_clean.csv"), na = "NULL")
 
 select(interviews, village, no_membrs, months_lack_food)
 
+interviews[c("village", "no_membrs", "months_lack_food")]
 
 
 
