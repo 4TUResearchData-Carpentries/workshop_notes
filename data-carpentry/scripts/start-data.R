@@ -77,3 +77,12 @@ respondent_floor_type
 
 levels(respondent_floor_type) # what levels are present
 
+as.character(respondent_floor_type)
+
+year_fct <- factor(c(1990, 1983, 1977, 1998, 1990))
+as.numeric(year_fct) 
+
+as.numeric(as.character(year_fct)) # convert first to char then to num
+as.numeric(levels(year_fct))[year_fct] # preferred
+
+
