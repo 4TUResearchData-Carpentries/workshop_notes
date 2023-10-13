@@ -21,7 +21,7 @@ interviews_plotting <- read_csv(here("data_output/interviews_plotting.csv"))
 
 ## Introduction
 
-This report uses the **tidyverse** package along with the *SAFI*
+This report was rendered on `r Sys.Date()`, and uses the **tidyverse** package along with the *SAFI*
 dataset, which has ***columns*** that include:
 
 - village
