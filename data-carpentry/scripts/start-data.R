@@ -19,13 +19,13 @@ class(interviews)
 
 # Inspecting data frame
 
-dim(interviews)
-nrow(interviews)
-ncol(interviews)
-tail(interviews)
-names(interviews)
-str(interviews)
-summary(interviews)
+dim(interviews) # dimensions
+nrow(interviews) # number of rows
+ncol(interviews) # number of columns
+tail(interviews) # last 6 rows
+names(interviews) # names of columns
+str(interviews) # structure of data
+summary(interviews) # summary stats
 
 
 
