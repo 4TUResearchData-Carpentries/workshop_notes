@@ -27,6 +27,9 @@ Ordered list:
 2. years_liv
 3. respondent_wall_type
 
+a. village
+b. years_liv
+c. respondent_wall_type
 
 
 
