@@ -126,3 +126,5 @@ interviews %>%
 
 interviews %>%
   count(village)
+
+
