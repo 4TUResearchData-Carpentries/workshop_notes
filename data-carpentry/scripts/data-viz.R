@@ -64,10 +64,11 @@ percent_wall_type <- interviews_plotting %>%
   ungroup()
   
 percent_wall_type %>% 
-  ggplot(aes(x = village, 
-             y = percent, 
-             fill = respondent_wall_type)) +
+  ggplot(aes(x = respondent_wall_type, 
+             y = percent)) +
     geom_bar(stat = "identity", position = "dodge") +
     labs(x = "Village",
          y = "Percent",
-         title = "Proportion of wall type by village")
+         title = "Proportion of wall type by village",
+         fill = "Type of wall in home") +
+    facet_wrap(~ village)
