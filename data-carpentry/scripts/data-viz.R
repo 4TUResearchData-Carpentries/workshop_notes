@@ -67,4 +67,4 @@ percent_wall_type %>%
   ggplot(aes(x = village, 
              y = percent, 
              fill = respondent_wall_type)) +
-    geom_bar()
+    geom_bar(stat = "identity")
