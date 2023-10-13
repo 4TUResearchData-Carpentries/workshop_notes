@@ -100,5 +100,7 @@ interviews4
 #  split-apply combine with group_by --------------------------------------
 
 # average hh size by village 
-
+interviews %>%
+  group_by(village) %>%
+  summarize(mean_no_membrs = mean(no_membrs) )
 
