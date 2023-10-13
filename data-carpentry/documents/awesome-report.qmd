@@ -51,12 +51,12 @@ c. respondent_wall_type
 #| message: false
 #| warning: false
 #| echo: false
+#| tbl-cap: "This is a table."
 interviews_plotting %>% 
   filter(!is.na(memb_assoc)) %>% 
   group_by(village, memb_assoc) %>% 
   summarise(mean_no_members = mean(no_membrs)) %>% 
-  knitr::kable(caption = "This is a table.",
-               col.names = c("Village", "Member", "Mean members"))
+  knitr::kable(col.names = c("Village", "Member", "Mean members"))
 ```
 
 
