@@ -17,5 +17,15 @@ view(interviews)
 head(interviews, n = 20)
 class(interviews)
 
+# Inspecting data frame
+
+dim(interviews)
+nrow(interviews)
+ncol(interviews)
+tail(interviews)
+names(interviews)
+str(interviews)
+summary(interviews)
+
 
 
