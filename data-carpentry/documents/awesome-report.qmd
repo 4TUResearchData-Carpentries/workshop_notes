@@ -11,7 +11,7 @@ format: html
 
 ## Introduction
 
-This report uses the tidyverse package along with the SAFI
+This report uses the **tidyverse** package along with the *SAFI*
 dataset, which has columns that include:
 
 
