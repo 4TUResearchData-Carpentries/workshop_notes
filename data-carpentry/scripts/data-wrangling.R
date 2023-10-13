@@ -130,4 +130,5 @@ interviews %>%
 
 # pivotting with tidyr ----------------------------------------------------
 
+head(interviews$items_owned)
 
