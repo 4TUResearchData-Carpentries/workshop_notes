@@ -59,7 +59,7 @@ interviews_plotting %>%
   knitr::kable(col.names = c("Village", "Member", "Mean members"))
 ```
 
-
+![](../fig_output/myfirstplot.png)
 
 
 
