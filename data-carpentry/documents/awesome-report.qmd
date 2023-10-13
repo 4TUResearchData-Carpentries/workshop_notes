@@ -47,6 +47,8 @@ c. respondent_wall_type
 ## Results
 
 ```{r}
+#| label: tbl-interviews
+#| echo: false
 interviews_plotting %>% 
   filter(!is.na(memb_assoc)) %>% 
   group_by(village, memb_assoc) %>% 
