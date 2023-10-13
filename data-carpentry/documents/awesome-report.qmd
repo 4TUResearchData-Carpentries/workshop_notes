@@ -15,6 +15,7 @@ This report uses the **tidyverse** package along with the *SAFI*
 dataset, which has columns that include:
 
 - village
+  + Name of village
 - interview_date
 - no_membrs
 - years_liv
@@ -30,6 +31,7 @@ Ordered list:
 a. village
 b. years_liv
 c. respondent_wall_type
+
 
 
 
