@@ -144,4 +144,8 @@ interviews_items_owned <- interviews_items_owned %>%
 
 dim(interviews_items_owned)
 
-
+interviews_items_owned <-interviews_items_owned %>%
+  mutate(items_owned_logical = TRUE) %>%
+  pivot_wider(names_from = items_owned, 
+              values_from = items_owned_logical, 
+              values_fill = FALSE )
