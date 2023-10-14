@@ -1,0 +1,15 @@
+
+    Lesson 2 Episode 1 --- commit in a secondary branch
+    Please perform the following tasks individually
+	    
+    1a. Stay in (or go to) branch B2 (the file Lines.txt contains
+        eight lines)
+    1b. Append a ninth and a tenth line in the usual way
+    1c. Make a single commit of these two changes
+        Specify the branch name in the commit message!
+    1d. Inspect the working tree
+    
+    Formulate your explanation of what you have observed
+    The following questions are two sides of the same coin:
+        What did you ask Git to do?
+        What did Git do for you?
