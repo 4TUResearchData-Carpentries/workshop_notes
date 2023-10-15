@@ -137,15 +137,15 @@ b. Paticipant accept inviation via email or GitHub GUI.
 
 Developing high quality software requires more than programming and technical skill. Exceptionally good programmers can produce high quality software by themselves. But good programmers will need to collaborate in order to develop complex, high quality software. 
 
-#### 1. Collaborative Development
+#### 1. Collaborative Development [ 3 mins]
 
 > An Quick introduction to collaborative development. Definitions  (Slides)
 
-#### 2. When to Aim for a Collaborative Approach? 
+#### 2. When to Aim for a Collaborative Approach? [2 min]
 
 > Explain the difference between private and close collaboration
 
-#### 3. Management Strategies [10 min]
+#### 3. Management Strategies [5 min]
 
 > Explain why management is important for developing software, the key factors to consider, and recommend a management strategy.
 
@@ -165,7 +165,9 @@ Developing high quality software requires more than programming and technical sk
 - Reviewer
 - Collaborator
 
-### 4. EXERCISE 2: Roles and Responsibilities [6 min]
+> Questions? [10 min]
+
+### 4. EXERCISE 2: Roles and Responsibilities [8 min]
 
 > Participant make teams, decide on roles and name their teams.
 
@@ -179,11 +181,11 @@ Developing high quality software requires more than programming and technical sk
 
 
 -----------------
-## BREAK 
+## BREAK [10 min]
 -----------------
 ## PART 2
 
-### a. Collaborative Workflows
+### a. Collaborative Workflows [8 min]
 
 Collaborative workflows are estrategies to organise the work of a developer team so that many developers can contribute to a software project. Two common estrategies that use version control and collaborative platforms as leverage are:
 
@@ -192,33 +194,33 @@ Collaborative workflows are estrategies to organise the work of a developer team
 
 >  A short explanation on branching workflow (slides)
 
-#### 1. EXERCISE 3: 
+#### 1. EXERCISE 3: Branching workflow [15 min]
 
 Teams work on coding taks using the branch worflow model.
 
-1. [Administrator] Creates a repository using the template:
-2. [Administrator] Invites all team members to the repository.
-3. [Team] Read the TODO list in the repository and each member takes on of the tasks
-4. [Team] Apply the branching model to work the chosen task.
-5. [Team] Commit and push changes to the repository.
+1. [Administrator] Creates a repository using [this template](https://github.com/the-magnificents/collab-branching)
+2. [Administrator] Invites all team members to the team's repository as collaborators.
+3. [Team] Read the `TODO.md` file and each member choses a tasks for the next step.
+4. [Team] Apply the branching model to complete the chosen task.
+5. [Team] Commit and push changes to the team's repository.
 
 
+#### 2. Pull requests 
 
+> ask if they already have experience with making pull request.
 
+Explain what they are and teams follow the steps to create a pull request from their branch to the main branch.
 
-#### Pull request
+#### 3. EXERCISE 4: Pull requests [6 min]
 
-Explain what they are and teams follow the steps to create a pull reques from their branch to the main branch.
-
-
-[CONTINUE HERE]
-
-
-
-
+Working as a team merge the changes made in the previous exercise into the main branch of the team’s repository.
+1. [Collaborators] create a pull request for their own branch.
+    - Give your pull request a meaning name, and a short description.
+2. Are there any conflicts? Resolve them using the GitHuB GUI. Ask for help if you need to.
+3. [Collaborators] Merge the pull request to the main branch using the method of their choice.
+4. Check the main branch to confirm that your changes have been merged.
 
 >  A short explanation on fork workflow (slides)
->
 
 
 ### 4. EXERCISE [20 mins]
