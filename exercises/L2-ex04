@@ -2,6 +2,7 @@
     Lesson 2 Episode 1 --- a first type of merge
     Please perform the following tasks individually
 
+    How many more lines has Lines.txt in B1 than in main?
     Please merge B1 in main
     Verify the outcome with a graphed `git log`
 
