@@ -1,9 +1,9 @@
 # Workshop Version Control and Collaborative Development for Research Software
 
-**When** 14, 15, 16 June 2023 (the pilot edition)  
+**When** 16, 17, 18, 19 October 2023 (the second edition)  
 **Where** Delft University of Technology  
 **Who, the instructors** Manuel Garcia Alvarez, Giordano Lipari  
-**Who, the helpers** Heather Andrews, Nicolas Dintzner, Niket Agrawal  
+**Who, the helpers** Lora Armstrong, Richard Grimes, Selin Kubilay, Raúl Ortiz Merino, Yasel Quintero Lares, Carlos Utrilla Guerrero
 
 ---
 ## 1. Workshop program
@@ -20,7 +20,11 @@ The time slots are not tied to the rolling out of self-contained topics.
 
 ### Content organisation
 
-The workshop is divided into **3 Lessons**, each given in one half a day. Each Lesson is further divided into **Episodes**, and then into **Chapters**. Unfold the detailed tables of contents in the listing below. As a disclaimer, the instructor may not cover all the intended material: see the following [Section 2](https://github.com/4TUResearchData-Carpentries/workshop_notes/edit/2306-VC+CD-TUD/README.md#type-along-notes-per-lesson) for the actual coverage.  
+The workshop is divided into **4 Lessons**, each given in one half a day. 
+Each Lesson is further divided into **Episodes**, and then into **Chapters**. 
+Unfold the detailed tables of contents in the listing below. 
+As a disclaimer, the instructor may not cover all the intended material: 
+see the following [Section 2](#2-lesson-notes) for the actual coverage.  
 
 <details> 
 <summary>
@@ -47,7 +51,7 @@ L1. FUNDAMENTAL OPERATIONS WITH GIT
 
 <details> 
 <summary>
-L2. BRANCHING AND REMOTE OPERATIONS
+L2. BRANCHING AND REMOTE OPERATIONS (to be revised)
 </summary>
   
 | Episode | Topic |
@@ -67,7 +71,7 @@ L2. BRANCHING AND REMOTE OPERATIONS
 
 <details> 
 <summary>
-L3. COLLABORATIVE SOFTWARE DEVELOPMENT
+L3. COLLABORATIVE SOFTWARE DEVELOPMENT (to be revised)
 </summary>
   
 | Episode | Topic |
@@ -91,17 +95,48 @@ L3. COLLABORATIVE SOFTWARE DEVELOPMENT
 </details>
 
 
+<details> 
+<summary>
+L4. COLLABORATIVE SOFTWARE DEVELOPMENT (to be composed)
+</summary>
+  
+| Episode | Topic |
+|:----|:----|
+| **4.1** | **Episode title** | 
+| --- | Chapter title |
+| --- | Chapter title |
+| **4.2** | **Episode title** |
+| --- | Chapter title |
+| --- | Chapter title |
+| **4.3** | **Episode title** | 
+| --- | Chapter title |
+| --- | Chapter title |
+
+</details>
+
 ---
 
-## 2. Type-along notes, per lesson
+## 2. Lesson notes
 
-The commands the instructors type on the screen during each lesson will be appended continuously to the documents **Lesson\*.\*** (extension may vary) found at the top of this web page, _above_ this document.
+The material of each lesson will be presented in documents named as **Lesson[1234].\*** (the file extension may vary).
+The documents are listed at the top of this web page, _above_ this text.
+There, bring up the file of your interest upon clicking _exactly on the file name_, hence to the left in the line. 
 
-Please use these lesson notes when you had to lag behind the instructor and need to catch up with the instructions. Bring up the file of the lesson upon clicking _exactly on the file name_ (to the left, hence not anywhere else, in the line). 
+### 2.1 Lesson 1 and 2: type-along notes
 
-Please refresh the page with the lesson notes in your browser (typically, hit `F5`). So, you will view the latest commands as the notes grow.
+The commands the instructors type on the screen during each lesson will be appended continuously to the documents **Lesson[12].\*** (the file extension may vary).
 
-<!-- After the end of the lesson the instructors will decorate the type-along notes with the division in Chapters and Episodes -->
+Please use these lesson notes when you had to lag behind the instructor and need to catch up with the instructions. 
+
+Please refresh the page with the lesson notes in your browser (typically, hit `F5`). 
+So, you will view the latest commands as the notes grow.
+Kindly notify the instructor if you do not see this happening.
+
+After the end of the lessons the instructors will decorate the type-along notes with the division in Chapters and Episodes.
+
+### 2.2 Lesson 3 and 4 (to be prepared)
+
+...
 
 ---
 ## 3. Documents
@@ -110,24 +145,26 @@ Please refresh the page with the lesson notes in your browser (typically, hit `F
 Please bookmark these URLs for an easy navigation during the workshop:
 
 1. [Workshop announcement at the Library](https://www.tudelft.nl/library/research-data-management/r/training-evenementen/training-voor-onderzoekers/version-control-collaborative-development-for-research-software)
-2. Short URL for this page: [https://bit.ly/2306-VC_CD-TUD](https://bit.ly/2306-VC_CD-TUD)
-3. Full URL of this page: https://github.com/4TUResearchData-Carpentries/workshop_notes/tree/2306-VC+CD-TUD
+2. Short URL of this README file: [https://bit.ly/2310-gitcodev-TUD](https://bit.ly/2310-gitcodev-TUD)
+3. Full URL of this page: https://github.com/4TUResearchData-Carpentries/workshop_notes/tree/2310-gitcodev-TUD 
 
 ### The slides
-* [Workshop introduction](https://docs.google.com/presentation/d/16dWVK1y3LFh227-GjvFvZLoBMyIJwiDC/edit?usp=sharing&ouid=105684743155471216616&rtpof=true&sd=true)
-* Lesson 1, TOC and exercises: [Google Slides](https://docs.google.com/presentation/d/15fFsslX_zyvXbgCkgCO-ALUbab38Q2oZZABhmqgn3yk/edit?usp=sharing) (subject to revision after this workshop)
-* Lesson 2, TOC and exercises: [Google Slides](https://docs.google.com/presentation/d/1p7-n04rVGNNlloMvJDAXApYkwWO1ItMIgCMLG9ScTqQ/edit?usp=sharing) (subject to revision after this workshop)
-* Lesson 3, TOC and exercises: [Google Slides](https://docs.google.com/presentation/d/1H18r-Q9CLx_aUPkTn3IXqWvOZdBWof-6ca_FdfOD9p0/edit?usp=sharing) (subject to revision after this workshop)
+* [Workshop introduction](...)
+* Lesson 3, TOC and exercises: [Google Slides](...) (subject to revision after this workshop)
+* Lesson 4, TOC and exercises: [Google Slides](...) (subject to revision after this workshop)
+* [Workshop conclusion and outlook](...)
 
 ### The feedback forms
 
-Filling in these anonymous questionnaires is voluntary. Your honest opinion based on your experience will help us improve the design and delivery of the workshop. Thank you in advance for your time.
+Filling in these anonymous questionnaires is voluntary.
+Your honest opinion based on your experience will help us improve the design and delivery of the workshop. 
+Thank you in advance for your time.
 
-* Feedback on Lesson 1: [Google Forms](https://bit.ly/2306-VC_CD-TUD-FB1)
-* Feedback on Lesson 2: [Google Forms](https://bit.ly/2306-VC_CD-TUD-FB2)
-* Feedback on Lesson 3: [Google Forms](https://bit.ly/2306-VC_CD-TUD-FB3)
+* Feedback on Lesson 1: [Google Forms](...)
+* Feedback on Lesson 2: [Google Forms](...)
+* Feedback on Lesson 3: [Google Forms](...)
 
-
+---
 ## 4. Resources
 
 ### Official Git documentation

@@ -1,0 +1,17 @@
+
+    Lesson 1 Episode 3 --- Explore the changes recorded in the history
+    Please perform the following tasks individually
+
+    The baseline
+        1a. Check that the history has 5 commits
+        1b. Check that the file has 7 lines
+
+    The action
+        Explain to yourself the difference **between** the outputs of
+        these two commands:
+
+            git diff HEAD~3 HEAD~4 Lines.txt
+
+	        git diff HEAD~3 HEAD~4
+
+    What is the reason of the (lack of) difference between the outputs?

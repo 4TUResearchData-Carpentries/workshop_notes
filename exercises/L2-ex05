@@ -1,0 +1,14 @@
+
+    Lesson 2 Episode 1 --- another type of merge
+    Please perform the following tasks individually
+
+    Please merge B2 in main
+    If a conflict arises, make choices of your liking
+    Verify the outcome with a graphed `git log`
+
+    DO NOT delete branches (for the purpose of this workshop)
+
+    Formulate your explanation of what you have observed
+    The following questions are two sides of the same coin:
+        What did you ask Git to do?
+        What did Git do for you?

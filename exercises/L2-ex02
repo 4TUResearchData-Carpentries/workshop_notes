@@ -1,0 +1,15 @@
+
+    Lesson 2 Episode 1 --- explore differences across branches
+    Please perform the following tasks individually
+	    
+    1a. Move to branch B2
+    1b. Inspect several previous versions in the history using 
+    `git diff` with appropriate arguments
+    1c. Repeat at your own pleasure
+
+    See how far back in the history of another branch you can go!
+    
+    Formulate your explanation of what you have observed
+    The following questions are two sides of the same coin:
+        What did you ask Git to do?
+        What did Git do for you?

@@ -1,0 +1,22 @@
+
+    Lesson 1 Episode 3 --- Explore the changes recorded in the history
+    Please perform the following tasks individually
+
+    The baseline
+        1a. Revise the commands launched since the last exercise using...
+
+    Perform the commit routine
+        2a. Append the seventh line to Lines.txt using...
+        2b. Stage the changes of Lines.txt in the index using...
+        2c. Store the changes of Lines.txt in the history using...
+
+    As many times as you like
+        3a. Check the history using...
+        3b. Compare different versions of Lines.txt using...
+
+    Formulate your own explanation of what you have observed
+    The following questions are two sides of the same coin:
+        What did you ask Git to do?
+        What did Git do for you?
+    Are there shortcuts to do the same with less typing?
+

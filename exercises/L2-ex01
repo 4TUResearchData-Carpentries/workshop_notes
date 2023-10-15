@@ -1,0 +1,23 @@
+    Lesson 2 Episode 1 --- get familiar with branches
+    Please perform the following tasks individually
+
+    1a. Revise the commands we have used so far
+    1b. Create at least three branches with any name you like, using...
+    
+    2a. Rename them and switch between them at your pleasure, using...
+    2b. Check the status message and the history in each branch
+        you are in, using...
+    Take note of the output of the Git commands
+
+    DO NOT change content and name of the file
+    DO NOT stage and commit changes
+
+    At the end:
+    3a. If you have a banch `master`, rename it as `main`
+    3b. Return to the branch `main`
+    3c. Delete all other branches, using...
+    
+    Formulate your explanation of what you have observed
+    The following questions are two sides of the same coin:
+        What did you ask Git to do?
+        What did Git do for you?

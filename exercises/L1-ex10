@@ -1,0 +1,21 @@
+
+    Lesson 1 Episode 3 --- Load committed versions in the working tree
+    Please perform the following tasks individually
+
+    Modify the file in the working tree at your pleasure recalling the
+    versions in the history.
+    The Git commands below may help you there (their order is just alphabetical)
+        git diff HEAD~m Lines.txt
+        git log --oneline
+        git restore --sources HEAD~n Lines.txt
+    where m and n are integers of your liking, including 0
+
+    REQUIRED for the continuation (but not as a rule)
+        1. NEVER STAGE OR COMMIT
+        2. Make sure that you finish with a clean working tree at HEAD
+
+    Formulate your own explanation of what you have observed
+    The following questions are two sides of the same coin:
+        What did you ask Git to do?
+        What did Git do for you?
+    Are there shortcuts to do the same with less typing?

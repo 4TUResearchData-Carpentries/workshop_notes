@@ -1,0 +1,15 @@
+
+    Lesson 1 Episode 3 --- Add lightweight tags to the history
+    Please perform the following tasks individually
+
+    Two commits come from exercises (as opposed to instructor-led typing)
+    1. Find out which commits they where
+    2. Tag them as exercises using...
+        Use capital letters for the tag name (for our convenience)
+    3. Verify the outcome of tagging with two Git commands, namely ... and ...
+
+    Formulate your own explanation of what you have observed
+
+    The following questions are two sides of the same coin:
+        What did you ask Git to do?
+        What did Git do for you?

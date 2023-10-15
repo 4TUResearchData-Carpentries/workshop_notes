@@ -1,0 +1,15 @@
+
+    Lesson 1 Episode 2 --- Stop tracking changes in a file
+    Please perform the following tasks individually
+
+    1. Revise the commands we have used since the last exercise.
+        Could you use a shell command for this?
+    2. Ask Git for the current state of the repository using...
+    3. Stop tracking the file directory/emptyfile.txt
+        CAUTION Be mindful of not deleting the file!
+    4. Verify the result of your action using...
+
+    Formulate your own explanation of what you have observed
+    The following questions are two sides of the same coin:
+        What did you ask Git to do?
+        What did Git do for you?
