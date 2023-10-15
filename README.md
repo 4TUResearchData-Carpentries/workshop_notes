@@ -149,10 +149,14 @@ Please bookmark these URLs for an easy navigation during the workshop:
 3. Full URL of this page: https://github.com/4TUResearchData-Carpentries/workshop_notes/tree/2310-gitcodev-TUD 
 
 ### The slides
-* [Workshop introduction](...)
+* [Workshop introduction](https://drive.google.com/file/d/1-HX-avKiULFfc14mT0yhLfamqoQgehnm/view?usp=drive_link)
 * Lesson 3, TOC and exercises: [Google Slides](...) (subject to revision after this workshop)
 * Lesson 4, TOC and exercises: [Google Slides](...) (subject to revision after this workshop)
 * [Workshop conclusion and outlook](...)
+
+### User Accounts
+
+Register you account via [GitHub account.](https://forms.gle/asj6dAhTh6vcyUhV9)
 
 ### The feedback forms
 
@@ -160,9 +164,11 @@ Filling in these anonymous questionnaires is voluntary.
 Your honest opinion based on your experience will help us improve the design and delivery of the workshop. 
 Thank you in advance for your time.
 
-* Feedback on Lesson 1: [Google Forms](...)
-* Feedback on Lesson 2: [Google Forms](...)
-* Feedback on Lesson 3: [Google Forms](...)
+* Feedback on Lesson 1: [Google Forms](https://forms.gle/97uGyGNZDawi9JXa7)
+* Feedback on Lesson 2: [Google Forms](https://forms.gle/S3RrnFf8gRTRGbfV8)
+* Feedback on Lesson 3: [Google Forms](https://forms.gle/SpKPDy42zY1PTzUv9)
+* Feedback on Lesson 4: [Google Forms](https://forms.gle/6jipvVF7bfiCoNso7)
+
 
 ---
 ## 4. Resources
