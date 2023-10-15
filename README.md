@@ -149,7 +149,7 @@ Please bookmark these URLs for an easy navigation during the workshop:
 3. Full URL of this page: https://github.com/4TUResearchData-Carpentries/workshop_notes/tree/2310-gitcodev-TUD 
 
 ### The slides
-* [Workshop introduction](...)
+* [Workshop introduction](https://drive.google.com/file/d/1-HX-avKiULFfc14mT0yhLfamqoQgehnm/view?usp=drive_link)
 * Lesson 3, TOC and exercises: [Google Slides](...) (subject to revision after this workshop)
 * Lesson 4, TOC and exercises: [Google Slides](...) (subject to revision after this workshop)
 * [Workshop conclusion and outlook](...)
