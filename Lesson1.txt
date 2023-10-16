@@ -16,3 +16,4 @@ pwd
 echo $SHELL
 echo
 git
+git --version
