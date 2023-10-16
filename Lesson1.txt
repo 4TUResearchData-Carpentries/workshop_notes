@@ -90,3 +90,4 @@ history
 history 20
 history 20 >history.log
 cat history.log 
+git status
