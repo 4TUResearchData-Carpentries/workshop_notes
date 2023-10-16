@@ -217,3 +217,4 @@ git commit -m 'Add sixth line' Lines.txt
 git diff
 git log
 git log --oneline
+git status 
