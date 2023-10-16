@@ -116,3 +116,5 @@ cat .gitignore
 git status 
 cat .gitignore 
 echo 'directory' >>.gitignore
+cat .gitignore 
+git status 
