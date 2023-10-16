@@ -142,3 +142,4 @@ git status
 echo '!directory' >>.gitignore
 ls
 git status 
+git status -u
