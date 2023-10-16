@@ -7,3 +7,5 @@ pwd
 ls
 cd Desktop/
 ls
+mkdir -p 2310-gitcodev/git
+ls
