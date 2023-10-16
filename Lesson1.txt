@@ -2,3 +2,4 @@ echo $HOME
 pwd
 cd
 pwd
+# cd /c/Users/<accountname>
