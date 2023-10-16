@@ -68,3 +68,4 @@ git status
 git diff lines.txt
 git add lines.txt 
 cat lines.txt 
+git status 
