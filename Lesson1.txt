@@ -88,3 +88,4 @@ git status
 # NOT TRACKING FILES
 history
 history 20
+history 20 >history.log
