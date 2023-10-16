@@ -163,3 +163,4 @@ ls -FR directory/
 touch directory/donttrackme.txt
 git status 
 git rm directory
+git rm -r directory
