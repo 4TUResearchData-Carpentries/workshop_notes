@@ -103,3 +103,4 @@ cat .gitignore
 git status 
 git add .gitignore 
 git status 
+# IGNORE UNTRACKED DIRECTORIES (before it was about files)
