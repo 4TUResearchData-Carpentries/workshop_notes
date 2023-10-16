@@ -53,3 +53,4 @@ git diff lines.txt
 echo 'third line' >>lines.txt
 cat lines.txt
 git diff lines.txt
+git status 
