@@ -232,3 +232,4 @@ git diff 7f2ca Lines.txt
 git diff HEAD~2 Lines.txt
 git diff HEAD~3 Lines.txt
 git diff HEAD~7 Lines.txt
+git diff Lines.txt
