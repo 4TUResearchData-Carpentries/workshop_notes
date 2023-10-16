@@ -179,3 +179,4 @@ git status -u
 git mv lines.txt Lines.txt
 git status -u
 # COMMITTING CHANGES (IDENTITY + MESSAGE)
+cat Lines.txt 
