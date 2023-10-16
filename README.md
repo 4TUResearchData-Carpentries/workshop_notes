@@ -76,21 +76,17 @@ L3. COLLABORATIVE SOFTWARE DEVELOPMENT (to be revised)
   
 | Episode | Topic |
 |:----|:----|
-| **3.1** | **Collaborative software development** | 
+| **3.1** | **Collaborative Platforms** |
+| --- | Connecting to code repositories |
+| --- | Exploring the GitHub GUI |
+| --- | Collaborating |
+| **3.2** | **Collaborative Development for Research Software** |
 | --- | When to aim for a collaborative approach? |
 | --- | Management strategies |
 | --- | Roles and responsibilities |
-| **3.2** | **Collaborative Platforms** |
-| --- | Connecting to code repositories |
-| --- | Collaborators |
-| --- | Pull requests and forks |
+| --- | Workflows
+| --- | Pull requests
 | --- | Documenting issues |
-| **3.3** | **Collaborative Workflows and Management** | 
-| --- | How workflow can help teams?|
-| --- | Branching Workflow |
-| --- | Forking Workflow |
-| --- | Code reviews |
-| --- | Managing collaboration|
 
 </details>
 
@@ -102,7 +98,7 @@ L4. COLLABORATIVE SOFTWARE DEVELOPMENT (to be composed)
   
 | Episode | Topic |
 |:----|:----|
-| **4.1** | **Episode title** | 
+| **4.1** | | **Managing collaboration** |
 | --- | Chapter title |
 | --- | Chapter title |
 | **4.2** | **Episode title** |
@@ -134,9 +130,13 @@ Kindly notify the instructor if you do not see this happening.
 
 After the end of the lessons the instructors will decorate the type-along notes with the division in Chapters and Episodes.
 
-### 2.2 Lesson 3 and 4 (to be prepared)
+### 2.2 Lesson 3 and 4: Lecture notes
 
-...
+The lecture notes for these lessons can be found in:
+
+- [Lecture notes lesson 3](Lesson3.md)
+- [Lecture notes lesson 4](Lesson4.md)
+
 
 ---
 ## 3. Documents
