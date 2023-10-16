@@ -176,3 +176,4 @@ git status -u
 # use the command `git mv <oldname> <newname>`
 # lines.txt Lines.txt
 git status -u
+git mv lines.txt Lines.txt
