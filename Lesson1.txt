@@ -208,3 +208,4 @@ git log
 # exercise 5
 git status 
 git diff
+echo 'sixth line' >>Lines.txt 
