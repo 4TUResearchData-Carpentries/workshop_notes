@@ -122,3 +122,4 @@ git help gitignore
 git status 
 git add .gitignore 
 git status 
+git rm --staged directory/emptyfile.txt
