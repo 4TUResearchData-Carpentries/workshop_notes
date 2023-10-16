@@ -77,3 +77,4 @@ mkdir directory
 ls
 ls -F
 git status 
+touch directory/emptyfile.txt
