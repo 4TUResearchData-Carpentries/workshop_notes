@@ -224,3 +224,4 @@ git add Lines.txt
 git diff Lines.txt
 git status 
 git log --oneline
+git diff HEAD Lines.txt
