@@ -165,3 +165,4 @@ git status
 git rm directory
 git rm -r directory
 git status 
+git rm -rf directory
