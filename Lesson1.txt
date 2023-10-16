@@ -83,3 +83,4 @@ ls -RF
 git status 
 git status -u
 git help status
+git add directory
