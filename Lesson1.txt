@@ -29,3 +29,4 @@ git config --list
 git help config
 git help glossary
 git help -g
+pwd
