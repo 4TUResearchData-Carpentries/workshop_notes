@@ -155,3 +155,4 @@ git status
 rm directory/
 rm -r directory/
 ls -FR
+git status 
