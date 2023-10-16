@@ -181,3 +181,4 @@ git status -u
 # COMMITTING CHANGES (IDENTITY + MESSAGE)
 cat Lines.txt 
 git diff
+git status 
