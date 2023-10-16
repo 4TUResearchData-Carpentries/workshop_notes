@@ -167,3 +167,4 @@ git rm -r directory
 git status 
 git rm -rf directory
 git status 
+ls -FR directory/
