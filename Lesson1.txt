@@ -3,3 +3,5 @@ pwd
 cd
 pwd
 # cd /c/Users/<accountname>
+pwd
+ls
