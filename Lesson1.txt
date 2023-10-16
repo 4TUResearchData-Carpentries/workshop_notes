@@ -141,3 +141,4 @@ cat lines.txt
 git status 
 echo '!directory' >>.gitignore
 ls
+git status 
