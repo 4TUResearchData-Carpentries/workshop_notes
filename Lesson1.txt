@@ -20,3 +20,4 @@ git --version
 git version
 git help
 git helphelp
+git help help
