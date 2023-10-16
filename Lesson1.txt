@@ -199,3 +199,4 @@ cat ~/dx/P/onderwijs/2310-gitcodev-tud/workshop_notes/exercises/L1-ex06
 echo 'fifth line' >>Lines.txt 
 cat Lines.txt 
 git status 
+git add Lines.txt 
