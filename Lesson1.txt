@@ -50,3 +50,4 @@ git add lines.txt
 git status 
 ls -a .git
 git diff lines.txt
+echo 'third line' >>lines.txt
