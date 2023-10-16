@@ -171,3 +171,4 @@ ls -FR directory/
 git restore directory
 git status 
 git status -u
+mv directory/donttrackme.txt directory/trackne.txt
