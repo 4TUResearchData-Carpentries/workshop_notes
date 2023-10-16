@@ -5,3 +5,5 @@ pwd
 # cd /c/Users/<accountname>
 pwd
 ls
+cd Desktop/
+ls
