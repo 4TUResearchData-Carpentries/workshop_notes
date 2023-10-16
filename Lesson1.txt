@@ -92,3 +92,4 @@ history 20 >history.log
 cat history.log 
 git status
 echo '*.log'
+echo '*.log' >.gitignore
