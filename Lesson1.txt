@@ -32,3 +32,4 @@ git help -g
 pwd
 ls
 echo 'first line'
+echo 'first line' >lines.txt
