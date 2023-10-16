@@ -212,3 +212,4 @@ echo 'sixth line' >>Lines.txt
 git diff
 git add Lines.txt 
 git diff
+git diff Lines.txt
