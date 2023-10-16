@@ -235,3 +235,4 @@ git diff HEAD~7 Lines.txt
 git diff Lines.txt
 git diff HEAD~3 Lines.txt
 git diff HEAD HEAD~1 Lines.txt
+git diff HEAD~1 HEAD Lines.txt
