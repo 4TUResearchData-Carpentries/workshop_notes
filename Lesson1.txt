@@ -73,3 +73,5 @@ git diff lines.txt
 #
 # end of exercise
 # TRACKING DIRECTORIES
+mkdir directory
+ls
