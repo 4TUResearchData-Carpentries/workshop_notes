@@ -153,3 +153,4 @@ git status
 git rm --cached directory/donttrackme.txt 
 git status 
 rm directory/
+rm -r directory/
