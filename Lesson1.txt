@@ -225,3 +225,4 @@ git diff Lines.txt
 git status 
 git log --oneline
 git diff HEAD Lines.txt
+git diff e278702 Lines.txt
