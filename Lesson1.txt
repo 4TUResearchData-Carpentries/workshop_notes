@@ -162,3 +162,4 @@ ls -FR directory/
 # restart
 touch directory/donttrackme.txt
 git status 
+git rm directory
