@@ -81,3 +81,4 @@ touch directory/emptyfile.txt
 ls -R
 ls -RF
 git status 
+git status -u
