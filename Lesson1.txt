@@ -101,3 +101,4 @@ git status
 echo 'lines.txt' >>.gitignore
 cat .gitignore 
 git status 
+git add .gitignore 
