@@ -33,3 +33,4 @@ pwd
 ls
 echo 'first line'
 echo 'first line' >lines.txt
+ls
