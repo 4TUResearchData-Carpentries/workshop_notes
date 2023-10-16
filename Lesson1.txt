@@ -120,3 +120,4 @@ cat .gitignore
 git status 
 git help gitignore
 git status 
+git add .gitignore 
