@@ -119,3 +119,4 @@ echo 'directory' >>.gitignore
 cat .gitignore 
 git status 
 git help gitignore
+git status 
