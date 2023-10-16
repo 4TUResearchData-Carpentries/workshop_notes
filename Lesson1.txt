@@ -213,3 +213,4 @@ git diff
 git add Lines.txt 
 git diff
 git diff Lines.txt
+git commit -m 'Add sixth line' Lines.txt 
