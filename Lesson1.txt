@@ -218,3 +218,4 @@ git diff
 git log
 git log --oneline
 git status 
+echo 'seventh line' >>Lines.txt 
