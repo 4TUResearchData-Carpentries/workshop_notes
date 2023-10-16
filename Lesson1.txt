@@ -22,3 +22,4 @@ git help
 git helphelp
 git help help
 git config
+git config --list
