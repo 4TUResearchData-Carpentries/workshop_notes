@@ -108,3 +108,4 @@ touch directory/trackme.txt
 touch directory/donttrackme.txt
 ls directory/
 git status 
+echo 'directory' >> .gitignore
