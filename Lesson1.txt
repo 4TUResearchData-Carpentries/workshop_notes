@@ -98,3 +98,4 @@ ls -a
 ls -aF
 git add .gitignore
 git status 
+echo 'lines.txt' >>.gitignore
