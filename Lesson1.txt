@@ -30,3 +30,4 @@ git help config
 git help glossary
 git help -g
 pwd
+ls
