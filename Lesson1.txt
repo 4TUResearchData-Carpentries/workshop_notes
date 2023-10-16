@@ -193,3 +193,4 @@ git status
 rm -r directory  # to keep things clean
 git status 
 ls
+git log
