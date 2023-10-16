@@ -17,3 +17,4 @@ echo $SHELL
 echo
 git
 git --version
+git version
