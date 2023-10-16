@@ -80,3 +80,4 @@ git status
 touch directory/emptyfile.txt
 ls -R
 ls -RF
+git status 
