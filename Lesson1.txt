@@ -182,3 +182,4 @@ git status -u
 cat Lines.txt 
 git diff
 git status 
+git commit -m 'Add first four lines' Lines.txt
