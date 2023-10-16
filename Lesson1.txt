@@ -85,3 +85,4 @@ git status -u
 git help status
 git add directory
 git status
+# NOT TRACKING FILES
