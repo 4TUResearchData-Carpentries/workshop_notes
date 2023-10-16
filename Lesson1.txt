@@ -72,3 +72,4 @@ git status
 git diff lines.txt
 #
 # end of exercise
+# TRACKING DIRECTORIES
