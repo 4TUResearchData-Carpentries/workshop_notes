@@ -175,3 +175,4 @@ mv directory/donttrackme.txt directory/trackne.txt
 git status -u
 # use the command `git mv <oldname> <newname>`
 # lines.txt Lines.txt
+git status -u
