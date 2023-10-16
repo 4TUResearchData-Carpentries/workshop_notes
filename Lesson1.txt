@@ -150,3 +150,4 @@ git add directory/emptyfile.txt
 git status 
 git add .gitignore 
 git status 
+git rm --cached directory/donttrackme.txt 
