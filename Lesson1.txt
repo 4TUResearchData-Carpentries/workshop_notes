@@ -158,3 +158,4 @@ ls -FR
 git status 
 git restore directory
 git status 
+ls -FR directory/
