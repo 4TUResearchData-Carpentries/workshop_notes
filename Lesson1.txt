@@ -27,3 +27,4 @@ git config --global core.editor nano
 git config --global core.autocrlf input # false for Win
 git config --list
 git help config
+git help glossary
