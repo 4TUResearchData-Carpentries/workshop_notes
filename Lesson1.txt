@@ -170,3 +170,4 @@ git status
 ls -FR directory/
 git restore directory
 git status 
+git status -u
