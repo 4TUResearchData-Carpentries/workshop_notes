@@ -206,3 +206,5 @@ git status
 history
 git log
 # exercise 5
+git status 
+git diff
