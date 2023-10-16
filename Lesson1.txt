@@ -49,3 +49,4 @@ git status
 git add lines.txt
 git status 
 ls -a .git
+git diff lines.txt
