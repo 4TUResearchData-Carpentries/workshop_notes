@@ -121,3 +121,4 @@ git status
 git help gitignore
 git status 
 git add .gitignore 
+git status 
