@@ -202,3 +202,4 @@ git status
 git add Lines.txt 
 git status 
 git commit -m 'Add fifth lines' Lines.txt 
+git status 
