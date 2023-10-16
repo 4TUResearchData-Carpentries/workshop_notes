@@ -192,3 +192,4 @@ git commit -m 'Add .gitignore' .gitignore
 git status 
 rm -r directory  # to keep things clean
 git status 
+ls
