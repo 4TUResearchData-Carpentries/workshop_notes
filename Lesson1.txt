@@ -148,3 +148,5 @@ git status -u
 git add directory/donttrackme.txt 
 git add directory/emptyfile.txt 
 git status 
+git add .gitignore 
+git status 
