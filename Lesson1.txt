@@ -94,3 +94,4 @@ git status
 echo '*.log'
 echo '*.log' >.gitignore
 git status
+ls -a
