@@ -2,9 +2,9 @@
 
 **Instructor:** *Manuel G. Garcia*
 
-**Last update:** *06-10-2023*
+**Last update:** *16-10-2023*
 
-**Presentation:** *[Branching and remote operations | remote operations](https://docs.google.com/presentation/d/1yBy_4r9aHhsUH9AH1s7zLWIQ_h20xNKVYM1somPnz1Q/edit?usp=sharing)*
+**Presentation:** *[Collaborative Software Development](https://docs.google.com/presentation/d/1yBy_4r9aHhsUH9AH1s7zLWIQ_h20xNKVYM1somPnz1Q/edit?usp=sharing)*
 
 <!-- **Exercises:** *[Exercises remote operations]()* -->
 
@@ -205,7 +205,7 @@ Teams work on coding taks using the branch worflow model.
 5. [Team] Commit and push changes to the team's repository.
 
 
-#### 2. Pull requests 
+#### 2. Pull requests [ 5 min]
 
 > ask if they already have experience with making pull request.
 
@@ -220,10 +220,16 @@ Working as a team merge the changes made in the previous exercise into the main 
 3. [Collaborators] Merge the pull request to the main branch using the method of their choice.
 4. Check the main branch to confirm that your changes have been merged.
 
+#### 4. Forking workflow [5 min]
+
 >  A short explanation on fork workflow (slides)
 
+#### 5. EXERCISE 5: Forking workflow [15 min]
 
-### 4. EXERCISE [20 mins]
+[COTINUE HERE]
+
+
+ [20 mins]
 
 Breakout session 1: [Working with remote repositories](https://docs.google.com/presentation/d/1p7-n04rVGNNlloMvJDAXApYkwWO1ItMIgCMLG9ScTqQ/edit#slide=id.g2513f0e7587_19_19)
 
