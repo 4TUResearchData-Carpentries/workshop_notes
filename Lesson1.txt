@@ -13,3 +13,4 @@ ls 2310-gitcodev/
 cd 2310-gitcodev/git/
 ls
 pwd
+echo $SHELL
