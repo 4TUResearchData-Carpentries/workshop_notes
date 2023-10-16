@@ -128,3 +128,5 @@ git status
 ls -FR
 # UNDOING CHANGE WITH THE INDEX
 cat lines.txt 
+echo 'fifth line' >>lines.txt 
+cat lines.txt 
