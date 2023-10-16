@@ -227,3 +227,4 @@ git log --oneline
 git diff HEAD Lines.txt
 git diff e278702 Lines.txt
 git diff HEAD~1 Lines.txt
+git log --oneline
