@@ -1,2 +1,3 @@
 echo $HOME
 pwd
+cd
