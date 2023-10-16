@@ -185,3 +185,4 @@ git status
 git commit -m 'Add first four lines' Lines.txt
 git status 
 git log
+# exercise 
