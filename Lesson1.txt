@@ -126,3 +126,4 @@ git rm --staged directory/emptyfile.txt
 git rm --cached directory/emptyfile.txt 
 git status 
 ls -FR
+# UNDOING CHANGE WITH THE INDEX
