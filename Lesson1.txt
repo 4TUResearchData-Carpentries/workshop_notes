@@ -210,3 +210,4 @@ git status
 git diff
 echo 'sixth line' >>Lines.txt 
 git diff
+git add Lines.txt 
