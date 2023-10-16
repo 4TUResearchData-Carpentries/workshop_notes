@@ -65,3 +65,4 @@ cat ~/dx/P/onderwijs/2310-gitcodev-tud/workshop_notes/exercises/L1-ex01
 echo 'fourth line' >>lines.txt
 cat lines.txt 
 git status 
+git diff lines.txt
