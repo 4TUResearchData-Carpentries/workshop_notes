@@ -46,3 +46,4 @@ ls -aF .git
 ls
 # TRACKING CHANGES IN FILES
 git status 
+git add lines.txt
