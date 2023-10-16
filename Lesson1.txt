@@ -95,3 +95,4 @@ echo '*.log'
 echo '*.log' >.gitignore
 git status
 ls -a
+ls -aF
