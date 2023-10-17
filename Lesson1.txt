@@ -507,3 +507,4 @@ cd ../git-one
 git status 
 git fetch
 git status 
+git log --oneline
