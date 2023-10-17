@@ -84,10 +84,10 @@ L3. COLLABORATIVE SOFTWARE DEVELOPMENT (to be revised)
 | --- | When to aim for a collaborative approach? |
 | --- | Management strategies |
 | --- | Roles and responsibilities |
-| --- | Workflows
-| --- | Pull requests
 | --- | Documenting issues |
-
+| --- | Centralize workflow: branching
+| --- | Pull requests
+| --- | Shared workflow: forking
 </details>
 
 
@@ -99,14 +99,14 @@ L4. COLLABORATIVE SOFTWARE DEVELOPMENT (to be composed)
 | Episode | Topic |
 |:----|:----|
 | **4.1** | | **Managing collaboration** |
-| --- | Chapter title |
-| --- | Chapter title |
-| **4.2** | **Episode title** |
-| --- | Chapter title |
-| --- | Chapter title |
-| **4.3** | **Episode title** | 
-| --- | Chapter title |
-| --- | Chapter title |
+| --- | Code Reviews |
+| --- | Guidelines |
+| **4.2** | **Licensing and Citation ** |
+| --- | Open source Licenses |
+| --- | Citation |
+| **4.3** | **Releasing Software** | 
+| --- | Semantic versioning |
+| --- | Releases |
 
 </details>
 
