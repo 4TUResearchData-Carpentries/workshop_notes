@@ -456,3 +456,4 @@ git init --bare git-zero.git
 ls -F
 git clone git-zero.git git-one
 ls -F
+ls -Fa git-one
