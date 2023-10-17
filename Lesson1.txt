@@ -271,3 +271,5 @@ git diff hey hey2 Lines.txt
 git log --oneline
 git diff hey hey2 Lines.txt
 echo 'eighth line' >>Lines.txt
+cat Lines.txt 
+git status 
