@@ -409,3 +409,4 @@ git commit -m 'Add ninth and tenth line on B2' Lines.txt
 git log --oneline --all --graph
 git switch B1
 echo 'eleventh line' >>Lines.txt
+echo 'twelfth line' >> Lines.txt 
