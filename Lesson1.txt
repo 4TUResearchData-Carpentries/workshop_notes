@@ -313,3 +313,4 @@ cat Lines.txt
 git log--oneline
 git log --oneline
 git branch -m B1 B2
+git log --oneline
