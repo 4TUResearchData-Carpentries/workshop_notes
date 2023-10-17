@@ -275,3 +275,4 @@ cat Lines.txt
 git status 
 git add Lines.txt 
 git status 
+git commit -m 'Add eighth line' Lines.txt
