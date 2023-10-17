@@ -355,3 +355,4 @@ git log --oneline
 git status 
 git switch B1
 git status 
+git log --oneline
