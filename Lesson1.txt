@@ -425,3 +425,5 @@ nano Lines.txt
 cat Lines.txt 
 git diff
 git status
+git add Lines.txt 
+git status 
