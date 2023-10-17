@@ -301,3 +301,4 @@ git tag -a -m 'First annotated tag' TAG1
 git log --oneline
 git tag
 git show
+git show HEAD~1
