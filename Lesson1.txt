@@ -342,3 +342,4 @@ git branch -d B1 B2
 git branch
 git log --oneline 
 cat Lines.txt 
+# DEVELOP AND COMPARE BRANCHES
