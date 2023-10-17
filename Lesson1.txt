@@ -491,3 +491,5 @@ pwd
 ls -FR
 pwd
 ls -F
+cd git-two/
+ls -aF
