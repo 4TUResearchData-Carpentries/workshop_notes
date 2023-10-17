@@ -441,3 +441,4 @@ pwd
 ls -F
 git init --bare git-zero
 ls -F
+ls -Fa git
