@@ -543,3 +543,4 @@ git merge
 git diff
 cat numbers.txt 
 nano numbers.txt 
+git status 
