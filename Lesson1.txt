@@ -373,3 +373,4 @@ git add Lines.txt
 git commit -m 'Add tenth line on main (with mistake)' Lines.txt
 cat Lines.txt 
 git log --oneline --all
+git log --oneline --all --parents
