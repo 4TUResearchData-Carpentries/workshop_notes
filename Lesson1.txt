@@ -265,3 +265,4 @@ git log --oneline
 git tag 'hey3' HEAD~5
 git tag 'hey4' 87ab7b6 
 git log --oneline
+git diff HEAD HEAD~1 Line.txt
