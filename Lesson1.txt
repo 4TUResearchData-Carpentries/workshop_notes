@@ -457,3 +457,4 @@ ls -F
 git clone git-zero.git git-one
 ls -F
 ls -Fa git-one
+ls -Fa git-one/.git
