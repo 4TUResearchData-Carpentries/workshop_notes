@@ -471,3 +471,4 @@ git add numbers.txt
 git status 
 git commit -m 'git-one: add first 1' numbers.txt 
 git log --oneline
+git branch
