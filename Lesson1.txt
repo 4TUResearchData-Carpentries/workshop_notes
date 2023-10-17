@@ -319,3 +319,4 @@ git log --oneline
 git branch -m master foo
 git log --oneline
 git branch -d foo
+git branch -m foo main
