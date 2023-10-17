@@ -417,3 +417,4 @@ git log --oneline --all --graph
 git switch main
 git diff main B1 Lines.txt
 git merge -m 'Merge development from branch B1' Lines.txt
+git merge -m 'Merge development from branch B1' 
