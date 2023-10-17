@@ -345,3 +345,5 @@ cat Lines.txt
 # DEVELOP AND COMPARE BRANCHES
 git branch B1 B2
 git branch B1
+git branch B2
+git branch
