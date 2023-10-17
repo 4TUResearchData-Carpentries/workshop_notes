@@ -295,3 +295,4 @@ git tag v4 HEAD~1
 git tag v5 HEAD
 git log --oneline
 # ANNOTATED TAG (THE PREVIOUS WAS A LIGHTWEIGHT TAG!)
+git tag -a
