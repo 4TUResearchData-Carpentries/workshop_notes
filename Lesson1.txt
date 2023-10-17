@@ -406,3 +406,4 @@ echo 'tenth line' >>Lines.txt
 git add Lines
 git add Lines.txt
 git commit -m 'Add ninth and tenth line on B2' Lines.txt
+git log --oneline --all --graph
