@@ -521,3 +521,4 @@ git add numbers.txt
 git commit -m 'git-one: add second 1' numbers.txt 
 git --oneline --all
 git log --oneline --all
+git status 
