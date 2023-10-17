@@ -452,3 +452,4 @@ cd ..
 ls
 ls -F
 rm -rf git-zero/
+git init --bare git-zero.git
