@@ -459,3 +459,5 @@ ls -F
 ls -Fa git-one
 ls -Fa git-one/.git
 cd git-one
+ls -a
+git status 
