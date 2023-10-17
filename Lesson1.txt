@@ -383,3 +383,4 @@ git commit -m'Add tenth line on B1' Lines.txt
 git log --oneline --all --graph
 git switch main
 git diff HEAD HEAD~1 Lines.txt
+git diff main B1 Lines.txt
