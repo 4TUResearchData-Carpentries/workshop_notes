@@ -486,3 +486,8 @@ cd git-two/
 ls -Fa
 cd ..
 rm -rf git-two  # fix mistake
+git clone git-zero.git/ git-two
+pwd
+ls -FR
+pwd
+ls -F
