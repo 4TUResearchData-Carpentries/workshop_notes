@@ -462,3 +462,4 @@ cd git-one
 ls -a
 git status 
 git log
+git remote
