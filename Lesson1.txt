@@ -523,3 +523,4 @@ git --oneline --all
 git log --oneline --all
 git status 
 git push
+git log --oneline --all
