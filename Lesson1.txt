@@ -529,3 +529,4 @@ cd ../git-two/
 ls
 cat numbers.txt 
 git status 
+git log --oneline
