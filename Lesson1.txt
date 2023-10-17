@@ -435,3 +435,4 @@ cat Lines.txt
 git log --oneline --all --graph
 git log --oneline --all --graph --parents
 # REMOTES
+pwd
