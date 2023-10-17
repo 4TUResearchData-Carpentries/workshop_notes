@@ -268,3 +268,5 @@ git log --oneline
 git diff HEAD HEAD~1 Line.txt
 git diff HEAD HEAD~1 Lines.txt
 git diff hey hey2 Lines.txt
+git log --oneline
+git diff hey hey2 Lines.txt
