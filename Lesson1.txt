@@ -545,3 +545,4 @@ cat numbers.txt
 nano numbers.txt 
 git status 
 git add numbers.txt 
+git status 
