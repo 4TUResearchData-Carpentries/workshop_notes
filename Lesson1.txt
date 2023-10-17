@@ -335,3 +335,4 @@ git switch B2
 git log --oneline
 git switch main 
 git log --oneline
+~cat ~/dx/P/onderwijs/2310-gitcodev-tud/workshop_notes/exercises/L2-ex01
