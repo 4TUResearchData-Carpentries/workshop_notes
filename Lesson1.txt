@@ -478,3 +478,4 @@ cd ../git-zero.git
 ls
 git status 
 git log
+pwd
