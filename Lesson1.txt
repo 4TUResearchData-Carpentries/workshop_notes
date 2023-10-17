@@ -333,3 +333,5 @@ git branch B2
 git log --oneline
 git switch B2
 git log --oneline
+git switch main 
+git log --oneline
