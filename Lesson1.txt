@@ -302,3 +302,4 @@ git log --oneline
 git tag
 git show
 git show HEAD~1
+true
