@@ -363,3 +363,4 @@ git status
 git add Lines.txt 
 git commit -m 'Add ninth line on B1' Lines.txt
 git status 
+git log --oneline
