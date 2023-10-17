@@ -479,3 +479,4 @@ ls
 git status 
 git log
 pwd
+ls -F
