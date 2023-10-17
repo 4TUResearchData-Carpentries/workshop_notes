@@ -509,3 +509,4 @@ git fetch
 git status 
 git log --oneline
 git log --oneline --all
+cat numbers.txt 
