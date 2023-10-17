@@ -324,3 +324,4 @@ git branch
 git status 
 git log --oneline
 git branch B1
+git branch
