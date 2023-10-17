@@ -554,3 +554,4 @@ git log --oneline
 git status 
 true
 echo
+# placeholder after the merge to fix these notes
