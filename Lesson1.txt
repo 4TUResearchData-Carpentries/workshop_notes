@@ -546,3 +546,4 @@ nano numbers.txt
 git status 
 git add numbers.txt 
 git status 
+git commit -m 'git-two: conclude merge'
