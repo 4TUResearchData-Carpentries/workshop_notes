@@ -461,3 +461,4 @@ ls -Fa git-one/.git
 cd git-one
 ls -a
 git status 
+git log
