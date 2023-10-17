@@ -503,3 +503,4 @@ git log --oneline
 git push
 git status 
 pwd
+cd ../git-one
