@@ -438,3 +438,4 @@ git log --oneline --all --graph --parents
 pwd
 cd ..
 pwd
+ls -F
