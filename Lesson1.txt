@@ -323,3 +323,4 @@ git branch -m foo main
 git branch
 git status 
 git log --oneline
+git branch B1
