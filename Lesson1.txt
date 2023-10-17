@@ -390,3 +390,4 @@ git log --oneline --all --graph
 git status
 nano Lines.txt 
 cat Lines.txt 
+git status 
