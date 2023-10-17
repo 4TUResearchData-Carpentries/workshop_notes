@@ -311,3 +311,4 @@ git branch
 git status 
 cat Lines.txt 
 git log--oneline
+git log --oneline
