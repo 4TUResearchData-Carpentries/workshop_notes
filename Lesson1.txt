@@ -366,3 +366,4 @@ git status
 git log --oneline
 git log --oneline --all
 git log --oneline --all --parents
+git switch main
