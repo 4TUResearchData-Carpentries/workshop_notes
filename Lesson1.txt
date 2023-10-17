@@ -532,3 +532,4 @@ git status
 git log --oneline
 echo 2 >>numbers.txt 
 cat numbers.txt 
+git add numbers.txt 
