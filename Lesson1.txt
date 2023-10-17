@@ -318,3 +318,4 @@ git branch -d B2
 git log --oneline
 git branch -m master foo
 git log --oneline
+git branch -d foo
