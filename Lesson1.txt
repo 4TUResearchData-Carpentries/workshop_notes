@@ -541,3 +541,4 @@ git fetch
 git status 
 git merge
 git diff
+cat numbers.txt 
