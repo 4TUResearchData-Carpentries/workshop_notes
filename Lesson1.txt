@@ -443,3 +443,6 @@ git init --bare git-zero
 ls -F
 ls -Fa git
 ls -Fa git-zero
+cd git-zeo
+cd git-zero
+ls
