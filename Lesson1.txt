@@ -513,3 +513,4 @@ cat numbers.txt
 # git pull = git fetch + git merge
 git fetch
 git merge
+cat numbers.txt 
