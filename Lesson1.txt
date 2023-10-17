@@ -481,3 +481,6 @@ git log
 pwd
 ls -F
 git clone --bare git-zero.git/ git-two
+ls -F
+cd git-two/
+ls -Fa
