@@ -432,3 +432,4 @@ git commit -m 'Merge changes from B1 in main'
 git log --oneline --all --graph
 git status 
 cat Lines.txt 
+git log --oneline --all --graph
