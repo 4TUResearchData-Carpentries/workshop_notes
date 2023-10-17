@@ -480,3 +480,4 @@ git status
 git log
 pwd
 ls -F
+git clone --bare git-zero.git/ git-two
