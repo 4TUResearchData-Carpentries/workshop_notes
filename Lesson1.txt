@@ -477,3 +477,4 @@ git push
 cd ../git-zero.git
 ls
 git status 
+git log
