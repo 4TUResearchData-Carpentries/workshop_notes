@@ -259,3 +259,4 @@ git log --oneline
 git tag 'hey'
 git log --oneline
 git log
+git tag 'hey' HEAD~1
