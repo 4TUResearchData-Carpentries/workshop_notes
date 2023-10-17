@@ -361,3 +361,4 @@ cat Lines.txt
 echo 'ninth line' >>Lines.txt 
 git status 
 git add Lines.txt 
+git commit -m 'Add ninth line on B1' Lines.txt
