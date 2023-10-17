@@ -279,3 +279,4 @@ git commit -m 'Add eighth line' Lines.txt
 git log --oneline
 git tag -d hey1
 git tag -d hey4
+git log --oneline
