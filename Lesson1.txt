@@ -451,3 +451,4 @@ git log
 cd ..
 ls
 ls -F
+rm -rf git-zero/
