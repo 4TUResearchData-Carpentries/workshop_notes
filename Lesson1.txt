@@ -348,3 +348,5 @@ git branch B1
 git branch B2
 git branch
 echo 'ninth line' >>Lines.txt 
+git status 
+git add Lines.txt 
