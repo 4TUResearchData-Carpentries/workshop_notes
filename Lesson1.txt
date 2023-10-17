@@ -368,3 +368,4 @@ git log --oneline --all
 git log --oneline --all --parents
 git switch main
 git log --oneline --all
+echo 'ninth line (mistake)' >>Lines.txt 
