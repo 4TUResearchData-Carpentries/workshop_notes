@@ -410,3 +410,5 @@ git log --oneline --all --graph
 git switch B1
 echo 'eleventh line' >>Lines.txt
 echo 'twelfth line' >> Lines.txt 
+git diff
+git add Lines.txt 
