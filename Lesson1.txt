@@ -536,3 +536,4 @@ git add numbers.txt
 git commit -m'git-two: add second 2' numbers.txt 
 git status 
 git log --oneline
+git push
