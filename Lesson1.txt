@@ -260,3 +260,4 @@ git tag 'hey'
 git log --oneline
 git log
 git tag 'hey' HEAD~1
+git tag 'hey2' HEAD~1
