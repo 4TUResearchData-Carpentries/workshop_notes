@@ -298,3 +298,4 @@ git log --oneline
 git tag -a
 git tag -a -m 'First annotated tag' 
 git tag -a -m 'First annotated tag' TAG1
+git log --oneline
