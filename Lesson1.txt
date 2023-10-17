@@ -429,3 +429,4 @@ git add Lines.txt
 git status 
 git commit -m 'Merge changes from B1 in main' Lines.txt 
 git commit -m 'Merge changes from B1 in main'
+git log --oneline --all --graph
