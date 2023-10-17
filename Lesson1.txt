@@ -510,3 +510,4 @@ git status
 git log --oneline
 git log --oneline --all
 cat numbers.txt 
+# git pull = git fetch + git merge
