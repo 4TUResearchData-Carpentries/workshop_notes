@@ -340,3 +340,5 @@ cat ~/dx/P/onderwijs/2310-gitcodev-tud/workshop_notes/exercises/L2-ex01
 git branch
 git branch -d B1 B2
 git branch
+git log --oneline 
+cat Lines.txt 
