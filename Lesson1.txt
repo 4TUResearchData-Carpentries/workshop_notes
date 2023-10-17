@@ -389,3 +389,4 @@ git diff main~1 B1~1 Lines.txt
 git log --oneline --all --graph
 git status
 nano Lines.txt 
+cat Lines.txt 
