@@ -530,3 +530,4 @@ ls
 cat numbers.txt 
 git status 
 git log --oneline
+echo 2 >>numbers.txt 
