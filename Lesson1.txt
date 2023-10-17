@@ -371,3 +371,4 @@ git log --oneline --all
 echo 'ninth line (mistake)' >>Lines.txt 
 git add Lines.txt 
 git commit -m 'Add tenth line on main (with mistake)' Lines.txt
+cat Lines.txt 
