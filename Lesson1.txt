@@ -358,3 +358,5 @@ git status
 git log --oneline
 git log --oneline --all
 cat Lines.txt 
+echo 'ninth line' >>Lines.txt 
+git status 
