@@ -427,3 +427,4 @@ git diff
 git status
 git add Lines.txt 
 git status 
+git commit -m 'Merge changes from B1 in main' Lines.txt 
