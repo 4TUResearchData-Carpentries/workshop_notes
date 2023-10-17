@@ -391,3 +391,4 @@ git status
 nano Lines.txt 
 cat Lines.txt 
 git status 
+git add Lines.txt 
