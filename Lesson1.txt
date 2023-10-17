@@ -357,3 +357,4 @@ git switch B1
 git status 
 git log --oneline
 git log --oneline --all
+cat Lines.txt 
