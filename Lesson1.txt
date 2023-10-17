@@ -447,3 +447,4 @@ cd git-zeo
 cd git-zero
 ls
 git status 
+git log
