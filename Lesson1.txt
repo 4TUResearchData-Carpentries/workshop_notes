@@ -422,3 +422,4 @@ git merge -m 'Merge development from branch B1' B1
 git diff Lines.txt
 cat Lines.txt 
 nano Lines.txt 
+cat Lines.txt 
