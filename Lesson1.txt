@@ -353,3 +353,4 @@ git add Lines.txt
 git commit -m 'Add ninth line on main' Lines.txt 
 git log --oneline
 git status 
+git switch B1
