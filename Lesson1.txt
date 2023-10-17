@@ -377,3 +377,4 @@ git log --oneline --all --parents
 git log --oneline --all --parents --graph
 git switch B1
 cat Lines.txt 
+echo 'tenth line on B1' >> Lines.txt 
