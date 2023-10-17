@@ -505,3 +505,4 @@ git status
 pwd
 cd ../git-one
 git status 
+git fetch
