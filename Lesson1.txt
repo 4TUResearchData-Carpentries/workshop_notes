@@ -424,3 +424,4 @@ cat Lines.txt
 nano Lines.txt 
 cat Lines.txt 
 git diff
+git status
