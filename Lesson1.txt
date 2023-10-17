@@ -463,3 +463,4 @@ ls -a
 git status 
 git log
 git remote
+git remote -v
