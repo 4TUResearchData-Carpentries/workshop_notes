@@ -288,3 +288,5 @@ git tag HEAD~4 v1
 git tag v1 HEAD~4
 git log --oneline
 git tag v2 HEAD~3
+git tag v3 HEAD~2
+git log --onelein
