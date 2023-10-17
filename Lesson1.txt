@@ -397,3 +397,4 @@ git log --oneline --all --graph
 cat Lines.txt 
 git switch B1
 git switch B2
+cat Lines.txt 
