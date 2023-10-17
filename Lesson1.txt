@@ -439,3 +439,4 @@ pwd
 cd ..
 pwd
 ls -F
+git init --bare git-zero
