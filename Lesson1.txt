@@ -496,3 +496,4 @@ ls -aF
 git remote -v
 echo 2 >>numbers.txt 
 cat numbers.txt 
+git log
