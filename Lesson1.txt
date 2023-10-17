@@ -525,3 +525,5 @@ git status
 git push
 git log --oneline --all
 git status 
+cd ../git-two/
+ls
