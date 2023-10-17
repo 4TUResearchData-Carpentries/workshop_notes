@@ -465,3 +465,5 @@ git log
 git remote
 git remote -v
 echo 1 >>numbers.txt
+cat numbers.txt 
+git status 
