@@ -327,3 +327,4 @@ git branch B1
 git branch
 git log --oneline
 git switch
+git switch B1
