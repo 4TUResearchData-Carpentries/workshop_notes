@@ -539,3 +539,4 @@ git log --oneline
 git push
 git fetch
 git status 
+git merge
