@@ -450,3 +450,4 @@ git status
 git log
 cd ..
 ls
+ls -F
