@@ -474,3 +474,5 @@ git log --oneline
 git branch
 git status 
 git push
+cd ../git-zero.git
+ls
