@@ -549,3 +549,4 @@ git status
 git commit -m 'git-two: conclude merge'
 git status 
 git log --oneline
+git push
