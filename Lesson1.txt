@@ -412,3 +412,4 @@ echo 'eleventh line' >>Lines.txt
 echo 'twelfth line' >> Lines.txt 
 git diff
 git add Lines.txt 
+git commit -m'Add 11th and 12th lineson B1' Lines.txt 
