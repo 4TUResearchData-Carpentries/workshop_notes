@@ -351,3 +351,4 @@ echo 'ninth line' >>Lines.txt
 git status 
 git add Lines.txt 
 git commit -m 'Add ninth line on main' Lines.txt 
+git log --oneline
