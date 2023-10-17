@@ -433,3 +433,4 @@ git log --oneline --all --graph
 git status 
 cat Lines.txt 
 git log --oneline --all --graph
+git log --oneline --all --graph --parents
