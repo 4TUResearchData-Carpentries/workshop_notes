@@ -385,3 +385,4 @@ git switch main
 git diff HEAD HEAD~1 Lines.txt
 git diff main B1 Lines.txt
 git diff main B1~1 Lines.txt
+git diff main~1 B1~1 Lines.txt
