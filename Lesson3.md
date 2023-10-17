@@ -2,7 +2,7 @@
 
 **Instructor:** *Manuel G. Garcia*
 
-**Last update:** *16-10-2023*
+**Last update:** *17-10-2023*
 
 **Presentation:** *[Collaborative Software Development](https://docs.google.com/presentation/d/1yBy_4r9aHhsUH9AH1s7zLWIQ_h20xNKVYM1somPnz1Q/edit?usp=sharing)*
 
@@ -187,6 +187,14 @@ Developing high quality software requires more than programming and technical sk
 
 ### a. Collaborative Workflows [8 min]
 
+
+#### 0. Issues
+
+Document and track ideas and tasks in a development project. They’re facilitate planning, discussing  and tracking the progress of a software project.
+
+> Demo on how to crate issues in a repository.
+
+
 Collaborative workflows are estrategies to organise the work of a developer team so that many developers can contribute to a software project. Two common estrategies that use version control and collaborative platforms as leverage are:
 
 - The **branching workflow** and
@@ -201,8 +209,9 @@ Teams work on coding taks using the branch worflow model.
 1. [Administrator] Creates a repository using [this template](https://github.com/the-magnificents/collab-branching)
 2. [Administrator] Invites all team members to the team's repository as collaborators.
 3. [Team] Read the `TODO.md` file and each member choses a tasks for the next step.
-4. [Team] Apply the branching model to complete the chosen task.
-5. [Team] Commit and push changes to the team's repository.
+4. [Team]  each member opens an issue  for the chosen  task.
+5. [Team] Apply the branching model to complete the chosen task.
+6. [Team] Commit and push changes to the team's repository.
 
 
 #### 2. Pull requests [ 5 min]
@@ -226,16 +235,21 @@ Working as a team merge the changes made in the previous exercise into the main 
 
 #### 5. EXERCISE 5: Forking workflow [15 min]
 
-[COTINUE HERE]
+working in teams, apply FAIR principle to a Git repository using a [FAIR software checklist.](https://tu-delft-dcc.github.io/software/checklist.html)
 
-
- [20 mins]
-
-Breakout session 1: [Working with remote repositories](https://docs.google.com/presentation/d/1p7-n04rVGNNlloMvJDAXApYkwWO1ItMIgCMLG9ScTqQ/edit#slide=id.g2513f0e7587_19_19)
-
-> More on remotes: https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes 
+1. [Administrator] creates a repository for the team using the [collab-faircode template repository](https://github.com/the-magnificents/collab-faircode). As name for the reposotory use <team-name>-faircode 
+3. [Team] Go thru the Fair software checklist and assign one item from the list to each member.
+3. [Collaborators] open an issue 
+2. [Collaborators] fork the team's repository to their accounts.
+4. [Collaborators] Clone their fork to their local machine, make changes to address ther issue and push changes to their forks.
+5. [Collaborators] Make a pull request from your fork to the base repository.
 
 > Questions?
 
-### 12. LESSON SUMMARY [10 min]
+### 12. LESSON SUMMARY [5 min]
 
+- SHH is a secure way to connect to Code repositories.
+- Collaborative workflows provide a way to organize a team around a software project.
+- Roles and responsibilities.
+- Two common workflows: branching (centrilized) and forking (shared)
+- High quality software requires good planning and management.
