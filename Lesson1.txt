@@ -281,3 +281,4 @@ git tag -d hey1
 git tag -d hey4
 git log --oneline
 git diff hey hey4 Lines.txt
+git log --oneline
