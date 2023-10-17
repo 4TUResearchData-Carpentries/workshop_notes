@@ -365,3 +365,4 @@ git commit -m 'Add ninth line on B1' Lines.txt
 git status 
 git log --oneline
 git log --oneline --all
+git log --oneline --all --parents
