@@ -514,3 +514,4 @@ cat numbers.txt
 git fetch
 git merge
 cat numbers.txt 
+git log --all
