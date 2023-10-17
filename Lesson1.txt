@@ -485,3 +485,4 @@ ls -F
 cd git-two/
 ls -Fa
 cd ..
+rm -rf git-two  # fix mistake
