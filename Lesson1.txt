@@ -305,3 +305,4 @@ git show HEAD~1
 true
 # there is a gap in the notes
 git status 
+git branch
