@@ -527,3 +527,4 @@ git log --oneline --all
 git status 
 cd ../git-two/
 ls
+cat numbers.txt 
