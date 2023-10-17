@@ -493,3 +493,4 @@ pwd
 ls -F
 cd git-two/
 ls -aF
+git remote -v
