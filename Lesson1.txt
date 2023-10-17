@@ -239,3 +239,18 @@ git diff HEAD~1 HEAD Lines.txt
 git diff HEAD~4 HEAD~2 Lines.txt
 git diff HEAD~3 HEAD~2 Lines.txt
 git log
+# DAY 2
+pwd
+git status 
+git log --oneline
+git diff Lines.txt
+git diff HEAD Lines.txt
+git diff HEAD~1 Lines.txt
+git diff HEAD HEAD~1 Lines.txt
+git diff HEAD~1 HEAD Lines.txt
+diff HEAD HEAD Lines.txt 
+git diff HEAD HEAD Lines.txt 
+git diff HEAD~2 HEAD~2 Lines.txt
+cat ~/dx/P/onderwijs/2310-gitcodev-tud/workshop_notes/exercises/L1-ex07
+cat Lines.txt 
+cat ~/dx/P/onderwijs/2310-gitcodev-tud/workshop_notes/exercises/L1-ex07
