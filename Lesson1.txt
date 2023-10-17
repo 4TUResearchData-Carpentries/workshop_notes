@@ -360,3 +360,4 @@ git log --oneline --all
 cat Lines.txt 
 echo 'ninth line' >>Lines.txt 
 git status 
+git add Lines.txt 
