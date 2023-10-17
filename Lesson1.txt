@@ -414,3 +414,4 @@ git diff
 git add Lines.txt 
 git commit -m'Add 11th and 12th lineson B1' Lines.txt 
 git log --oneline --all --graph
+git switch main
