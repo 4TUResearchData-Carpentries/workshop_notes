@@ -254,3 +254,4 @@ git diff HEAD~2 HEAD~2 Lines.txt
 cat ~/dx/P/onderwijs/2310-gitcodev-tud/workshop_notes/exercises/L1-ex07
 cat Lines.txt 
 cat ~/dx/P/onderwijs/2310-gitcodev-tud/workshop_notes/exercises/L1-ex07
+#  ANNOTATED TAGS
