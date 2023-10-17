@@ -381,3 +381,4 @@ echo 'tenth line on B1' >> Lines.txt
 git add Lines.txt 
 git commit -m'Add tenth line on B1' Lines.txt 
 git log --oneline --all --graph
+git switch main
