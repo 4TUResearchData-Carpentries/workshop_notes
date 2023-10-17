@@ -396,3 +396,4 @@ git commit -m'Correct tenth line on main' Lines.txt
 git log --oneline --all --graph
 cat Lines.txt 
 git switch B1
+git switch B2
