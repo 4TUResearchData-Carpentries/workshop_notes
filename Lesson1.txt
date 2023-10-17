@@ -499,3 +499,4 @@ cat numbers.txt
 git log
 git add numbers.txt 
 git commit -m'git-two: add first 2' numbers.txt 
+git log --oneline
