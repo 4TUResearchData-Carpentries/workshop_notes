@@ -12,11 +12,9 @@ The original list of commands is available at this commit [as displayed by GitHu
     
 
 
----
----
 ## Episode 1: Branching
 
----
+
 ### 2.1.1 Create, rename, change and delete branches
 
     git branch                                                          # new command
@@ -58,7 +56,6 @@ The original list of commands is available at this commit [as displayed by GitHu
     cat Lines.txt                                                       # verify
 **exercise 1 ends**
 
----
 ### 2.1.2 Develop and compare branches
 
     git status                                                          # observe
@@ -96,7 +93,6 @@ The original list of commands is available at this commit [as displayed by GitHu
     git commit -m 'Add tenth line on main (with mistake)' Lines.txt     # routine
     cat Lines.txt                                                       # verify
 
----
 ### 2.1.3 Visualise and merge branches, and resolve conflicts
 
     git log --oneline --all                                             # explore
@@ -166,11 +162,10 @@ The original list of commands is available at this commit [as displayed by GitHu
     git log --oneline --all --graph --parents                           # verify
 
 
----
----
+
 ## Episode 2 Operation with remotes
 
----
+
 ### 2.2.1 Create and explore a bare repository
 
     pwd                                                                 # observe
@@ -189,7 +184,6 @@ The original list of commands is available at this commit [as displayed by GitHu
     cd ..                                                               # observe
     ls                                                                  # verify
 
----
 ### 2.2.2 Cloning and pushing to "remote" bare repositories (upstreams)
 
     git clone git-zero.git git-one                                      # new command
@@ -233,7 +227,6 @@ The original list of commands is available at this commit [as displayed by GitHu
     git push                                                            # known action
     git status                                                          # verify
 
----
 ### 2.2.3 Fetching and merging (pulling) from upstreams
 
     cd ../git-one                                                       # in the first clone
