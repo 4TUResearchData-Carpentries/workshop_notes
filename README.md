@@ -71,7 +71,7 @@ L2. BRANCHING AND REMOTE OPERATIONS (to be revised)
 
 <details> 
 <summary>
-L3. COLLABORATIVE SOFTWARE DEVELOPMENT (to be revised)
+L3. COLLABORATIVE SOFTWARE DEVELOPMENT 
 </summary>
   
 | Episode | Topic |

@@ -108,6 +108,41 @@ Profile > Settings > SSH and GPG keys > New SSH key > Add SSH key
 
 > Check the info on (Troubleshooting SSH[https://docs.github.com/en/authentication/troubleshooting-ssh]) for GitHub.
 
+
+### 2. Publish local remository to GitHub [5 min]
+
+**a. Create GitHub Repo**
+
+> Go to Github and create an empty and public repository called `patients-analysis`.
+
+- Repo description: *analysis of treatments for inflammation*
+
+**Add Remote to Local Repo**
+
+> before this remove any existing remotes in the repository with: `git remote remove <name>`
+
+Move back to the repo directory: `~/Desktop/
+> In your local repository (on the terminal), add the remote repository and push the content.
+
+* Connect to remote
+    ```shell
+    $ git remote add origin git@github.com:<user-name>/<repo-name>.git
+    ```
+
+* Check that remote was added
+    ```shell
+    $ git remote -v
+    $ git branch -M main # [Optional if config was changed. This will change the name of the main branch of the repo to make it more friendly]
+    $ git push -u origin main 
+    ```
+
+#### c. Check the Content's Repositoy is in GitHub
+* Go back to your repo page and refresh the browser.
+
+
+> **Questions?**
+
+
 #### 2. Exploring the GitHub GUI [ 5 min]
 
 Collaborative platform host and manage remote repositories to enable collaborative development.
@@ -133,7 +168,9 @@ b. Paticipant accept inviation via email or GitHub GUI.
 - Reflect on the difficulties you faced, and how we might avoid them.
 
 
-### B. Collaborative Development for Research Software
+### B. Collaborative Development for Research Software 
+
+> Slides
 
 Developing high quality software requires more than programming and technical skill. Exceptionally good programmers can produce high quality software by themselves. But good programmers will need to collaborate in order to develop complex, high quality software. 
 
@@ -146,7 +183,7 @@ Developing high quality software requires more than programming and technical sk
 > Explain the difference between private and close collaboration
 
 #### 3. Management Strategies [5 min]
-
+ 
 > Explain why management is important for developing software, the key factors to consider, and recommend a management strategy.
 
 **Key Factors:**
@@ -167,7 +204,7 @@ Developing high quality software requires more than programming and technical sk
 
 > Questions? [10 min]
 
-### 4. EXERCISE 2: Roles and Responsibilities [8 min]
+### 4. EXERCISE 2: Roles and Responsibilities [6 min]
 
 > Participant make teams, decide on roles and name their teams.
 
@@ -179,21 +216,19 @@ Developing high quality software requires more than programming and technical sk
     - Zero or more reviewers
 3. Choose a name for the team.
 
-
 -----------------
 ## BREAK [10 min]
 -----------------
+
 ## PART 2
 
 ### a. Collaborative Workflows [8 min]
-
 
 #### 0. Issues
 
 Document and track ideas and tasks in a development project. They’re facilitate planning, discussing  and tracking the progress of a software project.
 
-> Demo on how to crate issues in a repository.
-
+> Do-along on how to crate issues in a repository. Use the recently pushed repository.
 
 Collaborative workflows are estrategies to organise the work of a developer team so that many developers can contribute to a software project. Two common estrategies that use version control and collaborative platforms as leverage are:
 
@@ -209,10 +244,9 @@ Teams work on coding taks using the branch worflow model.
 1. [Administrator] Creates a repository using [this template](https://github.com/the-magnificents/collab-branching)
 2. [Administrator] Invites all team members to the team's repository as collaborators.
 3. [Team] Read the `TODO.md` file and each member choses a tasks for the next step.
-4. [Team]  each member opens an issue  for the chosen  task.
-5. [Team] Apply the branching model to complete the chosen task.
-6. [Team] Commit and push changes to the team's repository.
-
+4. [Collaborator] each member opens an issue  for the chosen  task.
+5. [Collaborator] Apply the branching model to complete the chosen task.
+6. [Collaborator] Commit and push changes to the team's repository.
 
 #### 2. Pull requests [ 5 min]
 
@@ -239,10 +273,10 @@ working in teams, apply FAIR principle to a Git repository using a [FAIR softwar
 
 1. [Administrator] creates a repository for the team using the [collab-faircode template repository](https://github.com/the-magnificents/collab-faircode). As name for the reposotory use <team-name>-faircode 
 3. [Team] Go thru the Fair software checklist and assign one item from the list to each member.
-3. [Collaborators] open an issue 
-2. [Collaborators] fork the team's repository to their accounts.
-4. [Collaborators] Clone their fork to their local machine, make changes to address ther issue and push changes to their forks.
-5. [Collaborators] Make a pull request from your fork to the base repository.
+3. [Collaborator] open an issue about the item you chose.
+2. [Collaborator] fork the team's repository to their accounts.
+4. [Collaborator] Clone their fork to their local machine, make changes to address ther issue and push changes to their forks.
+5. [Collaborator] Make a pull request from your fork to the base repository.
 
 > Questions?
 
@@ -250,6 +284,6 @@ working in teams, apply FAIR principle to a Git repository using a [FAIR softwar
 
 - SHH is a secure way to connect to Code repositories.
 - Collaborative workflows provide a way to organize a team around a software project.
-- Roles and responsibilities.
-- Two common workflows: branching (centrilized) and forking (shared)
+- Workflows: branching (centralized) and forking (shared)
 - High quality software requires good planning and management.
+- Adopting roles and responsibilities can help teams to organize their work.
