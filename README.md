@@ -51,7 +51,7 @@ L1. FUNDAMENTAL OPERATIONS WITH GIT
 
 <details> 
 <summary>
-L2. BRANCHING AND REMOTE OPERATIONS (to be revised)
+L2. BRANCHING AND REMOTE OPERATIONS
 </summary>
   
 | Episode | Topic |
@@ -63,9 +63,9 @@ L2. BRANCHING AND REMOTE OPERATIONS (to be revised)
 | **2.2** | **Operations with remotes** | 
 | --- | Create a bare repositories |
 | --- | Cloning and pushing to upstreams |
-| --- | Comparing repositories |
 | --- | Syncing changes between repositories |
 | --- | ~Multiple branches, multiple remotes~ |
+| --- | ~Comparing repositories~ |
 
 </details>
 
