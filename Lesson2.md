@@ -9,15 +9,15 @@ Else, the annotation recalls why we typed that certain command, for example to *
 **routine** commands are the typical commit ssequence learned in Lesson 1.
 
 The original list of commands is available at this commit [as displayed by GitHub](https://github.com/4TUResearchData-Carpentries/workshop_notes/blob/056617efa8abb7d79ffb3e85b3ac8dbbcaed50e6/Lesson2.md).
-
+    
 
 
 ---
 ---
-# Episode 1: Branching
+## Episode 1: Branching
 
 ---
-# 2.1.1 Create, rename, change and delete branches
+### 2.1.1 Create, rename, change and delete branches
 
     git branch                                                          # new command
     git branch B1                                                       # new argument
@@ -59,7 +59,7 @@ The original list of commands is available at this commit [as displayed by GitHu
 **exercise 1 ends**
 
 ---
-# 2.1.2 Develop and compare branches
+### 2.1.2 Develop and compare branches
 
     git status                                                          # observe
     git branch B1                                                       # known action
@@ -97,7 +97,7 @@ The original list of commands is available at this commit [as displayed by GitHu
     cat Lines.txt                                                       # verify
 
 ---
-# 2.1.3 Visualise and merge branches, and resolve conflicts
+### 2.1.3 Visualise and merge branches, and resolve conflicts
 
     git log --oneline --all                                             # explore
     git log --oneline --all --parents                                   # explore
@@ -168,10 +168,10 @@ The original list of commands is available at this commit [as displayed by GitHu
 
 ---
 ---
-# Episode 2 Operation with remotes
+## Episode 2 Operation with remotes
 
 ---
-# 2.2.1 Create and explore a bare repository
+### 2.2.1 Create and explore a bare repository
 
     pwd                                                                 # observe
     cd ..                                                               # directory of the workshop
@@ -190,7 +190,7 @@ The original list of commands is available at this commit [as displayed by GitHu
     ls                                                                  # verify
 
 ---
-# 2.2.2 Cloning and pushing to "remote" bare repositories (upstreams)
+### 2.2.2 Cloning and pushing to "remote" bare repositories (upstreams)
 
     git clone git-zero.git git-one                                      # new command
     ls -Fa git-one                                                      # observe
@@ -234,7 +234,7 @@ The original list of commands is available at this commit [as displayed by GitHu
     git status                                                          # verify
 
 ---
-# 2.2.3 Fetching and merging (pulling) from upstreams, and resolving conflicts
+### 2.2.3 Fetching and merging (pulling) from upstreams
 
     cd ../git-one                                                       # in the first clone
     pwd                                                                 # verify
@@ -259,6 +259,9 @@ The original list of commands is available at this commit [as displayed by GitHu
     git push                                                            # known action
     git status                                                          # verify
     git log --oneline --all                                             # verify
+
+### 2.2.3 (continued) Resolving conflicts when pushing
+    
     cd ../git-two/                                                      # in the directory of the second clone
     ls                                                                  # observe
     cat numbers.txt                                                     # observe
@@ -287,5 +290,3 @@ The original list of commands is available at this commit [as displayed by GitHu
     git push                                                            # known action
     git log --oneline                                                   # verify
     git status                                                          # verify
-
-    # TOFIX placeholder for the last exercise
