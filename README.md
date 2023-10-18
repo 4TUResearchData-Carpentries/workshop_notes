@@ -61,11 +61,11 @@ L2. BRANCHING AND REMOTE OPERATIONS (to be revised)
 | --- | Develop and compare branches | 
 | --- | Visualise and merge branches, and resolve conflicts | 
 | **2.2** | **Operations with remotes** | 
-| --- | What are remote repositories? |
-| --- | Cloning remote repositories  |
-| --- | Comparing repositories |
-| --- | Syncing changes between repositories |
-| --- | Multiple branches, multiple remotes |
+| --- | Create a bare repositories |
+| --- | Cloning and pushing to upstreams |
+| --- | Syncing changes between cloned repositories |
+| --- | ~Comparing repositories~ |
+| --- | ~Multiple branches, multiple remotes~ |
 
 </details>
 
