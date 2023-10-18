@@ -9,26 +9,26 @@
 # 2.1.1 Create, rename, change and delete branches
 
     git branch                                                          # new command
-    git branch B1                                                       # new action
+    git branch B1                                                       # new argument
     git branch                                                          # verify
     git status                                                          # verify
     cat Lines.txt                                                       # verify
-    git branch -m B1 B2                                                 # new action
+    git branch -m B1 B2                                                 # new option
     git log --oneline                                                   # verify
-    git branch -d B2                                                    # new action
+    git branch -d B2                                                    # new option
     git log --oneline                                                   # verify
     git branch -m master foo                                            # known action
     git log --oneline                                                   # verify
     git branch -d foo                                                   # new action (fails)
-    git branch -m foo main                                              # known actions
+    git branch -m foo main                                              # known action
     git branch                                                          # verify
     git status                                                          # verify
     git log --oneline                                                   # verify
     git branch B1                                                       # known action
     git branch                                                          # verify
     git log --oneline                                                   # verify
-    git switch                                                          # new action (fails)
-    git switch B1                                                       # new action: on branch B1
+    git switch                                                          # new commmand (fails)
+    git switch B1                                                       # new argument: on branch B1
     git log --oneline                                                   # verify
     git branch B2                                                       # known action
     git log --oneline                                                   # verify
@@ -54,10 +54,13 @@
     git branch B1                                                       # known action
     git branch B2                                                       # known action
     git branch                                                          # on branch main
-    echo 'ninth line' >>Lines.txt                                       # routine
-    git status                                                          # routine
-    git add Lines.txt                                                   # routine
-    git commit -m 'Add ninth line on main' Lines.txt                    # routine
+    git status                                                          # routine with git status
+    echo 'ninth line' >>Lines.txt                                       # routine with git status
+    git status                                                          # routine with git status
+    git add Lines.txt                                                   # routine with git status
+    git status                                                          # routine with git status
+    git commit -m 'Add ninth line on main' Lines.txt                    # routine with git status
+    git status                                                          # routine with git status
     git log --oneline                                                   # verify
     git status                                                          # verify
     git switch B1                                                       # on branch B1
@@ -65,17 +68,19 @@
     git log --oneline                                                   # verify
     git log --oneline --all                                             # new option
     cat Lines.txt                                                       # verify
-    echo 'ninth line' >>Lines.txt                                       # routine
-    git status                                                          # routine
-    git add Lines.txt                                                   # routine
-    git commit -m 'Add ninth line on B1' Lines.txt                      # routine
-    git status                                                          # routine
+    git status                                                          # routine with git status
+    echo 'ninth line' >>Lines.txt                                       # routine with git status
+    git status                                                          # routine with git status
+    git add Lines.txt                                                   # routine with git status
+    git status                                                          # routine with git status
+    git commit -m 'Add ninth line on B1' Lines.txt                      # routine with git status
+    git status                                                          # routine with git status
     git log --oneline                                                   # verify
     git log --oneline --all                                             # verify
     git log --oneline --all --parents                                   # new option
     git switch main                                                     # on branch main
     git log --oneline --all                                             # verify
-    echo 'ninth line (mistake)' >>Lines.txt                             # routine (an intended mistake)
+    echo 'ninth line (duplicate)' >>Lines.txt                           # routine (an intended mistake)
     git add Lines.txt                                                   # routine
     git commit -m 'Add tenth line on main (with mistake)' Lines.txt     # routine
     cat Lines.txt                                                       # verify
@@ -117,6 +122,7 @@
     echo 'tenth line' >>Lines.txt                                       # routine
     git add Lines.txt                                                   # routine
     git commit -m 'Add ninth and tenth line on B2' Lines.txt            # routine
+    git status                                                          # verify
     git log --oneline --all --graph                                     # verify
 
 **exercise 3 ends**
@@ -132,17 +138,17 @@
     git diff main B1 Lines.txt                                          # verify
     git merge -m 'Merge development from branch B1' Lines.txt           # wrong syntax
     git merge -m 'Merge development from branch B1'                     # wrong syntax
-    git merge -m 'Merge development from branch B1' B1                  # right syntax
+    git merge -m 'Merge development from branch B1' B1                  # right syntax: fails because of conflict
     git diff Lines.txt                                                  # verify
     cat Lines.txt                                                       # explore
-    nano Lines.txt                                                      # edit the files
+    nano Lines.txt                                                      # edit the file within the conflict decorations
     cat Lines.txt                                                       # verify
     git diff                                                            # verify
     git status                                                          # verify
-    git add Lines.txt                                                   # resolve conflict
+    git add Lines.txt                                                   # mark resolution
     git status                                                          # verify
-    git commit -m 'Merge changes from B1 in main' Lines.txt             # close merge wrong syntax
-    git commit -m 'Merge changes from B1 in main'                       # close merge right syntax
+    git commit -m 'Merge changes from B1 into main' Lines.txt           # conclude merge wrong syntax
+    git commit -m 'Merge changes from B1 into main'                     s# conclude merge right syntax
     cat Lines.txt                                                       # verify
     git status                                                          # verify
     git log --oneline --all --graph                                     # verify
