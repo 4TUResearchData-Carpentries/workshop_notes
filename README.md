@@ -63,8 +63,8 @@ L2. BRANCHING AND REMOTE OPERATIONS (to be revised)
 | **2.2** | **Operations with remotes** | 
 | --- | Create a bare repositories |
 | --- | Cloning and pushing to upstreams |
-| --- | Syncing changes between cloned repositories |
-| --- | ~Comparing repositories~ |
+| --- | Comparing repositories |
+| --- | Syncing changes between repositories |
 | --- | ~Multiple branches, multiple remotes~ |
 
 </details>
