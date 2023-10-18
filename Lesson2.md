@@ -1,5 +1,16 @@
 # Lesson 2 Branching and remote operations
 
+The original list of commands has been edited and decorated with headings corresponding to the [lesson plan](../README.md#1-workshop-program) more clearly. 
+Some commands have been either removed or relocated or added for clarity and help self-study after the class. 
+Accidental errors have been removed, but intended errors have been kept.
+
+The comments after each line are annotations on whether a command/option appears for the first time (**new**) or is a **known action**. 
+Else, the annotation recalls why we typed that certain command, for example to **observe** the state of the play (typically before a certain change) or to **verify** the results of a change.
+**routine** commands are the typical commit ssequence learned in Lesson 1.
+
+The original list of commands is available at this commit [as displayed by GitHub](https://github.com/4TUResearchData-Carpentries/workshop_notes/blob/056617efa8abb7d79ffb3e85b3ac8dbbcaed50e6/Lesson2.md).
+
+
 
 ---
 ---
@@ -13,13 +24,13 @@
     git branch                                                          # verify
     git status                                                          # verify
     cat Lines.txt                                                       # verify
-    git branch -m B1 B2                                                 # new option
+    git branch -m B1 B2                                                 # new short option
     git log --oneline                                                   # verify
-    git branch -d B2                                                    # new option
+    git branch -d B2                                                    # new short option
     git log --oneline                                                   # verify
     git branch -m master foo                                            # known action
     git log --oneline                                                   # verify
-    git branch -d foo                                                   # new action (fails)
+    git branch -d foo                                                   # known action (fails)
     git branch -m foo main                                              # known action
     git branch                                                          # verify
     git status                                                          # verify
@@ -66,7 +77,7 @@
     git switch B1                                                       # on branch B1
     git status                                                          # verify
     git log --oneline                                                   # verify
-    git log --oneline --all                                             # new option
+    git log --oneline --all                                             # new long option
     cat Lines.txt                                                       # verify
     git status                                                          # routine with git status
     echo 'ninth line' >>Lines.txt                                       # routine with git status
@@ -77,7 +88,7 @@
     git status                                                          # routine with git status
     git log --oneline                                                   # verify
     git log --oneline --all                                             # verify
-    git log --oneline --all --parents                                   # new option
+    git log --oneline --all --parents                                   # new long option
     git switch main                                                     # on branch main
     git log --oneline --all                                             # verify
     echo 'ninth line (duplicate)' >>Lines.txt                           # routine (an intended mistake)
@@ -163,44 +174,46 @@
 # 2.2.1 Create and explore a bare repository
 
     pwd                                                                 # observe
-    cd ..                                                               # observe
-    pwd                                                                 # observe
+    cd ..                                                               # directory of the workshop
+    pwd                                                                 # verify
     ls -F                                                               # observe
-    git init --bare git-zero.git                                        # new action
-    ls -Fa git-zero                                                     # verify
+    git init --bare git-zero.git                                        # new long option
+    ls -F git-zero.git                                                  # verify
     ls -Fa git                                                          # observe
-    cd git-zero                                                         # observe
+    ls -Fa git/.git                                                     # observe
+    cd git-zero.git                                                     # directory of the bare repository
     ls                                                                  # observe
-    git status                                                          # observe
-    git log                                                             # observe
+    git status                                                          # observe (fails)
+    git log                                                             # observe (fails)
+    git branch                                                          # observe
     cd ..                                                               # observe
-    ls                                                                  # observe
+    ls                                                                  # verify
 
 ---
-# 2.2.2 Cloning and pushing to "remote" repositories (upstreams)
+# 2.2.2 Cloning and pushing to "remote" bare repositories (upstreams)
 
-
-    git clone git-zero.git git-one                                      # new action
+    git clone git-zero.git git-one                                      # new command
     ls -Fa git-one                                                      # observe
     ls -Fa git-one/.git                                                 # observe
     ls -F                                                               # observe
-    cd git-one                                                          # in the first clone
+    cd git-one                                                          # directory of the first clone
     git status                                                          # observe
-    git log                                                             # observe
-    git remote                                                          # new information
-    git remote -v                                                       # new information
+    git branch                                                          # observe
+    git log                                                             # observe (fails)
+    git remote                                                          # new command
+    git remote -v                                                       # new short option
     echo 1 >>numbers.txt                                                # routine
-    cat numbers.txt                                                     # routine
-    git status                                                          # routine
-    git add numbers.txt                                                 # routine
-    git status                                                          # routine
-    git commit -m 'git-one: add first 1' numbers.txt                    # routine
+    cat numbers.txt                                                     # verify
+    git status                                                          # routine with git status
+    git add numbers.txt                                                 # routine with git status
+    git status                                                          # routine with git status
+    git commit -m 'git-one: add first 1' numbers.txt                    # routine with git status
     git log --oneline                                                   # verify
-    git branch                                                          # verify
+    git status                                                          # verify (ignore the but-warning)
+    git push                                                            # new command
     git status                                                          # verify
-    git push                                                            # new action
-    cd ../git-zero.git                                                  # in the upstream
-    git status                                                          # observe
+    cd ../git-zero.git                                                  # directory of the upstreamgit
+    git status                                                          # observe (fails)
     git log                                                             # observe
     ls -F                                                               # observe
     cd ..                                                               # in the workshop directory
@@ -209,10 +222,11 @@
     ls -F                                                               # verify
     cd git-two/                                                         # in the second clone
     ls -aF                                                              # verify
-    git remote -v                                                       # verify
+    cat numbers.txt                                                     # observe
+    git log                                                             # observe
+    git remote -v                                                       # observe
     echo 2 >>numbers.txt                                                # routine
-    cat numbers.txt                                                     # routine
-    git log                                                             # routine
+    cat numbers.txt                                                     # verify
     git add numbers.txt                                                 # routine
     git commit -m 'git-two: add first 2' numbers.txt                    # routine
     git log --oneline                                                   # verify
@@ -220,21 +234,22 @@
     git status                                                          # verify
 
 ---
-# 2.2.3 Pulling (fetching and merging) from upstreams and resolving conflicts
+# 2.2.3 Fetching and merging (pulling) from upstreams, and resolving conflicts
 
     cd ../git-one                                                       # in the first clone
     pwd                                                                 # verify
     git status                                                          # verify
-    git fetch                                                           # new action
     git log --oneline                                                   # routine
+    git fetch                                                           # new command
     git status                                                          # routine
+    git log --oneline                                                   # routine
     git log --oneline --all                                             # routine
     cat numbers.txt                                                     # routine
     # git pull = git fetch + git merge                                  # git has compound commands
     git fetch                                                           # known action
-    git merge                                                           # see episode 2.1
+    git merge                                                           # see episode 2.1 (no conflict here)
     git log --all                                                       # verify
-    cat numbers.txt                                                     # routine
+    cat numbers.txt                                                     # verify
     echo 1 >>numbers.txt                                                # routine
     cat numbers.txt                                                     # routine
     git add numbers.txt                                                 # routine
@@ -242,26 +257,27 @@
     git log --oneline --all                                             # verify
     git status                                                          # verify
     git push                                                            # known action
-    git log --oneline --all                                             # verify
     git status                                                          # verify
-    cd ../git-two/                                                      # in the second clone
+    git log --oneline --all                                             # verify
+    cd ../git-two/                                                      # in the directory of the second clone
     ls                                                                  # observe
     cat numbers.txt                                                     # observe
     git status                                                          # observe
     git log --oneline                                                   # observe
     echo 2 >>numbers.txt                                                # routine
-    cat numbers.txt                                                     # routine
+    cat numbers.txt                                                     # verify
     git add numbers.txt                                                 # routine
     git commit -m 'git-two: add second 2' numbers.txt                   # routine
     git status                                                          # verify
     git log --oneline                                                   # verify
-    git push                                                            # conflict
+    git push                                                            # known action with conflict
     git fetch                                                           # known action
     git status                                                          # observe
-    git merge                                                           # conflict
+    git merge                                                           # known action with conflict
     git diff                                                            # observe
     cat numbers.txt                                                     # observe
-    nano numbers.txt                                                    # fix conflict
+    nano numbers.txt                                                    # edit the file within the conflict decorations
+    cat numbers.txt                                                     # verify
     git status                                                          # verify
     git add numbers.txt                                                 # mark resolution
     git status                                                          # verify
