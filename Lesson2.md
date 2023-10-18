@@ -1,4 +1,52 @@
-    # DEVELOP AND COMPARE BRANCHES
+# Lesson 2 Branching and remote operations 
+
+
+---
+---
+## Episode 1: Branching
+
+---
+### 2.1.1 Create, rename, change and delete branches
+    git status 
+    git branch
+    git branch B1
+    git branch
+    git status 
+    cat Lines.txt 
+    git log--oneline
+    git log --oneline
+    git branch -m B1 B2
+    git log --oneline
+    git branch -d B2
+    git log --oneline
+    git branch -m master foo
+    git log --oneline
+    git branch -d foo
+    git branch -m foo main
+    git branch
+    git status 
+    git log --oneline
+    git branch B1
+    git branch
+    git log --oneline
+    git switch
+    git switch B1
+    git log --oneline
+    git branch B2
+    git log --oneline
+    git switch B2
+    git log --oneline
+    git switch main 
+    git log --oneline
+    # exercise L2-ex01
+    git branch
+    git branch -d B1 B2
+    git branch
+    git log --oneline 
+    cat Lines.txt
+
+---    
+### 2.1.2 Develop and compare branches
     git branch B1 B2
     git branch B1
     git branch B2
@@ -28,6 +76,10 @@
     git add Lines.txt 
     git commit -m 'Add tenth line on main (with mistake)' Lines.txt
     cat Lines.txt 
+
+---
+### 2.1.3 Visualise and merge branches, and resolve conflicts
+
     git log --oneline --all
     git log --oneline --all --parents
     git log --oneline --all --parents --graph
@@ -90,7 +142,15 @@
     cat Lines.txt 
     git log --oneline --all --graph
     git log --oneline --all --graph --parents
-    # REMOTES
+
+
+---
+---
+## Episode 2 Operation with remotes
+
+---
+### 2.2.1 What are bare repositories?
+
     pwd
     cd ..
     pwd
@@ -110,6 +170,11 @@
     rm -rf git-zero/
     git init --bare git-zero.git
     ls -F
+    
+
+---    
+### 2.2.2 Cloning and pushing to "remote" repositories (upstreams)    
+
     git clone git-zero.git git-one
     ls -F
     ls -Fa git-one
@@ -154,11 +219,15 @@
     cat numbers.txt 
     git log
     git add numbers.txt 
-    git commit -m'git-two: add first 2' numbers.txt 
+    git commit -m 'git-two: add first 2' numbers.txt 
     git log --oneline
     git push
     git status 
     pwd
+    
+--- 
+### 2.2.3 Pulling from upstreams and resolve conflicts   
+    
     cd ../git-one
     git status 
     git fetch
@@ -210,4 +279,4 @@
     git status 
     true
     echo
-    # placeholder after the merge to fix these notes
+    # TOFIX placeholder for the last exercise
