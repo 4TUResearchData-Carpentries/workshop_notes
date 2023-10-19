@@ -20,59 +20,59 @@ The version rolled out during the class, with warts and all, is [here, as displa
     ls                                                                  # verify
     cd Desktop/                                                         # any location you find your work in easily
     ls                                                                  # verify
-    mkdir -p 2310-gitcodev/git                                          # make workshop directory and subdirectory
+    mkdir -p 2310-gitcodev/git                                          # make workshop directory and subdirectory for Lesson 1 and 2.1
     ls                                                                  # verify
     ls 2310-gitcodev/                                                   # explore
     cd 2310-gitcodev/git/                                               # explore
     ls                                                                  # explore
     echo $SHELL                                                         # get default setting
-    bash                                                                # only for users who have the zsh shell
+    bash                                                                # only for users whose default is the `zsh` shell
 
 
 ### Git command syntax and getting help
 
-    git                                                                 #
-    git --version                                                       #
-    git version                                                         #
-    git help                                                            #
-    git helphelp                                                        #
-    git help help                                                       #
-    git config                                                          #
-    git config --list                                                   #
-    git config --global core.editor nano                                #
-    git config --global core.autocrlf input # false for Win             #
-    git config --list                                                   #
-    git help config                                                     #
-    git help glossary                                                   #
-    git help -g                                                         #
+    git                                                                 # observe
+    git --version                                                       # new option
+    git version                                                         # new command
+    git help                                                            # new command
+    git help help                                                       # new argument
+    git config                                                          # new command
+    git config --list                                                   # new option
+    git config --global core.editor nano                                # new option and arguments
+    git config --global core.autocrlf input                             # set false instead of input for Win users
+    git config --list                                                   # known action
+    git help config                                                     # known action
+    git help glossary                                                   # known action (glossary is not a command)
+    git help -g                                                         # new option
 
 
 ### Creating an empty repository
 
-    pwd                                                                 #
-    ls                                                                  #
-    echo 'first line'                                                   #
-    echo 'first line' >lines.txt                                        #
-    ls                                                                  #
-    cat lines.txt                                                       #
-    echo 'second line' >>lines.txt                                      #
-    cat lines.txt                                                       #
-    git status                                                          #
-    git init                                                            #
-    ls                                                                  #
-    ls -a                                                               #
-    ls -aF                                                              #
-    ls -aF .git                                                         #
-    ls                                                                  #
+    pwd                                                                 # observe
+    ls                                                                  # observe
+    echo 'first line'                                                   # observe
+    echo 'first line' >lines.txt                                        # routine
+    ls                                                                  # verify
+    cat lines.txt                                                       # verify
+    echo 'second line' >>lines.txt                                      # routine
+    cat lines.txt                                                       # verify
+    git status                                                          # new command
+    git init                                                            # new command
+    ls                                                                  # verify
+    ls -a                                                               # new option
+    ls -aF                                                              # new option
+    ls -aF .git                                                         # new option
+    ls                                                                  # verify
 
 
 
 ## Episode 1.2 Tracking changes in work documents
 
 
-### Tracking changes with the index
+### 1.1.2 Tracking changes with the index
 
-    # TRACKING CHANGES IN FILES                                         #
+#### Tracking files
+
     git status                                                          #
     git add lines.txt                                                   #
     git status                                                          #
@@ -98,9 +98,10 @@ The version rolled out during the class, with warts and all, is [here, as displa
     cat lines.txt                                                       #
     git status                                                          #
     git diff lines.txt                                                  #
-    #                                                                   #
     # end of exercise                                                   #
-    # TRACKING DIRECTORIES                                              #
+
+#### Tracking directories
+
     mkdir directory                                                     #
     ls                                                                  #
     ls -F                                                               #
@@ -113,7 +114,9 @@ The version rolled out during the class, with warts and all, is [here, as displa
     git help status                                                     #
     git add directory                                                   #
     git status                                                          #
-    # NOT TRACKING FILES                                                #
+    
+#### Ignore untracked files
+
     history                                                             #
     history 20                                                          #
     history 20 >history.log                                             #
@@ -131,7 +134,9 @@ The version rolled out during the class, with warts and all, is [here, as displa
     git status                                                          #
     git add .gitignore                                                  #
     git status                                                          #
-    # IGNORE UNTRACKED DIRECTORIES (before it was about files)          #
+    
+#### Ignore untracked directories
+
     touch directory/trackme.txt                                         #
     touch directory/donttrackme.txt                                     #
     ls directory/                                                       #
@@ -150,7 +155,7 @@ The version rolled out during the class, with warts and all, is [here, as displa
     git status                                                          #
     git add .gitignore                                                  #
 
-### Not tracking and stop tracking
+### 1.2.2 Not tracking and stop tracking
 
     git status                                                          #
     git rm --staged directory/emptyfile.txt                             #
@@ -158,7 +163,7 @@ The version rolled out during the class, with warts and all, is [here, as displa
     git status                                                          #
     ls -FR                                                              #
 
-### Undoing changes with the index
+### 1.2.3 Undoing changes with the index
 
     cat lines.txt                                                       #
     echo 'fifth line' >>lines.txt                                       #
@@ -185,7 +190,7 @@ The version rolled out during the class, with warts and all, is [here, as displa
     git status                                                          #
 
 
-### Deleting and renaming tracked files and directories
+### 1.2.4 Deleting and renaming tracked files and directories
 
     git rm --cached directory/donttrackme.txt                           #
     git status                                                          #
@@ -221,7 +226,7 @@ The version rolled out during the class, with warts and all, is [here, as displa
 ## Episode 1.3 Organising tracked changes in a Git history
 
 
-### Committing changes with a configured identity and a message
+### 1.3.1 Committing changes with a configured identity and a message
 
 
     cat Lines.txt                                                       #
@@ -250,61 +255,50 @@ The version rolled out during the class, with warts and all, is [here, as displa
     git status                                                          #
     history                                                             #
     git log                                                             #
-    # exercise 5                                                        #
+
+exercise 5 
 
 
-### Inspecting changes using the history
+### 1.3.2 Inspecting changes using the history
 
-                                                                        #
-    git status                                                          #
-    git diff                                                            #
-    echo 'sixth line' >>Lines.txt                                       #
-    git diff                                                            #
-    git add Lines.txt                                                   #
-    git diff                                                            #
-    git diff Lines.txt                                                  #
-    git commit -m 'Add sixth line' Lines.txt                            #
-    git diff                                                            #
-    git log                                                             #
-    git log --oneline                                                   #
-    git status                                                          #
-    echo 'seventh line' >>Lines.txt                                     #
-    git diff Lines.txt                                                  #
-    git add Lines.txt                                                   #
-    git diff Lines.txt                                                  #
-    git status                                                          #
-    git log --oneline                                                   #
-    git diff HEAD Lines.txt                                             #
-    git diff e278702 Lines.txt                                          #
-    git diff HEAD~1 Lines.txt                                           #
-    git log --oneline                                                   #
-    git diff 7f2ca Lines.txt                                            #
-    git diff HEAD~2 Lines.txt                                           #
-    git diff HEAD~3 Lines.txt                                           #
-    git diff HEAD~7 Lines.txt                                           #
-    git diff Lines.txt                                                  #
-    git diff HEAD~3 Lines.txt                                           #
-    git diff HEAD HEAD~1 Lines.txt                                      #
-    git diff HEAD~1 HEAD Lines.txt                                      #
-    git diff HEAD~4 HEAD~2 Lines.txt                                    #
-    git diff HEAD~3 HEAD~2 Lines.txt                                    #
-    git log                                                             #
-    pwd                                                                 #
-    git status                                                          #
-    git log --oneline                                                   #
-    git diff Lines.txt                                                  #
-    git diff HEAD Lines.txt                                             #
-    git diff HEAD~1 Lines.txt                                           #
-    git diff HEAD HEAD~1 Lines.txt                                      #
-    git diff HEAD~1 HEAD Lines.txt                                      #
-    diff HEAD HEAD Lines.txt                                            #
-    git diff HEAD HEAD Lines.txt                                        #
-    git diff HEAD~2 HEAD~2 Lines.txt                                    #
-    cat ./exercises/L1-ex07                                             #
-    cat Lines.txt                                                       #
-    cat ./exercises/L1-ex07                                             #
-                                                                        #
-    # LIGHTWEIGHT TAGS                                                  #
+    git status                                                          # observe
+    git diff Lines.txt                                                  # routine with git diff
+    echo 'sixth line' >>Lines.txt                                       # routine with git diff
+    git diff Lines.txt                                                  # routine with git diff
+    git add Lines.txt                                                   # routine with git diff
+    git diff Lines.txt                                                  # routine with git diff
+    git commit -m 'Add sixth line' Lines.txt                            # routine with git diff
+    git diff Lines.txt                                                  # routine with git diff
+    git status                                                          # verify
+    git log                                                             # verify 
+    git log --oneline                                                   # verify
+    echo 'seventh line' >>Lines.txt                                     # routine without commit
+    git diff Lines.txt                                                  # routine without commit
+    git add Lines.txt                                                   # routine without commit
+    git diff Lines.txt                                                  # routine without commit
+    git status                                                          # routine without commit
+    git log --oneline                                                   # observe
+    git diff e278702 Lines.txt                                          # new argument
+    git diff HEAD Lines.txt                                             # new argument 
+    git diff HEAD~1 Lines.txt                                           # new argument
+    git log --oneline                                                   # observe
+    git diff 7f2ca Lines.txt                                            # observe
+    git diff Lines.txt                                                  # observe
+    git diff HEAD~2 Lines.txt                                           # observe
+    git diff HEAD~3 Lines.txt                                           # observe
+    git diff HEAD~7 Lines.txt                                           # observe
+    git diff HEAD~3 Lines.txt                                           # observe
+    git diff HEAD HEAD~1 Lines.txt                                      # new argument
+    git diff HEAD~1 HEAD Lines.txt                                      # observe
+    git diff HEAD~4 HEAD~2 Lines.txt                                    # observe
+    git diff HEAD~3 HEAD~2 Lines.txt                                    # observe
+    git diff HEAD HEAD Lines.txt                                        # observe
+    git diff HEAD~2 HEAD~2 Lines.txt                                    # observe
+
+[exercise](./exercises/L1-ex07)
+
+#### Lightweight tags
+
     git log --oneline                                                   #
     git tag 'hey'                                                       #
     git log --oneline                                                   #
@@ -320,12 +314,12 @@ The version rolled out during the class, with warts and all, is [here, as displa
     git diff hey hey2 Lines.txt                                         #
     git log --oneline                                                   #
     git diff hey hey2 Lines.txt                                         #
-    echo 'eighth line' >>Lines.txt                                      #
-    cat Lines.txt                                                       #
-    git status                                                          #
-    git add Lines.txt                                                   #
-    git status                                                          #
-    git commit -m 'Add eighth line' Lines.txt                           #
+    echo 'eighth line' >>Lines.txt                                      # routine with git status
+    cat Lines.txt                                                       # routine with git status
+    git status                                                          # routine with git status
+    git add Lines.txt                                                   # routine with git status
+    git status                                                          # routine with git status
+    git commit -m 'Add eighth line' Lines.txt                           # routine with git status
     git log --oneline                                                   #
     git tag -d hey1                                                     #
     git tag -d hey4                                                     #
@@ -345,7 +339,8 @@ The version rolled out during the class, with warts and all, is [here, as displa
     git tag v5 HEAD                                                     #
     git log --oneline                                                   #
                                                                         #
-    # ANNOTATED TAGS                                                    #
+#### Annotated tags
+
     git tag -a                                                          #
     git tag -a -m 'First annotated tag'                                 #
     git tag -a -m 'First annotated tag' TAG1                            #
@@ -354,36 +349,35 @@ The version rolled out during the class, with warts and all, is [here, as displa
     git show                                                            #
     git show HEAD~1                                                     #
     true                                                                #
-    # TODO edit exercise for tags v1 v2 v3                              #
-                                                                        #
-    # TOFIX there is a gap in the notes                                 #
+    
+TODO edit exercise for tags v1 v2 v3
 
 
-### Undoing changes with the history
+### 1.3.3 Undoing changes with the history
 
 
     cat Lines.txt                                                       # observe
     git status                                                          # observe
     ls                                                                  # observe
     git restore --source HEAD Lines.txt                                 # new long option
-    cat Lines.txt						                                # verify
-    git log --oneline  							                        # verify
-    git diff Lines.txt 							                        # verify
-    git restore -s HEAD~1 Lines.txt 			                        # short option
-    cat Lines.txt 								                        # verify
-    git log --oneline							                        # verify
-    git diff 									                        # verify
-    git diff HEAD								                        # verify
-    git status 									                        # verify
-    cat Lines.txt 								                        # verify
-    echo 'EIGHTH LINE' >>Lines.txt 				                        # routine
-    cat Lines.txt 								                        # verify
-    git diff Lines.txt							                        # routine
-    git status 								                            # verify
-    git add Lines.txt 							                        # routine
-    git commit -m 'Add EIGHTH LINE' Lines.txt 	                        # routine
-    git diff HEAD HEAD~1 						                        # verify
-    git log --oneline					                                # verify
-    git status 									                        # verify
+    cat Lines.txt                                                       # verify
+    git log --oneline                                                   # verify
+    git diff Lines.txt                                                  # verify
+    git restore -s HEAD~1 Lines.txt                                     # short option
+    cat Lines.txt                                                       # verify
+    git log --oneline                                                   # verify
+    git diff                                                            # verify
+    git diff HEAD                                                       # verify
+    git status                                                          # verify
+    cat Lines.txt                                                       # verify
+    echo 'EIGHTH LINE' >>Lines.txt                                      # routine
+    cat Lines.txt                                                       # verify
+    git diff Lines.txt                                                  # routine
+    git status                                                          # verify
+    git add Lines.txt                                                   # routine
+    git commit -m 'Add EIGHTH LINE' Lines.txt                           # routine
+    git diff HEAD HEAD~1                                                # verify
+    git status                                                          # verify
+    git log --oneline                                                   # verify
 
-    exercise 10
+exercise (10) to be added
