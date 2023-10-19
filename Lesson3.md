@@ -10,7 +10,7 @@
 
 Lecture notes for the lesson on collaborative software development.
 
-## PREPARATION
+## PREPARATIONS FOR THE INSTRUCTOR
 The instructor sets up the command history on two terminals do the following:
 
 1. On main terminal:
@@ -49,11 +49,27 @@ Useful shortcuts for the Windows Terminal (Preview) App on Windows 11.
 
 #### 1. Connect to GitHub via SSH [ 10 min]
 
+
+> Ask participants using Windows not to start Git Bash clicking on the desktop icon, as they did in Lesson 1. Instead,   
+
+* use the app menu (the Windows logo) 
+* pick up Git Bash from the list
+* launch Git Bash with the option **Run as administrator** available from the drop-down submenu.  
+The participants need to type in their credentials as local administrators.
+This gain authority to have SSH installing its own features in their laptop next.  
+Take note: at their first `git push`, Git might complain about a mismatch between the credentials of local and global administrator.
+The warning itself suggests another Git command as the remedy to this impasse. 
+
+
 > Ask participants to test the connection with:
 
 ```shell
 ssh -T git@github.com
 ```
+
+The message for a successful outcome is friendly and plain.    
+Ask participants whether git@github.com has welcomed them.
+
 
 > GitHub requires authentification via SSH to do pulls an pushes, but not for cloning. **Use illustrations** to explain what a SSH connection entitles.
 
