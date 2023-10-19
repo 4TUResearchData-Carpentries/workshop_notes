@@ -1,5 +1,8 @@
 # Lesson 1 Fundamental operations with Git
 
+**Disclaimer of work in progress**  
+This document is being reviewed (edited and replayed).
+The version rolled out during the class, with warts and all, is [here, as displayed by GitHub](https://github.com/4TUResearchData-Carpentries/workshop_notes/blob/056617efa8abb7d79ffb3e85b3ac8dbbcaed50e6/Lesson1.md).
 
 
 
@@ -360,8 +363,8 @@
 
 
     cat Lines.txt                                                       # observe
-    git status 									                        # observe
-    ls									                                # observe
+    git status                                                          # observe
+    ls                                                                  # observe
     git restore --source HEAD Lines.txt                                 # new long option
     cat Lines.txt						                                # verify
     git log --oneline  							                        # verify
