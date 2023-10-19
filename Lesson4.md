@@ -2,7 +2,7 @@
 
 **Instructor:** *Manuel G. Garcia*
 
-**Last update:** *18-10-2023*
+**Last update:** *19-10-2023*
 
 **Presentation:** *[Collaborative Software Development - Part 2](https://docs.google.com/presentation/d/1TvWIrBsVNwmEyvZodd4V7gueATeECKMubUqSSYKMyuU/edit?usp=sharing)*
 
@@ -17,8 +17,8 @@ Working in teams, define and implement a workflow to collaborate in a repository
 1. [Administrator] create a repository for the team using the template: https://github.com/the-magnificents/collab-review
 2. [Team] dicuss and agree on which workflow to implement for this exercise.
 3. [Team] each member choses one task from the `faircode-checklist.md` and make changes.
-4. [Team] each member opens a pull request to the `main` branch with the their changes. Important: do not merge
-5. [Team] each member makes some other changes to the repository, commits and push. Do not merge.
+4. [Team] each member opens a pull request to the `main` branch with their changes. Important: do not merge
+5. [Team] each member makes some other changes to the repository, commits, and pushes. Do not merge.
 6. [Team] go back to your pull request and see how the latest changes affected your pull request. Do not merge.
 
 
@@ -31,9 +31,9 @@ Working in teams, define and implement a workflow to collaborate in a repository
 Assign reviewers via the GitHub interface.
 
 **Type along**
-How to check out a pull request locally for the purpose of reviwing it (testing).
+How to check out a pull request locally for the purpose of reviewing it (testing).
 
-- Use the following comand in the CLI to create a new branch with the content of the pull request:
+- Use the following command in the CLI to create a new branch with the content of the pull request:
 
 ```shell
 git fetch origin pull/<#>/head:<local_branch_name>
@@ -46,7 +46,7 @@ git switch <local_branch_name>
 
 Practice reviewing code in pull requests on GitHub. 
 1. [Author]Assign one or two team members as reviewers in your pull request (PR).
-2. [Reviewer] Reviews, discuss, and suggest changes to the pull request(s) following recommendation mentioned so far.
+2. [Reviewer] Reviews, discuss and suggest changes to the pull request(s) following the recommendation mentioned so far.
 3. [Author] Make changes to PR based on the reviewer's suggestions, and updates the PR.
 4. [Reviewer] Approves the PR.
 5. [Author] Merges the PR into the repository.
@@ -59,7 +59,7 @@ Practice reviewing code in pull requests on GitHub.
 
 ### Exercise 3: Contributing guidelines [10 min]
 
-Add contributing guidelines to your very first repository (workshop-git?), using the template available in: https://github.com/manuGil/fair-code 
+Add contributing guidelines to your very first repository (workshop-git?), using the template available at: https://github.com/manuGil/fair-code 
 
 
 ### Exercise 4: Licensing and Citation [10 min] 
@@ -72,18 +72,18 @@ Add a license and citation file to your first repository (workshop-git?)
 
 ### C. Software releases
 
-> Explain how is a realease, and the meaning of semantic versioning.
+> Explain how is a release, and the meaning of semantic versioning.
 
  **Do along**
 
- - Using the first repository show how to make a release in Github, use semantic versioning for the name of the release.
+ - Using the first repository show how to make a release in Github, and use semantic versioning for the name of the release.
 
-> if time allows it shows reference materials, and DCC guides
+> If time allows it shows reference materials and DCC guides
 
 ### D. Summary
 
-- Code reviews a essential to produce high quality software
+- Code reviews a essential to producing high-quality software
 - Be mindful when giving feedback to someone else code.
-- Collaborative guidelines let potential collaborators to know how they can contribute to a software.
-- It is important to think about citing an licensing your software.
+- Collaborative guidelines let potential collaborators know how they can contribute to a software.
+- It is important to think about citing and licensing your software.
 - Use semantic versioning when releasing software.
