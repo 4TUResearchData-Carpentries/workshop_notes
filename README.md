@@ -176,6 +176,11 @@ Thank you in advance for your time.
 ### Official Git documentation
 
 * https://www.git-scm.com/docs/
+    * Short videos (4-8'): https://www.git-scm.com/videos
+    * Reference manual for commands: https://www.git-scm.com/docs
+    * General features: https://www.git-scm.com/about
+    * ProGit book (505 pages, open access, with full and partial translations in other languages): https://www.git-scm.com/book
+    * **Please explore this website**.
 
 ### GitHub-related documentation
 
@@ -184,6 +189,16 @@ Thank you in advance for your time.
 * Also Linus Torvalds has a [GitHub account with many repositories](https://github.com/torvalds)
 
 ### Miscellaneous resources
+
+* Peer-reviewed article: [Five reasons why researchers should learn to love the command line](https://www.nature.com/articles/d41586-021-00263-0) (J.M. Perkel, 2 Feb 2021)
+* Blog: [How to undo almost everything in Git](https://github.blog/2015-06-08-how-to-undo-almost-anything-with-git/) (J. Wehner, 8 June 2015)
+* Blog: [How to write a Git commit message](https://cbea.ms/git-commit/) (cbeams, 31 Aug 2014)
+* Blog: [Ignoring Files and Directories in Git (.gitignore)](https://linuxize.com/post/gitignore-ignoring-files-in-git/) (Linuxize, 25 July 2020)
+* Cartoons:
+    * [Git commit by xkcd](https://xkcd.com/1296)
+    * [Git by xkcd](https://xkcd.com/1597)
+    
+
 
 ...
 
