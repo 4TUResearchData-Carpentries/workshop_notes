@@ -2,7 +2,7 @@
 
 **Instructor:** *Manuel G. Garcia*
 
-**Last update:** *18-10-2023*
+**Last update:** *19-10-2023*
 
 **Presentation:** *[Collaborative Software Development - Part 2](https://docs.google.com/presentation/d/1TvWIrBsVNwmEyvZodd4V7gueATeECKMubUqSSYKMyuU/edit?usp=sharing)*
 
