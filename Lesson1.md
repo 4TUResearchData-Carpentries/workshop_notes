@@ -96,14 +96,14 @@ The original list of commands is available at this commit [as displayed by GitHu
 
 **[exercise 1](./exercises/L1-ex01) begins**
 
-        echo 'fourth line' >>lines.txt                                  # Git routine
-        cat lines.txt                                                   # verify
-        git status                                                      # verify
-        git diff lines.txt                                              # verify
-        git add lines.txt                                               # Git routine
-        cat lines.txt                                                   # verify
-        git status                                                      # verify
-        git diff lines.txt                                              # verify
+		echo 'fourth line' >>lines.txt                          # Git routine
+		cat lines.txt                                           # verify
+		git status                                              # verify
+		git diff lines.txt                                      # verify
+		git add lines.txt                                       # Git routine
+		cat lines.txt                                           # verify
+		git status                                              # verify
+		git diff lines.txt                                      # verify
 **exercise 1 ends** 
 
 
@@ -251,40 +251,40 @@ The original list of commands is available at this commit [as displayed by GitHu
 
 **[exercise 2](./exercises/L1-ex04) begins**
 
-		git status                                                      #
-		git commit -m 'Add .gitignore' .gitignore                       # Git routine
-		git status                                                      # verify
-		git log                                                         # verify
+		git status                                              #
+		git commit -m 'Add .gitignore' .gitignore               # Git routine
+		git status                                              # verify
+		git log                                                 # verify
 **exercise 2 ends**
 
-    rm -r directory														# to keep the working tree lean
+    rm -r directory				                        # to keep the working tree lean
     git status                                                          # verify
     ls                                                                  # verify
 
 **[exercise 3](./exercises/L1-ex05) begins**  
 
-		git status                                                      # Git routine with git status
-		echo 'fifth line' >>Lines.txt                                   # Git routine with git status
-		cat Lines.txt                                                   # Git routine with git status
-		git status                                                      # Git routine with git status
-		git add Lines.txt                                               # Git routine with git status
-		git status                                                      # Git routine with git status
-		git commit -m 'Add fifth line' Lines.txt                        # Git routine with git status
-		git status                                                      # Git routine with git status
-		git log                                                         # verify
+		git status                                              # Git routine with git status
+		echo 'fifth line' >>Lines.txt                           # Git routine with git status
+		cat Lines.txt                                           # Git routine with git status
+		git status                                              # Git routine with git status
+		git add Lines.txt                                       # Git routine with git status
+		git status                                              # Git routine with git status
+		git commit -m 'Add fifth line' Lines.txt                # Git routine with git status
+		git status                                              # Git routine with git status
+		git log                                                 # verify
 **exercise 3 ends**
 
 **[exercise 4](./exercises/L1-ex06) begins**  
 
-		git diff Lines.txt                                              # Git routine with git diff
-		echo 'sixth line' >>Lines.txt                                   # Git routine with git diff
-		git diff Lines.txt                                              # Git routine with git diff
-		git add Lines.txt                                               # Git routine with git diff
-		git diff Lines.txt                                              # Git routine with git diff
-		git commit -m 'Add sixth line' Lines.txt                        # Git routine with git diff
-		git diff Lines.txt                                              # Git routine with git diff
-		git status                                                      # verify
-		git log                                                         # verify
+	git diff Lines.txt                                              # Git routine with git diff
+	echo 'sixth line' >>Lines.txt                                   # Git routine with git diff
+	git diff Lines.txt                                              # Git routine with git diff
+	git add Lines.txt                                               # Git routine with git diff
+	git diff Lines.txt                                              # Git routine with git diff
+	git commit -m 'Add sixth line' Lines.txt                        # Git routine with git diff
+	git diff Lines.txt                                              # Git routine with git diff
+	git status                                                      # verify
+	git log                                                         # verify
 **exercise 4 ends**
 
 
@@ -292,7 +292,7 @@ The original list of commands is available at this commit [as displayed by GitHu
 ### 1.3.2 Inspecting changes using the history
 
 
-	git status                                                          # observe
+    git status                                                          # observe
     git log                                                             # verify 
     git log --oneline                                                   # new long option
     echo 'seventh line' >>Lines.txt                                     # Git routine without commit
@@ -316,13 +316,13 @@ The original list of commands is available at this commit [as displayed by GitHu
 
 **[exercise 5](./exercises/L1-ex07) begins**
 	
-	# for example...
-    git diff HEAD~4 HEAD~2 Lines.txt                                    # observe
-    git diff HEAD~3 HEAD~2 Lines.txt                                    # observe
-    # ad libitum
+		# for example...
+		git diff HEAD~4 HEAD~2 Lines.txt                                # observe
+		git diff HEAD~3 HEAD~2 Lines.txt                                # observe
+		# ad libitum
 **exercise 5 ends**
 
-	git diff HEAD HEAD Lines.txt                                        # observe
+    git diff HEAD HEAD Lines.txt                                        # observe
     git diff HEAD~2 HEAD~2 Lines.txt                                    # observe
 
 
@@ -357,7 +357,7 @@ The original list of commands is available at this commit [as displayed by GitHu
     git tag -d hey2                                                     # known action
     git tag -d hey                                                      # known action
 
-**[exercise 5](./exercises/L1-ex09) begins**
+**[exercise 6](./exercises/L1-ex09) begins**
 
 		git log --oneline                                               # verify
 		git tag HEAD~4 v1                                               # new arguments (fails)
@@ -367,7 +367,7 @@ The original list of commands is available at this commit [as displayed by GitHu
 		git tag v4 HEAD~1                                               # known action
 		git tag v5 HEAD                                                 # known action
 		git log --oneline                                               # known action
-**exercise 5**
+**exercise 6**
 
 
 #### Annotated tags
@@ -382,7 +382,6 @@ The original list of commands is available at this commit [as displayed by GitHu
 
 ### 1.3.3 Undoing changes with the history
 
-
     ls                                                                  # observe
     cat Lines.txt                                                       # observe
     git status                                                          # observe
@@ -394,13 +393,13 @@ The original list of commands is available at this commit [as displayed by GitHu
     git log --oneline                                                   # verify
     git diff Lines.txt                                                  # verify
 
-**[exercise 6](./exercises/L1-ex10) begins**
+**[exercise 7](./exercises/L1-ex10) begins**
 	
-    # ad libitum
-    git restore -s HEAD Lines.txt                                    	# verify
-**exercise 6 ends**
+	    # ad libitum
+	    git restore -s HEAD Lines.txt				# verify
+**exercise 7 ends**
 
-	git restore -s HEAD~1 Lines.txt                                     # short option
+    git restore -s HEAD~1 Lines.txt                                     # short option
     cat Lines.txt                                                       # verify
     git log --oneline                                                   # verify
     git diff                                                            # verify
