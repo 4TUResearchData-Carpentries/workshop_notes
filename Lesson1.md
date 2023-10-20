@@ -144,14 +144,14 @@ The version rolled out during the class, with warts and all, is [here, as displa
     touch directory/donttrackme.txt                                     # create baseline file
     ls directory/                                                       # verify
     git status                                                          # verify
-    echo 'directory' >> .gitignore                                      # 
+    echo 'directory' >> .gitignore                                      # routine
     cat .gitignore                                                      # verify
     git status                                                          # verify
-    echo '!directory' >> .gitignore                                     # 
+    echo '!directory' >> .gitignore                                     # ! means negation (also for file names)
     cat .gitignore                                                      # verify
     git status                                                          # verify
     cat .gitignore                                                      # verify
-    echo 'directory' >>.gitignore                                       #
+    echo 'directory' >>.gitignore                                       # routine
     cat .gitignore                                                      # verify
     git status                                                          # verify
     git help gitignore                                                  # known command
@@ -193,11 +193,13 @@ The version rolled out during the class, with warts and all, is [here, as displa
     git status -u                                                       # verify
     git add directory/donttrackme.txt                                   # Git routine
     git add directory/emptyfile.txt                                     # Git routine
-    git status                                                          # verify
+    git status -u                                                       # verify
     git add .gitignore                                                  # Git routine
     git status                                                          # verify
     git rm --cached directory/donttrackme.txt                           # known action
     git status                                                          # verify
+
+#### Remove in the working tree only
     rm directory/                                                       # remove directory (fails)
     rm -r directory/                                                    # new short option
     ls -FR                                                              # verify
@@ -205,6 +207,8 @@ The version rolled out during the class, with warts and all, is [here, as displa
     git restore directory                                               # known action
     git status                                                          # verify
     ls -FR directory/                                                   # verify
+
+#### Remove in the working tree and index
     touch directory/donttrackme.txt                                     # restart for a new round
     git status                                                          # verify
     git rm directory                                                    # known command without option
@@ -216,6 +220,8 @@ The version rolled out during the class, with warts and all, is [here, as displa
     git restore directory                                               # known action
     git status                                                          # verify
     git status -u                                                       # verify
+
+#### Renaming
     mv directory/donttrackme.txt directory/trackne.txt                  # restart from another round
     git status -u                                                       # verify
     git mv lines.txt Lines.txt                                          # new command (pill-like exercise)
@@ -238,49 +244,48 @@ The version rolled out during the class, with warts and all, is [here, as displa
 
 **[exercise 2](./exercises/L1-ex04) begins**
 
-        ...
+		git status                                                      #
+		git commit -m 'Add .gitignore' .gitignore                       # Git routine
+		git status                                                      # verify
+		git log                                                         # verify
 **exercise 2 ends**
 
-    git status                                                          #
-    git commit -m 'Add .gitignore' .gitignore                           #
-    git status                                                          #
-    rm -r directory  # to keep things clean                             #
-    git status                                                          #
-    ls                                                                  #
-    git log                                                             #
+    rm -r directory														# to keep the working tree lean
+    git status                                                          # verify
+    ls                                                                  # verify
 
 **[exercise 3](./exercises/L1-ex05) begins**  
 
-        ...
+		git status                                                      # Git routine with git status
+		echo 'fifth line' >>Lines.txt                                   # Git routine with git status
+		cat Lines.txt                                                   # Git routine with git status
+		git status                                                      # Git routine with git status
+		git add Lines.txt                                               # Git routine with git status
+		git status                                                      # Git routine with git status
+		git commit -m 'Add fifth lines' Lines.txt                       # Git routine with git status
+		git status                                                      # Git routine with git status
+		git log                                                         # verify
 **exercise 3 ends**
 
 **[exercise 4](./exercises/L1-ex06) begins**  
 
-        ...
+		git diff Lines.txt                                              # Git routine with git diff
+		echo 'sixth line' >>Lines.txt                                   # Git routine with git diff
+		git diff Lines.txt                                              # Git routine with git diff
+		git add Lines.txt                                               # Git routine with git diff
+		git diff Lines.txt                                              # Git routine with git diff
+		git commit -m 'Add sixth line' Lines.txt                        # Git routine with git diff
+		git diff Lines.txt                                              # Git routine with git diff
+		git status                                                      # verify
+		git log                                                         # verify
 **exercise 4 ends**
 
-    echo 'fifth line' >>Lines.txt                                       #
-    cat Lines.txt                                                       #
-    git status                                                          #
-    git add Lines.txt                                                   #
-    git status                                                          #
-    git commit -m 'Add fifth lines' Lines.txt                           #
-    git status                                                          #
-    history                                                             #
-    git log                                                             #
 
 
 ### 1.3.2 Inspecting changes using the history
 
-    git status                                                          # observe
-    git diff Lines.txt                                                  # Git routine with git diff
-    echo 'sixth line' >>Lines.txt                                       # Git routine with git diff
-    git diff Lines.txt                                                  # Git routine with git diff
-    git add Lines.txt                                                   # Git routine with git diff
-    git diff Lines.txt                                                  # Git routine with git diff
-    git commit -m 'Add sixth line' Lines.txt                            # Git routine with git diff
-    git diff Lines.txt                                                  # Git routine with git diff
-    git status                                                          # verify
+
+	git status                                                          # observe
     git log                                                             # verify 
     git log --oneline                                                   # verify
     echo 'seventh line' >>Lines.txt                                     # Git routine without commit
@@ -301,15 +306,17 @@ The version rolled out during the class, with warts and all, is [here, as displa
     git diff HEAD~3 Lines.txt                                           # observe
     git diff HEAD HEAD~1 Lines.txt                                      # new argument
     git diff HEAD~1 HEAD Lines.txt                                      # observe
-    git diff HEAD~4 HEAD~2 Lines.txt                                    # observe
-    git diff HEAD~3 HEAD~2 Lines.txt                                    # observe
-    git diff HEAD HEAD Lines.txt                                        # observe
-    git diff HEAD~2 HEAD~2 Lines.txt                                    # observe
 
 **[exercise 5](./exercises/L1-ex07) begins**
-
-        ...
+	
+	# for example...
+    git diff HEAD~4 HEAD~2 Lines.txt                                    # observe
+    git diff HEAD~3 HEAD~2 Lines.txt                                    # observe
+    # ad libitum
 **exercise 5 ends**
+
+	git diff HEAD HEAD Lines.txt                                        # observe
+    git diff HEAD~2 HEAD~2 Lines.txt                                    # observe
 
 
 #### Lightweight tags
@@ -341,19 +348,21 @@ The version rolled out during the class, with warts and all, is [here, as displa
     git log --oneline                                                   # verify
     git tag -d hey2                                                     # known action
     git tag -d hey                                                      # known action
-    
-TODO edit exercise for tags v1 v2 v3
 
-    git tag HEAD~4 v1                                                   # new arguments (fails)
-    git tag v1 HEAD~4                                                   # new arguments
-    git log --oneline                                                   # verify
-    git tag v2 HEAD~3                                                   # known action
-    git tag v3 HEAD~2                                                   # known action
-    git log --oneline                                                   # verify
-    git tag v4 HEAD~1                                                   # known action
-    git tag v5 HEAD                                                     # known action
-    git log --oneline                                                   # known action
-                                                                        # verify
+**[exercise 5](./exercises/L1-ex09) begins**
+
+		git tag HEAD~4 v1                                               # new arguments (fails)
+		git tag v1 HEAD~4                                               # new arguments
+		git log --oneline                                               # verify
+		git tag v2 HEAD~3                                               # known action
+		git tag v3 HEAD~2                                               # known action
+		git log --oneline                                               # verify
+		git tag v4 HEAD~1                                               # known action
+		git tag v5 HEAD                                                 # known action
+		git log --oneline                                               # known action
+**exercise 5**
+
+
 #### Annotated tags
 
     git tag -a                                                          # new option
@@ -362,7 +371,6 @@ TODO edit exercise for tags v1 v2 v3
     git log --oneline                                                   # verify
     git tag                                                             # known command without options
     git tag -n                                                          # new option
-   
 
 
 ### 1.3.3 Undoing changes with the history
@@ -395,7 +403,4 @@ TODO edit exercise for tags v1 v2 v3
     git status                                                          # verify
     git log --oneline                                                   # verify
 
-**[exercise 6](./exercises/L1-ex09) begins**
-
-        ...
-**exercise 6 ends**
+END OF LESSON 1 
