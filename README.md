@@ -64,8 +64,8 @@ L2. BRANCHING AND REMOTE OPERATIONS
 | --- | Create a bare repositories |
 | --- | Cloning and pushing to upstreams |
 | --- | Syncing changes between repositories |
-| --- | ~Multiple branches, multiple remotes~ |
 | --- | ~Comparing repositories~ |
+| --- | ~Multiple branches, multiple remotes~ |
 
 </details>
 
@@ -120,6 +120,7 @@ There, bring up the file of your interest upon clicking _exactly on the file nam
 
 ### 2.1 Lesson 1 and 2: type-along notes
 
+#### During the class
 The commands the instructors type on the screen during each lesson will be appended continuously to the documents **Lesson[12].\*** (the file extension may vary).
 
 Please use these lesson notes when you had to lag behind the instructor and need to catch up with the instructions. 
@@ -128,7 +129,14 @@ Please refresh the page with the lesson notes in your browser (typically, hit `F
 So, you will view the latest commands as the notes grow.
 Kindly notify the instructor if you do not see this happening.
 
-After the end of the lessons the instructors will decorate the type-along notes with the division in Chapters and Episodes.
+#### After the class
+
+After the end of the lessons the instructors will decorate the type-along notes with the division in Chapters and Episodes and add annotations. 
+Completing this may take a few days after the workshop.
+
+- [Lecture notes lesson 1](Lesson1.md)
+- [Lecture notes lesson 2](Lesson2.md)
+
 
 ### 2.2 Lesson 3 and 4: Lecture notes
 
