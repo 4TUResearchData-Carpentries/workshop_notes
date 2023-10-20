@@ -1,8 +1,14 @@
 # Lesson 1 Fundamental operations with Git
 
-**Disclaimer of work in progress**  
-This document is being reviewed (edited and replayed).
-The version rolled out during the class, with warts and all, is [here, as displayed by GitHub](https://github.com/4TUResearchData-Carpentries/workshop_notes/blob/056617efa8abb7d79ffb3e85b3ac8dbbcaed50e6/Lesson1.md).
+The original list of commands has been edited and decorated with headings corresponding to the [lesson plan](../README.md#1-workshop-program) more closely.
+Some commands have been either removed or relocated or added for clarity and help self-study after the class.
+Accidental errors have been removed, but intended errors have been kept.
+
+The comments after each line annotate whether a command/option appears for the first time (**new**) or is a **known action**. 
+Else, the annotation recalls why we typed that certain command, for example to **observe** the state of the play typically before a certain change, or to **verify** the results of a change.
+**Git routine** commands form the fundamental commit sequence (edit + stage + commit) we learn in this Lesson 1.
+
+The original list of commands is available at this commit [as displayed by GitHub](https://github.com/4TUResearchData-Carpentries/workshop_notes/blob/056617efa8abb7d79ffb3e85b3ac8dbbcaed50e6/Lesson1.md).
 
 
 
@@ -105,10 +111,9 @@ The version rolled out during the class, with warts and all, is [here, as displa
 
     mkdir directory                                                     # shell: create empty directory
     ls                                                                  # verify 
-    ls -F                                                               # verify
+    ls -RF                                                              # verify
     git status                                                          # verify
     touch directory/emptyfile.txt                                       # create empty file in directory
-    ls -RF                                                              # verify
     git status                                                          # verify
     git help status                                                     # known action
     git status -u                                                       # new option
@@ -137,7 +142,7 @@ The version rolled out during the class, with warts and all, is [here, as displa
     git status                                                          # verify
     git add .gitignore                                                  # Git routine
     git status                                                          # verify
-    
+
 #### Ignore untracked directories
 
     touch directory/trackme.txt                                         # create baseline file
@@ -159,7 +164,7 @@ The version rolled out during the class, with warts and all, is [here, as displa
     git add .gitignore                                                  # Git routine
 
 #### Stop tracking
-    
+
     git status                                                          # observe
     git rm --staged directory/emptyfile.txt                             # new command and long option (fails)
     git rm --cached directory/emptyfile.txt                             # new long option
@@ -185,8 +190,8 @@ The version rolled out during the class, with warts and all, is [here, as displa
 
 ### 1.2.4 Deleting and renaming tracked files and directories
 
+    ls -FR                                                              # observe
     echo '!directory' >>.gitignore                                      # make directory trackable
-    ls                                                                  # verify
     git status                                                          # verify
     git status -u                                                       # verify
     git add directory/trackme.txt                                       # Git routine
@@ -198,8 +203,10 @@ The version rolled out during the class, with warts and all, is [here, as displa
     git status                                                          # verify
     git rm --cached directory/donttrackme.txt                           # known action
     git status                                                          # verify
+    ls -FR                                                              # verify
 
 #### Remove in the working tree only
+
     rm directory/                                                       # remove directory (fails)
     rm -r directory/                                                    # new short option
     ls -FR                                                              # verify
@@ -212,12 +219,12 @@ The version rolled out during the class, with warts and all, is [here, as displa
     touch directory/donttrackme.txt                                     # restart for a new round
     git status                                                          # verify
     git rm directory                                                    # known command without option
-    git rm -r directory                                                 # new short option
+    git rm -r directory                                                 # new short option (fails)
     git status                                                          # verify
     git rm -rf directory                                                # new short option
     git status                                                          # verify
     ls -FR directory/                                                   # verify
-    git restore directory                                               # known action
+    git restore directory                                               # known action (fails, correctly)
     git status                                                          # verify
     git status -u                                                       # verify
 
@@ -262,7 +269,7 @@ The version rolled out during the class, with warts and all, is [here, as displa
 		git status                                                      # Git routine with git status
 		git add Lines.txt                                               # Git routine with git status
 		git status                                                      # Git routine with git status
-		git commit -m 'Add fifth lines' Lines.txt                       # Git routine with git status
+		git commit -m 'Add fifth line' Lines.txt                        # Git routine with git status
 		git status                                                      # Git routine with git status
 		git log                                                         # verify
 **exercise 3 ends**
@@ -287,22 +294,22 @@ The version rolled out during the class, with warts and all, is [here, as displa
 
 	git status                                                          # observe
     git log                                                             # verify 
-    git log --oneline                                                   # verify
+    git log --oneline                                                   # new long option
     echo 'seventh line' >>Lines.txt                                     # Git routine without commit
     git diff Lines.txt                                                  # Git routine without commit
     git add Lines.txt                                                   # Git routine without commit
     git diff Lines.txt                                                  # Git routine without commit
     git status                                                          # Git routine without commit
     git log --oneline                                                   # observe
-    git diff e278702 Lines.txt                                          # new argument
+    git diff e278702 Lines.txt                                          # new argument (use topmost commit name)
     git diff HEAD Lines.txt                                             # new argument 
-    git diff HEAD~1 Lines.txt                                           # new argument
     git log --oneline                                                   # observe
-    git diff 7f2ca Lines.txt                                            # observe
+    git diff 7f2ca Lines.txt                                            # observe (topmost but one commit)
+    git diff HEAD~1 Lines.txt                                           # new argument
     git diff Lines.txt                                                  # observe
     git diff HEAD~2 Lines.txt                                           # observe
     git diff HEAD~3 Lines.txt                                           # observe
-    git diff HEAD~7 Lines.txt                                           # observe
+    git diff HEAD~7 Lines.txt                                           # observe (fails)
     git diff HEAD~3 Lines.txt                                           # observe
     git diff HEAD HEAD~1 Lines.txt                                      # new argument
     git diff HEAD~1 HEAD Lines.txt                                      # observe
@@ -325,7 +332,7 @@ The version rolled out during the class, with warts and all, is [here, as displa
     git tag 'hey'                                                       # new command
     git log --oneline                                                   # verify
     git log                                                             # verify
-    git tag 'hey' HEAD~1                                                # new option
+    git tag 'hey' HEAD~1                                                # new option (command fails)
     git tag 'hey2' HEAD~1                                               # known action
     git log --oneline                                                   # verify
     git tag 'hey3' HEAD~5                                               # known action (fails)
@@ -339,24 +346,24 @@ The version rolled out during the class, with warts and all, is [here, as displa
     git status                                                          # Git routine with git status
     git add Lines.txt                                                   # Git routine with git status
     git status                                                          # Git routine with git status
-    git commit -m 'Add eighth line' Lines.txt                           # Git routine with git status
+    git commit -m 'Add seventh and eighth line' Lines.txt               # Git routine with git status
+    git status                                                          # Git routine with git status
     git log --oneline                                                   # verify
     git tag -d hey1                                                     # new option
     git tag -d hey4                                                     # known action
     git log --oneline                                                   # verify
-    git diff hey hey4 Lines.txt                                         # new arguments
+    git diff hey hey4 Lines.txt                                         # known action (fails)
     git log --oneline                                                   # verify
     git tag -d hey2                                                     # known action
     git tag -d hey                                                      # known action
 
 **[exercise 5](./exercises/L1-ex09) begins**
 
+		git log --oneline                                               # verify
 		git tag HEAD~4 v1                                               # new arguments (fails)
 		git tag v1 HEAD~4                                               # new arguments
-		git log --oneline                                               # verify
 		git tag v2 HEAD~3                                               # known action
 		git tag v3 HEAD~2                                               # known action
-		git log --oneline                                               # verify
 		git tag v4 HEAD~1                                               # known action
 		git tag v5 HEAD                                                 # known action
 		git log --oneline                                               # known action
@@ -365,42 +372,52 @@ The version rolled out during the class, with warts and all, is [here, as displa
 
 #### Annotated tags
 
-    git tag -a                                                          # new option
-    git tag -a -m 'First annotated tag'                                 # new option
+    git tag -a                                                          # new option (fails with help)
+    git tag -a -m 'First annotated tag'                                 # new option (fails with help)
     git tag -a -m 'First annotated tag' TAG1                            # new argument
-    git log --oneline                                                   # verify
     git tag                                                             # known command without options
+    git log --oneline                                                   # verify
     git tag -n                                                          # new option
 
 
 ### 1.3.3 Undoing changes with the history
 
 
+    ls                                                                  # observe
     cat Lines.txt                                                       # observe
     git status                                                          # observe
     git show                                                            # new command
-    git show HEAD                                                       # new argument  
-    git show HEAD~1                                                     # new argument  
-    ls                                                                  # observe
+    git show HEAD                                                       # new argument
+    git show HEAD~1                                                     # new argument
     git restore --source HEAD Lines.txt                                 # new long option
     cat Lines.txt                                                       # verify
     git log --oneline                                                   # verify
     git diff Lines.txt                                                  # verify
-    git restore -s HEAD~1 Lines.txt                                     # short option
+
+**[exercise 6](./exercises/L1-ex10) begins**
+	
+    # ad libitum
+    git restore -s HEAD Lines.txt                                    	# verify
+**exercise 6 ends**
+
+	git restore -s HEAD~1 Lines.txt                                     # short option
     cat Lines.txt                                                       # verify
     git log --oneline                                                   # verify
     git diff                                                            # verify
     git diff HEAD                                                       # verify
     git status                                                          # verify
     cat Lines.txt                                                       # verify
-    echo 'EIGHTH LINE' >>Lines.txt                                      # Git routine
+    echo 'SEVENTH LINE' >>Lines.txt                                     # Git routine (uppercased as memo)
+    echo 'EIGHTH LINE' >>Lines.txt                                      # Git routine (uppercased as memo)
     cat Lines.txt                                                       # verify
     git diff Lines.txt                                                  # Git routine
     git status                                                          # verify
     git add Lines.txt                                                   # Git routine
-    git commit -m 'Add EIGHTH LINE' Lines.txt                           # Git routine
-    git diff HEAD HEAD~1                                                # verify
     git status                                                          # verify
+    git commit -m 'Add SEVENTH AND EIGHTH LINE' Lines.txt               # Git routine
+    git diff HEAD HEAD~1                                                # verify
     git log --oneline                                                   # verify
+    git status                                                          # verify
 
-END OF LESSON 1 
+
+END OF LESSON 1
