@@ -37,9 +37,9 @@ The version rolled out during the class, with warts and all, is [here, as displa
     git help                                                            # new command
     git help help                                                       # new argument
     git config                                                          # new command
-    git config --list                                                   # new option
-    git config --global core.editor nano                                # new option and arguments
-    git config --global core.autocrlf input                             # set false instead of input for Win users
+    git config --list                                                   # new long option
+    git config --global core.editor nano                                # new long option and arguments
+    git config --global core.autocrlf input                             # Win users set false instead of input
     git config --list                                                   # known action
     git help config                                                     # known action
     git help glossary                                                   # known action (glossary is not a command)
@@ -51,10 +51,10 @@ The version rolled out during the class, with warts and all, is [here, as displa
     pwd                                                                 # observe
     ls                                                                  # observe
     echo 'first line'                                                   # observe
-    echo 'first line' >lines.txt                                        # routine
+    echo 'first line' >lines.txt                                        # Git routine
     ls                                                                  # verify
     cat lines.txt                                                       # verify
-    echo 'second line' >>lines.txt                                      # routine
+    echo 'second line' >>lines.txt                                      # Git routine
     cat lines.txt                                                       # verify
     git status                                                          # new command
     git init                                                            # new command
@@ -73,153 +73,153 @@ The version rolled out during the class, with warts and all, is [here, as displa
 
 #### Tracking files
 
-    git status                                                          #
-    git add lines.txt                                                   #
-    git status                                                          #
-    ls -a .git                                                          #
-    git diff lines.txt                                                  #
-    echo 'third line' >>lines.txt                                       #
-    cat lines.txt                                                       #
-    git diff lines.txt                                                  #
-    git status                                                          #
-    git add lines.txt                                                   #
-    git status                                                          #
-    git add lines.txt                                                   #
-    git status                                                          #
-    git diff lines.txt                                                  #
-    # instructor experimenting                                          #
-    cat ./exercises/L1-ex01                                             #
-    # first exercise displayed                                          #
-    echo 'fourth line' >>lines.txt                                      #
-    cat lines.txt                                                       #
-    git status                                                          #
-    git diff lines.txt                                                  #
-    git add lines.txt                                                   #
-    cat lines.txt                                                       #
-    git status                                                          #
-    git diff lines.txt                                                  #
-    # end of exercise                                                   #
+    git status                                                          # observe
+    git add lines.txt                                                   # new command
+    git status                                                          # known action
+    ls -a .git                                                          # verify
+    git diff lines.txt                                                  # new command
+    echo 'third line' >>lines.txt                                       # Git routine
+    cat lines.txt                                                       # verify
+    git diff lines.txt                                                  # known action
+    git status                                                          # verify
+    git add lines.txt                                                   # new command
+    git status                                                          # verify
+    git add lines.txt                                                   # known action
+    git status                                                          # verify
+    git diff lines.txt                                                  # known action
+
+**[exercise 1](./exercises/L1-ex01) begins**
+
+        echo 'fourth line' >>lines.txt                                  # Git routine
+        cat lines.txt                                                   # verify
+        git status                                                      # verify
+        git diff lines.txt                                              # verify
+        git add lines.txt                                               # Git routine
+        cat lines.txt                                                   # verify
+        git status                                                      # verify
+        git diff lines.txt                                              # verify
+**exercise 1 ends** 
+
 
 #### Tracking directories
 
-    mkdir directory                                                     #
-    ls                                                                  #
-    ls -F                                                               #
-    git status                                                          #
-    touch directory/emptyfile.txt                                       #
-    ls -R                                                               #
-    ls -RF                                                              #
-    git status                                                          #
-    git status -u                                                       #
-    git help status                                                     #
-    git add directory                                                   #
-    git status                                                          #
-    
-#### Ignore untracked files
+    mkdir directory                                                     # shell: create empty directory
+    ls                                                                  # verify 
+    ls -F                                                               # verify
+    git status                                                          # verify
+    touch directory/emptyfile.txt                                       # create empty file in directory
+    ls -RF                                                              # verify
+    git status                                                          # verify
+    git help status                                                     # known action
+    git status -u                                                       # new option
+    git add directory                                                   # Git routine
+    git status                                                          # verify
 
-    history                                                             #
-    history 20                                                          #
-    history 20 >history.log                                             #
-    cat history.log                                                     #
-    git status                                                          #
-    echo '*.log'                                                        #
-    echo '*.log' >.gitignore                                            #
-    git status                                                          #
-    ls -a                                                               #
-    ls -aF                                                              #
-    git add .gitignore                                                  #
-    git status                                                          #
-    echo 'lines.txt' >>.gitignore                                       #
-    cat .gitignore                                                      #
-    git status                                                          #
-    git add .gitignore                                                  #
-    git status                                                          #
-    
-#### Ignore untracked directories
-
-    touch directory/trackme.txt                                         #
-    touch directory/donttrackme.txt                                     #
-    ls directory/                                                       #
-    git status                                                          #
-    echo 'directory' >> .gitignore                                      #
-    cat .gitignore                                                      #
-    git status                                                          #
-    echo '!directory' >> .gitignore                                     #
-    cat .gitignore                                                      #
-    git status                                                          #
-    cat .gitignore                                                      #
-    echo 'directory' >>.gitignore                                       #
-    cat .gitignore                                                      #
-    git status                                                          #
-    git help gitignore                                                  #
-    git status                                                          #
-    git add .gitignore                                                  #
 
 ### 1.2.2 Not tracking and stop tracking
 
-    git status                                                          #
-    git rm --staged directory/emptyfile.txt                             #
-    git rm --cached directory/emptyfile.txt                             #
-    git status                                                          #
-    ls -FR                                                              #
+#### Ignore untracked files
+
+    history                                                             # history of **shell** commands
+    history 20                                                          # new option
+    history 20 >history.log                                             # create baseline file
+    cat history.log                                                     # verify
+    git status                                                          # verify
+    echo '*.log'                                                        # mind single quotes
+    echo '*.log' >.gitignore                                            # new file with reserved name
+    git status                                                          # verify
+    ls -a                                                               # verify
+    ls -aF                                                              # verify
+    git add .gitignore                                                  # Git routine
+    git status                                                          # verify
+    echo 'lines.txt' >>.gitignore                                       # Git routine
+    cat .gitignore                                                      # verify
+    git status                                                          # verify
+    git add .gitignore                                                  # Git routine
+    git status                                                          # verify
+    
+#### Ignore untracked directories
+
+    touch directory/trackme.txt                                         # create baseline file
+    touch directory/donttrackme.txt                                     # create baseline file
+    ls directory/                                                       # verify
+    git status                                                          # verify
+    echo 'directory' >> .gitignore                                      # 
+    cat .gitignore                                                      # verify
+    git status                                                          # verify
+    echo '!directory' >> .gitignore                                     # 
+    cat .gitignore                                                      # verify
+    git status                                                          # verify
+    cat .gitignore                                                      # verify
+    echo 'directory' >>.gitignore                                       #
+    cat .gitignore                                                      # verify
+    git status                                                          # verify
+    git help gitignore                                                  # known command
+    git status                                                          # observe
+    git add .gitignore                                                  # Git routine
+
+#### Stop tracking
+    
+    git status                                                          # observe
+    git rm --staged directory/emptyfile.txt                             # new command and long option (fails)
+    git rm --cached directory/emptyfile.txt                             # new long option
+    git status                                                          # verify
+    ls -FR                                                              # verify
+
 
 ### 1.2.3 Undoing changes with the index
 
-    cat lines.txt                                                       #
-    echo 'fifth line' >>lines.txt                                       #
-    cat lines.txt                                                       #
-    git status                                                          #
-    git diff lines.txt                                                  #
-    git restore lines.txt                                               #
-    cat lines.txt                                                       #
-    git status                                                          #
-    git diff lines.txt                                                  #
-    git restore lines.txt                                               #
-    cat lines.txt                                                       #
-    git status                                                          #
-    echo '!directory' >>.gitignore                                      #
-    ls                                                                  #
-    git status                                                          #
-    git status -u                                                       #
-    git add directory/trackme.txt                                       #
-    git status -u                                                       #
-    git add directory/donttrackme.txt                                   #
-    git add directory/emptyfile.txt                                     #
-    git status                                                          #
-    git add .gitignore                                                  #
-    git status                                                          #
+    cat lines.txt                                                       # observe
+    echo 'fifth line' >>lines.txt                                       # Git routine
+    cat lines.txt                                                       # verify
+    git status                                                          # verify
+    git diff lines.txt                                                  # verify
+    git restore lines.txt                                               # new command
+    cat lines.txt                                                       # verify
+    git status                                                          # verify
+    git diff lines.txt                                                  # verify
+    git restore lines.txt                                               # known action
+    cat lines.txt                                                       # verify
+    git status                                                          # verify
 
 
 ### 1.2.4 Deleting and renaming tracked files and directories
 
-    git rm --cached directory/donttrackme.txt                           #
-    git status                                                          #
-    rm directory/                                                       #
-    rm -r directory/                                                    #
-    ls -FR                                                              #
-    git status                                                          #
-    git restore directory                                               #
-    git status                                                          #
-    ls -FR directory/                                                   #
-    # restart                                                           #
-    touch directory/donttrackme.txt                                     #
-    git status                                                          #
-    git rm directory                                                    #
-    git rm -r directory                                                 #
-    git status                                                          #
-    git rm -rf directory                                                #
-    git status                                                          #
-    ls -FR directory/                                                   #
-    git restore directory                                               #
-    git status                                                          #
-    git status -u                                                       #
-    mv directory/donttrackme.txt directory/trackne.txt                  #
-    git status -u                                                       #
-    # use the command `git mv <oldname> <newname>`                      #
-    # lines.txt Lines.txt                                               #
-    git status -u                                                       #
-    git mv lines.txt Lines.txt                                          #
-    git status -u                                                       #
+    echo '!directory' >>.gitignore                                      # make directory trackable
+    ls                                                                  # verify
+    git status                                                          # verify
+    git status -u                                                       # verify
+    git add directory/trackme.txt                                       # Git routine
+    git status -u                                                       # verify
+    git add directory/donttrackme.txt                                   # Git routine
+    git add directory/emptyfile.txt                                     # Git routine
+    git status                                                          # verify
+    git add .gitignore                                                  # Git routine
+    git status                                                          # verify
+    git rm --cached directory/donttrackme.txt                           # known action
+    git status                                                          # verify
+    rm directory/                                                       # remove directory (fails)
+    rm -r directory/                                                    # new short option
+    ls -FR                                                              # verify
+    git status                                                          # verify
+    git restore directory                                               # known action
+    git status                                                          # verify
+    ls -FR directory/                                                   # verify
+    touch directory/donttrackme.txt                                     # restart for a new round
+    git status                                                          # verify
+    git rm directory                                                    # known command without option
+    git rm -r directory                                                 # new short option
+    git status                                                          # verify
+    git rm -rf directory                                                # new short option
+    git status                                                          # verify
+    ls -FR directory/                                                   # verify
+    git restore directory                                               # known action
+    git status                                                          # verify
+    git status -u                                                       # verify
+    mv directory/donttrackme.txt directory/trackne.txt                  # restart from another round
+    git status -u                                                       # verify
+    git mv lines.txt Lines.txt                                          # new command (pill-like exercise)
+    git status -u                                                       # verify
 
 
 
@@ -229,14 +229,18 @@ The version rolled out during the class, with warts and all, is [here, as displa
 ### 1.3.1 Committing changes with a configured identity and a message
 
 
-    cat Lines.txt                                                       #
-    git diff                                                            #
-    git status                                                          #
-    git commit -m 'Add first four lines' Lines.txt                      #
-    git status                                                          #
-    git log                                                             #
-    # exercise                                                          #
-    cat ./exercises/L1-ex04                                             #
+    cat Lines.txt                                                       # observe
+    git diff Lines.txt                                                  # observe
+    git status                                                          # observe
+    git commit -m 'Add first four lines' Lines.txt                      # new command
+    git status                                                          # verify
+    git log                                                             # verify
+
+**[exercise 2](./exercises/L1-ex04) begins**
+
+        ...
+**exercise 2 ends**
+
     git status                                                          #
     git commit -m 'Add .gitignore' .gitignore                           #
     git status                                                          #
@@ -244,8 +248,17 @@ The version rolled out during the class, with warts and all, is [here, as displa
     git status                                                          #
     ls                                                                  #
     git log                                                             #
-    cat ./exercises/L1-ex05                                             #
-    cat ./exercises/L1-ex06                                             #
+
+**[exercise 3](./exercises/L1-ex05) begins**  
+
+        ...
+**exercise 3 ends**
+
+**[exercise 4](./exercises/L1-ex06) begins**  
+
+        ...
+**exercise 4 ends**
+
     echo 'fifth line' >>Lines.txt                                       #
     cat Lines.txt                                                       #
     git status                                                          #
@@ -256,27 +269,25 @@ The version rolled out during the class, with warts and all, is [here, as displa
     history                                                             #
     git log                                                             #
 
-exercise 5 
-
 
 ### 1.3.2 Inspecting changes using the history
 
     git status                                                          # observe
-    git diff Lines.txt                                                  # routine with git diff
-    echo 'sixth line' >>Lines.txt                                       # routine with git diff
-    git diff Lines.txt                                                  # routine with git diff
-    git add Lines.txt                                                   # routine with git diff
-    git diff Lines.txt                                                  # routine with git diff
-    git commit -m 'Add sixth line' Lines.txt                            # routine with git diff
-    git diff Lines.txt                                                  # routine with git diff
+    git diff Lines.txt                                                  # Git routine with git diff
+    echo 'sixth line' >>Lines.txt                                       # Git routine with git diff
+    git diff Lines.txt                                                  # Git routine with git diff
+    git add Lines.txt                                                   # Git routine with git diff
+    git diff Lines.txt                                                  # Git routine with git diff
+    git commit -m 'Add sixth line' Lines.txt                            # Git routine with git diff
+    git diff Lines.txt                                                  # Git routine with git diff
     git status                                                          # verify
     git log                                                             # verify 
     git log --oneline                                                   # verify
-    echo 'seventh line' >>Lines.txt                                     # routine without commit
-    git diff Lines.txt                                                  # routine without commit
-    git add Lines.txt                                                   # routine without commit
-    git diff Lines.txt                                                  # routine without commit
-    git status                                                          # routine without commit
+    echo 'seventh line' >>Lines.txt                                     # Git routine without commit
+    git diff Lines.txt                                                  # Git routine without commit
+    git add Lines.txt                                                   # Git routine without commit
+    git diff Lines.txt                                                  # Git routine without commit
+    git status                                                          # Git routine without commit
     git log --oneline                                                   # observe
     git diff e278702 Lines.txt                                          # new argument
     git diff HEAD Lines.txt                                             # new argument 
@@ -295,62 +306,63 @@ exercise 5
     git diff HEAD HEAD Lines.txt                                        # observe
     git diff HEAD~2 HEAD~2 Lines.txt                                    # observe
 
-[exercise](./exercises/L1-ex07)
+**[exercise 5](./exercises/L1-ex07) begins**
+
+        ...
+**exercise 5 ends**
+
 
 #### Lightweight tags
 
-    git log --oneline                                                   #
-    git tag 'hey'                                                       #
-    git log --oneline                                                   #
-    git log                                                             #
-    git tag 'hey' HEAD~1                                                #
-    git tag 'hey2' HEAD~1                                               #
-    git log --oneline                                                   #
-    git tag 'hey3' HEAD~5                                               #
-    git tag 'hey4' 87ab7b6                                              #
-    git log --oneline                                                   #
-    git diff HEAD HEAD~1 Line.txt                                       #
-    git diff HEAD HEAD~1 Lines.txt                                      #
-    git diff hey hey2 Lines.txt                                         #
-    git log --oneline                                                   #
-    git diff hey hey2 Lines.txt                                         #
-    echo 'eighth line' >>Lines.txt                                      # routine with git status
-    cat Lines.txt                                                       # routine with git status
-    git status                                                          # routine with git status
-    git add Lines.txt                                                   # routine with git status
-    git status                                                          # routine with git status
-    git commit -m 'Add eighth line' Lines.txt                           # routine with git status
-    git log --oneline                                                   #
-    git tag -d hey1                                                     #
-    git tag -d hey4                                                     #
-    git log --oneline                                                   #
-    git diff hey hey4 Lines.txt                                         #
-    git log --oneline                                                   #
-    git tag -d hey2                                                     #
-    git tag -d hey                                                      #
-    git tag HEAD~4 v1                                                   #
-    git tag v1 HEAD~4                                                   #
-    git log --oneline                                                   #
-    git tag v2 HEAD~3                                                   #
-    git tag v3 HEAD~2                                                   #
-    git log --onelein                                                   #
-    git log --oneline                                                   #
-    git tag v4 HEAD~1                                                   #
-    git tag v5 HEAD                                                     #
-    git log --oneline                                                   #
-                                                                        #
-#### Annotated tags
-
-    git tag -a                                                          #
-    git tag -a -m 'First annotated tag'                                 #
-    git tag -a -m 'First annotated tag' TAG1                            #
-    git log --oneline                                                   #
-    git tag                                                             #
-    git show                                                            #
-    git show HEAD~1                                                     #
-    true                                                                #
+    git log --oneline                                                   # observe
+    git tag 'hey'                                                       # new command
+    git log --oneline                                                   # verify
+    git log                                                             # verify
+    git tag 'hey' HEAD~1                                                # new option
+    git tag 'hey2' HEAD~1                                               # known action
+    git log --oneline                                                   # verify
+    git tag 'hey3' HEAD~5                                               # known action (fails)
+    git tag 'hey4' 87ab7b6                                              # new argument (commmit name will vary)
+    git log --oneline                                                   # verify
+    git diff HEAD HEAD~1 Lines.txt                                      # known action
+    git diff hey hey2 Lines.txt                                         # new arguments
+    git log --oneline                                                   # verify
+    echo 'eighth line' >>Lines.txt                                      # Git routine with git status
+    cat Lines.txt                                                       # Git routine with git status
+    git status                                                          # Git routine with git status
+    git add Lines.txt                                                   # Git routine with git status
+    git status                                                          # Git routine with git status
+    git commit -m 'Add eighth line' Lines.txt                           # Git routine with git status
+    git log --oneline                                                   # verify
+    git tag -d hey1                                                     # new option
+    git tag -d hey4                                                     # known action
+    git log --oneline                                                   # verify
+    git diff hey hey4 Lines.txt                                         # new arguments
+    git log --oneline                                                   # verify
+    git tag -d hey2                                                     # known action
+    git tag -d hey                                                      # known action
     
 TODO edit exercise for tags v1 v2 v3
+
+    git tag HEAD~4 v1                                                   # new arguments (fails)
+    git tag v1 HEAD~4                                                   # new arguments
+    git log --oneline                                                   # verify
+    git tag v2 HEAD~3                                                   # known action
+    git tag v3 HEAD~2                                                   # known action
+    git log --oneline                                                   # verify
+    git tag v4 HEAD~1                                                   # known action
+    git tag v5 HEAD                                                     # known action
+    git log --oneline                                                   # known action
+                                                                        # verify
+#### Annotated tags
+
+    git tag -a                                                          # new option
+    git tag -a -m 'First annotated tag'                                 # new option
+    git tag -a -m 'First annotated tag' TAG1                            # new argument
+    git log --oneline                                                   # verify
+    git tag                                                             # known command without options
+    git tag -n                                                          # new option
+   
 
 
 ### 1.3.3 Undoing changes with the history
@@ -358,6 +370,9 @@ TODO edit exercise for tags v1 v2 v3
 
     cat Lines.txt                                                       # observe
     git status                                                          # observe
+    git show                                                            # new command
+    git show HEAD                                                       # new argument  
+    git show HEAD~1                                                     # new argument  
     ls                                                                  # observe
     git restore --source HEAD Lines.txt                                 # new long option
     cat Lines.txt                                                       # verify
@@ -370,14 +385,17 @@ TODO edit exercise for tags v1 v2 v3
     git diff HEAD                                                       # verify
     git status                                                          # verify
     cat Lines.txt                                                       # verify
-    echo 'EIGHTH LINE' >>Lines.txt                                      # routine
+    echo 'EIGHTH LINE' >>Lines.txt                                      # Git routine
     cat Lines.txt                                                       # verify
-    git diff Lines.txt                                                  # routine
+    git diff Lines.txt                                                  # Git routine
     git status                                                          # verify
-    git add Lines.txt                                                   # routine
-    git commit -m 'Add EIGHTH LINE' Lines.txt                           # routine
+    git add Lines.txt                                                   # Git routine
+    git commit -m 'Add EIGHTH LINE' Lines.txt                           # Git routine
     git diff HEAD HEAD~1                                                # verify
     git status                                                          # verify
     git log --oneline                                                   # verify
 
-exercise (10) to be added
+**[exercise 6](./exercises/L1-ex09) begins**
+
+        ...
+**exercise 6 ends**
