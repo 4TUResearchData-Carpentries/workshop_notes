@@ -160,7 +160,7 @@ Please bookmark these URLs for an easy navigation during the workshop:
 * [Workshop introduction](https://drive.google.com/file/d/1-HX-avKiULFfc14mT0yhLfamqoQgehnm/view?usp=drive_link)
 * Lesson 3, TOC and exercises: [Google Slides](Lesson3.md) (subject to revision after this workshop)
 * Lesson 4, TOC and exercises: [Google Slides](Lesson4.md) (subject to revision after this workshop)
-* [Workshop conclusion and outlook](...)
+* ~Workshop conclusion and outlook~
 
 ### User Accounts
 
