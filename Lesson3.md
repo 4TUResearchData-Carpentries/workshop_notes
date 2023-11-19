@@ -10,24 +10,24 @@
 
 Lecture notes for the lesson on collaborative software development.
 
-## PREPARATION
+## PREPARATIONS FOR THE INSTRUCTOR
 The instructor sets up the command history on two terminals do the following:
 
 1. On main terminal:
-```bash
- export PROMPT_COMMAND="history -a; $PROMPT_COMMAND"
-```
+
+    export PROMPT_COMMAND="history -a; $PROMPT_COMMAND"
+
 2. On second (history) terminal:
-```bash
- tail -f ~/.bash_history | nl -w 3
-```
+
+    tail -f ~/.bash_history | nl -w 3
+
 
 ### Windows Terminal (Preview) [Keyboard shortcuts]
 Useful shortcuts for the Windows Terminal (Preview) App on Windows 11.
 
 | Action             | Shortcut                |
 |--------------------|--------------------------|
-|Split pane horizontally | Alt + Shift + `-`   | 
+|Split pane horizontally | Alt + Shift + `-`   |
 |Split pane vertically   | Alt + Shift + `+`   |
 |Close a pane            | Ctrl+Shift + `w`     |
 |Move pane focus         | Alt + `Arrow keys`   |
@@ -49,64 +49,71 @@ Useful shortcuts for the Windows Terminal (Preview) App on Windows 11.
 
 #### 1. Connect to GitHub via SSH [ 10 min]
 
-> Ask participants to test the connection with:
 
-```shell
-ssh -T git@github.com
-```
+* Ask participants using Windows not to start Git Bash clicking on the desktop icon, as they did in Lesson 1. Instead,
+    * use the app menu (the Windows logo)
+    * pick up Git Bash from the list
+    * launch Git Bash with the option **Run as administrator** available from the drop-down submenu.
+    The participants need to type in their credentials as local administrators.
+This gain authority to have SSH installing its own features in their laptop next.
 
-> GitHub requires authentification via SSH to do pulls an pushes, but not for cloning. **Use illustrations** to explain what a SSH connection entitles.
+    Take note: at their first `git push`, Git might complain about a mismatch between the credentials of local and global administrator.
+The warning itself suggests another Git command as the remedy to this impasse.
 
-To connect via SSH do the following [skip if connections have been successfuly set]:
 
-* Create a Key-pair inside the `.ssh`  in the Home directory
+* Ask participants to test the connection with:
 
-    ```shell
-    # move to Home directory
-    cd ~
-    # create key
-    ssh-keygen -t ed25519 -C "your_email@example.com"
-    # save to the default location and file name: ~/.ssh/id_ed25519
-    ```
-* Check the keys have been created
+        ssh -T git@github.com
 
-    ```shell
-    ls ~/.ssh/
-    ```
+    The message for a successful outcome is friendly and plain.
+    Ask participants whether git@github.com has welcomed them.
 
-* Start the `ssh-agent` and add private key to agent:
+* GitHub requires authentication via SSH to do pulls and pushes, but not for cloning. **Use illustrations** to explain what a SSH connection entitles.
 
-    ```shell
-    # start agent
-    eval "$(ssh-agent -s)"
-    
-    # add private key
-    ssh-add ~/.ssh/id_ed25519
-    ```
-    > Instruct SSH to use key files in different locations: `ssh -i <path/private/keyfile>`
+    To connect via SSH do the following [skip if connections have been successfuly set]:
 
-> Info on how to (start the ssh-agent automatically)[https://docs.github.com/en/authentication/connecting-to-github-with-ssh/working-with-ssh-key-passphrases#auto-launching-ssh-agent-on-git-for-windows]
-Mac and Linux user don't have to worry about this.
+    1. Create a Key-pair inside the `.ssh`  in the Home directory
+
+            # move to Home directory
+            cd ~
+            # create key
+            ssh-keygen -t ed25519 -C "your_email@example.com"
+            # save to the default location and file name: ~/.ssh/id_ed25519
+
+    2. Check the keys have been created
+
+            ls ~/.ssh/
+
+    3. Start the `ssh-agent` and add private key to agent:
+
+            # start agent
+            eval "$(ssh-agent -s)"
+
+            # add private key
+            ssh-add ~/.ssh/id_ed25519
+
+    4. Instruct SSH to use key files in different locations:
+
+            ssh -i <path/private/keyfile>
+
+    5. Info on how to [start the ssh-agent automatically](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/working-with-ssh-key-passphrases#auto-launching-ssh-agent-on-git-for-windows)
+    Mac and Linux user don't have to worry about this.
 
 * Copy public key to GitHub:
 
-    ```shell
-    clip < .ssh/id_ed25519.pub
-    ```
+        clip < .ssh/id_ed25519.pub
 
 * Go to GitHub, explain the basics of the interface and add the SSH key.
 
-Profile > Settings > SSH and GPG keys > New SSH key > Add SSH key
+        Profile > Settings > SSH and GPG keys > New SSH key > Add SSH key
 
 * Test SSH connection
 
-    ```shell
-    $ ssh -T git@github.com
-    ```
+        ssh -T git@github.com
 
-> More information on working with (SSH keys and GitHub.)[https://docs.github.com/en/authentication/connecting-to-github-with-ssh]
+> More information on working with [SSH keys and GitHub](https://docs.github.com/en/authentication/connecting-to-github-with-ssh).
 
-> Check the info on (Troubleshooting SSH[https://docs.github.com/en/authentication/troubleshooting-ssh]) for GitHub.
+> Check the info on [Troubleshooting SSH for GitHub](https://docs.github.com/en/authentication/troubleshooting-ssh]).
 
 
 ### 2. Publish local remository to GitHub [5 min]
@@ -133,7 +140,7 @@ Move back to the repo directory: `~/Desktop/
     ```shell
     $ git remote -v
     $ git branch -M main # [Optional if config was changed. This will change the name of the main branch of the repo to make it more friendly]
-    $ git push -u origin main 
+    $ git push -u origin main
     ```
 
 #### c. Check the Content's Repositoy is in GitHub
@@ -161,18 +168,18 @@ b. Paticipant accept inviation via email or GitHub GUI.
 
 ### 4. EXERCISE 1: Startig with Collaboration [10 mins]
 
-- Clone the Check-in repository via SSH: https://github.com/manuGil/check-in  
+- Clone the Check-in repository via SSH: https://github.com/manuGil/check-in
 - Make a copy of the file `check-in/template.md` in the same directory; give it an anonymous name, ex. `<name-initials><3-last-digits-phone>.md`
 - Open your copy of `template.md` and add something to the lists in the file.
-- Commit your changes, and push them to the remote repository. You might experience difficulties doing that, follow the suggestions given by Git. 
+- Commit your changes, and push them to the remote repository. You might experience difficulties doing that, follow the suggestions given by Git.
 - Reflect on the difficulties you faced, and how we might avoid them.
 
 
-### B. Collaborative Development for Research Software 
+### B. Collaborative Development for Research Software
 
 > Slides
 
-Developing high quality software requires more than programming and technical skill. Exceptionally good programmers can produce high quality software by themselves. But good programmers will need to collaborate in order to develop complex, high quality software. 
+Developing high quality software requires more than programming and technical skill. Exceptionally good programmers can produce high quality software by themselves. But good programmers will need to collaborate in order to develop complex, high quality software.
 
 #### 1. Collaborative Development [ 3 mins]
 
@@ -183,7 +190,7 @@ Developing high quality software requires more than programming and technical sk
 > Explain the difference between private and close collaboration
 
 #### 3. Management Strategies [5 min]
- 
+
 > Explain why management is important for developing software, the key factors to consider, and recommend a management strategy.
 
 **Key Factors:**
@@ -271,7 +278,7 @@ Working as a team merge the changes made in the previous exercise into the main 
 
 working in teams, apply FAIR principle to a Git repository using a [FAIR software checklist.](https://tu-delft-dcc.github.io/software/checklist.html)
 
-1. [Administrator] creates a repository for the team using the [collab-faircode template repository](https://github.com/the-magnificents/collab-faircode). As name for the reposotory use <team-name>-faircode 
+1. [Administrator] creates a repository for the team using the [collab-faircode template repository](https://github.com/the-magnificents/collab-faircode). As name for the reposotory use <team-name>-faircode
 3. [Team] Go thru the Fair software checklist and assign one item from the list to each member.
 3. [Collaborator] open an issue about the item you chose.
 2. [Collaborator] fork the team's repository to their accounts.
