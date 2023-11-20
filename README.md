@@ -20,6 +20,10 @@ During each lesson, these commands are continuously appended to a file whose nam
 
 `git checkout 2311-SCW-TUD`
 
+`gitautopush .` # YOU MUST HAVE HAD AT LEAST ONE PUSH TO THE REMOTE BRANCH BEFORE USING THE GITAUTOPUSH
+
+`jupyter lab` # To open JupyterLab, if needed 
+
 #### Usage
 
 1. Use the lesson notes when you had to lag behind the instructor and need to catch up with the instructions.  
