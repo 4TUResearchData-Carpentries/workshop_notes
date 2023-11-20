@@ -12,6 +12,13 @@ Here you find the "lesson notes", that is the commands that instructors type dur
 During each lesson, these commands are continuously appended to a file whose name starts with `python`, `unixshell`, and `git`.  
 (Files may have different extension according to the lesson, never mind that.)
 
+#### Setup 
+
+`git clone git@github.com:4TUResearchData-Carpentries/workshop_notes.git`
+
+`cd workshop_notes`
+
+`git checkout 2311-SCW-TUD`
 
 #### Usage
 
