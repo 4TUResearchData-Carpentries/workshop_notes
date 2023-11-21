@@ -12,17 +12,15 @@ Here you find the "lesson notes", that is the commands that instructors type dur
 During each lesson, these commands are continuously appended to a file whose name starts with `python`, `unixshell`, and `git`.  
 (Files may have different extension according to the lesson, never mind that.)
 
-#### Setup 
+#### Setup for Python instructors 
 
-`git clone git@github.com:4TUResearchData-Carpentries/workshop_notes.git`
-
-`cd workshop_notes`
-
-`git checkout 2311-SCW-TUD`
-
-`gitautopush .` # YOU MUST HAVE HAD AT LEAST ONE PUSH TO THE REMOTE BRANCH BEFORE USING THE GITAUTOPUSH
-
-`jupyter lab` # To open JupyterLab, if needed 
+    git clone git@github.com:4TUResearchData-Carpentries/workshop_notes.git
+    cd workshop_notes
+    git checkout 2311-SCW-TUD
+    gitautopush .  # YOU MUST HAVE HAD AT LEAST ONE PUSH TO THE REMOTE BRANCH BEFORE USING THE GITAUTOPUSH
+    jupyter lab  # To open JupyterLab, if needed 
+    
+Compare https://github.com/4TUResearchData-Carpentries/workshop_notes/tree/master#3-preparations-for-coordinatorsinstructors
 
 #### Usage
 
