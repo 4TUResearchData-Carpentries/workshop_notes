@@ -22,7 +22,7 @@ During each lesson, these commands are continuously appended to a file whose nam
     
 Compare https://github.com/4TUResearchData-Carpentries/workshop_notes/tree/master#3-preparations-for-coordinatorsinstructors
 
-#### Usage
+#### Usage for workshop participants
 
 1. Use the lesson notes when you had to lag behind the instructor and need to catch up with the instructions.  
 Consider that instructors may not follow the on-line lesson material verbatim.  
