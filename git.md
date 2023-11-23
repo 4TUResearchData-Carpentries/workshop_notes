@@ -9,3 +9,4 @@ true
 ls
 cd gitautopush/
 ls
+git mv git.log git.md
