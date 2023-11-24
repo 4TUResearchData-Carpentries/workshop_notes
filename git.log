@@ -38,3 +38,4 @@ ls
 git 
 git --help
 ls
+ls -a
