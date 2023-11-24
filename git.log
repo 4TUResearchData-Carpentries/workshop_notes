@@ -107,3 +107,4 @@ git checkout HEAD count_lines.py
 cat count_lines.py 
 nano count_lines.py 
 cat count_lines.py 
+git status 
