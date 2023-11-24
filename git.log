@@ -85,3 +85,4 @@ git diff
 git status 
 git diff
 git log
+git log --oneline
