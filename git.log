@@ -68,3 +68,4 @@ git status
 ls
 git log
 git log --oneline
+git log
