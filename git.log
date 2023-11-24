@@ -89,3 +89,4 @@ git log --oneline
 git diff
 git diff HEAD
 git diff HEAD~1
+git diff HEAD~2
