@@ -80,3 +80,4 @@ git log
 git commit count_lines.py 
 git log
 git log --oneline
+cat count_lines.py 
