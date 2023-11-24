@@ -121,3 +121,4 @@ git show HEAD~1
 mkdir data
 ls
 touch data/a.dat data/b.dat big-data.zip
+ls
