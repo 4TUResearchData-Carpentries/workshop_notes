@@ -50,3 +50,4 @@ git config --global user.email "wmotion.eu@gmail.com"
 git config --global --list
 git config --global core.editor "nano"
 git config --global core.autocrlf true # windows
+git config --global core.autocrlf input  # linux/input
