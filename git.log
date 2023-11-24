@@ -67,3 +67,4 @@ git commit -m "Add count_lines.py" count_lines.py
 git status 
 ls
 git log
+git log --oneline
