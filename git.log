@@ -110,3 +110,4 @@ cat count_lines.py
 git status 
 git diff
 git add count_lines.py 
+git status 
