@@ -167,3 +167,4 @@ git log --oneline --all
 git fetch
 git log --oneline --all
 git pull origin main
+git config pull.rebase false
