@@ -53,3 +53,4 @@ git config --global core.autocrlf true # windows
 git config --global core.autocrlf input  # linux/input
 git config --global --list
 git status
+nano count_line.py
