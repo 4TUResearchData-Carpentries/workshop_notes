@@ -22,3 +22,4 @@ clip < ~/.ssh/id_ed25519.pub
 sudo apt install geomview
 clip < ~/.ssh/id_ed25519.pub
 ssh -T git@github.com
+eval "$(ssh-agent -s)"
