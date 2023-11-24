@@ -173,3 +173,4 @@ git status
 nano count_lines.py 
 git status 
 git add count_lines.py 
+git status 
