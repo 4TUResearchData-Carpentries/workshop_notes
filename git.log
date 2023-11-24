@@ -119,3 +119,4 @@ git log
 git log --oneline
 git show HEAD~1
 mkdir data
+ls
