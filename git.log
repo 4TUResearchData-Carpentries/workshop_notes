@@ -44,3 +44,4 @@ github
 git init
 ls -a
 ls .git
+git config --global --list
