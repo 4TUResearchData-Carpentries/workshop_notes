@@ -114,3 +114,4 @@ git status
 git diff
 git diff HEAD
 git commit count_lines.py 
+git log --oneline
