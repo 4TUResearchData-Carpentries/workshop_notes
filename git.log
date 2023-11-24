@@ -166,3 +166,4 @@ git log --oneline
 git log --oneline --all
 git fetch
 git log --oneline --all
+git pull origin main
