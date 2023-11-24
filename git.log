@@ -13,3 +13,4 @@ ssh -T git@github.com
 ls ~/.ssh
 ssh-keygen -t ed25519 -C 'wmotion.eu@gmail.com'
 ls ~/.ssh
+ssh -T git@github.com
