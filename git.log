@@ -154,3 +154,4 @@ git status
 git push origin main
 nano count_lines.py 
 git diff
+git add count_lines.py 
