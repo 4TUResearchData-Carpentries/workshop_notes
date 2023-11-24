@@ -163,3 +163,4 @@ git status
 git diff
 git pull
 git log --oneline
+git log --oneline --all
