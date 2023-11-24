@@ -171,3 +171,4 @@ git config pull.rebase false
 git pull origin main
 git status 
 nano count_lines.py 
+git status 
