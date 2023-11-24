@@ -148,3 +148,4 @@ git log --oneline
 git pull origin main
 nano count_lines.py 
 git add count_lines.py 
+git commit -m "Add name and surname" count_lines.py 
