@@ -122,3 +122,4 @@ mkdir data
 ls
 touch data/a.dat data/b.dat big-data.zip
 ls
+ls -R
