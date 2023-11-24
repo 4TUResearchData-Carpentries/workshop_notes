@@ -59,3 +59,5 @@ cat count_line.py
 git status 
 git add count_lines.py
 ls
+mv count_line.py count_lines.py
+ls
