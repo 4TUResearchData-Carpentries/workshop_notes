@@ -135,3 +135,4 @@ git add .gitignore
 git commit -m "Add .gitignore" .gitignore 
 git log --oneline
 git status 
+git status --ignored
