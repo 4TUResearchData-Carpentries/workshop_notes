@@ -96,3 +96,4 @@ git diff 4ea15
 git diff 4725f
 nano count_lines.py 
 cat count_lines.py 
+git status
