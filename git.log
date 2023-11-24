@@ -45,3 +45,4 @@ git init
 ls -a
 ls .git
 git config --global --list
+git config --global user.name "Giordano Lipari @laptop4"
