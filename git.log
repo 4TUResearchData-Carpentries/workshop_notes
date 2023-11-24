@@ -152,3 +152,4 @@ git commit -m "Add name and surname" count_lines.py
 git log --oneline
 git status 
 git push origin main
+nano count_lines.py 
