@@ -78,3 +78,4 @@ git diff
 git status 
 git log
 git commit count_lines.py 
+git log
