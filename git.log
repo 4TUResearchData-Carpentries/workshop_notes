@@ -133,3 +133,4 @@ cat .gitignore
 git status 
 git add .gitignore 
 git commit -m "Add .gitignore" .gitignore 
+git log --oneline
