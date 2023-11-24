@@ -100,3 +100,4 @@ git status
 git checkout HEAD count_lines.py
 cat count_lines.py 
 git status 
+git log --oneline
