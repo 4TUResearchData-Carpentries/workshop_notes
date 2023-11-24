@@ -69,3 +69,4 @@ ls
 git log
 git log --oneline
 git log
+nano count_lines.py 
