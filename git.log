@@ -65,3 +65,4 @@ git add count_lines.py
 git status 
 git commit -m "Add count_lines.py" count_lines.py 
 git status 
+ls
