@@ -129,3 +129,4 @@ touch .gitignore
 ls
 ls -a
 nano .gitignore
+cat .gitignore 
