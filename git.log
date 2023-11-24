@@ -47,3 +47,4 @@ ls .git
 git config --global --list
 git config --global user.name "Giordano Lipari @laptop4"
 git config --global user.email "wmotion.eu@gmail.com"
+git config --global --list
