@@ -126,3 +126,4 @@ ls -R
 git status 
 git status -u
 touch .gitignore
+ls
