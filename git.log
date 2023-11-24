@@ -130,3 +130,4 @@ ls
 ls -a
 nano .gitignore
 cat .gitignore 
+git status 
