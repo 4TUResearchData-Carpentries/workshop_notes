@@ -128,3 +128,4 @@ git status -u
 touch .gitignore
 ls
 ls -a
+nano .gitignore
