@@ -145,3 +145,4 @@ git remote
 git remote -v
 git push -u origin main
 git log --oneline
+git pull origin main
