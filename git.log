@@ -42,3 +42,4 @@ ls -a
 pwd
 github
 git init
+ls -a
