@@ -88,3 +88,4 @@ git log
 git log --oneline
 git diff
 git diff HEAD
+git diff HEAD~1
