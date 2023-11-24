@@ -39,3 +39,4 @@ git
 git --help
 ls
 ls -a
+pwd
