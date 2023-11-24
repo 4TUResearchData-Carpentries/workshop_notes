@@ -76,3 +76,4 @@ git diff
 git add count_lines.py 
 git diff
 git status 
+git log
