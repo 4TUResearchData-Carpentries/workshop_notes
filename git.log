@@ -143,3 +143,4 @@ git status
 git remote add origin git@github.com:wmotion/2311-SCW-conflict.git
 git remote
 git remote -v
+git push -u origin main
