@@ -56,3 +56,4 @@ git status
 nano count_line.py
 ls
 cat count_line.py 
+git status 
