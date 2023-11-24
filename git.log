@@ -141,3 +141,4 @@ git branch -M master main
 git branch
 git status 
 git remote add origin git@github.com:wmotion/2311-SCW-conflict.git
+git remote
