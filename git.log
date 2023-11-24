@@ -62,3 +62,4 @@ ls
 mv count_line.py count_lines.py
 ls
 git add count_lines.py
+git status 
