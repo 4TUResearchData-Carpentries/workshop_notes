@@ -72,3 +72,4 @@ git log
 nano count_lines.py 
 cat count_lines.py 
 git status
+git diff
