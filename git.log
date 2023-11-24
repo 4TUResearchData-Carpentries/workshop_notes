@@ -146,3 +146,4 @@ git remote -v
 git push -u origin main
 git log --oneline
 git pull origin main
+nano count_lines.py 
