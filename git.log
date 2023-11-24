@@ -159,3 +159,4 @@ git commit -m "Abbreviate first name" count_lines.py
 git log --oneline
 git push -u origin main
 git pull origin main
+git status 
