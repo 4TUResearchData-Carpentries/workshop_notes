@@ -147,3 +147,4 @@ git push -u origin main
 git log --oneline
 git pull origin main
 nano count_lines.py 
+git add count_lines.py 
