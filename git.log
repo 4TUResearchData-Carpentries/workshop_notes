@@ -156,3 +156,4 @@ nano count_lines.py
 git diff
 git add count_lines.py 
 git commit -m "Abbreviate first name" count_lines.py 
+git log --oneline
