@@ -14,3 +14,4 @@ ls ~/.ssh
 ssh-keygen -t ed25519 -C 'wmotion.eu@gmail.com'
 ls ~/.ssh
 ssh -T git@github.com
+cat ~/.ssh/id_ed25519.pub
