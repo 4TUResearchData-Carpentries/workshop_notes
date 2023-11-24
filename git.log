@@ -10,3 +10,4 @@ ls
 # mkdir 2311-SWC-TUD
 pwd
 ssh -T git@github.com
+ls ~/.ssh
