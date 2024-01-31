@@ -38,7 +38,7 @@ So, you will view the latest commands as the instructor types and the notes grow
 You are also encouraged to bookmark these URLs for an easy navigation during the workshop:
 
 1. Carpentries announcement: 
-2. Collaborative document: 
+2. Collaborative document: https://docs.google.com/document/d/1g3SsmlkkhtQmhMnndmHIuo_icayZsmrI0n0dLrLt82w/
 3. This README file (shortlink): https://bit.ly/2402-SCW-TUD
 
 
