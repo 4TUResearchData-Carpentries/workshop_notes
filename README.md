@@ -56,18 +56,25 @@ Using this repository for automated note-taking/sharing requires that:
 4. the _lesson notes_ are files tracked by and committed to an _edition branch_; 
 5. the README of the _edition branch_ thus addresses the workshop _learners_.
 
-The branch `YYMM-WHAT-WHERE` is a blank branch with a minimal draft README; 
-it is a convenient source point for the _edition branches_ to branch off in clean shape.
-Branching off `master` is discouraged, else you need to clean all the text you are reading just now.  
+#### Hint. Create a fresh edition branch
+
+Please create the fresh _edition branch_ off the branch [`YYMM-WHAT-WHERE`](https://github.com/4TUResearchData-Carpentries/workshop_notes/tree/YYMM-WHAT-WHERE). The latter provides a minimal draft README and you start off with your work in clean shape. Branching off the current branch `master` is discouraged, else you need to clean all the text you are reading just now. This hint is developed in [§3.1.1](#311-setting-up-the-remote-edition-branch).
+
+
 
 ### 2.2 Name conventions
 To leverage speed reading and finding, the following usage is encouraged:
 
-1. **edition-specific branch names** follow the pattern \[yymm\]-\[type of workshop\]-\[institution\]. 
- Example: Software Carpentry Workshop in May 2023 at Delft => `2305-SCW-TUD`.
-2. **shared-file names** start with the lesson they belong to, as follows: 
-   - `python*`. For example, Python shares JupyterLab notebooks and runs in two sessions. Hence: `python1.ipynb`, `python2.ipynb` 
-   - `unixshell*`, `git*`. For example, Unix Shell and Git both share the command history and run in one session each. Hence: `unixshell.log`, `git.log`. 
+1. **names of an edition-specific branch** follow the pattern \[yymm\]-\[type of workshop\]-\[institution\]. 
+   - Example: Software Carpentry Workshop in May 2023 at Delft => `2305-SCW-TUD`.
+       - 2305 stands for May 2023
+       - SCW stands for Software Carpentry Workshop (note it is tempting to use SWC)
+       - TUD stands for ... guess what?
+2. **names for shared files** start with the lesson they belong to, as follows: 
+   - `python*`. 
+      - For example, Python shares JupyterLab notebooks and runs in two sessions. Hence: `python1.ipynb`, `python2.ipynb` 
+   - `unixshell*`, `git*`. 
+      - For example, Unix Shell and Git both share the command history and run in one session each. Hence: `unixshell.log`, `git.log`. Hint: give the command history a format extension that GitHub renders neatly q(md is not OK).
 
 The table is an example of the eventual data hierarchy:
 
@@ -75,7 +82,7 @@ The table is an example of the eventual data hierarchy:
 |:-------|:------|:------|
 | this GitHub account | `4TUResearchData-Carpentries` | -- |
 | this (remote) repository | `workshop_notes` | -- |
-| an edition branch | `2305-SWC-TUD` | \[yymm\]-\[type of workshop\]-\[institution\] |
+| an edition branch | `2305-SCW-TUD` | \[yymm\]-\[type of workshop\]-\[institution\] |
 | lesson notes in the edition branch | `git.log` | `git*` |
 | lesson notes in the edition branch | `python1.ipynb` | `python*` |
 | lesson notes in the edition branch | `python2.ipynb` | `python*` |
@@ -111,17 +118,17 @@ A workshop coordinator can undertake these actions.
 You do not need to be an instructor to set this up.
 
 ##### Where and when
-As for the where, in this repository on GitHub. Its URL is https://github.com/4TUResearchData-Carpentries/workshop_notes. 
+As for the where: in this repository on GitHub. Its URL is https://github.com/4TUResearchData-Carpentries/workshop_notes. 
 
-As for the when, after the workshop edition has been planned and the links to the Carpentries workshop site and to the collaboration document are known. 
+As for the when: after the workshop edition has been planned and the links to the Carpentries workshop site and to the collaboration document are known. 
 
 ##### What and how
 The table details the steps to prepare the edition branch on this GitHub remote repository.
 
 |Step |Objective |Action |Example
 |:-------|:------|:------|:-----|
-|1 | create empty edition branch | [create a new branch in this repo](https://github.com/4TUResearchData-Carpentries/workshop_notes/branches) following §2.2 for naming; set `YYMM-WHAT-WHEN` as the source of the new branch| [`2305-SCW-TUD`](https://github.com/4TUResearchData-Carpentries/workshop_notes/tree/2305-SCW-TUD) |
-|2 | customize README for learners | edit workshop type, days, host and links (*) | [README of 2305-SWC-TUD](https://github.com/4TUResearchData-Carpentries/workshop_notes/blob/2305-SCW-TUD/README.md) (Software, 22-25 May 2023, Delft University of Technology, ...)|
+|1 | create empty edition branch | [create a new branch here](https://github.com/4TUResearchData-Carpentries/workshop_notes/branches) setting `YYMM-WHAT-WHEN` as the source of the new branch and following [§2.2](#22-name-conventions) for naming| [`2305-SCW-TUD`](https://github.com/4TUResearchData-Carpentries/workshop_notes/tree/2305-SCW-TUD) |
+|2 | customize README for learners | edit workshop type, days, host and links (*) | [README of 2305-SCW-TUD](https://github.com/4TUResearchData-Carpentries/workshop_notes/blob/2305-SCW-TUD/README.md) (Software, 22-25 May 2023, Delft University of Technology, ...)|
 |3 | broadcast URL of edition branch | update collaboration document for learners | In the [workshop collaborative document](https://docs.google.com/document/d/1s_LVZVKFA908kGex2wI4Ce-ZF8CqQLfD8S2kDRClL0g/edit#) sections on type-along commands point to the URL of the edition branch https://github.com/4TUResearchData-Carpentries/workshop_notes/tree/2305-SCW-TUD |
 
 #### 3.1.2 Setting up the local repository and edition branch
@@ -156,7 +163,7 @@ The table below guides the choice of the AUTOPUSHDIR directory for the different
 
 ##### What and how 
 
-Once you set your WORKINGDIR and AUTOPUSHDIR as convenient and appropriate, clone the remote edition branch (§ 3.1.1) into AUTOPUSHDIR. Conveniently, the following command enables you to clone the edition branch only. (Source: [Git documentation](https://www.git-scm.com/docs/git-clone) and [Stackexchange Q&A](https://stackoverflow.com/a/9920956), accessed 19 May 2023). Please set or substitute the variables AUTOPUSHDIR and EDITIONBRANCH (for the edition branch name, for example `SWC-2305-TUD`).
+Once you set your WORKINGDIR and AUTOPUSHDIR as convenient and appropriate, clone the remote edition branch (§ 3.1.1) into AUTOPUSHDIR. Conveniently, the following command enables you to clone the edition branch only. (Source: [Git documentation](https://www.git-scm.com/docs/git-clone) and [Stackexchange Q&A](https://stackoverflow.com/a/9920956), accessed 19 May 2023). Please set or substitute the variables AUTOPUSHDIR and EDITIONBRANCH (for the edition branch name, for example `SCW-2305-TUD`).
 
 ```bash
  mkdir $AUTOPUSHDIR
