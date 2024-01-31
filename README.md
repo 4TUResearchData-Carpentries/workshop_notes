@@ -74,7 +74,7 @@ To leverage speed reading and finding, the following usage is encouraged:
    - `python*`. 
       - For example, Python shares JupyterLab notebooks and runs in two sessions. Hence: `python1.ipynb`, `python2.ipynb` 
    - `unixshell*`, `git*`. 
-      - For example, Unix Shell and Git both share the command history and run in one session each. Hence: `unixshell.log`, `git.log`. Hint: give the command history a format extension that GitHub renders neatly q(md is not OK).
+      - For example, the Unix Shell and Git lessons both share the command history and run in one session each. Hence: `unixshell.log`, `git.log`. Hint: give the command history a format extension that GitHub renders neatly; as a contrary example, `md` does not render the new lines of a native text file well.
 
 The table is an example of the eventual data hierarchy:
 
