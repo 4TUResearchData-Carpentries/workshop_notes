@@ -3,7 +3,7 @@
 [![CC BY 4.0][cc-by-shield]][cc-by]
 
 ## Content
-Collection of learner materials for a Software Carpentries workshop. These materials are adaptations from the lessons provided by the [Software Carpentry](https://software-carpentry.org/lessons/).
+Collection of learner materials for a Software Carpentries workshop. These materials are adaptations from the lessons provided by the [Software Carpentry](https://software-carpentry.org/lessons/). 
 
 ## Feedback
 Feel free to use these materials and I welcome any feedback (mistakes, suggestions) in the form of an issue.
