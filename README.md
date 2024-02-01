@@ -5,7 +5,7 @@
 
 **Readership** Workshop coordinators and instructors.
 
-**Document status** This document is a draft. Please open issues to provide remarks.
+**Document status** This document is a draft. Please [open issues](https://github.com/4TUResearchData-Carpentries/workshop_notes/issues) to provide remarks.
 
 
 ---
@@ -22,13 +22,15 @@ Previously, one helper was fully engaged with the task of note-taking.
 The application to the Python lesson by [Maurits Kok (@mwakok)](https://github.com/mwakok) at https://github.com/mwakok/software_carpentry_learner has showed that note-taking can be automated effectively.
 
 **The key tool** is `gitautopush`, an application that _detects_ changes in the working directory, _commits_ them to a local repository, and _pushes_ them to the associated remote repository automatically (and uncritically and verbosely too). 
-The _local repository_ in the instructor's machine must contain the files to be shared while the instructor keeps on typing. 
+- The _local repository_ in the instructor's machine must contain the files to be shared while the instructor keeps on typing. 
 (The local repository _performs_ the pushes.) 
-The learners can consult the notes in the auto-pushed _remote repository_. 
+- The learners can consult the notes in the auto-pushed _remote repository_. 
 (The remote _receives_ the pushes.) 
+
 `gitautopush` has indeed been conceived from the start to support the Software Carpentries. 
 This application is available from the Python Package Index at https://pypi.org/project/gitautopush/ (accessed 19 May 2023); more on its installation in §3.2.  
-This diagram displays the way this arrangement is supposed to work:   
+This diagram displays the way this arrangement is supposed to work: the learner's side of the exchange is in black, the instructor's in red. 
+After cloning the shared repository (once), the instructors fills it from their laptop with the lesson notes using gitautopush (in blue).
 ![Diagram of how automated note taking and sharing works](./workshop_notes.jpg)
 
 **This document** explains to instructors how to use this remote to serve each edition of a Carpentries workshop and how to prepare your local computer for this. 
@@ -59,7 +61,7 @@ Using this repository for automated note-taking/sharing requires that:
 ### 2.2 Name conventions
 To leverage speed reading and finding, the following usage is encouraged:
 
-1. **edition-specific branch names** follow the pattern \[yymm\]-\[type of workshop\]-\[institution\]. 
+1. **edition-specific branch names** follow the slug patterned as \[yymm\]-\[type of workshop\]-\[institution\]. 
  Example: Software Carpentry Workshop in May 2023 at Delft => `2305-SCW-TUD`.
 2. **shared-file names** start with the lesson they belong to, as follows: 
    - `python*`. For example, Python shares JupyterLab notebooks and runs in two sessions. Hence: `python1.ipynb`, `python2.ipynb` 
@@ -103,13 +105,13 @@ the organisation members can invite 'external collaborators' through the Setting
 
 #### 3.1.1 Setting up the remote 'edition branch' 
 
+You do not need to be an instructor to set this up.  
 A workshop coordinator can undertake these actions. 
-You do not need to be an instructor to set this up.
 
 ##### Where and when
-As for the where, in this repository on GitHub. Its URL is https://github.com/4TUResearchData-Carpentries/workshop_notes. 
+As for the where: in this repository on GitHub. Its URL is https://github.com/4TUResearchData-Carpentries/workshop_notes. 
 
-As for the when, after the workshop edition has been planned and the links to the Carpentries workshop site and to the collaboration document are known. 
+As for the when: after the workshop edition has been planned and the links to the Carpentries workshop site and to the collaboration document are known. 
 
 ##### What and how
 The table details the steps to prepare the edition branch on this GitHub remote repository.
@@ -117,8 +119,10 @@ The table details the steps to prepare the edition branch on this GitHub remote 
 |Step |Objective |Action |Example
 |:-------|:------|:------|:-----|
 |1 | create empty edition branch | [create a new branch in this repo](https://github.com/4TUResearchData-Carpentries/workshop_notes/branches) following §2.2 | [`2305-SCW-TUD`](https://github.com/4TUResearchData-Carpentries/workshop_notes/tree/2305-SCW-TUD) |
-|2 | customize README for learners | edit workshop type, days, host and links (*) | [README of 2305-SWC-TUD](https://github.com/4TUResearchData-Carpentries/workshop_notes/blob/2305-SCW-TUD/README.md) (Software, 22-25 May 2023, Delft University of Technology, ...)|
-|3 | broadcast URL of edition branch | update collaboration document for learners | In the [workshop collaborative document](https://docs.google.com/document/d/1s_LVZVKFA908kGex2wI4Ce-ZF8CqQLfD8S2kDRClL0g/edit#) sections on type-along commands point to the URL of the edition branch https://github.com/4TUResearchData-Carpentries/workshop_notes/tree/2305-SCW-TUD |
+|2 | customize README for learners | edit workshop type, days, host and links | [README of 2305-SWC-TUD](https://github.com/4TUResearchData-Carpentries/workshop_notes/blob/2305-SCW-TUD/README.md) (Software, 22-25 May 2023, Delft University of Technology, ...)|
+|3 | broadcast URL of edition branch (*) | update collaboration document for learners | In the [workshop collaborative document](https://docs.google.com/document/d/1s_LVZVKFA908kGex2wI4Ce-ZF8CqQLfD8S2kDRClL0g/edit#) sections on type-along commands point to the URL of the edition branch https://github.com/4TUResearchData-Carpentries/workshop_notes/tree/2305-SCW-TUD |
+
+(*) You may want to use a shortlink to the same end. For example: [https://bit.ly/2305-SCW-TUD](https://bit.ly/2305-SCW-TUD)
 
 #### 3.1.2 Setting up the local repository and edition branch
 
@@ -127,38 +131,41 @@ Specific notes of caution apply as to which lessons you are teaching.
 
 ##### Where and when
 
-As for the when, after the edition branch is ready in this remote (§3.1.1).
+As for the when: after the edition branch is ready in this remote (§3.1.1).
 
-As for the where, in the machine the instructor will use for giving the lesson.
+As for the where: in the machine the instructor will use for giving the lesson.
 You need to make a conditioned choice regarding the paths of:
  
 * the **working directory** (path WORKINGDIR). 
 This is where you carry out the demonstrations for the learners. 
 Typically, this is a subdirectory of the desktop, although the instructor is free to choose any of his/her liking. 
-You show the learners a terminal working on this directory.
+You typically show the learners a terminal or notebook working on this directory.
 * the **auto-pushing directory** (path AUTOPUSHDIR).
-This where you save your lesson notes (whether notebooks or command histories) AND clone (the edition branch of) this repository AND have `gitautopush` observe the local changes (another terminal is thus needed for launching `gitautopush`, §3.2).
-You do _not_ show the learners the terminal working with this directory.
+This where you save your lesson notes (whether notebooks or command histories) AND clone the edition branch of this repository AND have `gitautopush` observe the local changes (this other terminal is thus needed for launching `gitautopush`, §3.2).
+You do _not_ show the learners the terminal working on this directory.
 
 The table below guides the choice of the AUTOPUSHDIR directory for the different lessons:
 
 | Questions | Unix Shell | Git | Python |
 |------:|:------|:------|:------|
 | **Will AUTOPUSHDIR = $WORKINGDIR work?** | No. Create another directory unrelated to WORKINGDIR. |No. Same as Unix Shell. | Yes. And it should be so in a [KISS](https://en.wikipedia.org/wiki/KISS_principle) approach. |
-| **Why?** | You are showing the learners the terminal with WORKINGDIR. gitautopush is verbose and its messages pollute that terminal at any change of the directory content, that is any command you type. (You may wish to check the gitautopush output from time to time.) | See Unix Shell. Also, you need a Git repository which you have full control on, whereas gitautopush will uncritically commit any change of the directory content and try to push it. Let alone that it is unhandy to manage two repositories in one directory. | You are working on the browser and never share a terminal with the learners. The verbose standard output of gitautopush does not interfere with your demonstration in the notebook. |
+| **Why?** | You are showing the learners the terminal with WORKINGDIR. gitautopush is verbose and its messages pollute that terminal at any change of the directory content, that is, at _any_ command you type. (You may also wish to doubly check the gitautopush output from time to time.) | See Unix Shell. Also, during the lesson you need a Git repository which you have full control on, whereas gitautopush will uncritically commit _any_ change of the directory content and try to push it. Let alone that two repositories in one directory are unhandy to manage. | You are working on the browser and never share a terminal with the learners. The verbose standard output of gitautopush does not interfere with your demonstration in the notebook. |
 | **What to do in AUTOPUSHDIR?** | Redirecting the command history to a file contained there. See next section. | Same as Unix Shell. See next section. | A `.gitignore` file that does not track a notebook's hidden companions, like the directory `.ipynb_checkpoints` (plus any notebook output you do not need to share). See next subsection. |
-| **How many terminals are needed?** | 1 for gitautopush + 2 | 1 for gitautopush + 2 | 1 for gitautopush |
+| **How many terminals are needed?** (*) | 1 for gitautopush + 2 for the class | 1 for gitautopush + 2 for the class | 1 for gitautopush |
 
+(*) Two terminals for the class are one to show input and output, and another to show the command history (input only). The latter is one more piece of help to the learners lagging behind.
 
 ##### What and how 
 
 Once you set your WORKINGDIR and AUTOPUSHDIR as convenient and appropriate, clone the remote edition branch (§ 3.1.1) into AUTOPUSHDIR. Conveniently, the following command enables you to clone the edition branch only. (Source: [Git documentation](https://www.git-scm.com/docs/git-clone) and [Stackexchange Q&A](https://stackoverflow.com/a/9920956), accessed 19 May 2023). Please set or substitute the variables AUTOPUSHDIR and EDITIONBRANCH (for the edition branch name, for example `SWC-2305-TUD`).
 
 ```bash
+ AUTOPUSHDIR=your_choice_here
+ EDITIONBRANCH=the_standard_slug_here
  mkdir $AUTOPUSHDIR
  git clone git@github.com:4TUResearchData-Carpentries/workshop_notes.git --branch $EDITIONBRANCH --single-branch $AUTOPUSHDIR
 ```
-Recall that `git clone` wants to act on an empty (AUTOPUSHDIR) directory.
+Recall that `git clone` wants the AUTOPUSHDIR directory to be empty at the start.
 
 For the **Unix Shell** and **Git** lessons, use 
 
