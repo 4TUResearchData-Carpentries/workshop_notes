@@ -23,7 +23,7 @@ So, referring to these notes may be more helpful and effective than browsing the
     * The Quarto document of the episode **Quarto and data viz** (Bjorn) is [link will follow]
     * The R script of the episode **Data visualisation** (Bjorn) is [link will follow]
 3. Please refresh the webpage with the lesson notes. So, you will view the latest commands as the instructor types and the notes grow.
-4. Please notify the instructor if you notice that the lesson notes are not up to date; s/he may have lost the connection with the repository.
+4. Please notify the instructor if you notice that the lesson notes are not up to date; they may have lost the connection with the repository.
 
 #### Workshop documents
 You are also encouraged to bookmark these URLs for an easy navigation during the workshop:
