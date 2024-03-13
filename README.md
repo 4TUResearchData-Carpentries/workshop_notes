@@ -17,7 +17,7 @@ This directory contains the RStudio project you have working with in class, exce
 Consider that instructors may not follow the on-line lesson material verbatim.  
 So, referring to these notes may be more helpful and effective than browsing the [Carpentries lesson material](https://datacarpentry.org/r-socialsci/index.html).  
 2. You can bring up the file of your lesson upon clicking _exactly on the file name_ (hence not anywhere else in the line) in the list of document above in this page.  
-    * The R script of the episode **Introduction to R** (Kristina)  is [link will follow]
+    * The R script of the episode **Introduction to R** (Kristina)  is [ test link will follow]
     * The R script of the episode **Starting with Data** (Kristina/Peter) is [link will follow]
     * The R script of the episode **Data wrangling** (Peter) is [link will follow]
     * The Quarto document of the episode **Quarto and data viz** (Bjorn) is [link will follow]
