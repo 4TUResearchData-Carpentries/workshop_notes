@@ -34,6 +34,10 @@ sqrt(12)
 
 sqrt_area <- sqrt(area_acres) # store as an object
 
+round(3.14159)
 
+args(round) # find the arguments of the round function
 
+?round
 
+round(pi, digits = 4)
