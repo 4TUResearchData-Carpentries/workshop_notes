@@ -1,5 +1,8 @@
 #download.file("https://raw.githubusercontent.com/datacarpentry/r-socialsci/main/episodes/data/SAFI_clean.csv", "data/SAFI_clean.csv", mode = "wb")
 
+
+# R Basics ----------------------------------------------------------------
+
 # land area in hectares
 area_hectares <- 1.0
 
