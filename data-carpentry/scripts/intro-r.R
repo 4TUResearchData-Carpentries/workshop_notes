@@ -27,3 +27,13 @@ r_area <- r_width * r_length
 ## BACK AT 10.35 ##
 
 
+# Functions ---------------------------------------------------------------
+
+# square root function
+sqrt(12)
+
+sqrt_area <- sqrt(area_acres) # store as an object
+
+
+
+
