@@ -13,4 +13,10 @@ area_acres <- 2.47 * area_hectares
 
 area_hectares <- 50
 
+## Exercise 1
 
+r_length <- 4
+r_width <- 6
+r_area <- r_width * r_length
+
+#rm(r_length)
