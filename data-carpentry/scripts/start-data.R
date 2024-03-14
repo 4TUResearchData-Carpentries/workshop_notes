@@ -35,3 +35,6 @@ interviews[3,] #the 3rd row of the tibble
 
 head_interviews <- interviews[1:6,] #the first 6 rows of the tibble
 head_interviews
+
+interviews[,-1] #the whole tibble, except the first column
+interviews[-c(7:131),] #the first 6 rows of the tibble
