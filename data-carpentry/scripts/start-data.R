@@ -23,4 +23,7 @@ names(interviews)
 #Data summaries
 str(interviews) #structure of object and information about the class
 summary(interviews) #summary statistics for each column
-glimpse(interviews)
+glimpse(interviews) #returns the number of columns and rows of the tibble, the names and class of each column, and previews as many values will fit on the screen
+
+interviews[1,1] #first element in the first column of the tibble
+interviews[1,6] #first element in the 6th column of the tibble
