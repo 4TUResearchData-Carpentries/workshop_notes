@@ -83,3 +83,10 @@ memb_assoc <- as.factor(memb_assoc) #convert to a factor
 memb_assoc
 
 plot(memb_assoc)
+
+memb_assoc <- interviews$memb_assoc #recreate vector
+memb_assoc[is.na(memb_assoc)] <- "undetermined"
+
+memb_assoc <- as.factor(memb_assoc) #turn into a factor
+memb_assoc
+plot(memb_assoc)
