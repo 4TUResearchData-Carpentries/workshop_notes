@@ -41,3 +41,7 @@ args(round) # find the arguments of the round function
 ?round
 
 round(pi, digits = 4)
+
+round(pi, 4)
+
+round(digits = 4, x = pi)
