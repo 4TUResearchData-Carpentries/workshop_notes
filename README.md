@@ -18,7 +18,7 @@ Consider that instructors may not follow the on-line lesson material verbatim.
 So, referring to these notes may be more helpful and effective than browsing the [Carpentries lesson material](https://datacarpentry.org/r-socialsci/index.html).  
 2. You can bring up the file of your lesson upon clicking _exactly on the file name_ (hence not anywhere else in the line) in the list of document above in this page.  
     * The R script of the episode **Introduction to R** (Kristina)  is in [data-carpentry/scripts/intro-r.R](/data-carpentry/scripts/intro-r.R)
-    * The R script of the episode **Starting with Data** (Kristina/Peter) is [link will follow]
+    * The R script of the episode **Starting with Data** (Kristina/Peter) is [data-carpentry/scripts/start-data.R](/data-carpentry/scripts/start-data.R)
     * The R script of the episode **Data wrangling** (Peter) is [link will follow]
     * The Quarto document of the episode **Quarto and data viz** (Bjorn) is [link will follow]
     * The R script of the episode **Data visualisation** (Bjorn) is [link will follow]
