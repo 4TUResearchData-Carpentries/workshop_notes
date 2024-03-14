@@ -42,3 +42,7 @@ interviews[-c(7:131),] #the first 6 rows of the tibble
 interviews_100 <- interviews[100,] #contains only the data in row 100
 interviews_100
 
+
+# Factors -----------------------------------------------------------------
+
+respondent_floor_type <- factor(c("earth", "cement", "earth"))
