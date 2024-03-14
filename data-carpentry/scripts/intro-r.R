@@ -49,3 +49,5 @@ round(digits = 4, x = pi)
 ## Exercise 2
 
 # round 1.624 down to nearest integer
+floor(1.624)
+
