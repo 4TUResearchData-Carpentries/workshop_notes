@@ -65,3 +65,11 @@ respondent_floor_type #after re-ordering
 
 respondent_floor_type <- fct_recode(respondent_floor_type, brick = "cement")
 levels(respondent_floor_type)
+
+as.character(respondent_floor_type)
+
+year_fct <- factor(c(1990,1983,1977,1998,1999))
+
+as.numeric(year_fct)
+
+as.numeric(as.character(year_fct))
