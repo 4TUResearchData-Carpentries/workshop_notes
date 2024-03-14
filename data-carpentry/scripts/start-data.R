@@ -30,3 +30,5 @@ interviews[1,6] #first element in the 6th column of the tibble
 interviews[[1]] #first column of the tibble (as a vector)
 interviews[1] #first column of the tibble
 interviews[1:3,7] #first three elements in the 7th column of the tibble
+
+interviews[3,] #the 3rd row of the tibble
