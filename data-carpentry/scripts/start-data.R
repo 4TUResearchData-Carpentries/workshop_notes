@@ -32,3 +32,6 @@ interviews[1] #first column of the tibble
 interviews[1:3,7] #first three elements in the 7th column of the tibble
 
 interviews[3,] #the 3rd row of the tibble
+
+head_interviews <- interviews[1:6,] #the first 6 rows of the tibble
+head_interviews
