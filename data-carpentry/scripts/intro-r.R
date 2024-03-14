@@ -92,3 +92,18 @@ class(hh_members)
 
 # Subsetting vectors
 
+respondent_wall_type[2]
+
+respondent_wall_type[-2]
+
+hh_members[c(TRUE, FALSE, FALSE, TRUE)]
+
+hh_members > 5
+
+hh_members[hh_members > 5]
+
+hh_members[hh_members > 5 | hh_members < 5]
+
+hh_members[hh_members > 5 & hh_members < 5]
+
+respondent_wall_type[respondent_wall_type == "muddaub"]
