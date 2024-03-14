@@ -73,3 +73,5 @@ year_fct <- factor(c(1990,1983,1977,1998,1999))
 as.numeric(year_fct)
 
 as.numeric(as.character(year_fct))
+
+as.numeric(levels(year_fct)[year_fct])
