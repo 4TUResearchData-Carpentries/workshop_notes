@@ -75,3 +75,7 @@ as.numeric(year_fct)
 as.numeric(as.character(year_fct))
 
 as.numeric(levels(year_fct)[year_fct])
+
+memb_assoc <- interviews$memb_assoc #create a vector from the data frame column "member association
+memb_assoc <- as.factor(memb_assoc) #convert to a factor
+memb_assoc
