@@ -62,3 +62,6 @@ respondent_floor_type <- factor(respondent_floor_type,
                                 levels = c("earth", "cement"))
 
 respondent_floor_type #after re-ordering
+
+respondent_floor_type <- fct_recode(respondent_floor_type, brick = "cement")
+levels(respondent_floor_type)
