@@ -46,3 +46,7 @@ interviews_100
 # Factors -----------------------------------------------------------------
 
 respondent_floor_type <- factor(c("earth", "cement", "earth"))
+
+levels(respondent_floor_type) #the levels of the vector
+
+nlevels(respondent_floor_type) #the number of levels of the vector
