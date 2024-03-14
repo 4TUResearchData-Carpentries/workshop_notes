@@ -55,4 +55,35 @@ trunc(1.624)
 
 # Data types --------------------------------------------------------------
 
+# create a vector
 
+hh_members <- c(3, 7, 10, 6)
+
+respondent_wall_type <- c("muddaub", "burntbricks", "sunbricks")
+respondent_wall_type
+
+length(respondent_wall_type)
+length(hh_members)
+
+typeof(respondent_wall_type)
+typeof(hh_members)
+
+str(hh_members)
+str(respondent_wall_type)
+
+# vector manipulation
+
+possessions <- c("bicycle", "radio", "television")
+
+possessions <- c(possessions, "mobile_phone") # add to vector
+possessions
+
+possessions <- c("car", possessions)
+possessions
+
+# Exercise 3?
+
+num_char <- c(1, 2, 3, "a")
+num_logical <- c(1, 2L, 3, TRUE)
+char_logical <- c("a", "b", "c", TRUE)
+tricky <- c(1, 2, 3, "4")
