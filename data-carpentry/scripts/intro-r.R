@@ -90,7 +90,8 @@ tricky <- c(1, 2, 3, "4")
 
 class(hh_members)
 
-# Subsetting vectors
+
+# Subsetting vectors ------------------------------------------------------
 
 respondent_wall_type[2]
 
