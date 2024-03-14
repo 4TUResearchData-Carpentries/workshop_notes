@@ -2,7 +2,9 @@ library(tidyverse)
 library(here)
 
 
-interviews <- read_csv(here("data/SAFI_clean.csv"))
+interviews <- read_csv(
+  here("data", "SAFI_clean.csv"), 
+  na = "NULL")
 
 interviews
 
@@ -79,3 +81,5 @@ as.numeric(levels(year_fct)[year_fct])
 memb_assoc <- interviews$memb_assoc #create a vector from the data frame column "member association
 memb_assoc <- as.factor(memb_assoc) #convert to a factor
 memb_assoc
+
+plot(memb_assoc)
