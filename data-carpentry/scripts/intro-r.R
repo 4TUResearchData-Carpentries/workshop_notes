@@ -5,3 +5,7 @@ area_hectares <- 1.0
 area_hectares * 2.47
 
 area_hectares <- 2.5
+
+area_hectares * 2.47
+
+area_acres <- 2.47 * area_hectares
