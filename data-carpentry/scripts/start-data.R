@@ -28,3 +28,5 @@ glimpse(interviews) #returns the number of columns and rows of the tibble, the n
 interviews[1,1] #first element in the first column of the tibble
 interviews[1,6] #first element in the 6th column of the tibble
 interviews[[1]] #first column of the tibble (as a vector)
+interviews[1] #first column of the tibble
+interviews[1:3,7] #first three elements in the 7th column of the tibble
