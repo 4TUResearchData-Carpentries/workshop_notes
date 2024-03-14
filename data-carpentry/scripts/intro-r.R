@@ -51,3 +51,8 @@ round(digits = 4, x = pi)
 # round 1.624 down to nearest integer
 floor(1.624)
 
+trunc(1.624)
+
+# Data types --------------------------------------------------------------
+
+
