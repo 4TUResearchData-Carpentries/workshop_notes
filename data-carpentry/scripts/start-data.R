@@ -55,3 +55,10 @@ respondent_floor_type <- factor(c("earth", "cement", "cement", "earth"))
 levels(respondent_floor_type) #the levels of the vector
 
 nlevels(respondent_floor_type) #the number of levels of the vector
+
+respondent_floor_type #current order
+
+respondent_floor_type <- factor(respondent_floor_type, 
+                                levels = c("earth", "cement"))
+
+respondent_floor_type #after re-ordering
