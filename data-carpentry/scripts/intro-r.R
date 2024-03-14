@@ -45,3 +45,7 @@ round(pi, digits = 4)
 round(pi, 4)
 
 round(digits = 4, x = pi)
+
+## Exercise 2
+
+# round 1.624 down to nearest integer
