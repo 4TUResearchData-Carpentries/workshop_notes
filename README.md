@@ -20,8 +20,8 @@ So, referring to these notes may be more helpful and effective than browsing the
     * The R script of the episode **Introduction to R** (Bjorn)  is in [data-carpentry/scripts/intro-r.R](/data-carpentry/scripts/intro-r.R)
     * The R script of the episode **Starting with Data** (Kristina/Peter) is [data-carpentry/scripts/start-data.R](/data-carpentry/scripts/start-data.R)
     * The R script of the episode **Data wrangling** (Peter) is [link will follow]
-    * The Quarto document of the episode **Quarto and data viz** (Bjorn) is [link will follow]
-    * The R script of the episode **Data visualisation** (Bjorn) is [link will follow]
+    * The Quarto document of the episode **Quarto and data viz** (Bjorn) is [here](/data-carpentry/documents/awesome-report.qmd)
+    * The R script of the episode **Data visualisation** (Bjorn) is [here](/data-carpentry/scripts/)
 3. Please refresh the webpage with the lesson notes. So, you will view the latest commands as the instructor types and the notes grow.
 4. Please notify the instructor if you notice that the lesson notes are not up to date; they may have lost the connection with the repository.
 
