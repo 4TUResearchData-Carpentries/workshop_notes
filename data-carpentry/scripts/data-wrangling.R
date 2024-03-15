@@ -26,6 +26,7 @@ interviews3 <- filter( interviews , village == 'Ruaca' )
 interviews3 <- filter( interviews , village == 'Ruaca' & no_membrs > 4 ) 
 
 # select columns and rows
+interviews2 <- select( interviews , village:rooms )
 interviews3 <- filter( interviews2 , village == 'Ruaca' & no_membrs > 4 ) 
 
 
