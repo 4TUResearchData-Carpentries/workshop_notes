@@ -1,0 +1,18 @@
+---
+title: "My Awesome Report"
+author: "That's me"
+format: html
+---
+
+# Title
+## Section
+### Sub-section
+#### Sub-sub-section
+
+Just write text.
+
+## Introduction
+
+This report uses the tidyverse package along with the SAFI
+dataset which has columns that include:
+
