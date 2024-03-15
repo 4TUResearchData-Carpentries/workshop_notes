@@ -42,5 +42,8 @@ interviews_plotting %>%
       width = 0.2,
       height = 0.2)
 
+# Bar plots
+
+
 
 
