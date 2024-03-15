@@ -65,11 +65,11 @@ interviews %>%
   knitr::kable(col.names = c("Village", "Member Association", "Mean number of Members"))
 ```
 
-And a plot [@cool-plot]
+And a plot [@fig-cool-plot]
 
 ```{r}
 #| echo: false
-#| label: cool-plot
+#| label: fig-cool-plot
 percent_wall_type %>%
   ggplot(aes(x = respondent_wall_type, y = percent, fill = respondent_wall_type)) +
   geom_col(position = "dodge") +
