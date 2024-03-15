@@ -66,4 +66,7 @@ interviews6 <- summarise( interviews, st_dev = sd(rooms) )
 interviews7 <- group_by( interviews , village ) %>%
   summarise( st_dev = sd(rooms))
 
+## count
 
+interviews7 <- group_by( interviews, village ) %>%
+  summarise( no_interviews = n() )
