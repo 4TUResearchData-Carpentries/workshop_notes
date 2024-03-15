@@ -77,3 +77,12 @@ interviews8 <- count(interviews,village)
 exercise4 <- count( interviews , no_meals )
 
 write_csv( interviews8 , here('data', 'no_interviews.csv') )
+
+## Make a data frame in the wide format
+
+column1 <- c('Ruaca','God','Choridzo')
+column2 <- c( 4 , 5, 6 )
+column3 <- c( 8 , 10, 12 )
+column4 <- c( 5 , 32, 8 )
+
+wide_data <- tibble( `village` )
