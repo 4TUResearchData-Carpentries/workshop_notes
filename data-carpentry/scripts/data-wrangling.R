@@ -61,3 +61,7 @@ interviews6 <- summarise( interviews , avg_rooms = mean( rooms ) )
 ## standard deviation
 interviews6 <- summarise( interviews, st_dev = sd(rooms) )
 
+## Group by
+
+interviews7 <- group_by( interviews , village ) %>%
+  summarise( st_dev = sd(rooms) )
