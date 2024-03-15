@@ -44,6 +44,10 @@ interviews_plotting %>%
 
 # Bar plots
 
+interviews_plotting %>%
+  ggplot(aes(x = respondent_wall_type))
+
+
 
 
 
