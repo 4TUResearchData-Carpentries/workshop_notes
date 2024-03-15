@@ -28,7 +28,6 @@ dataset which has columns that include:
 These are my favourite:
 
 1. village
-  - a thing
 2. rooms
 3. meals thing
 4. some other column
