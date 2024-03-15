@@ -45,6 +45,7 @@ These are my favourite:
 ## Results
 
 ```{r}
+#| echo: false
 interviews %>%
   filter(!is.na(memb_assoc)) %>%
   group_by(village, memb_assoc) %>%
