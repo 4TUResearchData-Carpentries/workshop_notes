@@ -85,4 +85,7 @@ column2 <- c( 4 , 5, 6 )
 column3 <- c( 8 , 10, 12 )
 column4 <- c( 5 , 32, 8 )
 
-wide_data <- tibble( `village` )
+wide_data <- tibble( `village`=column1 , 
+                     `2016-11-17`=column2 , 
+                     `2016-11-18`=column3, 
+                     `2016-11-19`=column4 )
