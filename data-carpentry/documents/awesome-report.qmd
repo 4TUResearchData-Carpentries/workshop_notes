@@ -4,7 +4,8 @@ author: "That's me"
 format: 
   html: default
   docx: default
-  pdf: default
+  pdf:
+    keep-tex: true
 ---
 
 ```{r}
