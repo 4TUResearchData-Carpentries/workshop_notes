@@ -94,3 +94,23 @@ long_data <- pivot_longer( wide_data,
                            cols = `2016-11-17`:`2016-11-19` , 
                            names_to = 'date' , 
                            values_to = 'nr_interviews' )
+
+
+interviews_plotting <- interviews %>%
+  ## pivot wider by items_owned
+  separate_longer_delim(items_owned, delim = ";") %>%
+  ## if there were no items listed, changing NA to no_listed_items
+  replace_na(list(items_owned = "no_listed_items")) %>%
+  mutate(items_owned_logical = TRUE) %>%
+  pivot_wider(names_from = items_owned,
+              values_from = items_owned_logical,
+              values_fill = list(items_owned_logical = FALSE)) %>%
+  ## pivot wider by months_lack_food
+  separate_longer_delim(months_lack_food, delim = ";") %>%
+  mutate(months_lack_food_logical = TRUE) %>%
+  pivot_wider(names_from = months_lack_food,
+              values_from = months_lack_food_logical,
+              values_fill = list(months_lack_food_logical = FALSE)) %>%
+  ## add some summary columns
+  mutate(number_months_lack_food = rowSums(select(., Jan:May))) %>%
+  mutate(number_items = rowSums(select(., bicycle:car)))
