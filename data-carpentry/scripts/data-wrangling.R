@@ -55,5 +55,9 @@ exercise2 <- mutate( interviews , total_meals = no_meals * no_membrs ) %>%
 
 ## Summarise
 
+## mean
 interviews6 <- summarise( interviews , avg_rooms = mean( rooms ) )
+
+## standard deviation
 interviews6 <- summarise( interviews, st_dev = sd(rooms) )
+
