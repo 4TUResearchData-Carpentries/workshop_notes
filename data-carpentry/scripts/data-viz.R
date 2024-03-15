@@ -32,3 +32,14 @@ interviews_plotting %>%
 
 interviews_pl +
   geom_jitter(aes(colour = village))
+
+interviews_plotting %>%
+  ggplot(aes(x = village, y = rooms)) +
+    geom_boxplot(fill = "blue") +
+    geom_jitter(
+      aes(color = respondent_wall_type),
+      alpha = 0.3,
+      width = 0.2,
+      height = 0.2)
+
+
