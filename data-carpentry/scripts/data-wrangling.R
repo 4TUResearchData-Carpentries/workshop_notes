@@ -76,3 +76,4 @@ interviews8 <- count(interviews,village)
 ## exercise4 
 exercise4 <- count( interviews , no_meals )
 
+write_csv( interviews8 , here('data', 'no_interviews') )
