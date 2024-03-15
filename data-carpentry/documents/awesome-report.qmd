@@ -77,6 +77,7 @@ percent_wall_type %>%
     x = "Wall type",
     y = "Percent",
     fill = "Wall type") +
+  theme_bw() +
   theme(
     axis.text.x = element_blank(),
     #axis.text.x = element_text(angle = 45, hjust = 1, vjust = 1),
