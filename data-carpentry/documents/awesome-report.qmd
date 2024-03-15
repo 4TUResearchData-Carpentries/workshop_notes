@@ -16,3 +16,11 @@ Just write text.
 This report uses the **tidyverse** package along with the *SAFI*
 dataset which has columns that include:
 
+- village
+- interview_date
+- no_members
+- years_liv
+- respondent_wall_type
+
+
+
