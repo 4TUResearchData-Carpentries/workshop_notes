@@ -1,7 +1,10 @@
 ---
 title: "My Awesome Report"
 author: "That's me"
-format: html
+format: 
+  html: default
+  docx: default
+  pdf: default
 ---
 
 ```{r}
