@@ -14,3 +14,6 @@ select( interviews , village, no_membrs  )
 
 ## select the columns village and rooms and all columns in between 
 interviews2 <- select( interviews , village:rooms )
+
+##nselect the columns staring with 'no_'
+interviews2 <- select( interviews , starts_with('no_')  ) 
