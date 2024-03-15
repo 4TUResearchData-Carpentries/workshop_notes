@@ -93,7 +93,6 @@ plot(memb_assoc)
 
 
 
-
 library(lubridate)
 
 dates <- interviews$interview_date
@@ -112,4 +111,5 @@ interviews12 <- mutate( interviews , month = month(interview_date) )
 char_dates <- c("7/31/2012","8/9/2014",'4/30/2016' )
 as_date(char_dates, format = "%m/%d/%Y")
 norm_dates
+
 
