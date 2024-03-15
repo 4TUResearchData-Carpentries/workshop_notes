@@ -73,11 +73,12 @@ percent_wall_type %>%
   labs(
     title = "Proportion of wall type by village",
     x = "Wall type",
-    y = "Percent") +
+    y = "Percent",
+    fill = "Wall type") +
   theme(
     axis.text.x = element_blank(),
     #axis.text.x = element_text(angle = 45, hjust = 1, vjust = 1),
-    legend.position = "none",
+    #legend.position = "none",
     axis.ticks.x = element_blank()
   )
 
