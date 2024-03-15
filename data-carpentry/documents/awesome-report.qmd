@@ -32,4 +32,18 @@ These are my favourite:
 3. meals thing
 4. some other column
 
+## Results
+
+```{r}
+interviews %>%
+  filter(!is.na(memb_assoc)) %>%
+  group_by(village, memb_assoc) %>%
+  summarise(mean_no_membrs = mean(no_membrs))
+```
+
+
+
+
+
+
 
