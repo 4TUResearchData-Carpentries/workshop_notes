@@ -72,3 +72,7 @@ interviews7 <- group_by( interviews, village ) %>%
   summarise( no_interviews = n() )
 
 interviews8 <- count(interviews,village)
+
+## exercise4 
+
+exercise4 <- count( interviews , no_meals )
