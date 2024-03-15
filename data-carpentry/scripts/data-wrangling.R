@@ -23,3 +23,5 @@ interviews2 <- select( interviews , starts_with('no_')  )
 
 ## select interviews conducted in Ruaca
 interviews3 <- filter( interviews , village == 'Ruaca' )
+
+interviews3 <- filter( interviews , village == 'Ruaca' & no_membrs > 2 ) 
