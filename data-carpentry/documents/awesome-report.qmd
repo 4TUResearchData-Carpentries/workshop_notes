@@ -27,5 +27,5 @@ These are my favourite:
 1. village
 2. rooms
 3. meals thing
-5. some other column
+4. some other column
 
