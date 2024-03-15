@@ -23,7 +23,7 @@ Just write text.
 
 ## Introduction
 
-This report was rendered on `r Sys.Date()`.
+This report was rendered on `Sys.Date()`.
 
 This report uses the **tidyverse** package along with the *SAFI*
 dataset which has columns that include:
