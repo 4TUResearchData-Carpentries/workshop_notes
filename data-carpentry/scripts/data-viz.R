@@ -66,6 +66,20 @@ percent_wall_type %>%
   ggplot(aes(x = village, y = percent, fill = respondent_wall_type)) +
   geom_col(position = "dodge")
 
+percent_wall_type %>%
+  ggplot(aes(x = respondent_wall_type, y = percent, fill = respondent_wall_type)) +
+  geom_col(position = "dodge") +
+  facet_wrap(~ village) +
+  labs(
+    title = "Proportion of wall type by village",
+    x = "Wall type",
+    y = "Percent") +
+  theme(
+    axis.text.x = element_blank(),
+    #axis.text.x = element_text(angle = 45, hjust = 1, vjust = 1),
+    legend.position = "none",
+    axis.ticks.x = element_blank()
+  )
 
 
 
