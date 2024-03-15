@@ -22,5 +22,10 @@ dataset which has columns that include:
 - years_liv
 - respondent_wall_type
 
+These are my favourite:
 
+1. village
+2. rooms
+3. meals thing
+4. some other column
 
