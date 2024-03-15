@@ -1,6 +1,6 @@
 library(tidyverse)
 library(here)
-
+fgfg
 
 interviews <- read_csv(
   here("data", "SAFI_clean.csv"), 
