@@ -24,3 +24,8 @@ interviews2 <- select( interviews , starts_with('no_')  )
 ## select interviews conducted in Ruaca
 interviews3 <- filter( interviews , village == 'Ruaca' )
 interviews3 <- filter( interviews , village == 'Ruaca' & no_membrs > 4 ) 
+
+# select columns and rows
+interviews3 <- filter( interviews2 , village == 'Ruaca' & no_membrs > 4 ) 
+
+
