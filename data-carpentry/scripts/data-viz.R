@@ -18,5 +18,7 @@ interviews_pl +
   geom_jitter(
     alpha = 0.5,
     width = 0.2,
-    height = 0.2
+    height = 0.2,
+    colour = "blue"
     )
+
