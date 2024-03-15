@@ -60,7 +60,7 @@ view(percent_wall_type)
 
 percent_wall_type %>%
   ggplot(aes(x = village, y = percent, fill = respondent_wall_type)) +
-    geom_bar(position = "dodge")
+    geom_bar(position = "dodge", stat = "identity")
 
 
 
