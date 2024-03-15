@@ -29,4 +29,10 @@ interviews3 <- filter( interviews , village == 'Ruaca' & no_membrs > 4 )
 interviews2 <- select( interviews , village:rooms )
 interviews3 <- filter( interviews2 , village == 'Ruaca' & no_membrs > 4 ) 
 
+## doing the same with pipes
+
+interviews3 <- select( interviews , village:rooms ) %>%
+  filter( village == 'Ruaca' )
+
+
 
