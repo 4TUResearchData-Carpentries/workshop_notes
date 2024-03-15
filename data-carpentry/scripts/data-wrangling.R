@@ -17,3 +17,8 @@ interviews2 <- select( interviews , village:rooms )
 
 ##nselect the columns staring with 'no_'
 interviews2 <- select( interviews , starts_with('no_')  ) 
+
+
+## filter function
+
+interviews3 <- filter( interviews , village == 'Ruaca' )
