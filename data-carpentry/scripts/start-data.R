@@ -91,7 +91,14 @@ memb_assoc <- as.factor(memb_assoc) #turn into a factor
 memb_assoc
 plot(memb_assoc)
 
+## Exercise 
 
+## Rename levels.
+memb_assoc <- fct_recode(memb_assoc, No = "no",
+                         Undetermined = "undetermined", Yes = "yes")
+## Reorder levels. Note we need to use the new level names.
+memb_assoc <- factor(memb_assoc, levels = c("No", "Yes", "Undetermined"))
+plot(memb_assoc)
 
 library(lubridate)
 
