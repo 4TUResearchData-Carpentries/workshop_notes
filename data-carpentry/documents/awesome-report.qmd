@@ -17,7 +17,10 @@ This report uses the **tidyverse** package along with the *SAFI*
 dataset which has columns that include:
 
 - village
+  + Name of village
 - interview_date
+  + Date of interview
+    * another detail
 - no_members
 - years_liv
 - respondent_wall_type
@@ -28,4 +31,5 @@ These are my favourite:
 2. rooms
 3. meals thing
 4. some other column
+
 
