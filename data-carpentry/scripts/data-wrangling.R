@@ -89,3 +89,8 @@ wide_data <- tibble( `village`=column1 ,
                      `2016-11-17`=column2 , 
                      `2016-11-18`=column3, 
                      `2016-11-19`=column4 )
+
+long_data <- pivot_longer( wide_data, 
+                           cols = `2016-11-17`:`2016-11-19` , 
+                           names_to = 'date' , 
+                           values_to = 'nr_interviews' )
