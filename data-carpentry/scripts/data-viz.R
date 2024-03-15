@@ -79,7 +79,8 @@ percent_wall_type %>%
     axis.text.x = element_blank(),
     #axis.text.x = element_text(angle = 45, hjust = 1, vjust = 1),
     #legend.position = "none",
-    axis.ticks.x = element_blank()
+    axis.ticks.x = element_blank(),
+    axis.title.x = element_blank()
   )
 
 
