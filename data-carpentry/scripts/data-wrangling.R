@@ -51,3 +51,8 @@ interviews4 <- mutate( interviews ,
 exercise2 <- mutate( interviews , total_meals = no_meals * no_membrs ) %>%
   select( village , total_meals ) %>%
   filter( total_meals > 20 )
+
+
+## Summarise
+
+interviews6 <- summarise( interviews , avg_rooms = mean( rooms ) )
