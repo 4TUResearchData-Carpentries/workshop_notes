@@ -39,3 +39,5 @@ exercise1 <- filter( interviews , memb_assoc == 'yes' ) %>%
 
 ## add a new column with the result of a calculations
 interviews4 <- mutate( interviews , no_portions = no_membrs * no_meals )
+
+interviews4 <- mutate( interviews , people_per_room = no_membrs / rooms )
