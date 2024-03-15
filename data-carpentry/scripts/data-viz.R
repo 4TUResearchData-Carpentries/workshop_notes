@@ -22,3 +22,13 @@ interviews_pl +
     colour = "blue"
     )
 
+# Mapping
+
+interviews_plotting %>%
+  ggplot(aes(x = no_membrs, y = number_items, colour = village)) +
+    geom_jitter(alpha = 0.5,
+      width = 0.2,
+      height = 0.2)
+
+interviews_pl +
+  geom_jitter(aes(colour = village))
