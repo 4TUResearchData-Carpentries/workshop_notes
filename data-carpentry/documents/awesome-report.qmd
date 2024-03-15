@@ -65,7 +65,7 @@ interviews %>%
   knitr::kable(col.names = c("Village", "Member Association", "Mean number of Members"))
 ```
 
-And a plot
+And a plot [@cool-plot]
 
 ```{r}
 #| echo: false
