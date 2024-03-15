@@ -53,9 +53,10 @@ These are my favourite:
 
 ## Results
 
-Here is a table
+Here is a table @tbl-cool-table
 
 ```{r}
+#| label: tbl-cool-table
 #| echo: false
 #| message: false
 interviews %>%
