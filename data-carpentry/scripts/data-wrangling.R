@@ -46,6 +46,8 @@ interviews4 <- mutate( interviews ,
 
 # Contains only the ‘village’ column and a new
 # column called ‘total_meals’. 
-
 # final dataframe should only contain the rows where ‘total_meals’ is greater than 20.
 
+exercise2 <- mutate( interviews , total_meals = no_meals * no_membrs ) %>%
+  select( village , total_meals ) %>%
+  filter( total_meals > 20 )
