@@ -37,5 +37,5 @@ interviews3 <- select( interviews , village:rooms ) %>%
 exercise1 <- filter( interviews , memb_assoc == 'yes' ) %>%
   select( affect_conflicts, liv_count , no_meals, memb_assoc )
 
-interviews4$new_column <- 5
+## add a new column with the result of a calculations
 interviews4 <- mutate( interviews , no_portions = no_membrs * no_meals )
