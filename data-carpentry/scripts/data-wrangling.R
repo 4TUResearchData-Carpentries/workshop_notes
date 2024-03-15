@@ -114,3 +114,5 @@ interviews_plotting <- interviews %>%
   ## add some summary columns
   mutate(number_months_lack_food = rowSums(select(., Jan:May))) %>%
   mutate(number_items = rowSums(select(., bicycle:car)))
+
+write_csv( interviews_plotting, here('data_output','interviews_plotting.csv') )
