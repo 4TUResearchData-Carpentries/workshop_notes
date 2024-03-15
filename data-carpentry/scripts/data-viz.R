@@ -15,4 +15,8 @@ interviews_pl <- interviews_plotting %>%
   ggplot(aes(x = no_membrs, y = number_items))
 
 interviews_pl +
-  geom_jitter()
+  geom_jitter(
+    alpha = 0.5,
+    width = 0.2,
+    height = 0.2
+    )
