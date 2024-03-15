@@ -37,3 +37,4 @@ interviews3 <- select( interviews , village:rooms ) %>%
 exercise1 <- filter( interviews , memb_assoc == 'yes' ) %>%
   select( affect_conflicts, liv_count , no_meals, memb_assoc )
 
+
