@@ -21,6 +21,7 @@ percent_wall_type <- interviews_plotting %>%
 ```
 
 
+
 # Title
 ## Section
 ### Sub-section
@@ -55,6 +56,7 @@ These are my favourite:
 
 Here is a table @tbl-cool-table
 
+
 ```{r}
 #| label: tbl-cool-table
 #| tbl-cap: "Caption"
@@ -67,7 +69,9 @@ interviews %>%
   knitr::kable(col.names = c("Village", "Member Association", "Mean number of Members"))
 ```
 
+
 And a plot [@fig-cool-plot]
+
 
 ```{r}
 #| echo: false
@@ -90,9 +94,4 @@ percent_wall_type %>%
     axis.title.x = element_blank()
   )
 ```
-
-
-
-
-
 
