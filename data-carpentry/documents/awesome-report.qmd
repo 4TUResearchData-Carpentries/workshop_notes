@@ -6,6 +6,7 @@ format: html
 
 ```{r}
 #| label: setup
+#| include: false
 
 library(tidyverse)
 library(here)
