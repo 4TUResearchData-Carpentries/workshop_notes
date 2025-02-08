@@ -1,0 +1,103 @@
+from subprocess import run, PIPE, DEVNULL
+import os.path as op
+from time import sleep
+import argparse
+
+DESCRIPTION = (
+    "Automatically syncronize and push a git repository to GitHub."
+    "\n\n"
+    "Useful for teaching with one of more files that you populate "
+    "as you go along. This tool will automatically sync "
+    "changes that you make and push them to GitHub so that "
+    "students can use it as a reference."
+)
+parser = argparse.ArgumentParser(description=DESCRIPTION)
+parser.add_argument(
+    "path", nargs="?", default='.', help=("The path to the folder you'd like to watch. "
+                                          "Any changes to this folder will be committed and pushed.")
+)
+parser.add_argument(
+    "--sleep", default=10, help="Time to wait (in seconds) before checking for updates."
+)
+
+NBVIEWER_BASE = "https://nbviewer.jupyter.org/github/%s/blob/%s/%s?flush_cache=true"
+GITHUB_BASE = "https://github.com/%s/blob/%s/%s"
+TAB = '    '
+
+
+def main():
+    # Parse args
+    args = parser.parse_args()
+    path = op.abspath(args.path)
+    this_sleep = int(args.sleep)
+
+    # Checks
+    if not op.isdir(path):
+        raise ValueError("Specified path does not exist: \n" + path)
+
+    try:
+        out = run("git rev-parse --abbrev-ref HEAD".split(), check=True,
+                  stdout=PIPE, cwd=path)
+        branch = out.stdout.decode().strip()
+
+    except Exception:
+        raise ValueError("A `git status` command didn't work, are you sure this is a git repository?")
+
+    # Grab the URL of the remote
+    out = run('git remote -v'.split(), stdout=PIPE, cwd=path)
+    remotes = out.stdout.decode().strip().split('\n')
+    remote = [ii for ii in remotes if '(push)' in ii][0].strip().split()[1]
+    orgrepo = '/'.join(remote.split('/')[-2:])
+    nbviewer_tree_link = (NBVIEWER_BASE % (orgrepo, branch, '')).split('?')[0].replace('blob', 'tree')
+
+    print('\n---')
+    print("Observing changes to folder: " + op.abspath(path))
+    print("Pushing changes to repository: %s/tree/%s" % (remote, branch))
+    print("View notebooks at this nbviewer link: " + nbviewer_tree_link)
+
+    # --- Main loop ---
+    ii = 1
+    while True:
+        # Check for any changes in this folder
+        out = run('git status --porcelain'.split(), stdout=PIPE, cwd=path)
+        changed_files = out.stdout.decode().strip().split('\n')
+        changed_files = [ii.strip().split(' ', 1)[-1] for ii in changed_files]
+
+        # Remove some common files we don't want
+        changed_files = [ii for ii in changed_files
+                         if ".ipynb_checkpoints" not in ii]
+
+        # Remove a weird character that occasionally shows up
+        changed_files = [ii.lstrip('~') for ii in changed_files if len(ii) > 0]
+
+        # Do nothing if we have no changed files
+        if len(changed_files) == 0:
+            sleep(this_sleep)
+            continue
+
+        # Check in all the changed files
+        run("git add -A".split(), check=True, cwd=path)
+        msg = "Updated files:\n\n"
+        for ch_file in changed_files:
+            if _is_ipynb(ch_file):
+                nbviewer_extra = NBVIEWER_BASE % (orgrepo, branch, ch_file)
+                nbviewer_extra = "%s" % nbviewer_extra
+            else:
+                nbviewer_extra = ''
+            github_extra = GITHUB_BASE % (orgrepo, branch, ch_file)
+            msg += TAB + ch_file + '\n' + TAB + TAB + nbviewer_extra + '\n' + TAB + TAB + github_extra + '\n'
+
+        run(["git", "commit", "-m", "gitautosync update %s" % ii], check=True, cwd=path)
+
+        out = run(("git", "push"), stdout=DEVNULL, cwd=path)
+        print("\n---\n")
+        print("Update %s\n\n%s" % (ii, msg))
+        ii += 1
+        sleep(this_sleep)
+
+
+def _is_ipynb(path):
+    return op.splitext(path)[-1] == '.ipynb'
+
+if __name__ == "__main__":
+    main()

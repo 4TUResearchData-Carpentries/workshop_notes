@@ -1,0 +1,3 @@
+[console_scripts]
+gitautopush = gitautopush.gitautopush:main
+
