@@ -23,4 +23,8 @@ area_hectares # typing the name of the object it prints the value
 
 2.47 * area_hectares # convert area into acres
 area_hectares <- 10 # change the value of area_hectares
+2.47 * area_hectares # convert into acres again
+
+
+
 
