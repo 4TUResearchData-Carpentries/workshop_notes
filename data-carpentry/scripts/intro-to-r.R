@@ -18,6 +18,6 @@ install.packages("here")
 2 + 16
 123 / 56
 
-
+area_hectares <- 1.0 # assign 1.0 to an object called area_hectares
 
 
