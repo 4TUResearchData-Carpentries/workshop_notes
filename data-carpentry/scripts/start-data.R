@@ -5,3 +5,30 @@ library(here)
 interviews <- read_csv(here("data/SAFI_clean.csv"), na = "NULL")
 
 view(interviews)
+head(interviews)
+tail(interviews)
+class(interviews)
+dim(interviews) # dimenisons (rows and columns)
+nrow(interviews)
+ncol(interviews)
+str(interviews)
+summary(interviews)
+
+# Subsetting data frames --------------------------------------------------
+
+interviews[1, 3] # subset first row, third column
+interviews[[3]] # subset third column as vector
+interviews[3]
+interviews[1:4, 3]
+interviews[c(1,3,4), 3]
+interviews[3, ] # output as tibble
+interviews[, 3]
+interviews[, -1]
+interviews[-c(1,3,4), ]
+interviews["village"] # name of variable to subset as tibble
+interviews[, c("village", "no_meals")]
+interviews[["village"]] # output as vector
+interviews$respondent_wall_type[1:3]
+
+
+
