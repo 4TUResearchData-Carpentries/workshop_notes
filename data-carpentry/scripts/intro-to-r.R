@@ -19,5 +19,8 @@ install.packages("here")
 123 / 56
 
 area_hectares <- 1.0 # assign 1.0 to an object called area_hectares
+area_hectares # typing the name of the object it prints the value
 
+2.47 * area_hectares # convert area into acres
+area_hectares <- 10 # change the value of area_hectares
 
