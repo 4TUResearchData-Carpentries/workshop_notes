@@ -63,6 +63,6 @@ str(hh_members) # str() provides an overview of the structure of the hh_members 
 
 posessions <- c("bicycle", "radio", "television") # create a new character vectos with posessions
 posessions <- c(posessions, "mobile_phone") # add an extra element to the end of the existing vector
-
+posessions <- c("car", posessions) # add element to beginning
 
 
