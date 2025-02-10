@@ -59,4 +59,10 @@ length(respondent_wall_type) # no. of elements in the respondent_wall_type vecto
 typeof(hh_members) # what type of object is hh_members?
 typeof(respondent_wall_type) # what type of object is respondent_wall_type?
 
+str(hh_members) # str() provides an overview of the structure of the hh_members object
+
+posessions <- c("bicycle", "radio", "television") # create a new character vectos with posessions
+posessions <- c(posessions, "mobile_phone") # add an extra element to the end of the existing vector
+
+
 
