@@ -65,4 +65,12 @@ posessions <- c("bicycle", "radio", "television") # create a new character vecto
 posessions <- c(posessions, "mobile_phone") # add an extra element to the end of the existing vector
 posessions <- c("car", posessions) # add element to beginning
 
+## EXERCISE 3
+num_char <- c(1, 2, 3, "a")
+num_logical <- c(1, 2, 3, TRUE)
 
+# subsetting vectors
+hh_members
+hh_members[c(TRUE, FALSE, TRUE, FALSE)] # TRUE will select element with the same index, FALSE will not
+hh_members[1]
+hh_members > 5 # select only values above 5
