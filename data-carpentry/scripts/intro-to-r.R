@@ -11,4 +11,4 @@ download.file("https://ndownloader.figshare.com/files/11492171",
 ?download.file
 
 ### Installing packages
-install.packages()
+install.packages("tidyverse")
