@@ -30,5 +30,12 @@ interviews[, c("village", "no_meals")]
 interviews[["village"]] # output as vector
 interviews$respondent_wall_type[1:3]
 
+## Exercise 1
 
+interviews_100 <- interviews[100,]
+nrow(interviews)
+interviews[131,]
+interviews[nrow(interviews), ]
+interviews[median(1:nrow(interviews)), ]
+interviews[-c(7:nrow(interviews)), ]
 
