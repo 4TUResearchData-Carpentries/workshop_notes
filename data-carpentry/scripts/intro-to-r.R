@@ -47,5 +47,5 @@ round(digits = 2, x = 3.14159) # we can switch the order if we name the argument
 ## EXERCISE 2
 floor(1.624)
 
-
+# Vectors and data types
 
