@@ -35,3 +35,12 @@ r_width <- 20
 r_area <- r_length * r_width
 r_area
 
+# Functions
+round(3.14159) # run the round() function with pi as an argument
+round(pi) # R knows pi
+args(round) # show the arguments of the round() function
+?round # show Help for the round() function
+
+
+
+
