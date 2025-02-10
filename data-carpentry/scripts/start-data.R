@@ -57,9 +57,13 @@ respondent_floor_type <- factor(
 levels(respondent_floor_type)
 
 # recoding factors
-
-respondent_floor_type <- fct_recode(respondent_floor_type, brick = "cement")
+# recode all instances of cement to brick
+respondent_floor_type <- fct_recode(
+  respondent_floor_type,
+  brick = "cement"
+)
 levels(respondent_floor_type)
+
 
 
 
