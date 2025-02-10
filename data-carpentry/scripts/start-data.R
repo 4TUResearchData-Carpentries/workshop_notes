@@ -64,7 +64,21 @@ respondent_floor_type <- fct_recode(
 )
 levels(respondent_floor_type)
 
+# ordered factor
 
+respondent_floor_type <- factor(respondent_floor_type, ordered = TRUE)
+
+# convert back to a character vector
+as.character(respondent_floor_type)
+
+# Numeric factors
+year_fct <- factor(c(1990, 1983, 1977, 1998, 1990))
+as.numeric(year_fct)
+as.numeric(as.character(year_fct))
+as.numeric(levels(year_fct))[year_fct]
+
+# convert the memb_assoc variable to a factor
+memb_assoc <- as.factor(interviews$memb_assoc)
 
 
 
