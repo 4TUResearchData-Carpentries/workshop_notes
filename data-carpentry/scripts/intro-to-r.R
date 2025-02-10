@@ -44,3 +44,8 @@ round(3.14159, digits = 2) # round pi to 2 decimal points using the digits argum
 round(3.14159, 2) # we can remove the name of the argument when exactly using the same order
 round(digits = 2, x = 3.14159) # we can switch the order if we name the arguments
 
+## EXERCISE 2
+floor(1.624)
+
+
+
