@@ -39,3 +39,35 @@ interviews[nrow(interviews), ] # a better way to subset the last row
 interviews[median(1:nrow(interviews)), ] # subset the middle row
 interviews[-c(7:nrow(interviews)), ] # subset the first 6 rows
 
+
+# Factors -----------------------------------------------------------------
+
+# character vector
+respondent_floor_type <- c("earth", "cement", "cement", "earth")
+# factor
+respondent_floor_type <- factor(c("earth", "cement", "cement", "earth"))
+
+levels(respondent_floor_type)
+nlevels(respondent_floor_type)
+
+respondent_floor_type <- factor(
+  respondent_floor_type,
+  levels = c("earth", "cement")
+)
+levels(respondent_floor_type)
+
+# recoding factors
+
+respondent_floor_type <- fct_recode(respondent_floor_type, brick = "cement")
+levels(respondent_floor_type)
+
+
+
+
+
+
+
+
+
+
+
