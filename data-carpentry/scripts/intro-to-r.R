@@ -59,3 +59,4 @@ length(respondent_wall_type) # no. of elements in the respondent_wall_type vecto
 typeof(hh_members) # what type of object is hh_members?
 typeof(respondent_wall_type) # what type of object is respondent_wall_type?
 
+
