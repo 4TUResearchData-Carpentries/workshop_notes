@@ -16,4 +16,4 @@ install.packages("here")
 
 # R as a calculator
 2 + 16
-123/56
+123 / 56
