@@ -41,6 +41,6 @@ round(pi) # R knows pi
 args(round) # show the arguments of the round() function
 ?round # show Help for the round() function
 round(3.14159, digits = 2) # round pi to 2 decimal points using the digits argument
-
+round(3.14159, 2) # we can remove the name of the argument when exactly using the same order
 
 
