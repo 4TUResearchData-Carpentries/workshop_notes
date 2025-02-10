@@ -54,3 +54,8 @@ respondent_wall_type <- c("cement", "brick", "wood") # create a vector of 3 char
 respondent_wall_type
 
 length(hh_members) # return the number of elements in the hh_members vector
+length(respondent_wall_type) # no. of elements in the respondent_wall_type vector
+
+typeof(hh_members) # what type of object is hh_members?
+typeof(respondent_wall_type) # what type of object is respondent_wall_type?
+
