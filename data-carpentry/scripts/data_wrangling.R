@@ -45,7 +45,14 @@ exercise2 <- interviews %>%
   select( village, total_meals) %>%
   filter( total_meals > 20 )
 
+## calculating the average number of rooms
 interviews7 <- interviews %>%
+  summarise( avg_rooms = mean(rooms) )
+
+## calculate the average number of rooms PER VILLAGE
+
+interviews7 <- interviews %>%
+  group_by( village ) %>%
   summarise( avg_rooms = mean(rooms) )
 
 
