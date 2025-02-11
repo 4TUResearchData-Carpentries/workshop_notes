@@ -84,4 +84,7 @@ year(interviews$interview_date)
 ## Add a new column with the months
 interviews$month2 <- month(interviews$interview_date)
 
-
+nr_interviews <- interviews %>%
+  group_by(interview_date) %>%
+  summarise( no_interviews = n() ) %>%
+  arrange( interview_date )
