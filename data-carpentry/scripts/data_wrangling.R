@@ -72,3 +72,5 @@ excercise3 <- interviews %>%
   group_by(no_meals) %>%
   summarise( count_meals = n() )
 
+exercise3 <- count(interviews,no_meals)
+
