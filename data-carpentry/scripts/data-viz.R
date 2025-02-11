@@ -18,6 +18,6 @@ interviews_plotting %>%
 # Create a jitterplot
 interviews_plotting %>%
   ggplot(aes(x=no_membrs,y=number_items)) +
-  geom_point(alpha=0.5, colour = 'red')
+  geom_jitter(alpha=0.5, colour = 'red')
 
 
