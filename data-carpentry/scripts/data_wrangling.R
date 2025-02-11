@@ -89,4 +89,6 @@ nr_interviews <- interviews %>%
   summarise( no_interviews = n() ) %>%
   arrange( interview_date )
 
-
+wide_date <- pivot_wider( nr_interviews ,
+                          names_from = interview_date ,
+                          values_from = no_interviews )
