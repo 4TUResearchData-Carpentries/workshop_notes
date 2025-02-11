@@ -45,6 +45,7 @@ exercise2 <- interviews %>%
   select( village, total_meals) %>%
   filter( total_meals > 20 )
 
-
+interviews7 <- interviews %>%
+  summarise( avg_rooms = mean(rooms) )
 
 
