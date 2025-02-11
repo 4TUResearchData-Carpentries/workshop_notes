@@ -82,4 +82,4 @@ month(interviews$interview_date)
 year(interviews$interview_date)
 
 ## Add a new column with the months
-interviews$month <- month(interviews$interview_date)
+interviews$month2 <- month(interviews$interview_date)
