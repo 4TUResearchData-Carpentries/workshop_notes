@@ -13,7 +13,8 @@ interviews_plotting %>%
 # Making points transparent
 interviews_plotting %>%
   ggplot(aes(x=no_membrs,y=number_items)) +
-  geom_point()
+  geom_point(alpha=0.5)
+
 
 
 
