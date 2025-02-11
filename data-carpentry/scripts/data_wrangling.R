@@ -114,4 +114,4 @@ interviews_plotting <- interviews %>%
               values_from = months_lack_food_logical,
               values_fill = list(months_lack_food_logical = FALSE))
 
-
+write_csv(interviews_plotting,here("data_output","interview_plotting.csv"))
