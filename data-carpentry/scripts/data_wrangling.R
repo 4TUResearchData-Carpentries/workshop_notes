@@ -30,8 +30,12 @@ exercise1 <- interviews %>%
   filter(memb_assoc=='yes') %>%
   select(affect_conflicts,liv_count,no_meals)
 
+# Add a new column with the result of a calculation
 interviews6 <- interviews %>%
   mutate( people_per_room = no_membrs / rooms )
+
+interviews6 <- interviews %>%
+  mutate( total_meals = no_meals * no_membrs )
 
 
 
