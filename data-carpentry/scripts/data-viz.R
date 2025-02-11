@@ -31,4 +31,12 @@ interviews_plotting %>%
               width = 0.15 ) +
   scale_colour_manual( values = c('red','green','blue')  )
 
+# Exercise 1
+
+interviews_plotting %>%
+  ggplot( aes( x=rooms, y = village, colour = respondent_wall_type) ) +
+  geom_point()
+
+
+
 
