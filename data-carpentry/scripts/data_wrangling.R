@@ -31,3 +31,4 @@ exercise1 <- interviews %>%
   select(affect_conflicts,liv_count,no_meals)
 
 
+
