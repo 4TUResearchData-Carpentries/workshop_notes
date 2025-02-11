@@ -112,6 +112,9 @@ interviews_barplot <- interviews %>%
   group_by(village) %>%
   summarise( number_interviews = n() )
 
+interviews_barplot %>%
+  ggplot(aes(x=village,y=number_interviews))+
+  geom_bar(stat='identity')
 
 
 
