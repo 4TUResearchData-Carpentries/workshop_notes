@@ -44,3 +44,27 @@ interviews_plotting %>%
   geom_boxplot()
 
 
+interviews_plotting %>%
+  ggplot( aes(x=village, y=rooms)) +
+  geom_boxplot() +
+  geom_jitter(height=0.2, width=0.2)
+
+# Exercise 2
+
+interviews_plotting %>%
+  ggplot( aes(x=village, y=rooms)) +
+  geom_violin() +
+  geom_jitter(height=0.2, width=0.2)
+
+## bar plot
+
+interviews_plotting %>%
+  ggplot( aes(x= respondent_wall_type )) +
+  geom_bar()
+
+## colour bars
+interviews_plotting %>%
+  ggplot( aes(x= respondent_wall_type , fill='purple')) +
+  geom_bar()
+
+
