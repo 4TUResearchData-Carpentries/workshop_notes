@@ -113,3 +113,5 @@ interviews_plotting <- interviews %>%
   pivot_wider(names_from = months_lack_food,
               values_from = months_lack_food_logical,
               values_fill = list(months_lack_food_logical = FALSE))
+
+
