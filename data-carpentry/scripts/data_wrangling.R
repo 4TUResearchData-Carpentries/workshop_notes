@@ -92,3 +92,24 @@ nr_interviews <- interviews %>%
 wide_date <- pivot_wider( nr_interviews ,
                           names_from = interview_date ,
                           values_from = no_interviews )
+
+
+## Plotting data ##
+interviews_plotting <- interviews %>%
+  ## pivot wider by items_owned
+  separate_longer_delim(items_owned, delim = ";") %>%
+  replace_na(list(items_owned = "no_listed_items")) %>%
+  ## Use of grouped mutate to find number of rows
+  group_by(key_ID) %>%
+  mutate(items_owned_logical = TRUE,
+         number_items = if_else(items_owned == "no_listed_items", 0, n())) %>%
+  pivot_wider(names_from = items_owned,
+              values_from = items_owned_logical,
+              values_fill = list(items_owned_logical = FALSE)) %>%
+  ## pivot wider by months_lack_food
+  separate_longer_delim(months_lack_food, delim = ";") %>%
+  mutate(months_lack_food_logical = TRUE,
+         number_months_lack_food = if_else(months_lack_food == "none", 0, n())) %>%
+  pivot_wider(names_from = months_lack_food,
+              values_from = months_lack_food_logical,
+              values_fill = list(months_lack_food_logical = FALSE))
