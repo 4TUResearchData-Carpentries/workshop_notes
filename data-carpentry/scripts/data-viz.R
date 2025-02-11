@@ -37,6 +37,10 @@ interviews_plotting %>%
   ggplot( aes( x=rooms, y = village, colour = respondent_wall_type) ) +
   geom_point()
 
+## boxplot
 
+interviews_plotting %>%
+  ggplot( aes(x=village, y=rooms)) +
+  geom_boxplot()
 
 
