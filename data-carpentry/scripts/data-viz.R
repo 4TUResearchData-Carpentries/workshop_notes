@@ -88,6 +88,6 @@ interviews_plotting %>%
 
 # Exercise 3
 interviews_plotting %>%
-  ggplot( aes( x = memb_assoc )) +
+  ggplot( aes( x = memb_assoc , fill = village )) +
   geom_bar()
 
