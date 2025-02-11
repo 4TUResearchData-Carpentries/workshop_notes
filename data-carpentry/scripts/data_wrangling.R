@@ -75,3 +75,10 @@ excercise3 <- interviews %>%
 exercise3 <- interviews %>%
   count(no_meals)
 
+library(lubridate)
+
+day(interviews$interview_date)
+month(interviews$interview_date)
+
+## Add a new column with the months
+interviews$month <- month(interviews$interview_date)
