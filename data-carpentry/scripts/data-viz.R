@@ -98,5 +98,14 @@ interviews_plotting %>%
   geom_bar(fill='tomato',colour='blue') +
   facet_wrap(~village)
 
+## Themes
+
+interviews_plotting %>%
+  ggplot( aes( x = memb_assoc )) +
+  geom_bar(fill='tomato') +
+  facet_wrap(~village) +
+  theme_classic()
+
+
 
 
