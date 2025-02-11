@@ -1,0 +1,63 @@
+---
+title: "My Awesome Report"
+author: "Research Student"
+format: html
+---
+
+## Introduction
+
+This report uses **tidyverse** package along with the *SAFI* data, which has columns that include:
+
+- village
+  + Name village
+- interview_data
+  + Date of interview
+- no_members
+  + How many family members live in a house?
+- years_liv
+  + How many years respondent has lived in village
+- respondent_wall_type
+  + Type of wall of house
+- rooms
+  + Number of rooms in house
+
+Or, numerically:
+
+1. village
+2. interview_data
+3. no_members
+
+```{r}
+#| label: setup
+#| include: false
+library(tidyverse)
+library(here)
+
+interviews <- read_csv(here("data/SAFI_clean.csv"), na = "NULL"
+)
+```
+## Tables
+
+```{r}
+#| label: tbl-interviews
+#| tbl-cap: "A useful description about the table."
+
+interviews %>%
+  filter (!is.na(memb_assoc)) %>%
+  group_by(village, memb_assoc) %>%
+  summarize(mean_no_members = mean(no_membrs)) %>%
+  knitr::kable(col.names = c("Village", "Member Association", "Mean Number of Members"))
+```
+
+## Plots!
+```{r}
+#| label: fig-chunk-name
+#| fig-cap: "I made this amazing plot."
+#| echo: false
+
+interviews_plotting <- read_csv(here("data_output/interviews_plotting.csv"))
+
+interviews_plotting %>%
+  ggplot(aes(x = respondent_wall_tyle)) +
+  geom_bar(aes(fill = village))
+```
