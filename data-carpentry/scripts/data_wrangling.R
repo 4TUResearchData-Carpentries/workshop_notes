@@ -55,4 +55,9 @@ interviews7 <- interviews %>%
   group_by( village ) %>%
   summarise( avg_rooms = mean(rooms) )
 
+# mean() for calculating the mean
+# min() for the minimum
+# sd() for standard deviation
+# n() for doing a simple count
+
 
