@@ -91,3 +91,12 @@ interviews_plotting %>%
   ggplot( aes( x = memb_assoc , fill = village )) +
   geom_bar()
 
+## Faceting
+
+interviews_plotting %>%
+  ggplot( aes( x = memb_assoc )) +
+  geom_bar(fill='tomato',colour='blue') +
+  facet_wrap(~village)
+
+
+
