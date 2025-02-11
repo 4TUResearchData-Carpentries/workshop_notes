@@ -21,7 +21,9 @@ interviews4 <- filter( interviews, village=='Ruaca' )
 # test for multiple criteria
 interviews4 <- filter( interviews, village=='Ruaca' & no_membrs > 5 )
 
-
+interviews5 <- interviews %>%
+  select( village:rooms ) %>%
+  filter( village == 'Ruaca' )
 
 
 
