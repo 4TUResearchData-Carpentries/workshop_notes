@@ -62,9 +62,26 @@ interviews_plotting %>%
   ggplot( aes(x= respondent_wall_type )) +
   geom_bar()
 
-## colour bars
+## colour for the bars
 interviews_plotting %>%
-  ggplot( aes(x= respondent_wall_type , fill='purple')) +
+  ggplot( aes(x= respondent_wall_type )) +
+  geom_bar(fill='purple')
+
+## A stacked bar chart
+interviews_plotting %>%
+  ggplot( aes(x= respondent_wall_type, fill=village)) +
   geom_bar()
 
+## Side-by-side bars
+interviews_plotting %>%
+  ggplot( aes(x= respondent_wall_type, fill=village)) +
+  geom_bar( position = 'dodge')
 
+
+## Annotate your graph using lab()
+interviews_plotting %>%
+  ggplot( aes(x= respondent_wall_type, fill=village)) +
+  geom_bar( position = 'dodge') +
+  labs( x = 'Wall types' ,
+        y = 'Number of observations',
+        title = 'Number of wall types by city' )
