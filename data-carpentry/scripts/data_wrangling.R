@@ -19,5 +19,7 @@ interviews3 <- select( interviews, starts_with('no_'))
 
 interviews4 <- filter( interviews, village=='Ruaca' )
 # test for multiple criteria
+interviews4 <- filter( interviews, village=='Ruaca' & no_membrs >= 5 )
+
 
 
