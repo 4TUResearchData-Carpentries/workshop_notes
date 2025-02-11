@@ -60,4 +60,8 @@ interviews7 <- interviews %>%
 # sd() for standard deviation
 # n() for doing a simple count
 
+interviews8 <- interviews %>%
+  group_by(village) %>%
+  summarise( total_interviews = n())
+
 
