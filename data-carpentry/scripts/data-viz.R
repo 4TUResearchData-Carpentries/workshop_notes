@@ -106,6 +106,12 @@ interviews_plotting %>%
   facet_wrap(~village) +
   theme_classic()
 
+interviews <- read_csv(here("data","SAFI_clean.csv"))
+
+interviews_barplot <- interviews %>%
+  group_by(village) %>%
+  summarise( number_interviews = n() )
+
 
 
 
