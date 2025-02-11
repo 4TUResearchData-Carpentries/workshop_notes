@@ -15,4 +15,8 @@ interviews2 <- select( interviews , village:memb_assoc )
 ## select columns starting with a certain string
 interviews3 <- select( interviews, starts_with('no_'))
 
+## Filter
+
+interviews4 <- filter( interviews, village == 'Ruaca' )
+
 
