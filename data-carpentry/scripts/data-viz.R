@@ -85,3 +85,9 @@ interviews_plotting %>%
   labs( x = 'Wall types' ,
         y = 'Number of observations',
         title = 'Number of wall types by city' )
+
+# Exercise 3
+interviews_plotting %>%
+  ggplot( aes( x = memb_assoc )) +
+  geom_bar()
+
