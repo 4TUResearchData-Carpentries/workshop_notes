@@ -23,3 +23,5 @@ interviews4 <- filter( interviews, village=='Ruaca' & no_membrs > 5 )
 
 
 
+
+
