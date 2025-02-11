@@ -13,3 +13,4 @@ select( interviews , village, no_membrs , rooms )
 interviews2 <- select( interviews , village:memb_assoc )
 
 ## select columns starting
+interviews3 <- select( interviews, starts_with('no_'))
