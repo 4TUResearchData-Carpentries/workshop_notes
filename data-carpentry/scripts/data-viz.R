@@ -28,6 +28,7 @@ interviews_plotting %>%
   ggplot(aes(x=no_membrs,y=number_items,colour=village)) +
   geom_jitter(alpha=0.5,
               height = 0.15 ,
-              width = 0.15 )
+              width = 0.15 ) +
+  scale_colour_manual( values = c('red','green','blue')  )
 
 
