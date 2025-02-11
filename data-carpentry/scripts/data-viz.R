@@ -13,8 +13,11 @@ interviews_plotting %>%
 # Making points transparent and add colour
 interviews_plotting %>%
   ggplot(aes(x=no_membrs,y=number_items)) +
-  geom_point(alpha=0.5, colour = '#7d1542')
+  geom_point(alpha=0.5, colour = 'red')
 
-
+# Create a jitterplot
+interviews_plotting %>%
+  ggplot(aes(x=no_membrs,y=number_items)) +
+  geom_point(alpha=0.5, colour = 'red')
 
 
