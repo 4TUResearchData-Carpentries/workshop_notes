@@ -17,6 +17,6 @@ interviews3 <- select( interviews, starts_with('no_'))
 
 ## Filter
 
-interviews4 <- filter( interviews, village == 'Ruaca' )
+interviews4 <- filter( interviews, village=='Ruaca' )
 
 
