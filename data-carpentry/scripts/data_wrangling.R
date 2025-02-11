@@ -88,3 +88,5 @@ nr_interviews <- interviews %>%
   group_by(interview_date) %>%
   summarise( no_interviews = n() ) %>%
   arrange( interview_date )
+
+
