@@ -79,6 +79,7 @@ library(lubridate)
 
 day(interviews$interview_date)
 month(interviews$interview_date)
+year(interviews$interview_date)
 
 ## Add a new column with the months
 interviews$month <- month(interviews$interview_date)
