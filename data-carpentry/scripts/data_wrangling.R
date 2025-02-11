@@ -64,4 +64,7 @@ interviews8 <- interviews %>%
   group_by(village) %>%
   summarise( total_interviews = n())
 
+## The exact same can be achieved using the following
+interviews8 <- interviews %>%
+  count(village)
 
